@@ -13,5 +13,12 @@
     "brandDark": "#9fe1f8",
     "brandText": "#9fe1f8"
   },
-  "logo": "/logo.png"
+  "logo": "/logo.png",
+  "elements": {
+    "bookmarks": false
+  },
+  "links": [{
+    "href": "/glossary",
+    "label": "Glossar"
+  }]
 }
