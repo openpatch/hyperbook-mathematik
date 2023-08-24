@@ -1,9 +1,8 @@
 ---
-name: Getting Started
+name: Willkommen
+lang: de
 ---
 
-## Getting Started
+# Willkommen
 
-This is created with :t[hyperbook].
-
-![Actual test image of jelly beans from the USC-SIPI image database.](/images/SIPI_Jelly_Beans_4.1.07.jpg)
+Das Hyperbook befindet sich noch im Aufbau.
