@@ -54,7 +54,7 @@ Angenommen zwei Vektoren $$ \vec{a} $$ und $$ \vec{b} $$ gehen vom selben Punkt 
 
 2. Bringe die Umforumgen in die richtige Reihenfolge und vollziehe sie nach.
 
-::embed{src="https://app.Lumi.education/api/v1/run/N5F7lo/embed"}
+::embed{src="https://app.Lumi.education/api/v1/run/N5F7lo/embed" height=850}
 
 # Transfer in den Raum
 
