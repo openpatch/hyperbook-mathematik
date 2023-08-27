@@ -36,7 +36,7 @@ Die jeweils gegenüber liegenden Seiten sind gleich lang. Beide Diagonalen sind 
 
 $$ \vec{d_1} = \vec{a} + \vec{b} = \begin{pmatrix}-4\\6\end{pmatrix} + \begin{pmatrix}3\\2\end{pmatrix} = \begin{pmatrix}-1\\8\end{pmatrix} $$
 
-$$ \vec{d_2} = \vec{a} + \vec{b} = \begin{pmatrix}-4\\6\end{pmatrix} - \begin{pmatrix}3\\2\end{pmatrix} = \begin{pmatrix}-7\\4\end{pmatrix} $$
+$$ \vec{d_2} = \vec{a} - \vec{b} = \begin{pmatrix}-4\\6\end{pmatrix} - \begin{pmatrix}3\\2\end{pmatrix} = \begin{pmatrix}-7\\4\end{pmatrix} $$
 
 :::
 
