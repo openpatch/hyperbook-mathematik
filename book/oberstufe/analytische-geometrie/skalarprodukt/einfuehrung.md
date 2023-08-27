@@ -1,5 +1,5 @@
 ---
-name: Einführung
+name: 💡 Einführung
 lang: de
 index: 0
 ---
