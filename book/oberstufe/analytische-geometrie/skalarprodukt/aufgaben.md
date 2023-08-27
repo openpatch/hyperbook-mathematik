@@ -1,5 +1,5 @@
 ---
-name: Aufgaben
+name: 🖊 Aufgaben
 index: 1
 lang: de
 ---
