@@ -46,8 +46,14 @@ Denke daran, dass du einen der beiden Parameter umbenennst.
 
 $$
 
-\begin{pmatrix}5\\0\\-3\end{pmatrix} + t \cdot \begin{pmatrix}-4\\1\\3\end{pmatrix} = \begin{pmatrix}1\\1\\0\end{pmatrix} + p \cdot \begin{pmatrix}2\\0\\-1\end{pmatrix}
+\begin{pmatrix}1\\1\\0\end{pmatrix} + t \cdot \begin{pmatrix}2\\0\\-1\end{pmatrix} = \begin{pmatrix}5\\0\\-3\end{pmatrix} + p \cdot \begin{pmatrix}-4\\1\\3\end{pmatrix}
 
 $$
 
 ![](/assets/oberstufe/analytische-geometrie/schnittwinkel-zwischen-geraden/ti-ablauf.gif)
+
+=> Die Geraden schneiden sich.
+
+![](/assets/oberstufe/analytische-geometrie/schnittwinkel-zwischen-geraden/ti-ablauf2.gif)
+
+=> Der Schnittwinkel beträg ungefähr $164.745°$.
