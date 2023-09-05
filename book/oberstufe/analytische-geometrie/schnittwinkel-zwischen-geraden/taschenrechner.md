@@ -26,7 +26,7 @@ berechnen.
 
 Dazu können wir mit dem Taschenrechner wie folgt vorgehen.
 
-1. Prüfen, ob die Geraden sich schneiden
+1. Prüfen, ob sich die Geraden schneiden.
     1. Wir setzen die Geradengleichung gleich und lösen mit **linSolve** (Buch-Taste (a) oder auf Menü (b) und dann 3 7 2 drücken).
 1. Wenn es ein Ergebnis gibt, dann
     1. berechnen wir den Winkel zwischen den Richtungsvektoren.
