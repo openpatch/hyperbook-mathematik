@@ -56,4 +56,4 @@ $$
 
 ![](/assets/oberstufe/analytische-geometrie/schnittwinkel-zwischen-geraden/ti-ablauf2.gif)
 
-=> Der Schnittwinkel beträg ungefähr $164.745°$.
+=> Der Schnittwinkel beträgt ungefähr $164.745°$.
