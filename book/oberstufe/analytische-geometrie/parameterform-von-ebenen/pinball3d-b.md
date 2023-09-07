@@ -20,7 +20,7 @@ E_{Sound-Rechts}: \vec{x} = \begin{pmatrix}-5,12\\28\\-0,64\end{pmatrix} + r \cd
 
 $$
 
-- Überprüfe rechnerisch, ob für die Kugelposition $K=(2,22|19,04|-1,35)$ ein Sound abgespielt werden muss.
+- Überprüfe rechnerisch, ob für die Kugelposition $K=(2,224|19,04|-1,348)$ ein Sound abgespielt werden muss.
 
 ::::tabs{id="884989"}
 
