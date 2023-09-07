@@ -51,7 +51,7 @@ $r=-1$ und $s=2$
 
 $$
 
-E: \vec{x} = \vec{a} + r \cdot \vec{u} + s \cdot \vec{v} \begin{pmatrix}8\\10\\10\end{pmatrix} + r \cdot \begin{pmatrix}5\\5\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\0\\5\end{pmatrix}
+E: \vec{x} = \vec{a} + r \cdot \vec{u} + s \cdot \vec{v} \begin{pmatrix}8\\10\\10\end{pmatrix} + r \cdot \begin{pmatrix}5\\5\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\0\\5\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 

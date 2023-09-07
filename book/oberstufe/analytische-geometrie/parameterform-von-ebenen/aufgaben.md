@@ -14,7 +14,7 @@ a. $A(1|0|3)$, $B(0|2|1)$ und $C(2|2|4)$
 
 :::collapsible{title="Lösung" id="224361"}
 
-$$ E: \vec{x} = \begin{pmatrix}1\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}-1\\2\\-2\end{pmatrix} + s \cdot \begin{pmatrix}1\\2\\1\end{pmatrix} $$
+$$ E: \vec{x} = \begin{pmatrix}1\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}-1\\2\\-2\end{pmatrix} + s \cdot \begin{pmatrix}1\\2\\1\end{pmatrix}, \ r,s \in \mathbb{R} $$
 
 :::
 
@@ -22,7 +22,7 @@ b. $A(0|1|2)$, $B(3|3|3)$ und $C(-1|1|4)$
 
 :::collapsible{title="Lösung" id="720144"}
 
-$$ E: \vec{x} = \begin{pmatrix}0\\1\\2\end{pmatrix} + r \cdot \begin{pmatrix}3\\2\\1\end{pmatrix} + s \cdot \begin{pmatrix}-1\\0\\2\end{pmatrix} $$
+$$ E: \vec{x} = \begin{pmatrix}0\\1\\2\end{pmatrix} + r \cdot \begin{pmatrix}3\\2\\1\end{pmatrix} + s \cdot \begin{pmatrix}-1\\0\\2\end{pmatrix}, \ r,s \in \mathbb{R} $$
 
 :::
 
@@ -32,7 +32,7 @@ Gegeben ist ein Punkt und eine Gerade. Gib die Parameterform der Ebene E an, die
 
 $$
 
-g: \vec{x} = \begin{pmatrix}2\\1\\-3\end{pmatrix} + r \cdot \begin{pmatrix}-1\\3\\1\end{pmatrix}
+g: \vec{x} = \begin{pmatrix}2\\1\\-3\end{pmatrix} + r \cdot \begin{pmatrix}-1\\3\\1\end{pmatrix} \ r \in \mathbb{R}
 
 $$
 
@@ -59,7 +59,7 @@ Wähle den Vektor zwischen dem Punkt P und dem Aufpunkt der Geraden als zweiten 
 
 $$
 
-E: \vec{x} = \begin{pmatrix}1\\-3\\-3\end{pmatrix} + r \cdot \begin{pmatrix}-1\\3\\1\end{pmatrix} + s \cdot \begin{pmatrix}1\\4\\0\end{pmatrix}
+E: \vec{x} = \begin{pmatrix}1\\-3\\-3\end{pmatrix} + r \cdot \begin{pmatrix}-1\\3\\1\end{pmatrix} + s \cdot \begin{pmatrix}1\\4\\0\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 
@@ -71,13 +71,13 @@ Gegeben sind die Geraden g und f. Zeige, dass die Geraden sich schneiden. Gib di
 
 $$
 
-g: \vec{x} = \begin{pmatrix}7\\-3\\3\end{pmatrix} + s \cdot \begin{pmatrix}6\\1\\-2\end{pmatrix}
+g: \vec{x} = \begin{pmatrix}7\\-3\\3\end{pmatrix} + s \cdot \begin{pmatrix}6\\1\\-2\end{pmatrix}, \ s \in \mathbb{R}
 
 $$
 
 $$
 
-f: \vec{x} = \begin{pmatrix}1\\-4\\5\end{pmatrix} + s \cdot \begin{pmatrix}-1\\13\\3\end{pmatrix}
+f: \vec{x} = \begin{pmatrix}1\\-4\\5\end{pmatrix} + s \cdot \begin{pmatrix}-1\\13\\3\end{pmatrix}, \ s \in \mathbb{R}
 
 $$
 
@@ -91,7 +91,7 @@ Nimm die Richtungsvektoren der Geraden als Spannvektoren der Ebene.
 
 $$
 
-E: \vec{x} = \begin{pmatrix}1\\-4\\5\end{pmatrix} + s \cdot \begin{pmatrix}-1\\13\\3\end{pmatrix} + t \cdot \begin{pmatrix}6\\1\\-2\end{pmatrix}
+E: \vec{x} = \begin{pmatrix}1\\-4\\5\end{pmatrix} + s \cdot \begin{pmatrix}-1\\13\\3\end{pmatrix} + t \cdot \begin{pmatrix}6\\1\\-2\end{pmatrix}, \ s,t \in \mathbb{R}
 
 $$
 
@@ -103,13 +103,13 @@ Gegeben sind die Geraden g und f. Zeige, dass die Geraden parallel sind. Gib die
 
 $$
 
-g: \vec{x} = \begin{pmatrix}2\\3\\-1\end{pmatrix} + s \cdot \begin{pmatrix}-8\\2\\6\end{pmatrix}
+g: \vec{x} = \begin{pmatrix}2\\3\\-1\end{pmatrix} + s \cdot \begin{pmatrix}-8\\2\\6\end{pmatrix}, \ s \in \mathbb{R}
 
 $$
 
 $$
 
-f: \vec{x} = \begin{pmatrix}5\\-2\\0\end{pmatrix} + s \cdot \begin{pmatrix}4\\-1\\-3\end{pmatrix}
+f: \vec{x} = \begin{pmatrix}5\\-2\\0\end{pmatrix} + s \cdot \begin{pmatrix}4\\-1\\-3\end{pmatrix}, s \in \mathbb{R}
 
 $$
 
@@ -129,7 +129,7 @@ Wähle die Aufpunkte der Geraden und einen weiteren zum Beispiel für $s = 1$.
 
 $$
 
-E: \vec{x} = \begin{pmatrix}2\\3\\-1\end{pmatrix} + r \cdot \begin{pmatrix}3\\-5\\1\end{pmatrix} + s \begin{pmatrix}7\\-6\\-2\end{pmatrix}
+E: \vec{x} = \begin{pmatrix}2\\3\\-1\end{pmatrix} + r \cdot \begin{pmatrix}3\\-5\\1\end{pmatrix} + s \begin{pmatrix}7\\-6\\-2\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 
