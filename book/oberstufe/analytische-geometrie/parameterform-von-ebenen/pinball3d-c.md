@@ -6,7 +6,7 @@ lang: de
 
 # Pinball 3D: Obere Ebene
 
-Die obere Ebene des Spiels soll auch in mit der Parameterform beschrieben werden. Die obere Ebene (blau markiert) verläuft parallel zur Tischebene und geht durch den Punkt $P(29|43|10)$. 
+Die obere Ebene des Spiels soll auch mit der Parameterform beschrieben werden. Die obere Ebene (blau markiert) verläuft parallel zur Tischebene und geht durch den Punkt $P(29|43|10)$. 
 
 - Gib die Parameterform der oberen Ebenen an.
 
@@ -29,6 +29,6 @@ Die obere Ebene des Spiels soll auch in mit der Parameterform beschrieben werden
 
 :::collapsible{title="TIpp" id="982897"}
 
-Welche Eigenschaften haben zwei parallele Geraden? Kannst du ähnliches für zwei parallele Ebenen beobachten?
+Welche Eigenschaften haben zwei parallele Geraden? Kannst du Ähnliches für zwei parallele Ebenen beobachten?
 
 :::

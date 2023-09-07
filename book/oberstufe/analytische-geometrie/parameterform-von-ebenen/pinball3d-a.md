@@ -36,7 +36,7 @@ $\vec{OA}$ Stützvektor; $\vec{AB}$ und $\vec{AD}$ Spannvektoren:
 
 $$
 
-E_{Tisch}: \vec{x} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\0\\10\end{pmatrix}
+E_{Tisch}: \vec{x} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\0\\10\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 
@@ -45,7 +45,7 @@ $\vec{OA}$ Stützvektor; $\vec{AB}$ und $\vec{AC}$ Spannvektoren:
 
 $$
 
-E_{Tisch}: \vec{x} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\56\\10\end{pmatrix}
+E_{Tisch}: \vec{x} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\56\\10\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 
@@ -53,7 +53,7 @@ $\vec{OB}$ Stützvektor; $\vec{BA}$ und $\vec{BC}$ Spannvektoren:
 
 $$
 
-E_{Tisch}: \vec{x} = \begin{pmatrix}0\\56\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\-56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\0\\10\end{pmatrix}
+E_{Tisch}: \vec{x} = \begin{pmatrix}0\\56\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\-56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\0\\10\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 
@@ -65,7 +65,7 @@ Wir überprüfen, ob $D(80|0|10)$ in der Ebene $E_{Tisch}$ liegt.
 
 $$
 
-\begin{pmatrix}80\\0\\10\end{pmatrix} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\56\\10\end{pmatrix}
+\begin{pmatrix}80\\0\\10\end{pmatrix} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\56\\0\end{pmatrix} + s \cdot \begin{pmatrix}80\\56\\10\end{pmatrix}, \ r,s \in \mathbb{R}
 
 $$
 

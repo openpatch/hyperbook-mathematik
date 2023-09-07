@@ -14,6 +14,6 @@ Zur besseren Handhabung in der Programmierung soll der Ursprung des Koordinatens
 
 :::collapsible{title="Tipp" id="437594"}
 
-Überlege dir, wie die neunen Koordinaten des Punktes $P(1|0|0)$ sein würden, nachdem der Ursprung verschoben wurde.
+Überlege dir, wie die neuen Koordinaten des Punktes $P(1|0|0)$ sein würden, nachdem der Ursprung verschoben wurde.
 
 :::
