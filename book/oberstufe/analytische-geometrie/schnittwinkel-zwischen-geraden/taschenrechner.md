@@ -10,7 +10,7 @@ Angenommen wir möchten den Schnitwinkel zwischen den Geraden
 
 $$
 
-f: \vec{x} = \begin{pmatrix}1\\1\\0\end{pmatrix} + t \cdot \begin{pmatrix}2\\0\\-1\end{pmatrix}
+f: \vec{x} = \begin{pmatrix}1\\1\\0\end{pmatrix} + t \cdot \begin{pmatrix}2\\0\\-1\end{pmatrix}, \ t \in \mathbb{R}
 
 $$
 
@@ -18,7 +18,7 @@ und
 
 $$
 
-g: \vec{x} = \begin{pmatrix}5\\0\\-3\end{pmatrix} + t \cdot \begin{pmatrix}-4\\1\\3\end{pmatrix}
+g: \vec{x} = \begin{pmatrix}5\\0\\-3\end{pmatrix} + t \cdot \begin{pmatrix}-4\\1\\3\end{pmatrix}, \ t \in \mathbb{R}
 
 $$
 

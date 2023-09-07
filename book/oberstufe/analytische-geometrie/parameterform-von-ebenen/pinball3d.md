@@ -12,6 +12,10 @@ lang: de
 
 ## Blütenaufgabe
 
+:::alert{info}
+Starte mit der Grundaufgabe "Tischebene". Danach kannst du frei wählen, welche Aufgaben du bearbeiten möchtest.
+:::
+
 ::excalidraw{src="/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball.excalidraw" aspectRatio="16/9" autoZoom=true center=true edit=false}
 
 - Aufgabe [Tischebene](/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball3d-a)
