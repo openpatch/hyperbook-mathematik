@@ -9,7 +9,7 @@ Gegeben sind die Punkte A, B und C. Damit lässt sich folgende die Parameterform
 
 $$
 
-E: \vec{x} = \vec{OA} + r \cdot \vec{AB} + s \cdot \vec{AC}
+E: \vec{x} = \vec{OA} + r \cdot \vec{AB} + s \cdot \vec{AC}, \ r,s \in \mathbb{R}
 
 $$
 

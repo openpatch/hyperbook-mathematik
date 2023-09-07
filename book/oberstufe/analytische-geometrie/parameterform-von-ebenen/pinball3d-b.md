@@ -10,13 +10,13 @@ Wenn die Kugel eine der beiden Soundebenen berührt, dann soll ein Sound abgespi
 
 $$
 
-E_{Sound-Links}: \vec{x} = \begin{pmatrix}-5,12\\28\\-0,64\end{pmatrix} + r \cdot \begin{pmatrix}17,86\\22,4\\2,23\end{pmatrix} + s \cdot \begin{pmatrix}18,86\\22,4\\-5,77\end{pmatrix}
+E_{Sound-Links}: \vec{x} = \begin{pmatrix}-5,12\\28\\-0,64\end{pmatrix} + r \cdot \begin{pmatrix}17,86\\22,4\\2,23\end{pmatrix} + s \cdot \begin{pmatrix}18,86\\22,4\\-5,77\end{pmatrix}, \ r, s \in \mathbb{R}
 
 $$
 
 $$
 
-E_{Sound-Rechts}: \vec{x} = \begin{pmatrix}-5,12\\28\\-0,64\end{pmatrix} + r \cdot \begin{pmatrix}17,86\\-22,4\\2,23\end{pmatrix} + s \cdot \begin{pmatrix}18,86\\-22,4\\-5,77\end{pmatrix}
+E_{Sound-Rechts}: \vec{x} = \begin{pmatrix}-5,12\\28\\-0,64\end{pmatrix} + r \cdot \begin{pmatrix}17,86\\-22,4\\2,23\end{pmatrix} + s \cdot \begin{pmatrix}18,86\\-22,4\\-5,77\end{pmatrix}, \ r, s \in \mathbb{R}
 
 $$
 
