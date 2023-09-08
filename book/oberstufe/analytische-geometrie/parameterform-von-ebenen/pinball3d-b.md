@@ -4,7 +4,7 @@ hide: true
 lang: de
 ---
 
-# Pinball 3D: Position der Kugel
+# Pinball 3D: Soundcheck
 
 Wenn die Kugel eine der beiden Soundebenen berührt, dann soll ein Sound abgespielt werden. Die Soundebenen sind wie folgt definiert.
 
