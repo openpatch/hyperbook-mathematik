@@ -1,3 +1,4 @@
 ---
 name: Geometrie
+hide: true
 ---
