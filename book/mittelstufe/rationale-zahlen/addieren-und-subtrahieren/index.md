@@ -1,8 +1,6 @@
 ---
 name: Addieren und subtrahieren
 lang: de
-index: 1
+index: 2
 hide: true
 ---
-
-# Addieren und subtrahieren

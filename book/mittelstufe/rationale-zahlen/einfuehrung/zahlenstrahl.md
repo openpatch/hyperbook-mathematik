@@ -1,6 +1,6 @@
 ---
 name: 💡 Zahlenstrahl
-index: 3
+index: 3.1
 lang: de
 ---
 
@@ -17,3 +17,7 @@ Rationale Zahlen können auch auf dem Zahlenstrahl dargestellt werden. Dazu wird
 ::embed{src="https://learningapps.org/watch?app=14484214"}
 
 2. Zeichne einen Zahlenstrahl in dein Heft und zeichne verschiedene rationale Zahlen ein.
+
+3. Bearbeite die nachfolgende Aufgabe.
+
+::embed{src="https://app.Lumi.education/api/v1/run/DydlIW/embed"}
