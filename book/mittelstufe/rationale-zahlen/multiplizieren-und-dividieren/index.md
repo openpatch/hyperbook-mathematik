@@ -1,7 +1,7 @@
 ---
 name: Multiplizieren und dividieren
 lang: de
-index: 2
+index: 3
 hide: true
 ---
 

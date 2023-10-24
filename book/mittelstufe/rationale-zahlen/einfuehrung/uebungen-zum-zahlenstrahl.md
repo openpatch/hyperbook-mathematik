@@ -1,6 +1,6 @@
 ---
 name: 🖊 Übungen zum Zahlenstrahl
-index: 3
+index: 3.2
 lang: de
 ---
 
