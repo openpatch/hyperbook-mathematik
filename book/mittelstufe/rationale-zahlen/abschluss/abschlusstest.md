@@ -1,7 +1,7 @@
 ---
 name: ✅ Abschlusstest
 lang: de
-index: 0
+index: 1
 ---
 
 # ✅ Abschlusstest: Rationale Zahlen
