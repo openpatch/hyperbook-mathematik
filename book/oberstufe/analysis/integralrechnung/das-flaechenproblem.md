@@ -6,7 +6,7 @@ index: 1
 
 # Das Flächenproblem
 
-Das Flächenproblem ist ein zentrales Problem in der Mathematik und ein wichtiger Anwendungsfall der Integralrechnung. Es geht darum, die Fläche unter einem Funktionsgraphen zu berechnen.
+Das Flächenproblem ist ein zentrales Problem in der Mathematik und ein wichtiger Anwendungsfall der Integralrechnung. Es geht darum, die Fläche unter einem :t[Funktionsgraphen]{#funktionsgraph} zu berechnen.
 
 ## Beispiel: Der Flächeninhalt eines Grundstücks
 
@@ -30,8 +30,8 @@ Am Abend der Fernsehübertragung eines Fußballspiels der Champions League wurde
 
 ### Aufgaben
 
-1. Wann war die erste Halbzeit zu Ende?
-2. Wann endete das Spiel?
-3. Wie groß ist der Gesamtverbrauch während der Pause? Schätze!
-4. Wie groß ist der Gesamtverbrauch während der gesamten Fernsehübertragung? Schätze!
+1. Bestimme das Ende der ersten Halbzeit.
+2. Bestimme, wann das Spiel zu Ende gewesen ist.
+3. Schätze wie groß der Gesamtverbrauch während der Pause gewesen ist.
+4. Schätze wie groß der Gesamtverbrauch während der gesamten Fernsehübertragung gewesen ist.
 5. Erläutere deinen bei 3. und 4. gewählten Weg zur Berechnung des Gesamtwasserverbrauchs.
