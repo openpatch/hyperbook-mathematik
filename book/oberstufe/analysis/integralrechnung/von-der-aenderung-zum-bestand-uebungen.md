@@ -154,3 +154,56 @@ iii und vii sind korrekt.
 Er ist in den ersten 4 Stunden 900 m hoch gestiegen.
 
 :::
+
+## Übung 4: Hubschrauber
+
+Ein Hubschrauber startet zur Zeit $t = 0 s$ vom Boden.
+Die Geschwindigkeit des Hubschraubers in vertikaler
+Richtung wird durch das folgende Diagramm beschrieben.
+Dabei wird die Zeit t in Sekunden (s) und die Geschwindig-
+keit v in Meter pro Sekunde (m/s) angegeben.
+
+![](/assets/oberstufe/analysis/integralrechnung/hubschrauber.png)
+
+1. Beschreibe den Bewegungsablauf ohne Rechnung.
+    1. In welchen Zeitabschnitten bewegt sich der Hubschrauber aufwärts bzw. abwärts?
+    2. Zu welchen Zeitpunkten ändert der Hubschrauber die Bewegungsrichtung?
+    3. Wann war die Steiggeschwindigkeit am größten?
+    4. Wann war die Sinkgeschwindigkeit am größten?
+
+:::collapsible{title="Lösung" id="665998"}
+
+- Graph von f oberhalb der t-Achse: Hubschrauber bewegt sich nach oben für $0 \leq t \leq 11$
+- Graph von f unterhalb der t-Achse: Hubschrauber bewegt sich nach unten für $11 \leq t \leq 22$
+- Schnittpunkte des Graphen von f mit der t-Achse: dort Änderung der Bewegungsrichtung: t = 11
+- Hochpunkt des Graphen von f: größte Steiggeschwindigkeit (t = 10)
+- Tiefpunkt des Graphen von f: größte Sinkgeschwindigkeit (t = 20)
+
+:::
+
+2. In welchen Zeitabschnitten des Steigflugs findet eine positive bzw. negative Beschleunigung statt?
+
+:::collapsible{title="Lösung" id="816283"}
+
+- positive Steigung des Graphen von f: positive Beschleunigung für $0 \leq t \leq 10$
+- negative Steigung des Graphen von f: negative Beschleunigung für $10 \leq t \leq 11$ Lösungsansätze sind z. B. qualitatives differenzieren des Graphen bzw. erkennen der Beschleunigung als Änderungsrate der Geschwindigkeit.
+
+:::
+
+3. Bestimme eine sinnvolle Schätzung für die nach 10 Sekunden erreichte Höhe.
+
+:::collapsible{title="Lösung" id="281882"}
+
+Die näherungsweise Berechnung, z. B. über Rechteck- oder Trapezsummen, ergibt eine Höhe von ca. 108 m. Ebenfalls möglich wäre eine Argumentation mit der mittleren Geschwindigkeit (etwa 10 m/s). Damit ergibt sich eine Höhe von ca. 100 m.
+- Interpretation des Integrals als Wirkung (hier: zurückgelegte Höhe)
+
+:::
+
+4. Nach 22 Sekunden Flugzeit landet der Hubschrauber. Begründe, dass der Landeplatz auf einem Hügel liegt.
+
+:::collapsible{title="Lösung" id="896982"}
+
+Der Flächeninhalt oberhalb der t-Achse ist größer als unterhalb der t-Achse, d. h. die zurückgelegte Strecke nach oben ist größer als die zurückgelegte Strecke nach unten.
+- Interpretation des Integrals als Bilanzierung von Flächeninhalten
+
+:::
