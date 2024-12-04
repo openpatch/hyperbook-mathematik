@@ -12,7 +12,7 @@ Das Flächenproblem ist ein zentrales Problem in der Mathematik und ein wichtige
 
 Das Bauamt einer Großstadt hat beschlossen, die im Stadtplan grün eingezeichnete Fläche südlich des Flusses neu zu gestalten. Doch für die Planungsarbeiten muss zuerst einmal die Größe des Grundstücks ermittelt werden. Wie groß ist der Flächeninhalt dieses Grundstückes ungefähr? 
 
-::geogebra{src="https://www.geogebra.org/calculator/p6w4n4yw" width=800}
+::geogebra{src="https://www.geogebra.org/calculator/p6w4n4yw" width=600 height=400}
 
 ### Aufgaben
 
