@@ -1,6 +1,6 @@
 ---
 name: 💻 Unter- und Obersumme mit GeoGebra berechnen
-index: 2
+index: 7
 lang: de
 ---
 
