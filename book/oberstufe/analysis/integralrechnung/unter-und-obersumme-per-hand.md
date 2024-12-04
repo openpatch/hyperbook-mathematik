@@ -1,6 +1,6 @@
 ---
 name: Unter- und Obersumme per Hand berechnen
-index: 2
+index: 5
 lang: de
 ---
 

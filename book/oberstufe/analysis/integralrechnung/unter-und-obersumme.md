@@ -1,6 +1,6 @@
 ---
 name: Unter- und Obersumme einer Funktion
-index: 1
+index: 4
 lang: de
 ---
 
