@@ -20,5 +20,6 @@
   "links": [{
     "href": "/glossary",
     "label": "Glossar"
-  }]
+  }],
+  "repo": "https://github.com/openpatch/hyperbook-mathematik/edit/main"
 }
