@@ -71,17 +71,17 @@ Stelle die Fläche zwischen dem Graphen und der x-Achse als Flächen dar. Benutz
 :::
 :::collapsible{title="Lösung" id="432737"}
 
-Die Fläche a ist ein Rechteck mit den Seitenlängen 30 und 30 und die Fläche b ist eine zusammengesetzte Fläche aus einem Rechteck mit den Seitenlängen 30 und 30 und einem Dreieck mit der Grundseite 30 und der Höhe 10.
+Die Fläche a ist ein Rechteck mit den Seitenlängen 20 und 0,5 und die Fläche b ist eine zusammengesetzte Fläche aus einem Rechteck mit den Seitenlängen 20 und 0,5 und einem Dreieck mit der Grundseite 0,5 und der Höhe 20.
 
 ![](/assets/oberstufe/analysis/integralrechnung/besucher-im-schwimmbad-integral.png)
 
 $$$
 \begin{align*}
-a &= 30 \cdot 30 = 900 \\
+a &= 20 \cdot 0,5 = 10 \\
 
-b &= 30 \cdot 30 + \frac{1}{2} \cdot 30 \cdot 10 = 1050 \\
+b &= 20 \cdot 0,5 + \frac{1}{2} \cdot 0,5 \cdot 20 = 15 \\
 
-c &= a + b = 1350
+c &= a + b = 35
 \end{align*}
 $$$
 
