@@ -50,7 +50,7 @@ Ein Schwimmbad füllt sich in den ersten 30 Minuten mit 20 Besuchern pro Stunde.
 
 :::collapsible{title="Hilfe" id="665096"}
 
-Zeichne ein Koorinatensystem. Auf der x-Achse trägst du die Zeit in Minuten und auf der y-Achse den Zufluss an Besuchern in $\frac{Besucher}{Minuten}$ dar.
+Zeichne ein Koorinatensystem. Auf der x-Achse trägst du die Zeit in Stunden und auf der y-Achse den Zufluss an Besuchern in $\frac{Besucher}{Minuten}$ dar.
 
 ![](/assets/oberstufe/analysis/integralrechnung/besucher-im-schwimmbad-koordinatensystem.png)
 
