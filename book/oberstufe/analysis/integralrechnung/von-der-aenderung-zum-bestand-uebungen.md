@@ -81,7 +81,7 @@ a &= 20 \cdot 0,5 = 10 \\
 
 b &= 20 \cdot 0,5 + \frac{1}{2} \cdot 0,5 \cdot 20 = 15 \\
 
-c &= a + b = 35
+c &= a + b = 25
 \end{align*}
 $$$
 
