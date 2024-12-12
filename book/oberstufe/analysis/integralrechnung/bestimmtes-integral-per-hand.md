@@ -15,6 +15,6 @@ Mit diesem Beispiel kannst du den Umgang mit unendlichen Summen wiederholen.
 
 ::download[Arbeitsblatt: lineare Funktion]{src="/assets/oberstufe/analysis/integralrechnung/O_U_linFkt.pdf"}
 
-In diesem Beispiel siehst du, dass die Berechnung des Grenzwertes von Unter- und Obersumme schon für die einfache Funktion f(x) = x2 ziemlich aufwändig ist.
+In diesem Beispiel siehst du, dass die Berechnung des Grenzwertes von Unter- und Obersumme schon für die einfache Funktion $f(x) = x^2$ ziemlich aufwändig ist.
 
 ::download[Arbeitsblatt: quadratische Funktion]{src="/assets/oberstufe/analysis/integralrechnung/O_U_quadFkt.pdf"}
