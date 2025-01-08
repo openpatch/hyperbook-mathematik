@@ -36,7 +36,7 @@ Integral[f]
 
 |     Funktion f(x)      |           Stammfunktion F(x)            |    Probe    |
 | :--------------------: | :-------------------------------------: | :---------: |
-|       $f(x) = x$       | $F(x) = \int{x dx} = \frac{x^2}{2} + c$ | $F'(x) = x$ |
+|       $f(x) = x$       | $F(x) = \int{x \ dx} = \frac{x^2}{2} + c$ | $F'(x) = x$ |
 |       $f(x) = 1$       |                                         |             |
 |       $f(x) = 3$       |                                         |             |
 |      $f(x) = 3x$       |                                         |             |
