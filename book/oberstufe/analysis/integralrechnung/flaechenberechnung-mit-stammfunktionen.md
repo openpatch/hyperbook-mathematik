@@ -28,7 +28,7 @@ Unten sehen wir die Funktion $f(x)=-x^2+5$. Die farbig markierte Fläche ist die
 
 $$
 
-F(x) = \int{f(x) dx} = \int{(-x^2+5) dx} = -\frac{x^3}{3} + 5x + c
+F(x) = \int{f(x) \ dx} = \int{(-x^2+5) \ dx} = -\frac{x^3}{3} + 5x + c
 
 
 $$
