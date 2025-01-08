@@ -6,9 +6,9 @@ lang: de
 
 Die Berechnung des bestimmten Integrals als Grenzwert von Unter- und Obersumme ist aufwändig und langwierig. Wir wollen daher nach einer Möglichkeit suchen, wie man das bestimmte Integral einer Funktion einfacher berechnen kann.
 
-Im unteren Fenster ist das bestimmte Integral von f(x) = x2 in einem Intervall [a, b] zu sehen. Bei der Intervallgrenze b ist zusätzlich der Wert des bestimmten Integrals F von der x-Achse aus abgetragen.
+Im unteren Fenster ist das bestimmte Integral von $f(x) = x^2$ in einem Intervall $[a, b]$ zu sehen. Bei der Intervallgrenze b ist zusätzlich der Wert des bestimmten Integrals F von der x-Achse aus abgetragen.
 
-- Ziehe die rechte Intervallgrenze b entlang der x-Achse. Dabei wird für jeden Wert von b der Wert des bestimmten Integrals eingezeichnet. Es entsteht der Graph der so genannten Flächeninhaltsfunktion$F(x)$ bezüglich der unteren Grenze a.
+- Ziehe die rechte Intervallgrenze b entlang der x-Achse. Dabei wird für jeden Wert von b der Wert des bestimmten Integrals eingezeichnet. Es entsteht der Graph der sogenannten Flächeninhaltsfunktion $F(x)$ bezüglich der unteren Grenze a.
 
 - Versuche die Gleichung dieser Flächeninhaltsfunktion $F(x)$ zu finden. Gib dazu rechts im Algebra-Fenster deine vermutete Funktionsgleichung ein und drücke die Eingabetaste.
 
