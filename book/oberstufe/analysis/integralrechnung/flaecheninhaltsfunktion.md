@@ -4,6 +4,8 @@ index: 12
 lang: de
 ---
 
+# Flächeninhaltsfunktion
+
 Die Berechnung des bestimmten Integrals als Grenzwert von Unter- und Obersumme ist aufwändig und langwierig. Wir wollen daher nach einer Möglichkeit suchen, wie man das bestimmte Integral einer Funktion einfacher berechnen kann.
 
 Im unteren Fenster ist das bestimmte Integral von $f(x) = x^2$ in einem Intervall $[a, b]$ zu sehen. Bei der Intervallgrenze b ist zusätzlich der Wert des bestimmten Integrals F von der x-Achse aus abgetragen.
