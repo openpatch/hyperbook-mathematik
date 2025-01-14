@@ -10,7 +10,7 @@ Im unteren Fenster ist das bestimmte Integral von $f(x) = x^2$ in einem Interval
 
 - Ziehe die rechte Intervallgrenze b entlang der x-Achse. Dabei wird für jeden Wert von b der Wert des bestimmten Integrals eingezeichnet. Es entsteht der Graph der sogenannten Flächeninhaltsfunktion $F(x)$ bezüglich der unteren Grenze a.
 
-- Versuche die Gleichung dieser Flächeninhaltsfunktion $F(x)$ zu finden. Gib dazu rechts im Algebra-Fenster deine vermutete Funktionsgleichung ein und drücke die Eingabetaste.
+- Versuche die Gleichung dieser Flächeninhaltsfunktion $F(x)$ zu finden. Gib dazu links im Algebra-Fenster deine vermutete Funktionsgleichung ein und drücke die Eingabetaste. Stimmt sie mit der Spur überein?
 
 :::collapsible{title="Lösung" id="991417"}
 
@@ -32,7 +32,7 @@ $$$
 
 - Im unteren Fenster siehst du diese Situation dargestellt, wobei du a und b verschieben kannst. Versuche in eigenen Worten die obige Formel zu erklären. Mache auch eine Skizze in deinem Heft.
 
-- Berechne mithilfe der Flächeninhaltsfunktion bezogen auf die untere Grenze (-3), nämlich $F(x) = \frac{x^3}{3}+ 9$, die Fläche unter dem Funktionsgraph von $f(x) = x^2$ im Intervall [-2, 1] in deinem Heft! Vergleiche dein Ergebnis mit der Konstruktion im unteren Fenster!
+- Berechne mithilfe der Flächeninhaltsfunktion, nämlich $F(x) = \frac{x^3}{3}+ 9$, die Fläche unter dem Funktionsgraph von $f(x) = x^2$ im Intervall [-2, 1] in deinem Heft! Vergleiche dein Ergebnis mit der Konstruktion im unteren Fenster!
 
 ::geogebra{src="https://www.geogebra.org/calculator/ujqhfezw" height=600 width=800 showAlgebraInput showToolbar}
 
