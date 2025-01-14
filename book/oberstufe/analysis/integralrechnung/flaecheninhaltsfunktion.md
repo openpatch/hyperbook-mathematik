@@ -36,7 +36,7 @@ $$$
 
 - Berechne mithilfe der Flächeninhaltsfunktion, nämlich $F(x) = \frac{x^3}{3}+ 9$, die Fläche unter dem Funktionsgraph von $f(x) = x^2$ im Intervall [-2, 1] in deinem Heft! Vergleiche dein Ergebnis mit der Konstruktion im unteren Fenster!
 
-::geogebra{src="https://www.geogebra.org/calculator/ujqhfezw" height=600 width=800 showAlgebraInput showToolbar}
+::geogebra{src="https://www.geogebra.org/calculator/ujqhfezw" height=600 width=800}
 
 ## Ergebnis
 
