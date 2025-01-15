@@ -16,7 +16,7 @@ Im unteren Fenster ist das bestimmte Integral von $f(x) = x^2$ in einem Interval
 
 :::collapsible{title="Lösung" id="991417"}
 
-$F(x)=\frac{x^3}{3} + 10$
+$F(x)=\frac{x^3}{3} + 9$
 
 :::
 
