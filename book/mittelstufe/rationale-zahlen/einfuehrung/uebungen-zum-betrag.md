@@ -1,5 +1,5 @@
 ---
-name: 🖊 Übungen zum Betrag
+name: ✏️ Übungen zum Betrag
 index: 4
 lang: de
 ---

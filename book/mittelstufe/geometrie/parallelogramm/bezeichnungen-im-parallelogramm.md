@@ -1,5 +1,5 @@
 ---
-name: 🖊 Bezeichnungen im Parallelogramm
+name: ✏️ Bezeichnungen im Parallelogramm
 lang: de
 ---
 

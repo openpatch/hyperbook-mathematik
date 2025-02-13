@@ -1,5 +1,5 @@
 ---
-name: 🖊️ Flächenberechnung mit Stammfunktionen
+name: ✏️ Flächenberechnung mit Stammfunktionen
 index: 15
 lang: de
 ---

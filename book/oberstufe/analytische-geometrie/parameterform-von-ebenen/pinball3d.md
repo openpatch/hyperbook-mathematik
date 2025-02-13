@@ -1,5 +1,5 @@
 ---
-name: 🖊 Pinball 3D
+name: ✏️ Pinball 3D
 lang: de
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: 🖊 Übungen zum Zahlenstrahl
+name: ✏️ Übungen zum Zahlenstrahl
 index: 3.2
 lang: de
 ---

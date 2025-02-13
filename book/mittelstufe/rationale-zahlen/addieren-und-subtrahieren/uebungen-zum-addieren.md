@@ -1,5 +1,5 @@
 ---
-name: 🖊 Übungen zum Addieren und Subtrahieren
+name: ✏️ Übungen zum Addieren und Subtrahieren
 index: 1
 lang: de
 ---

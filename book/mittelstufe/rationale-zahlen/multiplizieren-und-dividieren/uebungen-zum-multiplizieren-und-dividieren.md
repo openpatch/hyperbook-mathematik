@@ -1,5 +1,5 @@
 ---
-name: 🖊 Übungen zum Multiplizieren und Dividieren
+name: ✏️ Übungen zum Multiplizieren und Dividieren
 index: 3
 lang: de
 ---
