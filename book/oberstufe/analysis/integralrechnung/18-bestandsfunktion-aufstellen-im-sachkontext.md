@@ -18,7 +18,7 @@ $$
 
 beschreibt die momentane Produktionsrate der erzeugten Wärme in Megajoule pro Tag in Abhängigkeit von der Zeit $t$ in Tagen.
 
-Für die Menge der Wärme $H(a)$ in MJ, die sich zum Zeitpunkt $a$ im Speichertank befindet, gilt 
+Für die Menge der Wärme $H(t)$ in MJ, die sich zum Zeitpunkt $a$ im Speichertank befindet, gilt 
 
 $$ 
 H(60) = 0. 
@@ -104,7 +104,7 @@ $$
 
 beschreibt die momentane Produktionsrate der erzeugten elektrischen Energie in Megawattstunden pro Tag in Abhängigkeit von der Zeit $t$ in Tagen.
 
-Für die Menge der Energie $E(b)$ in MWh, die sich zum Zeitpunkt $b$ im Speichertank befindet, gilt 
+Für die Menge der Energie $E(t)$ in MWh, die sich zum Zeitpunkt $t$ im Speichertank befindet, gilt 
 
 $$ 
 E(30) = 0. 
@@ -188,7 +188,7 @@ $$
 
 beschreibt die momentane Füllrate des Wassers in Litern pro Stunde in Abhängigkeit von der Zeit $t$ in Stunden.
 
-Für die Menge des Wassers $W(c)$ in Litern, die sich zum Zeitpunkt $c$ im Speicher befindet, gilt 
+Für die Menge des Wassers $W(t)$ in Litern, die sich zum Zeitpunkt $t$ im Speicher befindet, gilt 
 
 $$ 
 W(20) = 0. 
