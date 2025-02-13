@@ -1,5 +1,5 @@
 ---
-name: 🖊 Parallelogramm oder nicht?
+name: ✏️ Parallelogramm oder nicht?
 lang: de
 ---
 

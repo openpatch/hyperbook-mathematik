@@ -1,5 +1,5 @@
 ---
-name: 🖊 Übungen
+name: ✏️ Übungen
 index: 3
 lang: de
 ---

@@ -1,5 +1,5 @@
 ---
-name: 🖊 Übungen zu Zahlenmengen
+name: ✏️ Übungen zu Zahlenmengen
 index: 2
 lang: de
 ---
