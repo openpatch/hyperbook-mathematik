@@ -345,6 +345,115 @@ $$
 
 :::
 
+## Aufgabe: 🚀 Rakete starten lassen
+
+Eine Rakete startet vertikal und ihre Beschleunigung kann als zeitabhängig betrachtet werden und ist durch die Funktion  
+
+$$ 
+a(t) = 4t 
+$$ 
+
+gegeben. Dabei ist $ t $ die Zeit in Sekunden und $ a(t) $ die Beschleunigung in Metern pro Sekunde zum Quadrat. Die Rakete startet aus der Ruhe (Geschwindigkeit = 0 m/s).
+
+a) Bestimme die Funktion $ v(t) $, die die Geschwindigkeit der Rakete nach $ t $ Sekunden angibt.
+
+:::collapsible{title="1. Tipp: Verstehen der Funktion" id="654321"}
+
+- Funktion analysieren: Die gegebene Funktion $ a(t) = 4t $ beschreibt die Beschleunigung der Rakete in Abhängigkeit von der Zeit.
+- Bedeutung der Variablen: Hierbei ist $ t $ die Zeit in Sekunden und $ a(t) $ die Beschleunigung in Metern pro Sekunde zum Quadrat. Die Geschwindigkeit $ v(t) $ kann durch die Integration der Beschleunigung bestimmt werden.
+
+:::
+
+:::collapsible{title="2. Tipp: Integration der Beschleunigung" id="890123"}
+
+- Bestandsfunktion finden: Um die Geschwindigkeit $ v(t) $ zu bestimmen, muss die Funktion $ a(t) $ integriert werden.
+
+$$
+\begin{align*}
+v(t) &= \int a(t) \, dt \\
+     &= \int (4t) \, dt
+\end{align*}
+$$
+
+- Integration durchführen:
+    - Die Integration von $ 4t $ ergibt $ 2t^2 $.
+
+Somit ergibt sich die Funktion $ v(t) $:
+
+$$
+v(t) = 2t^2 + c
+$$
+
+Wobei $ c $ die Integrationskonstante ist, die die Anfangsgeschwindigkeit beschreibt.
+
+:::
+
+:::collapsible{title="3. Tipp: Bestimmung der Integrationskonstante" id="456789"}
+
+- Anfangsbedingung einsetzen: Die Integrationskonstante $ c $ kann bestimmt werden, indem die Anfangsgeschwindigkeit der Rakete (0 m/s, beim Start) eingesetzt wird. Zu Beginn der Bewegung (bei $ t = 0 $) gilt $ v(0) = 0 $.
+
+$$
+\begin{align*}
+v(0) = 2 \cdot 0^2 + c &= 0\\
+c &= 0
+\end{align*}
+$$
+
+:::
+
+:::collapsible{title="4. Tipp: Geschwindigkeitsfunktion aufstellen" id="123789"}
+
+- Geschwindigkeitsfunktion aufstellen: Die Integrationskonstante $ c $ ist 0. Die Geschwindigkeit der Rakete nach $ t $ Sekunden lautet also:
+
+$$
+v(t) = 2t^2
+$$
+
+:::
+
+b) Wie lange dauert es, bis die Rakete eine Geschwindigkeit von 16 m/s erreicht?
+
+:::collapsible{title="5. Tipp: Bestimmung der Zeit bis zur gewünschten Geschwindigkeit" id="678901"}
+
+- Geschwindigkeit bestimmen: Setze die Geschwindigkeit gleich 16 m/s und löse nach $ t $ auf:
+
+$$
+16 = 2t^2
+$$
+
+- Umstellen der Gleichung:
+
+$$
+t^2 = \frac{16}{2} = 8
+$$
+
+$$
+t = \sqrt{8} \approx 2,83 \, \text{s}
+$$
+
+:::
+
+c) Berechne $ \int_0^3 v(t) \, dt $ und interpretiere den Wert im Sachzusammenhang.
+
+:::collapsible{title="6. Tipp: Berechnung des Integrals" id="345678"}
+
+- Integral berechnen: Das Integral $ \int_0^3 v(t) \, dt $ gibt die zurückgelegte Strecke der Rakete in den ersten 3 Sekunden an. 
+
+$$
+\begin{align*}
+\int_0^3 v(t) \, dt &= \int_0^3 2t^2 \, dt \\
+&= 2 \left[ \frac{t^3}{3} \right]_0^3 \\
+&= 2 \times \left( \frac{3^3}{3} - \frac{0^3}{3} \right) \\
+&= 2 \times \frac{27}{3} \\
+&= 2 \times 9 \\
+&= 18 \, \text{m}
+\end{align*}
+$$
+
+- Der Wert von 18 m bedeutet, dass die Rakete in den ersten 3 Sekunden eine Strecke von 18 Metern zurückgelegt hat.
+
+:::
+
 ## 🔴 Aufgabe: 🏗️ Brückenkonstruktion – Belastung eines Trägers  
 
 Ein Ingenieur untersucht die Belastung eines Brückenträgers mit einer festen Länge von **6 Metern** unter einer gleichmäßig verteilten Last. Die Biegelinie des Trägers (die Durchbiegung in Abhängigkeit von der Position $ x $) wird vereinfacht durch die zweite Ableitung der Durchbiegungsfunktion $ y(x) $ beschrieben:  
