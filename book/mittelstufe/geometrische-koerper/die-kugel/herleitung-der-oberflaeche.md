@@ -7,4 +7,4 @@ index: 4
 
 Hier kannst du dich informieren wie man die Formel für den Oberflächeninhalt einer Kugel mathematisch herleiten kann.
 
-::embed{height=500 src="https://www.geogebra.org/m/dm9mnb6n"}
+::embed{height="500px" src="https://www.geogebra.org/m/dm9mnb6n"}

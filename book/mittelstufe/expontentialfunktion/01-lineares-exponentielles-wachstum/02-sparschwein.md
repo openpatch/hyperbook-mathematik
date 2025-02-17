@@ -43,6 +43,10 @@ $K=1000€$; $p\%=5\%$; $n=18$
 | ... | ... |
 | 18 | ??? |
 
+Beispielrechnung mit $p\% = 2\% = 0,02$
+
+::youtube[Zinsen und Zinseszinsen]{#RPFoUkR9PvA}
+
 ## Aufgaben
 
 1. Übertrage die beiden Möglichkeiten in dein Heft und fülle die Tabelle aus.

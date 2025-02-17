@@ -1,5 +1,5 @@
 ---
-name: Unterschiede zwischen Zinsarten
+name: ✏️ Unterschiede zwischen Zinsarten
 index: 3
 lang: de
 ---
@@ -14,4 +14,6 @@ blau: einfache Verzinsung
 
 rot: Zinseszins
 
-Beschreibe, was dir auffällt.
+✏️ Beschreibe, was dir auffällt.
+
+::geogebra{height=500 width=900 src="https://www.geogebra.org/m/hhut2yyz"}
