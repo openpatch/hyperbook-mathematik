@@ -178,4 +178,26 @@ Das Maximum der Temperatur wird also nach 20 Stunden erreicht.
 
 :::
 
+# 🦷 Logo einer Zahnpraxis
 
+Die Zahnpraxis "Zahnfee" hat ein neues Logo entworfen. Das Logo besteht aus einem Kreis, in dem ein Zahn abgebildet ist. Der Zahn ist durch eine Funktion vierten Grades modelliert. Die Funktion $f(x)$ beschreibt die Höhe des Zahns in mm über dem Boden. Der Zahn beginnt bei $x = -10$ und endet bei $x = 10$. Die Funktion $f(x)$ ist symmetrisch zur $y$-Achse und hat ein Hochpunkt $H(5|4)$.
+
+a) Skizziere den Graphen der Funktion $f(x)$.
+
+::::collapsible{title="Skizze des Graphens" id="005005"}
+
+:::geogebra{perspective="g"}
+
+:::
+
+::::
+
+b) Stelle eine Funktionsgleichung für die Funktion $f(x)$ auf.
+
+c) Berechne die Fläche zwischen dem Graphen der Funktion $f(x)$ und der $x$-Aachse im Intervall $[0;10]$.
+
+Eine Mitarbeiterin entwirft einen Gegenvorschlag. Sich möchte, dass nur der Umriss des Zahns im Logo abgebildet wird. Dafür soll die Funktion $g(x)$ um vier Millimeter nach unten verschoben werden.
+
+d) Berechne den Flächenunterschied der beiden Vorschläge in Prozent.
+
+f) Aufgrund des aufwändigeren Designs kostet der Vorschlag der Mitarbeiterin doppelt so viel wie der ursprüngliche Vorschlag. Beurteile, ob sich der neue Vorschlag lohnt.

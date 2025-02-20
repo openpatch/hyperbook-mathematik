@@ -38,7 +38,7 @@ $A_2 = \int_1^3 (x^2 - 4x + 3) \, dx$
 
 $A_2 = \left[ \frac{1}{3}x^3 - 2x^2 + 3x \right]_1^3$
 
-$A_2 = \left( \frac{27}{3} - 18 + 9 \right) - \left( \frac{1}{3} - 2 + 3 \right) = \frac{4}{3}$
+$A_2 = \left( \frac{27}{3} - 18 + 9 \right) - \left( \frac{1}{3} - 2 + 3 \right) = -\frac{4}{3}$
 
 :::
 
@@ -78,7 +78,7 @@ $A_2 = \int_1^3 (-x^2 + 4x - 3) \, dx$
 
 $A_2 = \left[ -\frac{1}{3}x^3 + 2x^2 - 3x \right]_1^3$
 
-$A_2 = \left( -\frac{27}{3} + 18 - 9 \right) - \left( -\frac{1}{3} + 2 - 3 \right) = -\frac{4}{3}$
+$A_2 = \left( -\frac{27}{3} + 18 - 9 \right) - \left( -\frac{1}{3} + 2 - 3 \right) = \frac{4}{3}$
 
 :::
 
