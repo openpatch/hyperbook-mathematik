@@ -1,10 +1,10 @@
 ---
-name: "✏️ Übungen: Expoentielles Wachstum"
+name: "✏️ Übungen: Exponentielles Wachstum"
 index: 4
 lang: de
 ---
 
-# ✏️ Übungen: Expoentielles Wachstum
+# ✏️ Übungen: Exponentielles Wachstum
 
 ## Der neue Wert ist gesucht
 
