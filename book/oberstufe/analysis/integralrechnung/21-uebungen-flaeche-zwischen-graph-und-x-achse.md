@@ -32,22 +32,22 @@ $A_1 = \int_0^1 (x^2 - 4x + 3) \, dx$
 
 $A_1 = \left[ \frac{1}{3}x^3 - 2x^2 + 3x \right]_0^1$
 
-$A_1 = \left( \frac{1}{3} - 2 + 3 \right) - 0 = \frac{1}{3}$
+$A_1 = \left( \frac{1}{3} - 2 + 3 \right) - 0 = \frac{4}{3}$
 
 $A_2 = \int_1^3 (x^2 - 4x + 3) \, dx$
 
 $A_2 = \left[ \frac{1}{3}x^3 - 2x^2 + 3x \right]_1^3$
 
-$A_2 = \left( \frac{27}{3} - 18 + 9 \right) - \left( \frac{1}{3} - 2 + 3 \right) = \frac{49}{3}$
+$A_2 = \left( \frac{27}{3} - 18 + 9 \right) - \left( \frac{1}{3} - 2 + 3 \right) = \frac{4}{3}$
 
 :::
 
 :::collapsible{title="Lösung: Flächeninhalte addieren" id="155045"}
 3. Flächeninhalte addieren:
 
-$A = A_1 + A_2 = \frac{1}{3} + \frac{49}{3} = \frac{50}{3}$
+$A = A_1 + A_2 = \frac{4}{3} + \frac{4}{3} = \frac{8}{3}$
 
-Der Flächeninhalt beträgt $\frac{50}{3}$.
+Der Flächeninhalt beträgt $\frac{8}{3}$.
 :::
 
 2. $f(x) = -x^2 + 4x - 3$ im Intervall $[0,3]$
@@ -78,7 +78,7 @@ $A_2 = \int_1^3 (-x^2 + 4x - 3) \, dx$
 
 $A_2 = \left[ -\frac{1}{3}x^3 + 2x^2 - 3x \right]_1^3$
 
-$A_2 = \left( -\frac{27}{3} + 18 - 9 \right) - \left( -\frac{1}{3} + 2 - 3 \right) = -\frac{49}{3}$
+$A_2 = \left( -\frac{27}{3} + 18 - 9 \right) - \left( -\frac{1}{3} + 2 - 3 \right) = -\frac{4}{3}$
 
 :::
 
@@ -86,9 +86,9 @@ $A_2 = \left( -\frac{27}{3} + 18 - 9 \right) - \left( -\frac{1}{3} + 2 - 3 \righ
 
 3. Flächeninhalte addieren:
 
-$A = A_1 + A_2 = -\frac{4}{3} - \frac{49}{3} = -\frac{53}{3}$
+$A = A_1 + A_2 = \frac{4}{3} + \frac{4}{3} = -\frac{8}{3}$
 
-Der Flächeninhalt beträgt $-\frac{53}{3}$.
+Der Flächeninhalt beträgt $\frac{8}{3}$.
 
 :::
 
@@ -114,13 +114,13 @@ $A_1 = \int_0^1 (x^2 - 4x + 3) \, dx$
 
 $A_1 = \left[ \frac{1}{3}x^3 - 2x^2 + 3x \right]_0^1$
 
-$A_1 = \left( \frac{1}{3} - 2 + 3 \right) - 0 = \frac{1}{3}$
+$A_1 = \left( \frac{1}{3} - 2 + 3 \right) - 0 = \frac{4}{3}$
 
 $A_2 = \int_1^2 (x^2 - 4x + 3) \, dx$
 
 $A_2 = \left[ \frac{1}{3}x^3 - 2x^2 + 3x \right]_1^2$
 
-$A_2 = \left( \frac{8}{3} - 8 + 6 \right) - \left( \frac{1}{3} - 2 + 3 \right) = \frac{14}{3}$
+$A_2 = \left( \frac{8}{3} - 8 + 6 \right) - \left( \frac{1}{3} - 2 + 3 \right) = \frac{2}{3}$
 
 :::
 
@@ -128,9 +128,9 @@ $A_2 = \left( \frac{8}{3} - 8 + 6 \right) - \left( \frac{1}{3} - 2 + 3 \right) =
 
 3. Flächeninhalte addieren:
 
-$A = A_1 + A_2 = \frac{1}{3} + \frac{14}{3} = \frac{15}{3}$
+$A = A_1 + A_2 = \frac{4}{3} + \frac{2}{3} = \frac{6}{3}$
 
-Der Flächeninhalt beträgt $5$.
+Der Flächeninhalt beträgt $2$.
 
 :::
 
