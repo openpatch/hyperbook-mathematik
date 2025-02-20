@@ -19,7 +19,7 @@ a) Erkläre das Verhalten der Funktion T anhand des abgebildeten Graphen im Sach
 
 :::collapsible{title="Lösung" id="811688"}
 
-Die Temperatur im Gewächshaus steigt anfangs langsam an und steigt dann immer schneller an. Nach 20 Stunden erreicht die Temperatur ihren Höchstwert und sinkt dann wieder.
+Die Temperaturänderung ist die ganze Zeit positiv. Nach 20 Stunden ist die Temperaturänderung am geringesten. Danach steigt diese wieder an.
 
 :::
 
@@ -27,7 +27,7 @@ b) Begründe, dass eine lineare Funktion zur Modellierung nicht ausreicht.
 
 :::collapsible{title="Lösung" id="262681"}
 
-Eine lineare Funktion würde eine konstante Steigung bedeuten, was nicht dem Verhalten des Graphen entspricht. Sie würde auch nicht zur Modellierung ausreichen, da die Temperatur nach 20 Stunden wieder sinkt.
+Eine lineare Funktion würde eine konstante Steigung bedeuten, was nicht dem Verhalten des Graphen entspricht. Sie würde auch nicht zur Modellierung ausreichen, da die Temperaturänderung nicht konstant ist.
 
 :::
 
