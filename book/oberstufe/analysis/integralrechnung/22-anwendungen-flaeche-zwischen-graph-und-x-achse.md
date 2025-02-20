@@ -30,6 +30,6 @@ b) Berechne den Flächeninhalt der Dachfläche.
 
 :::collapsible{title="Lösung" id="963200"}
 
-Flächeninhalt der Dachfläche: $32 m^2$
+Flächeninhalt der Dachfläche beträgt ungefähr $21,33 m^2$
 
 :::

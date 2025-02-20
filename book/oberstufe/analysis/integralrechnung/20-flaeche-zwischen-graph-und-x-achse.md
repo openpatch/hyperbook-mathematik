@@ -10,7 +10,7 @@ Der Flächeninhalt zwischen dem Graphen einer Funktion $f(x)$ und der $x$-Achse 
 
 1. Nullstellen der Funktion $f(x)$ im Intervall $[a,b]$ bestimmen.
 
-2. Flächeninhalte der einzelnen Abschnitte zwischen den Nullstellen berechnen. Bei negativen Funktionswerten wird der Betrag genommen.
+2. Flächeninhalte der einzelnen Abschnitte zwischen den Nullstellen berechnen. Bei negativen Werten wird der Betrag genommen.
 
 3. Die Flächeninhalte der Abschnitte addieren.
 
