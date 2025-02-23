@@ -178,26 +178,33 @@ Das Maximum der Temperatur wird also nach 20 Stunden erreicht.
 
 :::
 
-# 🦷 Logo einer Zahnpraxis
+# 🤓 Logo eines Optikers
 
-Die Zahnpraxis "Zahnfee" hat ein neues Logo entworfen. Das Logo besteht aus einem Kreis, in dem ein Zahn abgebildet ist. Der Zahn ist durch eine Funktion vierten Grades modelliert. Die Funktion $f(x)$ beschreibt die Höhe des Zahns in mm über dem Boden. Der Zahn beginnt bei $x = -10$ und endet bei $x = 10$. Die Funktion $f(x)$ ist symmetrisch zur $y$-Achse und hat ein Hochpunkt $H(5|4)$.
+Das Logo eines Optikers wurde mithilfe von zwei Funktionen neu gestaltet.
 
-a) Skizziere den Graphen der Funktion $f(x)$.
+Die Funktionen $f(x)$ und $g(x)=-f(x)$ schließen Flächen ein, die an zwei Brillengläser erinnert.
 
-::::collapsible{title="Skizze des Graphens" id="005005"}
+Die Funktion $f(x)$ besitzt bei $x=0$ eine Nullstelle, sie ist punktsymmetrisch zum Ursprung und der Punkt $P(0,06|0,06)$ liegt auf dem Graphen der Funktion $f(x)$.
 
-:::geogebra{perspective="g"}
+:::geogebra{perspective="G"}
+
+f(x) = -1.8x^3 + x
+g(x) = -f(x)
 
 :::
 
-::::
+a) Ermittle die Funktionsgleichungen zu den beiden Graphen.
+b) Berechne den Flächeninhalt der Fläche, die von den beiden Graphen eingeschlossen wird.
 
-b) Stelle eine Funktionsgleichung für die Funktion $f(x)$ auf.
+Ein alternativer Vorschlag sieht ein asymmetrisches Logo vor. Dies soll besser ins moderne Desing des Optikers passen.
 
-c) Berechne die Fläche zwischen dem Graphen der Funktion $f(x)$ und der $x$-Aachse im Intervall $[0;10]$.
+Der Graph f bleibt unberührt. Der Graph von g wird mit dem Faktor von $0,8$ in Richtung der y-Achse gestaucht.
 
-Eine Mitarbeiterin entwirft einen Gegenvorschlag. Sich möchte, dass nur der Umriss des Zahns im Logo abgebildet wird. Dafür soll die Funktion $g(x)$ um vier Millimeter nach unten verschoben werden.
+:::geogebra{perspective="G"}
 
-d) Berechne den Flächenunterschied der beiden Vorschläge in Prozent.
+f(x) = -1.8x^3 + x
+g(x) = -0.8*f(x)
 
-f) Aufgrund des aufwändigeren Designs kostet der Vorschlag der Mitarbeiterin doppelt so viel wie der ursprüngliche Vorschlag. Beurteile, ob sich der neue Vorschlag lohnt.
+:::
+
+c) Bestimme den Flächenunterschied der beiden Vorschläge in Prozent.
