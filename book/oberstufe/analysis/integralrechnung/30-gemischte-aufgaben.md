@@ -178,7 +178,7 @@ Das Maximum der Temperatur wird also nach 20 Stunden erreicht.
 
 :::
 
-# 🤓 Logo eines Optikers
+## 🤓 Logo eines Optikers
 
 Das Logo eines Optikers wurde mithilfe von zwei Funktionen neu gestaltet.
 
@@ -186,7 +186,7 @@ Die Funktionen $f(x)$ und $g(x)=-f(x)$ schließen Flächen ein, die an zwei Bril
 
 Die Funktion $f(x)$ besitzt bei $x=0$ eine Nullstelle, sie ist punktsymmetrisch zum Ursprung und der Punkt $P(0,06|0,06)$ liegt auf dem Graphen der Funktion $f(x)$.
 
-:::geogebra{perspective="G"}
+:::geogebra{perspective="G" coordsystem="-1,1,-0.5,0.5"}
 
 f(x) = -1.8x^3 + x
 g(x) = -f(x)
@@ -200,7 +200,7 @@ Ein alternativer Vorschlag sieht ein asymmetrisches Logo vor. Dies soll besser i
 
 Der Graph f bleibt unberührt. Der Graph von g wird mit dem Faktor von $0,8$ in Richtung der y-Achse gestaucht.
 
-:::geogebra{perspective="G"}
+:::geogebra{perspective="G" coordsystem="-1,1,-0.5,0.5"}
 
 f(x) = -1.8x^3 + x
 g(x) = -0.8*f(x)
