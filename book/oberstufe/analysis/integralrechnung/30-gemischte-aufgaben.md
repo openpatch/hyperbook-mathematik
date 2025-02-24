@@ -194,9 +194,10 @@ g(x) = -f(x)
 :::
 
 a) Ermittle die Funktionsgleichungen zu den beiden Graphen.
+
 b) Berechne den Flächeninhalt der Fläche, die von den beiden Graphen eingeschlossen wird.
 
-Ein alternativer Vorschlag sieht ein asymmetrisches Logo vor. Dies soll besser ins moderne Desing des Optikers passen.
+Ein alternativer Vorschlag sieht ein asymmetrisches Logo vor. Dies soll besser ins moderne Design des Optikers passen.
 
 Der Graph f bleibt unberührt. Der Graph von g wird mit dem Faktor von $0,8$ in Richtung der y-Achse gestaucht.
 
