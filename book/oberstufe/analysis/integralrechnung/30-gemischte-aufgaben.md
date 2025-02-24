@@ -6,6 +6,102 @@ index: 30
 
 # ✏️ Gemischte Aufgaben
 
+## Bestimmung des Flächeninhalts
+
+Bestimme jeweils den Flächeninhalt der gefärbten Flächen.
+
+### Fläche 1
+
+:::geogebra{perspective="G" coordsystem="-5,5,-1,3" enableRightClick=false}
+
+f(x) = 2, (-4 <= x <= -2)
+ShowLabel(f, false)
+g(x) = -0.5x +1, (-2 <= x <= 0)
+ShowLabel(g, false)
+h(x) = 0.5x + 1, (0 <= x <= 2)
+ShowLabel(h, false)
+p(x) = 2, (2 <= x <= 4)
+ShowLabel(p, false)
+a = Integral(f, -4, -2)
+ShowLabel(a, false)
+b = Integral(g, -2, 0)
+ShowLabel(b, false)
+c = Integral(h, 0, 2)
+ShowLabel(c, false)
+d = Integral(p, 2, 4)
+ShowLabel(d, false)
+
+:::
+
+:::collapsible{title="Lösung" id="744629"}
+
+$ A = 14 $
+
+:::
+
+### Fläche 2
+
+:::geogebra{perspective="G" coordsystem="-5,5,-3,8" enableRightClick=false}
+
+f(x) = -2x -2, (-4 <= x <= 0)
+ShowLabel(f, false)
+h(x) = -2, (0 <= x <= 2)
+ShowLabel(h, false)
+p(x) = 1x - 4, (2 <= x <= 4)
+ShowLabel(p, false)
+a = Integral(f, -4, 0)
+ShowLabel(a, false)
+c = Integral(h, 0, 2)
+ShowLabel(c, false)
+d = Integral(p, 2, 4)
+ShowLabel(d, false)
+
+:::
+
+:::collapsible{title="Lösung" id="744630"}
+
+$ A = 14 $
+
+:::
+
+## Ober- und Untersumme
+
+::h5p{src="/assets/oberstufe/analysis/integralrechnung/ober-und-untersumme.h5p"}
+
+
+## Stammfunktionen zuordnen
+
+::embed{src="https://learningapps.org/view2975793"}
+
+
+## Integrale berechnen
+
+Berechne jeweils das Integral.
+
+a) $\int_{-1}^{1} 2x^2 \, dx$
+
+:::collapsible{title="Lösung" id="843462"}
+
+$ A \approx 1,33 $
+
+:::
+
+b) $\int_{0}^{2} 3x^2 \, dx$
+
+:::collapsible{title="Lösung" id="843463"}
+
+$ A = 8 $
+
+:::
+
+c) $\int_{-2}^{2} \frac{1}{2}x^2 + 3x + 5 \, dx$
+
+:::collapsible{title="Lösung" id="843464"}
+
+$ A = 22,67 $
+
+:::
+
 ## 💐 Temperatur im Gewächshaus
 
 Um die Temperatur in einem Gewächshaus zu regulieren, wurde ein Heizsystem installiert. Bei kaltem Wetter wird die Wärme von der Heizung in den Raum geleitet. In das Heizsystem wurde ein Thermometer eingebaut, das kontinuierlich die Temperaturentwicklung registriert und als Graph aufzeichnet. Ein solcher Graph ist in der nachfolgenden Abbildung vereinfacht dargestellt. Die Zeit wird in Stunden und die Temperaturerhöhung in der Einheit °C pro Stunde gemessen.
