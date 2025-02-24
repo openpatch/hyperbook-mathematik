@@ -1,6 +1,6 @@
 ---
 name: "✏️ Übungen: Fläche zwischen zwei Graphen"
-index: 31
+index: 24
 lang: de
 ---
 
