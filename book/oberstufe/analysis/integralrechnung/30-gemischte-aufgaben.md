@@ -71,7 +71,7 @@ $ A = 14 $
 
 ## Stammfunktionen zuordnen
 
-::embed{src="https://learningapps.org/view2975793"}
+::embed{src="https://learningapps.org/watch?app=2975793"}
 
 
 ## Integrale berechnen
