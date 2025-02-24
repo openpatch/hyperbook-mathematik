@@ -92,7 +92,7 @@ Fläche: $A = 8 $
 
 b) $f(x)=x^2-4x+4$ und $g(x)=x-2$
 
-::::collapsible{title="Skizze" id="78224012131"}
+::::collapsible{title="Skizze" id="78224012131asda"}
 
 :::geogebra{perspective="G" coordsystem="0,4,-1,2" enableRightClick=false}
 f(x)=x^2-4x+4
@@ -124,7 +124,7 @@ ShowLabel(A, false)
 
 ::::
 
-:::collapsible{title="Lösung" id="782239"}
+:::collapsible{title="Lösung" id="7822asdaf39"}
 
 Schnittpunkte: $S_1(0|2); S_2(1|1)$
 
@@ -134,7 +134,7 @@ Fläche: $A = \frac{1}{6}$
 
 d) $f(x)=x^3-3x^2+2x$ und $g(x)=x^2-x$
 
-::::collapsible{title="Skizze" id="7822401"}
+::::collapsible{title="Skizze" id="7822401sdsafd"}
 
 :::geogebra{perspective="G" coordsystem="-1,5,-3,10" enableRightClick=false}
 f(x)=x^3-3x^2+2x
@@ -145,7 +145,7 @@ ShowLabel(A, false)
 
 ::::
 
-:::collapsible{title="Lösung" id="782240"}
+:::collapsible{title="Lösung" id="78jkljo2240"}
 
 Schnittpunkte: $S_1(0|0); S_2(1|0); S_3(3|6)$
 
@@ -166,7 +166,7 @@ ShowLabel(A, false)
 
 ::::
 
-:::collapsible{title="Lösung" id="782241"}
+:::collapsible{title="Lösung" id="7822kjasd41"}
 
 Schnittpunkte: $S_1(0|4); S_2(4|4)$
 
