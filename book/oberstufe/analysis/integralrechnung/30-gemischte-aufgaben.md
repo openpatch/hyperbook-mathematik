@@ -280,28 +280,197 @@ Das Logo eines Optikers wurde mithilfe von zwei Funktionen neu gestaltet.
 
 Die Funktionen $f(x)$ und $g(x)=-f(x)$ schließen Flächen ein, die an zwei Brillengläser erinnert.
 
-Die Funktion $f(x)$ besitzt bei $x=0$ eine Nullstelle, sie ist punktsymmetrisch zum Ursprung und der Punkt $P(0,06|0,06)$ liegt auf dem Graphen der Funktion $f(x)$.
+Die Funktion $f(x)$ ist eine Funktion dritten Grades, sie ist punktsymmetrisch zum Ursprung und hat einen Tiefpunkt $T(1|-1)$.
 
-:::geogebra{perspective="G" coordsystem="-1,1,-0.5,0.5"}
+:::geogebra{perspective="G" coordsystem="-3,3,-1.5,1.5"}
 
-f(x) = -1.8x^3 + x
+f(x) = 0.5x^3 - 1.5x
 g(x) = -f(x)
 
 :::
 
 a) Ermittle die Funktionsgleichungen zu den beiden Graphen.
 
-b) Berechne den Flächeninhalt der Fläche, die von den beiden Graphen eingeschlossen wird.
+:::collapsible{title="Lösung" id="262686"}
 
-Ein alternativer Vorschlag sieht ein asymmetrisches Logo vor. Dies soll besser ins moderne Design des Optikers passen.
+Zunächst stellen wir die allgemeine Funktionsgleichung einer punktsymmetrischen Funktion dritten Grade auf:
 
-Der Graph f bleibt unberührt. Der Graph von g wird mit dem Faktor von $0,8$ in Richtung der y-Achse gestaucht.
+$$
 
-:::geogebra{perspective="G" coordsystem="-1,1,-0.5,0.5"}
+\begin{align*}
+f(x) &= ax^3 + bx \\
+f'(x) &= 3ax^2 + b \\
+\end{align*}
 
-f(x) = -1.8x^3 + x
-g(x) = -0.8*f(x)
+$$
+
+Der Tiefpunkt $T(1|-1)$ bedeutet, dass die Ableitung an der Stelle $x = 1$ den Wert 0 hat:
+
+$$
+
+\begin{align*}
+
+f'(1) &= 0 \\
+f(1) &= -1 \\
+
+\end{align*}
+
+$$
+
+Damit erhalten wir zwei Gleichungen:
+
+$$
+
+\begin{align*}
+
+3a + b &= 0 \\
+a + b &= -1 \\
+\end{align*}
+
+$$
+
+Daraus ergibt sich $a = 0,5$ und $b = -1,5$. Die Funktionsgleichung von $f(x)$ lautet also:
+
+$$
+
+f(x) = 0,5x^3 - 1,5x
+
+$$
+
+Die Funktionsgleichung von $g(x)$ ist $g(x) = -f(x)$:
+
+$$
+
+g(x) = -0,5x^3 + 1,5x
+
+$$
 
 :::
 
+b) Berechne den Flächeninhalt der Fläche, die von den beiden Graphen eingeschlossen wird.
+
+:::collapsible{title="Lösung" id="262687149134"}
+
+1. Scnittstellen berechnen:
+
+$$
+
+\begin{align*}
+
+f(x) &= g(x) \\
+
+0,5x^3 - 1,5x &= -0,5x^3 + 1,5x \\
+
+x^3 - 3x &= 0 \\
+
+x(x^2 - 3) &= 0 \\
+x_1 &= 0 \\
+x_2 &= \sqrt{3} \\
+x_3 &= -\sqrt{3} \\
+
+
+\end{align*}
+
+$$
+
+2. Flächen berechnen:
+
+$$
+
+\begin{align*}
+
+A_1 &= \int_{-\sqrt{3}}^{0} f(x) - g(x) \, dx \\
+A_2 &= \int_{0}^{\sqrt{3}} f(x) - g(x) \, dx \\
+
+A_1 = 2,25 \, \text{FE} \\
+A_2 = -2,25 \, \text{FE} \\
+
+A &= |A_1| + |A_2| = 4,5 \, \text{FE}
+
+\end{align*}
+
+$$
+
+:::
+
+
+
+
+Ein alternativer Vorschlag sieht ein asymmetrisches Logo vor. Dies soll besser ins moderne Design des Optikers passen.
+
+Der Graph f bleibt unberührt. Der Graph von g wird mit dem Faktor von $0,5$ in Richtung der y-Achse gestaucht.
+
+:::geogebra{perspective="G" coordsystem="-3,3,-1.5,1.5"}
+
+f(x) = 0.5x^3 - 1.5 x
+g(x) = -0.5*f(x)
+
+:::
+
+Die Fläche zwischen den beiden Graphen berechnen wir, indem wir die Differenz der beiden Flächen berechnen:
+
+
 c) Bestimme den Flächenunterschied der beiden Vorschläge in Prozent.
+
+:::collapsible{title="Lösung" id="262688"}
+
+Die neue Funktionsgleichung für $g(x)$ lautet:
+
+$$
+
+g(x) = -0,5 \cdot 0,5x^3 + 1,5x = -0,25x^3 + 1,5x
+
+$$
+
+1. Schnittpunkte berechnen:
+
+Die Funktionen haben die gleichen Schnittpunkte wie zuvor:
+
+$$
+
+\begin{align*}
+
+x_1 &= 0 \\
+
+x_2 &= \sqrt{3} \\
+
+x_3 &= -\sqrt{3} \\
+
+\end{align*}
+
+$$
+
+2. Flächen berechnen:
+
+$$
+
+\begin{align*}
+
+A_1 &= \int_{-\sqrt{3}}^{0} f(x) - g(x) \, dx \\
+
+A_2 &= \int_{0}^{\sqrt{3}} f(x) - g(x) \, dx \\
+
+A_1 = 1.6875 \, \text{FE} \\
+
+A_2 = -1.6875 \, \text{FE} \\
+
+A &= |A_1| + |A_2| = 3.375 \, \text{FE}
+
+\end{align*}
+
+$$
+
+3. Flächenunterschied berechnen:
+
+$$
+
+\begin{align*}
+
+\text{Flächenunterschied} &= 4,5 - 3,375 = 1,125 \, \text{FE} \\
+
+\text{Flächenunterschied in Prozent} &= \frac{1,125}{4,5} \cdot 100 = 25 \%
+
+\end{align*}
+
+
+:::
