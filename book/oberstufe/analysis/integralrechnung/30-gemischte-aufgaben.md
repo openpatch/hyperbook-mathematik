@@ -211,10 +211,7 @@ $$
 \begin{align*}
 
 G(40) &= 0,0001 \cdot \left( \frac{1}{4} \cdot 40^4 - \frac{40}{3} \cdot 40^3 + 200 \cdot 40^2 \right) + 10 \\
-&= 0,0001 \cdot \left( 256000 - 1024000 + 320000 \right) + 10 \\
-&= 0,0001 \cdot 256000 + 10 \\
-&= 25,6 + 10 \\
-&= 35,6
+&= 20,67
 
 
 \end{align*}
@@ -270,7 +267,23 @@ T'(20) &= 0,0001 \cdot (3 \cdot 20^2 - 120 \cdot 20 + 400) = -0,4 \\
 
 $$
 
-Das Maximum der Temperatur wird also nach 20 Stunden erreicht.
+Nach 20 Stunden wird ein lokales Maximum erreicht.
+
+Um das globale Maximum im Interval $[0,40]$ zu bestimmen, müssen wir noch die Randwerte überprüfen:
+
+$$
+
+\begin{align*}
+
+G(0) &= 10 \\
+G(20) &= 11,33 \\
+G(40) &= 20,67 \\
+
+\end{align*}
+
+$$
+
+Das globale Maximum wird also nach 40 Stunden erreicht.
 
 :::
 
