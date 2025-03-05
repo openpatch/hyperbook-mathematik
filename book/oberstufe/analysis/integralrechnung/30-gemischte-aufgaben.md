@@ -60,7 +60,7 @@ ShowLabel(d, false)
 
 :::collapsible{title="Lösung" id="744630"}
 
-$ A = 14 $
+$ A = 16 $
 
 :::
 
