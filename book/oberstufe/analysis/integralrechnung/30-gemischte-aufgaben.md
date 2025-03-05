@@ -218,7 +218,7 @@ G(40) &= 0,0001 \cdot \left( \frac{1}{4} \cdot 40^4 - \frac{40}{3} \cdot 40^3 + 
 
 $$
 
-Die Temperatur im Gewächshaus beträgt also nach 40 Stunden $35,6$ °C.
+Die Temperatur im Gewächshaus beträgt also nach 40 Stunden $20,67$ °C.
 
 :::
 
@@ -484,6 +484,5 @@ $$
 \text{Flächenunterschied in Prozent} &= \frac{1,125}{4,5} \cdot 100 = 25 \%
 
 \end{align*}
-
 
 :::
