@@ -269,7 +269,7 @@ $$
 
 Nach 20 Stunden wird ein lokales Maximum erreicht.
 
-Um das globale Maximum im Interval $[0,40]$ zu bestimmen, müssen wir noch die Randwerte überprüfen:
+Um das globale Maximum im Interval $[0,40]$ zu bestimmen, müssen wir noch die Randwerte überprüfen und mit dem Wert des lokalen Maximums vergleichen:
 
 $$
 
@@ -283,7 +283,7 @@ G(40) &= 20,67 \\
 
 $$
 
-Das globale Maximum wird also nach 40 Stunden erreicht.
+Das globale Maximum wird also nach 40 Stunden mit $20,67 °C$ erreicht.
 
 :::
 
