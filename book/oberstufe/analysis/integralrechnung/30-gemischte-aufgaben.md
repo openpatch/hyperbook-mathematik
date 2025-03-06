@@ -291,7 +291,7 @@ Das globale Maximum wird also nach 40 Stunden mit $20,67 °C$ erreicht.
 
 Das Logo eines Optikers wurde mithilfe von zwei Funktionen neu gestaltet.
 
-Die Funktionen $f(x)$ und $g(x)=-f(x)$ schließen Flächen ein, die an zwei Brillengläser erinnert.
+Die Funktionen $f(x)$ und $g(x)=-f(x)$ schließen Flächen ein, die an zwei Brillengläser erinnern.
 
 Die Funktion $f(x)$ ist eine Funktion dritten Grades, sie ist punktsymmetrisch zum Ursprung und hat einen Tiefpunkt $T(1|-1)$.
 
@@ -419,8 +419,6 @@ f(x) = 0.5x^3 - 1.5 x
 g(x) = -0.5*f(x)
 
 :::
-
-Die Fläche zwischen den beiden Graphen berechnen wir, indem wir die Differenz der beiden Flächen berechnen:
 
 
 c) Bestimme den Flächenunterschied der beiden Vorschläge in Prozent.
