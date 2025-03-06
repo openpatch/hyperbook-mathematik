@@ -269,10 +269,10 @@ Eine Einheit im Kooridnatensystem entspricht 10 Metern.
 f(x) = -1/50x^4 + 0.5x^3 - 4x^2 + 10x + 4
 A_1 = Integral(f,0,11.61)
 SetColor(A_1, "Green")
-SetLabelMode(A_1, 1)
+SetLabelMode(A_1, 0)
 g(x) = -1/10 x^2 + 0.5x + 14
 A_2 = Integral(f,g,1,11)
-SetLabelMode(A_2, 1)
+SetLabelMode(A_2, 0)
 SetColor(A_2, "Gray")
 :::
 
