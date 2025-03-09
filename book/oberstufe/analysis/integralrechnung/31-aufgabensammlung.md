@@ -343,7 +343,12 @@ $$
 
 ## Aufgabe 1
 
-In einem Gastank befinden sich zu Beginn des Tages 1000 Liter Wasserstoff. Durch eine Leitung wird Gas entnommen und hinzugefügt. Die Verbrauchsgeschwindigkeit in Liter pro Stunde lässt sich im Laufe des Tages mit der Funktion $f(t) = 0,02t^4 - t^3 + 12t^2$ modellieren. Dabei ist $t$ die Zeit in Stunden.
+In einem Gastank befinden sich zu Beginn des Tages 1000 Liter Wasserstoff. Durch eine Leitung wird Gas entnommen und hinzugefügt. Die Verbrauchsgeschwindigkeit in Liter pro Stunde lässt sich im Laufe des Tages mit der Funktion 
+
+$$
+f(t) = 0,02(t^2 - t + 12) \cdot t^2
+$$ 
+modellieren. Dabei ist $t$ die Zeit in Stunden.
 
 a) Bestimme die Bestandsfunktion $B(t)$, die den Bestand an Wasserstoff im Tank zu einem beliebigen Zeitpunkt $t$ in Litern angibt.
 
@@ -356,6 +361,8 @@ $$
 \begin{align*}
 
 B(t) &= \int f(t) \, dt \\
+
+B(t) &= \int 0,02(t^2 - t + 12) \cdot t^2 \, dt \\
 
 B(t) &= \int 0,02t^4 - t^3 + 12t^2 \, dt \\
 
@@ -431,7 +438,7 @@ Am Ende des Tages, nach 24 Stunden, sind also 5202,5 Liter Wasserstoff im Tank.
 
 :::
 
-d) Bestimme den Zeitpunkt zu dem der Tank in den ersten 24 Stunden am meisten Wasserstoff enthält.
+d) Bestimme den Zeitpunkt, zu dem der Tank in den ersten 24 Stunden am meisten Wasserstoff enthält.
 
 :::collapsible{title="Lösung" id="3572312"}
 
@@ -480,5 +487,8 @@ $$
 Der Tank enthält also nach 20 Stunden am meisten Wasserstoff.
 
 :::
+
+## Aufgabe 2
+
 
 :::::::::
