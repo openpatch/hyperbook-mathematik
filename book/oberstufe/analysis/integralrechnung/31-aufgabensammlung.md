@@ -602,3 +602,96 @@ Der Wasserstand zu Beginn des Tages und am Ende des Tages ist also gleich.
 
 
 :::::::::
+
+:::::::::collapsible{title="Flächeninhalt zwischen dem Graphen einer Funktion und der x-Achse bestimmen" id="54876sa7"}
+
+## Aufgabe 1
+
+Berechne den Flächeninhalt der Fläche, die von der Funktion $f(x) = 2x^2 - 4x + 3$ und der x-Achse im Intervall $[-1; 4]$ eingeschlossen wird.
+
+:::collapsible{title="Lösung" id="35718243260"}
+
+1. Nullstellen berechnen:
+
+$$
+
+\begin{align*}
+
+f(x) &= 0 \\
+
+2x^2 - 4x + 3 &= 0 \\
+
+x^2 - 2x + \frac{3}{2} &= 0 \\
+
+x_{1,2} &= 1 \pm \sqrt{1 - \frac{3}{2}} \\
+x_{1,2} &= 1 \pm \sqrt{-\frac{1}{2}} \\
+
+
+
+\end{align*}
+
+$$
+
+Da die Wurzel aus einer negativen Zahl nicht definiert ist, hat die Funktion keine Nullstellen.
+
+2. Flächen berechnen:
+
+$$
+
+\begin{align*}
+
+A &= \int_{-1}^{4} 2x^2 - 4x + 3 \, dx \\
+
+A &= \left[ \frac{2}{3}x^3 - 2x^2 + 3x \right]_{-1}^{4} \\
+
+A &\approx 28,33
+
+\end{align*}
+
+$$
+
+:::
+
+# Aufgabe 2
+
+Berechne den Flächeninhalt der Fläche, die von der Funktion $f(x) = (x + 2)^2 - 20$ und der x-Achse im Intervall $[0; 3]$ eingeschlossen wird.
+
+:::collapsible{title="Lösung" id="35718243261"}
+
+1. Nullstellen berechnen:
+
+$$
+
+\begin{align*}
+
+f(x) &= 0 \\
+
+(x + 2)^2 - 20 &= 0 \\
+x^2 + 4x + 4 - 20 &= 0 \\
+x^2 + 4x - 16 &= 0 \\
+x_1 &\approx -6,47 \\
+x_2 &\approx 2,47
+
+\end{align*}
+
+$$
+
+2. Flächen berechnen:
+
+$$
+
+\begin{align*}
+
+A_1 &= \int_{0}^{2,47} (x + 2)^2 - 20 \, dx \\
+A_2 &= \int_{2,47}^{3} (x + 2)^2 - 20 \, dx \\
+
+A_1 &\approx 22,3 \\
+A_2 &\approx 1,3
+
+A = A_1 + A_2 = 23,6
+
+\end{align*}
+
+$$
+
+:::::::::
