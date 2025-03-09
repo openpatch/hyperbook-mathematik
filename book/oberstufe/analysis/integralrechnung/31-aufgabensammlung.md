@@ -286,5 +286,54 @@ $$
 
 :::
 
+:::::::::
+
+:::::::::collapsible{title="Bestimmtes Integral berechnen" id="54876sa5"}
+
+## Aufgabe 1
+
+Berechne das bestimmte Integral der Funktion $f(x) = 3x^2 - 2x + 1$ im Intervall $[-1, 2]$.
+
+:::collapsible{title="Lösung" id="35718243252"}
+
+$$
+
+\begin{align*}
+
+d &= \int_{-1}^{2} 3x^2 - 2x + 1 \, dx \\
+
+d &= \left[ x^3 - x^2 + x \right]_{-1}^{2} \\
+
+d &= 9
+
+\end{align*}
+
+$$
+
+:::
+
+## Aufgabe 2
+
+Berechne das bestimmte Integral der Funktion $f(x) = \frac{1}{2}(x^2 - 3x + 4) \cdot x$ im Intervall $[0, 3]$.
+
+:::collapsible{title="Lösung" id="35718243253"}
+
+$$
+
+\begin{align*}
+
+d &= \int_{0}^{3} \frac{1}{2}(x^2 - 3x + 4) \cdot x \, dx \\
+
+d &= \int_{0}^{3} \frac{1}{2}x^3 - \frac{3}{2}x^2 + 2x \, dx \\
+
+d &= \left[ \frac{1}{8}x^4 - \frac{1}{2}x^3 + x^2 \right]_{0}^{3} \\
+
+d &\approx 5,63
+
+\end{align*}
+
+$$
+
+:::
 
 :::::::::
