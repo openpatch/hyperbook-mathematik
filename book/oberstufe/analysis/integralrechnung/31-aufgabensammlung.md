@@ -337,3 +337,148 @@ $$
 :::
 
 :::::::::
+
+
+:::::::::collapsible{title="Bestandsfunktionen aufstellen" id="54876sa6asd"}
+
+## Aufgabe 1
+
+In einem Gastank befinden sich zu Beginn des Tages 1000 Liter Wasserstoff. Durch eine Leitung wird Gas entnommen und hinzugefügt. Die Verbrauchsgeschwindigkeit in Liter pro Stunde lässt sich im Laufe des Tages mit der Funktion $f(t) = 0,02t^4 - t^3 + 12t^2$ modellieren. Dabei ist $t$ die Zeit in Stunden.
+
+a) Bestimme die Bestandsfunktion $B(t)$, die den Bestand an Wasserstoff im Tank zu einem beliebigen Zeitpunkt $t$ in Litern angibt.
+
+:::collapsible{title="Lösung" id="35718243254"}
+
+Die Bestandsfunktion $B(t)$ ergibt sich durch Integration der Funktion $f(t)$:
+
+$$
+
+\begin{align*}
+
+B(t) &= \int f(t) \, dt \\
+
+B(t) &= \int 0,02t^4 - t^3 + 12t^2 \, dt \\
+
+B(t) &= 0,02 \cdot \frac{1}{5}t^5 - \frac{1}{4}t^4 + 4t^3 + C
+
+\end{align*}
+
+$$
+
+Da zu Beginn des Tages 1000 Liter Wasserstoff im Tank waren, gilt:
+
+$$
+
+\begin{align*}
+
+B(0) &= 1000 \\
+
+0,02 \cdot \frac{1}{5} \cdot 0^5 - \frac{1}{4} \cdot 0^4 + 4 \cdot 0^3 + C &= 1000 \\
+
+C &= 1000
+
+\end{align*}
+
+$$
+
+Die Bestandsfunktion $B(t)$ lautet also:
+
+$$
+
+B(t) = 0,02 \cdot \frac{1}{5}t^5 - \frac{1}{4}t^4 + 4t^3 + 1000
+
+$$
+
+:::
+
+b) Bestimme wie viel Wasserstoff nach 10 Stunden im Tank ist.
+
+:::collapsible{title="Lösung" id="35718243255"}
+
+$$
+
+\begin{align*}
+
+B(10) &= 0,02 \cdot \frac{1}{5} \cdot 10^5 - \frac{1}{4} \cdot 10^4 + 4 \cdot 10^3 + 1000 \\
+
+B(10) &= 2900
+
+\end{align*}
+
+$$
+
+Nach 10 Stunden sind also 2900 Liter Wasserstoff im Tank.
+
+:::
+
+c) Zeige rechnerisch, dass am Ende des Tages, nach 24 Stunden, der Tank nicht leer ist.
+
+:::collapsible{title="Lösung" id="35718243256"}
+
+$$
+
+\begin{align*}
+
+B(24) &= 0,02 \cdot \frac{1}{5} \cdot 24^5 - \frac{1}{4} \cdot 24^4 + 4 \cdot 24^3 + 1000 \\
+
+B(24) &= 5202,5
+
+\end{align*}
+
+$$
+
+Am Ende des Tages, nach 24 Stunden, sind also 5202,5 Liter Wasserstoff im Tank.
+
+:::
+
+d) Bestimme den Zeitpunkt zu dem der Tank in den ersten 24 Stunden am meisten Wasserstoff enthält.
+
+:::collapsible{title="Lösung" id="3572312"}
+
+Die Ableitung der Bestandsfunktion $B(t)$ gibt die Veränderung des Bestands an Wasserstoff im Tank an. Der Zeitpunkt, an dem der Tank am meisten Wasserstoff enthält, ist der Zeitpunkt, an dem die Ableitung $B'(t)$ den Wert 0 annimmt.
+
+$$
+
+\begin{align*}
+
+B'(t) &= f(t) \\
+
+B'(t) &= 0,02t^4 - t^3 + 12t^2
+
+\end{align*}
+
+$$
+
+$$
+
+\begin{align*}
+
+0 &= 0,02t^4 - t^3 + 12t^2 \\
+
+0 &= 0,02t^2 \cdot (t^2 - 50t + 600)
+
+\end{align*}
+
+$$
+
+Die Nullstellen der quadratischen Funktion $t^2 - 50t + 600$ sind $t_1 = 20$ und $t_2 = 30$. Da nur $t_1$ im Intervall $[0, 24]$ liegt, brachten wir nur diese Extremstelle weiter.
+
+Zusätzlich müssen wir noch die Randpunkte des Intervalls $[0, 24]$ betrachten:
+
+$$
+
+\begin{align*}
+
+B(0) &= 1000 \\
+B(20) &= 5800 \\
+B(24) &= 5202,5
+
+\end{align*}
+
+$$
+
+Der Tank enthält also nach 20 Stunden am meisten Wasserstoff.
+
+:::
+
+:::::::::
