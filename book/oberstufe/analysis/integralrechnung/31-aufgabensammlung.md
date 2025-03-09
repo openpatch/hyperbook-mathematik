@@ -490,5 +490,115 @@ Der Tank enthält also nach 20 Stunden am meisten Wasserstoff.
 
 ## Aufgabe 2
 
+Der Wasserstand eines Stausees verändert sich im Laufe eines Tages. Die Veränderung des Wasserstands in Metern pro Stunde lässt sich mit der Funktion
+
+$$
+
+f(t) = \frac{1}{10000}(5t^2 - 120t + 480) \cdot t
+
+$$
+
+modellieren. Dabei ist $t \in [0;24]$ die Zeit in Stunden. Zu Beginn des Tages betrug der Wasserstand im Stausee 10 Meter.
+
+a) Bestimme die Bestandsfunktion $B(t)$, die den Wasserstand im Stausee zu einem beliebigen Zeitpunkt $t$ in Metern angibt.
+
+:::collapsible{title="Lösung" id="35718243257"}
+
+Die Bestandsfunktion $B(t)$ ergibt sich durch Integration der Funktion $f(t)$:
+
+$$
+
+\begin{align*}
+
+B(t) &= \int f(t) \, dt \\
+
+B(t) &= \int \frac{1}{10000}(5t^2 - 120t + 480) \cdot t \, dt \\
+B(t) &= \frac{1}{10000} \int 5t^3 - 120t^2 + 480t \, dt \\
+B(t) &= \frac{1}{10000} (\frac{5}{4}t^4 - 120 \cdot \frac{1}{3}t^3 + 480 \cdot \frac{1}{2}t^2) + C
+
+\end{align*}
+
+$$
+
+Da zu Beginn des Tages der Wasserstand im Stausee 10 Meter betrug, gilt:
+
+$$
+
+\begin{align*}
+
+B(0) &= 10 \\
+
+\frac{1}{10000} (\frac{5}{4} \cdot 0^4 - 120 \cdot \frac{1}{3} \cdot 0^3 + 480 \cdot \frac{1}{2} \cdot 0^2) + C &= 10 \\
+
+C &= 10
+
+\end{align*}
+
+$$
+
+Die Bestandsfunktion $B(t)$ lautet also:
+
+$$
+
+B(t) = \frac{1}{10000} (\frac{5}{4}t^4 - 120 \cdot \frac{1}{3}t^3 + 480 \cdot \frac{1}{2}t^2) + 10
+
+$$
+
+:::
+
+
+b) Bestimme wie hoch der Wasserstand nach 10 Stunden ist.
+
+:::collapsible{title="Lösung" id="35718243258"}
+
+$$
+
+\begin{align*}
+
+B(10) &= \frac{1}{10000} (\frac{5}{4} \cdot 10^4 - 120 \cdot \frac{1}{3} \cdot 10^3 + 480 \cdot \frac{1}{2} \cdot 10^2) + 10 \\
+
+B(10) &= 9,65
+
+\end{align*}
+
+$$
+
+Nach 10 Stunden beträgt der Wasserstand im Stausee also 50 Meter.
+
+:::
+
+c) Zeige rechnerisch, dass der Wasserstand zu Beginn des Tages und am Ende des Tages gleich ist.
+
+:::collapsible{title="Lösung" id="35718243259"}
+
+$$
+
+\begin{align*}
+
+B(0) &= \frac{1}{10000} (\frac{5}{4} \cdot 0^4 - 120 \cdot \frac{1}{3} \cdot 0^3 + 480 \cdot \frac{1}{2} \cdot 0^2) + 10 \\
+
+B(0) &= 10
+
+\end{align*}
+
+$$
+
+$$
+
+\begin{align*}
+
+B(24) &= \frac{1}{10000} (\frac{5}{4} \cdot 24^4 - 120 \cdot \frac{1}{3} \cdot 24^3 + 480 \cdot \frac{1}{2} \cdot 24^2) + 10 \\
+
+B(24) &= 10
+
+\end{align*}
+
+$$
+
+Der Wasserstand zu Beginn des Tages und am Ende des Tages ist also gleich.
+
+:::
+
+
 
 :::::::::
