@@ -4,7 +4,7 @@ index: 31
 lang: de
 ---
 
-# Aufgabensammlung
+# ✅ Aufgabensammlung
 
 :::::::::collapsible{title="Flächeninhalt mit geometrischen Formen bestimmen" id="54876sa4"}
 
@@ -693,5 +693,153 @@ A = A_1 + A_2 = 23,6
 \end{align*}
 
 $$
+
+:::::::::
+
+:::::::::collapsible{title="Flächeninhalt zwischen zwei Graphen bestimmen" id="54876skpqweoa8"}
+
+## Aufgabe 1
+
+Bestimme die Fläche, die von der Funktion $f$ und der Funktion $g$ eingeschlossen wird.
+
+$$
+
+\begin{align*}
+f(x) &= (x+1)^3-3 \\
+g(x) &= x-2
+\end{align*}
+
+$$
+
+:::geogebra{perspective="G" coordsystem="-3,1,-5,-1" enableRightClick=false}
+f(x)=(x+1)^3-3
+g(x)=x-2
+d = Integral(f, g, -2, -1)
+ShowLabel(d, false)
+e = Integral(f, g, -1, 0)
+ShowLabel(e, false)
+:::
+
+:::collapsible{title="Lösung" id="521159"}
+
+Zuerst multiplizieren wir den Funktionsterm von $f(x)$ aus:
+
+$$
+
+\begin{align*}
+f(x) &= (x^2 + 2x +1)(x+1)-3 \\
+f(x) &= x^3 + 3x^2 + 3x - 2
+\end{align*}
+
+$$
+
+Dann rechnen wir die Schnittstellen aus:
+
+$$
+
+\begin{align*}
+
+f(x) &= g(x) \\
+x^3 + 3x^2 + 3x - 2 &= x - 2 \\
+x^3 + 3x^2 + 2x &= 0 \\
+x(x^2 + 3x + 2) &= 0 \\
+x(x+1)(x+2) &= 0 \\
+x_1 &= 0 \\
+x_2 &= -1 \\
+x_3 &= -2
+
+\end{align*}
+
+$$
+
+Dann stellen wir die Differenzfunktion $h(x) = f(x) - g(x)$ auf:
+
+$$
+
+\begin{align*}
+h(x) &= x^3 + 3x^2 + 3x - 2 - x + 2 \\
+h(x) &= x^3 + 3x^2 + 2x
+\end{align*}
+
+$$
+
+Jetzt können wir die Teilflächen berechnen:
+
+$$
+
+\begin{align*}
+
+A_1 &= \int_{-2}^{-1} h(x) \, dx \\
+A_2 &= \int_{-1}^{0} h(x) \, dx
+
+\end{align*}
+
+$$
+
+$ A = 0,5 $
+
+:::
+
+## Aufgabe 2
+
+Bestimme die Fläche, die von der Funktion $f$ und der Funktion $g$ eingeschlossen wird. Dabei ist bekannt, dass die Schnittstellen der Funktionen bei $x_1=-1$ und $x_2=1$ liegen.
+
+$$
+
+\begin{align*}
+f(x) &= (x+1)(x-1) \cdot x \\
+g(x) &= x^2-1
+\end{align*}
+
+$$
+
+:::geogebra{perspective="G" coordsystem="-1.5,1.5,-2,1" enableRightClick=false}
+f(x)=(x+1)(x-1) * x
+g(x)=x^2-1
+p=Integral(f, g, -1, 1)
+ShowLabel(p, false)
+:::
+
+:::collapsible{title="Lösung" id="109524"}
+
+Zuerst multiplizieren wir den Funktionsterm von $f(x)$ aus:
+
+$$
+
+f(x) = x^3 - x
+
+$$
+
+Dann stellen wir die Differenzfunktion auf:
+
+$$
+
+h(x)=x^3-x-x^2+1
+
+$$
+
+Jetzt können wir die Fläche berechnen:
+
+$$
+
+\begin{align*}
+A &= \int_{-1}^{1} x^3-x^2-x+1 dx \\
+A &= \left[ \frac{1}{4}x^4 - \frac{1}{3}x^3 - \frac{1}{2}x^2 + x \right]_{-1}^{1}
+\end{align*}
+
+$$
+
+$ A \approx 1,33 $
+
+:::
+
+:::::::::
+
+:::::::::collapsible{title="Integralgrenze bestimmen, wenn der Integralwert gegeben ist" id="54876sa8"}
+
+:::::::::
+
+:::::::::collapsible{title="Kombinierte Aufgaben im Sachkontext" id="54876saqweezrbc4"}
+
 
 :::::::::
