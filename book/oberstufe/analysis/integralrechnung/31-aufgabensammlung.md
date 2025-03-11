@@ -1,5 +1,5 @@
 ---
-name: Aufgabensammlung
+name: ✅ Aufgabensammlung
 index: 31
 lang: de
 ---
@@ -7,6 +7,15 @@ lang: de
 # ✅ Aufgabensammlung
 
 :::::::::collapsible{title="Flächeninhalt mit geometrischen Formen bestimmen" id="54876sa4"}
+
+:::collapsible{title="Erklärung" id="982227"}
+
+Schau dir das folgende Video von Minute 0 bis Minute 6 an, um zu lernen, wie du den Flächeninhalt mit geometrischen Formen bestimmen kannst.
+
+::youtube[Flächeninhalt mit geometrischen Formen bestimmen]{#rA4SEQNwNqc}
+
+
+:::
 
 ## Aufgabe 1
 
@@ -59,6 +68,16 @@ A = 24 + 14 = 38
 :::::::::
 
 :::::::::collapsible{title="Unbestimmtes Integral (Menge aller Stammfunktionen) von ganzrationalen Funktionen bestimmen" id="548764asdfsdag"}
+
+:::collapsible{title="Erklärung" id="200108"}
+
+Das unbestimmte Integral ist die Menge aller Stammfunktionen einer Funktion. Schau dir das folgende Video an, um zu lernen, wie du das unbestimmte Integral von ganzrationalen Funktionen bestimmen kannst.
+
+Ein unbestimmtes Integral heißt so, da keine Integrationsgrenzen angegeben sind. Es wird mit dem Integralzeichen $\int$ dargestellt.
+
+::youtube[Stammfunktion von Polynomen bestimmen]{#uWVZ37PthFU}
+
+:::
 
 Bestimme das unbestimme Integral (die Menge aller Stammfunktionen) der folgenden Funktionen und gib zwei konrete Stammfunktionen an.
 
@@ -290,6 +309,14 @@ $$
 
 :::::::::collapsible{title="Bestimmtes Integral berechnen" id="54876sa5"}
 
+::::collapsible{title="Erklärung" id="954643"}
+
+In diesem Video wird erklärt, wie du das bestimmte Integral einer Funktion berechnen kannst.
+
+::youtube[Flächen mit der Stammfunktion bestimmen]{#nGwRQyoozD8}
+
+::::
+
 ## Aufgabe 1
 
 Berechne das bestimmte Integral der Funktion $f(x) = 3x^2 - 2x + 1$ im Intervall $[-1, 2]$.
@@ -340,6 +367,16 @@ $$
 
 
 :::::::::collapsible{title="Bestandsfunktionen aufstellen" id="54876sa6asd"}
+
+:::collapsible{title="Erklärung" id="495992"}
+
+In diesem Video wird erklärt, wie du Bestandsfunktionen aufstellen kannst.
+
+::youtube[Bestandsfunktion]{#1wCXTKXHkpU}
+
+Eine schriftliche Erklärung findest du [hier](/oberstufe/analysis/integralrechnung/17-bestandsfunktion).
+
+:::
 
 ## Aufgabe 1
 
@@ -605,6 +642,16 @@ Der Wasserstand zu Beginn des Tages und am Ende des Tages ist also gleich.
 
 :::::::::collapsible{title="Flächeninhalt zwischen dem Graphen einer Funktion und der x-Achse bestimmen" id="54876sa7"}
 
+:::collapsible{title="Erklärung" id="851913"}
+
+In diesem Video wird erklärt, wie du den Flächeninhalt zwischen dem Graphen einer Funktion und der x-Achse bestimmen kannst.
+
+::youtube[Flächen zwischen dem Graphen und der x-Achse]{#tWgejCz2iEE}
+
+Eine schriftliche Erklärung findest du [hier](/oberstufe/analysis/integralrechnung/20-flaeche-zwischen-graph-und-x-achse).
+
+:::
+
 ## Aufgabe 1
 
 Berechne den Flächeninhalt der Fläche, die von der Funktion $f(x) = 2x^2 - 4x + 3$ und der x-Achse im Intervall $[-1; 4]$ eingeschlossen wird.
@@ -697,6 +744,16 @@ $$
 :::::::::
 
 :::::::::collapsible{title="Flächeninhalt zwischen zwei Graphen bestimmen" id="54876skpqweoa8"}
+
+:::collapsible{title="Erklärung" id="153713"}
+
+In diesem Video wird erklärt, wie du den Flächeninhalt zwischen zwei Graphen bestimmen kannst.
+
+::youtube[Flächeninhalt zwischen zwei Graphen]{#XcqaJ42smNg}
+
+Eine schriftliche Erklärung findest du [hier](/oberstufe/analysis/integralrechnung/23-fläche-zwischen-zwei-graphen).
+
+:::
 
 ## Aufgabe 1
 
@@ -837,9 +894,481 @@ $ A \approx 1,33 $
 
 :::::::::collapsible{title="Integralgrenze bestimmen, wenn der Integralwert gegeben ist" id="54876sa8"}
 
+:::collapsible{title="Erklärung" id="153713"}
+
+In diesem Video wird erklärt, wie du eine Grenze des Integrals bestimmen kannst, wenn der Integralwert gegeben ist.
+
+::youtube[Integralgrenze bestimmen, wenn der Integralwert gegeben ist]{#xSe-9hOflLM}
+
+:::
+
+# Aufgabe 1
+
+Bestimme die obere Grenze des Integrals, wenn der Integralwert gegeben ist.
+
+$$
+
+\int_{0}^{x} (2t^2 - 4t - 3) \, dt = 0
+
+$$
+
+:::collapsible{title="Lösung" id="35718243262"}
+
+Wir berechnen das Integral mit der gegebenen unteren Grenze $x$ und lösen die Gleichung nach $x$ auf.
+
+$$
+
+\begin{align*}
+
+\int_{0}^{x} (2t^2 - 4t - 3) \, dt &= 0 \\
+\left[ \frac{2}{3}t^3 - 2t^2 - 3t \right]_{0}^{x} &= 0 \\
+\frac{2}{3}x^3 - 2x^2 - 3x &= 0 \\
+x \cdot (\frac{2}{3}x^2 - 2x - 3) &= 0 \\
+
+\end{align*}
+
+$$
+
+Mit der pq-Formel erhalten wir die Nullstellen:
+
+$$
+
+\begin{align*}
+x_1 &= 0 \\
+x_{2,3} &= x^2 - 3x - \frac{9}{2} = 0 \\
+x_2 &\approx -1,1 \\
+x_3 &\approx 4,1
+\end{align*}
+
+$$
+
+Die obere Grenze des Integrals ist also $x_3 \approx 4,1$, da $x_2$ und $x_1$ nicht im Intervall $(0, x]$ liegen.
+
+:::
+
+# Aufgabe 2
+
+Bestimme die untere Grenze des Integrals, wenn der Integralwert gegeben ist.
+
+$$
+
+\int_{x}^{4} (2t - 4) \, dt = 4
+
+$$
+
+:::collapsible{title="Lösung" id="35718243263"}
+
+Wir berechnen das Integral mit der gegebenen unteren Grenze $x$ und lösen die Gleichung nach $x$ auf.
+
+$$
+
+\begin{align*}
+
+\int_{x}^{4} (2t - 4) \, dt &= 4 \\
+
+\left[ t^2 - 4t \right]_{x}^{4} &= 4 \\
+
+4^2 - 4 \cdot 4 - x^2 + 4x &= 4 \\
+
+16 - 16 - x^2 + 4x &= 4 \\
+
+-x^2 + 4x &= 4 \\
+
+x^2 - 4x &= -4 \\
+
+x^2 - 4x + 4 &= 0
+
+\end{align*}
+
+$$
+
+Mit der pq-Formel erhalten wir die Nullstellen:
+
+$$
+
+\begin{align*}
+
+x_{1,2} &= \frac{4}{2} \pm \sqrt{\left( \frac{4}{2} \right)^2 - 4} \\
+x_1 &= 2 \\
+x_2 &= 2
+
+\end{align*}
+
+$$
+
+Die untere Grenze des Integrals ist also $x = 2$.
+
 :::::::::
 
-:::::::::collapsible{title="Kombinierte Aufgaben im Sachkontext" id="54876saqweezrbc4"}
+:::::::::collapsible{title="Kombinierte Aufgabe im Sachkontext" id="54876saqweezrbc4"}
+
+# Aufgabe 1
+
+Das Logo für ein Reiseunternehmen wurde mithilfe von zwei Funktionen modelliert. Die nachfolgende Abbildung zeigt dieses
+Logo, das von dem Graphen einer ganzrationalen Funktion $f$ vierten Grades und dessen Spiegelung, der Funktion $g$, begrenzt wird.
+
+:::geogebra{perspective="G" height=400 coordsystem="-2.5,2.5,-1.5,1.5" axissteps="0.1,0.1" enableRightClick=false}
+f(x)=-0.25x^4+0.5x^2-0.25
+g(x)=-f(x)
+P=(0,0)
+ShowLabel(P, false)
+Circle(P,0.1)
+:::
+
+a) Bestimme die Funktiongleichungen der beiden Funktionen. Nehme dafür an, dass die Funktion $f$ einen Tiefpunkt $T(0|-0.25$ und zwei Hochpunkte bei $H_1(-1|0)$ und $H_2(1|0)$ hat.
+
+:::collapsible{title="Lösung" id="626057"}
+
+Zunächst bestimmen wir die Funktiongleichung der Funktion $f$.
+
+Dazu nutzen wir die allgemeine Form einer ganzrationalen Funktion vierten Grades:
+
+$$
+
+\begin{align*}
+f(x) &= ax^4 + bx^3 + cx^2 + dx + e
+f'(x) &= 4ax^3 + 3bx^2 + 2cx + d
+\end{align*}
+
+$$
+
+An der Abbildung und an der Lage der beiden Hochpunkte können wir erkennen, dass die Funktion symmetrisch zur y-Achse ist. Das bedeutet, dass wir die Koeffizienten $b$ und $d$ gleich null setzen können, da nur die geraden Potenzen von $x$ vorkommen.
+
+$$
+
+\begin{align*}
+f(x) &= ax^4 + cx^2 + e
+f'(x) &= 4ax^3 + 2cx
+\end{align*}
+
+$$
+
+Da die Funktion $f$ einen Tiefpunkt bei $T(0|-0.25)$ hat, wissen wir, dass der y-Achsenabschnitt $e = -0.25$ ist.
+
+Mit den beiden Hochpunkten $H_1(-1|0)$ und $H_2(1|0)$ können wir die restlichen Parameter bestimmen:
+
+$$
+
+\begin{align*}
+
+f(-1) &= a + c - 0.25 = 0 \\
+f(1) &= a + c - 0.25 = 0
+f'(-1) &= -4a - 2c = 0 \\
+f'(1) &= 4a + 2c = 0
+
+\end{align*}
+
+$$
+
+Daraus folgt:
+
+
+$$
+
+\begin{align*}
+
+a &= -0.25 \\
+c &= 0.5
+
+\end{align*}
+
+$$
+
+Die Funktion $f$ hat also die Funktiongleichung:
+
+$$
+
+f(x) = -0.25x^4 + 0.5x^2 - 0.25
+
+$$
+
+Die Funktion $g$ ist die Spiegelung der Funktion $f$ an der x-Achse. Das bedeutet, dass die Funktion $g$ die Funktiongleichung $g(x) = -f(x)$ hat.
+
+$$
+
+g(x) = -f(x) = 0.25x^4 - 0.5x^2 + 0.25
+
+$$
+
+:::
+
+b) Der Hintergrund des Logos soll in Gold dargestellt werden. Das Augo, welches einen Radius von $0,1 FE$ hat, des Logos in Schwarz. Berechne wie viel goldene und wie viel schwarze Farbe benötigt wird, um das Logo zu drucken.
+
+:::collapsible{title="Lösung" id="626058"}
+
+Die goldene Fläche entspricht der Fläche zwischen den Funktionen $f$ und $g$ im Intervall $[-1, 1]$ ohne die Fläche des Kreises.
+
+Die schwarze Fläche entspricht der Fläche des Kreises.
+
+Die goldene Fläche berechnen wir, indem wir die Differenz der beiden Funktionen berechnen und das Integral im Intervall $[-1, 1]$ bilden.
+
+$$
+
+\begin{align*}
+
+A_{1} &= \int_{-1}^{1} f(x) - g(x) \, dx \\
+
+A_{1} &= \int_{-1}^{1} -0.5x^4 + x^2 -0.5 \, dx \\
+
+A_{1} &\approx 0.53 \\
+
+A_{schwarz} &= \pi \cdot 0.1^2 \\
+A_{schwarz} &\approx 0.0314 \\
+
+A_{gold} &= A_{1} - A_{schwarz}
+
+\end{align*}
+
+$$
+
+:::
+
+c) Die Form der Funktionen $f$ und $g$ sollen durch eine Streckung in Richtung der y-Achse so verändert werden, dass das Logo weniger Breit wird. Dazu wurde entschieden, dass die Schnittstellen der Funktionen bei $S_1(-0.5|0.25)$ und $S_2(0.5|0.25)$ liegen sollen. Bestimme die Funktiongleichungen der beiden Funktionen.
+
+:::collapsible{title="Lösung" id="626059"}
+
+Die ursprüngliche Funktion $f$ hat die Funktiongleichung:
+
+$$
+
+f(x) = -0.25x^4 + 0.5x^2 - 0.25
+
+$$
+
+Eine Streckung in Richtung der y-Achse bedeutet, dass die Funktion $f$ die Funktiongleichung $f(x) = a(-0.25x^4 + 0.5x^2 - 0.25)$ hat.
+
+Wir bestimmen jetzt den Parameter $a$, sodass die Funktionen $f$ und $g$ die Schnittstellen bei $x_1 = -0.5$ und $x_2 = 0.5$ haben.
+
+$$
+
+\begin{align*}
+
+f(-0.5) &= a(-0.25 \cdot (-0.5)^4 + 0.5 \cdot (-0.5)^2 - 0.25) = 0.25 \\
+f(0.5) &= a(-0.25 \cdot 0.5^4 + 0.5 \cdot 0.5^2 - 0.25) = 0.25
+
+\end{align*}
+
+$$
+
+Daraus folgt:
+
+$$
+
+\begin{align*}
+
+a \cdot 0.11 &= 0.25 \\
+a &= \frac{0.25}{0.11} \approx 2.27
+
+\end{align*}
+
+$$
+
+Die neue Funktion $f$ hat also die Funktiongleichung:
+
+$$
+
+f(x) = 2.27(-0.25x^4 + 0.5x^2 - 0.25)
+
+$$
+
+Die Funktion $g$ ist die Spiegelung der Funktion $f$ an der x-Achse. Das bedeutet, dass die Funktion $g$ die Funktiongleichung $g(x) = -f(x)$ hat.
+
+$$
+
+g(x) = -f(x) = -2.27(-0.25x^4 + 0.5x^2 - 0.25)
+
+$$
+
+:::
+
+d) Berechne wie viel goldene und wie viel schwarze Farbe benötigt wird, um das Logo zu drucken, nachdem die Funktionen $f$ und $g$ gestreckt wurden.
+
+:::collapsible{title="Lösung" id="626060"}
+
+Die goldene Fläche entspricht der Fläche zwischen den Funktionen $f$ und $g$ im Intervall $[-0.5, 0.5]$ ohne die Fläche des Kreises.
+
+Die schwarze Fläche entspricht der Fläche des Kreises.
+
+Die goldene Fläche berechnen wir, indem wir die Differenz der beiden Funktionen berechnen und das Integral im Intervall $[-0.5, 0.5]$ bilden.
+
+$$
+
+\begin{align*}
+
+A_{1} &= \int_{-0.5}^{0.5} f(x) - g(x) \, dx \\
+A_{1} &= \int_{-0.5}^{0.5} 2.27(-0.5x^4 + x^2 - 0.25) - 2.27(-0.5x^4 + x^2 - 0.25) \, dx \\
+A_{1} &\approx 0.33 \\
+A_{schwarz} &= \pi \cdot 0.1^2 \\
+A_{schwarz} &\approx 0.0314 \\
+A_{gold} &= A_{1} - A_{schwarz} \\
+A_{gold} &\approx 0.33 - 0.0314 \\
+A_{gold} &\approx 0.3
+
+\end{align*}
+
+$$
+
+Die goldene Fläche beträgt also 0.3 FE und die schwarze Fläche 0.0314 FE.
+
+:::
+
+# Aufgabe 2
+
+Der Boden eines halben Kilometer langen Kanals hat die Form einer Parabel. Der Kanal ist 2 m tief. In der nachfolgenden Abbildung ist die Situation abgebildet. Hier entspricht eine Einheit der Länge 1 m.
+
+:::geogebra{perspective="G" height=400 coordsystem="-6,6,-1,4" enableRightClick=false}
+f(x)=1/9x^2
+y=2
+:::
+
+a) Berechne den Flächeninhalt des Querschnitts des Kanals.
+
+:::collapsible{title="Lösung" id="626061"}
+
+Zunächst bestimmen wir die Funktiongleichung der Parabel, die den Boden des Kanals beschreibt.
+
+Aus der Abbildung können wir entnehmen, dass die Parabel durch den Punkt $P(3|1)$ verläuft und den Scheitelpunkt $S(0|0)$ hat.
+
+Mit der Scheitelpunktform einer Parabel können wir die Funktiongleichung bestimmen:
+
+$$
+
+f(x) = a(x - 0)^2 + 0
+
+$$
+
+Da die Parabel durch den Punkt $P(3|1)$ verläuft, können wir die Funktiongleichung aufstellen:
+
+$$
+
+1 = a(3 - 0)^2 \\
+
+1 = 9a \\
+
+a = \frac{1}{9}
+
+$$
+
+Die Funktiongleichung der Parabel lautet also:
+
+$$
+
+f(x) = \frac{1}{9}x^2
+
+$$
+
+Damit wir den Flächeninhalt des Querschnitts des Kanals berechnen können, verschieben wir die Funktion $f$ um 2 Einheiten nach unten, sodass die Nullstellen der Funktion $f$ den Rand des Kanals beschreiben.
+
+$$
+
+f(x) = \frac{1}{9}x^2 - 2
+
+$$
+
+Jetzt berechnen wir die Nullstellen der Funktion $f$:
+
+$$
+
+\begin{align*}
+
+\frac{1}{9}x^2 - 2 &= 0 \\
+
+\frac{1}{9}x^2 &= 2 \\
+
+x^2 &= 18 \\
+x &= \pm \sqrt{18} = \pm 3\sqrt{2}
+x_1 &= -3\sqrt{2} \\
+x_2 &= 3\sqrt{2}
+
+\end{align*}
+
+$$
+
+Nun können wir den Flächeninhalt des Querschnitts des Kanals berechnen:
+
+$$
+
+\begin{align*}
+
+A &= \int_{-3\sqrt{2}}^{3\sqrt{2}} \left( \frac{1}{9}x^2 - 2 \right) \, dx \\
+
+A &= \left[ \frac{1}{27}x^3 - 2x \right]_{-3\sqrt{2}}^{3\sqrt{2}} \\
+
+A &\approx 11
+
+\end{align*}
+
+$$
+
+Der Flächeninhalt des Querschnitts des Kanals beträgt also 11 m$^2$.
+
+:::
+
+b) Bestimme das Volumen des Kanals, wenn dieser voll gefüllt ist.
+
+:::collapsible{title="Lösung" id="626062"}
+
+Das Volumen des Kanals berechnen wir, indem wir den Flächeninhalt des Querschnitts des Kanals mit der Länge des Kanals multiplizieren. Der Kanal ist einen halben Kilometer lang, also 500 m.
+
+$$
+
+V = 11 \cdot 500 = 5500
+
+$$
+
+Das Volumen des Kanals beträgt also 5500 m$^3$.
+
+:::
+
+c) Berechne zu wie viel Prozent der Kanal gefüllt ist, wenn der Wasserspiegel 1 m beträgt.
+
+:::collapsible{title="Lösung" id="626063"}
+
+Da der Wasserspielgel 1 m beträgt, können wir unsere Parabel um 1 Einheit nach oben verschieben.
+
+$$
+
+f(x) = \frac{1}{9}x^2 - 1
+
+$$
+
+Jetzt berechnen wir wieder die Nullstellen:
+
+$$
+
+\begin{align*}
+
+\frac{1}{9}x^2 - 1 &= 0 \\
+
+\frac{1}{9}x^2 &= 1 \\
+
+x^2 &= 9 \\
+
+x &= \pm 3
+
+\end{align*}
+
+$$
+
+Nun können wir den Flächeninhalt des Querschnitts des Kanals berechnen, wenn zu einem Meter befüllt ist:
+
+$$
+
+\begin{align*}
+
+A &= \int_{-3}^{3} \left( \frac{1}{9}x^2 - 1 \right) \, dx \\
+
+A &= \left[ \frac{1}{27}x^3 - x \right]_{-3}^{3} \\
+
+A &= 4
+
+\end{align*}
+
+$$
+
+Der Kanal ist also zu $4/11 \approx 36,36 \%$ gefüllt.
+
+:::
 
 
 :::::::::
