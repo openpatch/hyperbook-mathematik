@@ -523,8 +523,7 @@ B(24) &= 32297
 
 $$
 
-Der Tank enthält also nach 20 Stunden am meisten Wasserstoff.
-
+Der Tank enthält also am meisten Wasserstoff nach 24 Stunden.
 :::
 
 ## Aufgabe 2
