@@ -1015,7 +1015,7 @@ ShowLabel(P, false)
 Circle(P,0.1)
 :::
 
-a) Bestimme die Funktiongleichungen der beiden Funktionen. Nehme dafür an, dass die Funktion $f$ einen Tiefpunkt $T(0|-0.25$ und zwei Hochpunkte bei $H_1(-1|0)$ und $H_2(1|0)$ hat.
+a) Bestimme die Funktiongleichungen der beiden Funktionen. Nehme dafür an, dass die Funktion $f$ einen Tiefpunkt $T(0|-0.25)$ und zwei Hochpunkte bei $H_1(-1|0)$ und $H_2(1|0)$ hat.
 
 :::collapsible{title="Lösung" id="626057"}
 
