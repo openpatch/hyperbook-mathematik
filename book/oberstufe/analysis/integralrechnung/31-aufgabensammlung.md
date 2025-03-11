@@ -1000,7 +1000,7 @@ Die untere Grenze des Integrals ist also $x = 2$.
 
 :::::::::
 
-:::::::::collapsible{title="Kombinierte Aufgabe im Sachkontext" id="54876saqweezrbc4"}
+:::::::::collapsible{title="Kombinierte Aufgaben im Sachkontext" id="54876saqweezrbc4"}
 
 # Aufgabe 1
 
