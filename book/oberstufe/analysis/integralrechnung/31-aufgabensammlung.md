@@ -401,9 +401,9 @@ B(t) &= \int f(t) \, dt \\
 
 B(t) &= \int 0,02(t^2 - t + 12) \cdot t^2 \, dt \\
 
-B(t) &= \int 0,02t^4 - t^3 + 12t^2 \, dt \\
+B(t) &= 0,02 \int t^4 - t^3 + 12t^2 \, dt \\
 
-B(t) &= 0,02 \cdot \frac{1}{5}t^5 - \frac{1}{4}t^4 + 4t^3 + C
+B(t) &= 0,02 \cdot (\frac{1}{5}t^5 - \frac{1}{4}t^4 + 4t^3) + C
 
 \end{align*}
 
@@ -417,7 +417,7 @@ $$
 
 B(0) &= 1000 \\
 
-0,02 \cdot \frac{1}{5} \cdot 0^5 - \frac{1}{4} \cdot 0^4 + 4 \cdot 0^3 + C &= 1000 \\
+0,02 \cdot (\frac{1}{5} \cdot 0^5 - \frac{1}{4} \cdot 0^4 + 4 \cdot 0^3) + C &= 1000 \\
 
 C &= 1000
 
@@ -429,7 +429,7 @@ Die Bestandsfunktion $B(t)$ lautet also:
 
 $$
 
-B(t) = 0,02 \cdot \frac{1}{5}t^5 - \frac{1}{4}t^4 + 4t^3 + 1000
+B(t) = 0,02 \cdot (\frac{1}{5}t^5 - \frac{1}{4}t^4 + 4t^3) + 1000
 
 $$
 
@@ -443,15 +443,15 @@ $$
 
 \begin{align*}
 
-B(10) &= 0,02 \cdot \frac{1}{5} \cdot 10^5 - \frac{1}{4} \cdot 10^4 + 4 \cdot 10^3 + 1000 \\
+B(10) &= 0,02 \cdot (\frac{1}{5} \cdot 10^5 - \frac{1}{4} \cdot 10^4 + 4 \cdot 10^3) + 1000 \\
 
-B(10) &= 2900
+B(10) &= 1430
 
 \end{align*}
 
 $$
 
-Nach 10 Stunden sind also 2900 Liter Wasserstoff im Tank.
+Nach 10 Stunden sind also 1430 Liter Wasserstoff im Tank.
 
 :::
 
@@ -463,15 +463,15 @@ $$
 
 \begin{align*}
 
-B(24) &= 0,02 \cdot \frac{1}{5} \cdot 24^5 - \frac{1}{4} \cdot 24^4 + 4 \cdot 24^3 + 1000 \\
+B(24) &= 0,02 \cdot (\frac{1}{5} \cdot 24^5 - \frac{1}{4} \cdot 24^4 + 4 \cdot 24^3) + 1000 \\
 
-B(24) &= 5202,5
+B(24) &\approx 32297
 
 \end{align*}
 
 $$
 
-Am Ende des Tages, nach 24 Stunden, sind also 5202,5 Liter Wasserstoff im Tank.
+Am Ende des Tages, nach 24 Stunden, sind also 32297 Liter Wasserstoff im Tank.
 
 :::
 
@@ -487,7 +487,7 @@ $$
 
 B'(t) &= f(t) \\
 
-B'(t) &= 0,02t^4 - t^3 + 12t^2
+B'(t) &= 0,02(t^4 - t^3 + 12t^2)
 
 \end{align*}
 
@@ -497,15 +497,18 @@ $$
 
 \begin{align*}
 
-0 &= 0,02t^4 - t^3 + 12t^2 \\
+0 &= 0,02(t^4 - t^3 + 12t^2) \\
 
-0 &= 0,02t^2 \cdot (t^2 - 50t + 600)
+0 &= 0,02t^2 \cdot (t^2 - t + 12)
+
+t_1 &= 0 \\
+t_{2,3} &= 1 \pm \sqrt{1 - 48} \\
 
 \end{align*}
 
 $$
 
-Die Nullstellen der quadratischen Funktion $t^2 - 50t + 600$ sind $t_1 = 20$ und $t_2 = 30$. Da nur $t_1$ im Intervall $[0, 24]$ liegt, brachten wir nur diese Extremstelle weiter.
+Da die Diskriminante negativ ist, hat die Funktion keine weiteren Nullstellen.
 
 Zusätzlich müssen wir noch die Randpunkte des Intervalls $[0, 24]$ betrachten:
 
@@ -514,8 +517,7 @@ $$
 \begin{align*}
 
 B(0) &= 1000 \\
-B(20) &= 5800 \\
-B(24) &= 5202,5
+B(24) &= 32297
 
 \end{align*}
 
