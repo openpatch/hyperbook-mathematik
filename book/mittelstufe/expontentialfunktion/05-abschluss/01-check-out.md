@@ -91,11 +91,11 @@ Hier findest du zwei eingesetzte Aufgaben aus den Zentralen Prüfungen der letzt
 
 ## ZP-10 MSA 2024
 
-::embed{height="calc(100vh - 120px)" src="https://de.serlo.org/315461"}
+::embed{height="calc(100vh - 120px)" src="https://de.serlo.org/315461?contentOnly"}
 
 ## ZP-10 MSA 2023
 
-::embed{height="calc(100vh - 120px)" src="https://de.serlo.org/307421"}
+::embed{height="calc(100vh - 120px)" src="https://de.serlo.org/307421?contentOnly"}
 
 
 ::::::
