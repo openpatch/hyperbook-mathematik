@@ -6,6 +6,8 @@ lang: de
 
 # ✏️ Wachstumsmodelle unterscheiden
 
+Hier findest du Übungen in denen du lineares und exponentielles Wachstum unterscheiden sollst.
+
 ## Übung 1: Aufgabenfuchs
 
 Bearbeite die Aufgaben 2 und 3.
