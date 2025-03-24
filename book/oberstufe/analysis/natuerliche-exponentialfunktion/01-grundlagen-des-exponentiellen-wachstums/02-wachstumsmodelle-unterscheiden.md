@@ -14,12 +14,12 @@ Bearbeite die Aufgaben 2 und 3.
 
 ## Übung 2: Wachstum unterscheiden
 
-::embed{src="https://learningapps.org/watch?app=16929218"}
+::embed{height="calc(100vh - 140px)" src="https://learningapps.org/watch?app=16929218"}
 
 # Übung 3: Graphen unterscheiden
 
-::embed{src="https://learningapps.org/show.php?id=p2ra03jdj21"}
+::embed{height="calc(100vh - 140px)" src="https://learningapps.org/show.php?id=p2ra03jdj21"}
 
 # Übung 4: Situationen zuordnen
 
-::embed{src="https://learningapps.org/show.php?id=pd99dt7tn21"}
+::embed{height="calc(100vh - 140px)" src="https://learningapps.org/show.php?id=pd99dt7tn21"}
