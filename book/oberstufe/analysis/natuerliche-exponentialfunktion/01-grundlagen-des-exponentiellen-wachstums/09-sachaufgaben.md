@@ -99,7 +99,51 @@ Wobei $a$ das Anfangskapital, $q$ der Wachstumsfaktor und $t$ die Zeit in Jahren
 a) Berechnen Sie, wie viel mg des radioaktiven Stoffes nach drei Jahren vorhanden
 sind.
 
+:::collapsible{title="Lösung" id="414544"}
+
+Wir kennen die Halbwertszeit $30$ Jahre und die Anfangsmenge von $ 250 mg $. Das heißt nach $30$ Jahren ist nur noch die Hälfte der Menge vorhanden, also $125 mg$. Damit kann man den Wachstumsfaktor $q$ berechnen:
+
+$$
+
+\begin{aligned}
+250 \cdot q^{30} &= 125 | : 250 \\
+q^{30} &= \frac{125}{250} = \frac{1}{2} | \sqrt[30]{\dots} \\
+q &= \sqrt[30]{\frac{1}{2}} 
+\end{aligned}
+
+$$
+
+Die Funktion $f(t) = 250 \cdot \left(\sqrt[30]{\frac{1}{2}}\right)^t$ beschreibt die Menge des radioaktiven Stoffes nach $t$ Jahren. Um die Menge nach drei Jahren zu berechnen, setzen wir $t = 3$ in die Funktion ein:
+
+$$f(3) = 250 \cdot \left(\sqrt[30]{\frac{1}{2}}\right)^3 \approx 233,26$$
+
+Das bedeutet, dass nach drei Jahren noch etwa 233,26 mg des radioaktiven Stoffes vorhanden sind.
+
+:::
+
 b) Ermitteln Sie, nach wie vielen Jahren nur noch 50 mg vorhanden sind.
+
+:::collapsible{title="Lösung" id="4145441"}
+
+Wir setzen $f(t) = 250 \cdot \left(\sqrt[30]{\frac{1}{2}}\right)^t = 50$:
+
+$$
+
+\begin{aligned}
+
+250 \cdot \left(\sqrt[30]{\frac{1}{2}}\right)^t &= 50 | : 250\\
+
+\left(\sqrt[30]{\frac{1}{2}}\right)^t &= \frac{50}{250} = \frac{1}{5} | \log_{\sqrt[30]{\frac{1}{2}}}(\dots)\\
+
+t &= \log_{\sqrt[30]{\frac{1}{2}}}(\frac{1}{5}) \approx 69,66
+
+\end{aligned}
+
+$$
+
+Nach etwa 70 Jahren sind nur noch 50 mg des radioaktiven Stoffes vorhanden.
+
+:::
 
 ## Aufgabe 3
 
