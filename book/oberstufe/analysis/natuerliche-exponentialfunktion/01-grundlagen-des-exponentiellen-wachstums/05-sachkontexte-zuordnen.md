@@ -14,3 +14,14 @@ B) Die Menge (Masse) an radioaktivem Material beim radioaktiven Zerfall.
 
 C) Die Kosten für die Stromnutzung bei einer jährlichen Grundgebühr und einem
 Preis für jede verbrauchte Kilowattstunde.
+
+:::collapsible{title="Lösung" id="204758"}
+
+A) Exponentielle Zunahme
+
+B) Exponentieller Abnahme
+
+C) Lineares Wachstum
+
+
+:::
