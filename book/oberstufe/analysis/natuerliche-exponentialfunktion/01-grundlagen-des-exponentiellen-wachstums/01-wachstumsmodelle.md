@@ -95,7 +95,7 @@ Eine Population von Kaninchen vermehrt sich in einem geschützten Gebiet. Zu Beg
 
 :::collapsible{title="Lösung" id="392591q"}
 
-Der Graph der quadratischen Funktion sollte durch die Punkte $P_0 = (0, 10)$, $P_1 = (1, 40)$ und $P_2 = (2, 90)$ verlaufen. Das bedeutet, dass $a = 15$, $b = 1$ und $c = 10$ sein müssen.
+Der Graph der quadratischen Funktion sollte durch die Punkte $P_0 = (0, 10)$, $P_1 = (1, 30)$ und $P_2 = (2, 90)$ verlaufen. Das bedeutet, dass $a = 20$, $b = 0$ und $c = 10$ sein müssen.
 
 :::
 
