@@ -8,6 +8,8 @@ lang: de
 
 Wachstumsprozesse können durch verschiedene mathematische Modelle beschrieben werden. Drei wichtige Modelle sind das lineare, das quadratische und das exponentielle Wachstum.
 
+::youtube{#IySWSL_ibZk}
+
 ## Lineares Wachstum
 
 Beim linearen Wachstum nimmt die Größe einer Menge in gleichen Zeitintervallen um denselben Betrag zu. Die Funktionsgleichung des linearen Wachstums lautet:

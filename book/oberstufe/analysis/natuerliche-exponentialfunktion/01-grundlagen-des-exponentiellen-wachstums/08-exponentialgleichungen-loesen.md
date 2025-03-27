@@ -8,6 +8,12 @@ lang: de
 
 Wenn wir Sachaufgaben mit exponentiellem Wachstum lösen, kommen wir oft auf Gleichungen, die wir mit den Methoden der Analysis lösen können.
 
+:::alert{info}
+Schaue dir das Video an oder lies den Text.
+:::
+
+::youtube{#yu9AGvHD1y0}
+
 ## Exponentialgleichungen
 
 Eine Exponentialgleichung ist eine Gleichung, in der eine Variable im Exponenten einer Basis steht.
@@ -40,3 +46,10 @@ x &= \log_{1,05}(30) \\
 x &\approx 69,71 
 \end{aligned}
 
+$$
+
+## Sachaufgaben
+
+Hier ist ein Video, welches zeigt, wie man Sachaufgaben zum exponentiellen Wachstum lösen kann.
+
+::youtube{#qXibn0hXzfk}
