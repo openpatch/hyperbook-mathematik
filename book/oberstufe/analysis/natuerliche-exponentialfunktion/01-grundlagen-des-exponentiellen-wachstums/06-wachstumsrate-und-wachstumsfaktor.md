@@ -8,6 +8,12 @@ lang: de
 
 In Sachkontexten, in denen Wachstumsprozesse beschrieben werden, wird oft die Wachstumsrate beschrieben. Meistens muss die Wachstumsrate in den Wachstumsfaktor umgerechnet werden, um die Menge zu berechnen, die nach einer bestimmten Zeit gewachsen ist.
 
+:::alert{info}
+Schaue dir das Video an oder lies den Text.
+:::
+
+::youtube{#7iAk91r_Nlo}
+
 ## Wachstumsrate
 
 Die Wachstumsrate $r$ gibt an, um welchen Prozentsatz die Menge in einer Zeiteinheit wächst. Sie wird in Prozent angegeben und ist oft positiv. Die Wachstumsrate kann auch negativ sein, wenn die Menge abnimmt.
