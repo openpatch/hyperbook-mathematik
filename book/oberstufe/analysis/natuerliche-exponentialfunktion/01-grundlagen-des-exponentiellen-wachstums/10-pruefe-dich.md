@@ -129,7 +129,7 @@ Das bedeutet, dass nach fünf Jahren mit Schutzmaßnahmen noch etwa 7,28 % wenig
 
 **e1)** Begründe, warum die Funktion $ b(t) $ nicht mehr für die Anzahl der Bienenvölker in Deutschland geeignet ist.
 
-::collapsible{title="Musterlösung" id="9442175"}
+:::collapsible{title="Musterlösung" id="9442175"}
 
 Die Funktion $ b(t) $ beschreibt einen kontinuierlichen Rückgang der Bienenvölker. Da die Anzahl der Bienenvölker jedoch wieder gestiegen ist, ist die Funktion nicht mehr geeignet, um den aktuellen Zustand zu beschreiben.
 
