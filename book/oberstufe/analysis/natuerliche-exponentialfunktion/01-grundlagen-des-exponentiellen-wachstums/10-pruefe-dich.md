@@ -28,7 +28,7 @@ Dabei gibt $ b(t) $ die Anzahl der Bienenvölker an, und $ t $ die Zeit in Jahre
 
 ### **Aufgaben:**  
 
-**a)** Bestimme den Anfangswert und den Wachstumsfaktor von $ b(t) $ und interpretiere diese Werte im Sachzusammenhang. (4P)  
+**a)** Bestimme den Anfangswert und den Wachstumsfaktor von $ b(t) $ und interpretiere diese Werte im Sachzusammenhang. 
 
 :::collapsible{title="Musterlösung" id="944217"}
 
@@ -38,7 +38,7 @@ Dabei gibt $ b(t) $ die Anzahl der Bienenvölker an, und $ t $ die Zeit in Jahre
 
 :::
 
-**b)** Berechne die Anzahl der Bienenvölker gemäß der Funktion $ b $ im Jahr 2013 und ermittle, um wie viel Prozent die Population im Vergleich zu heute sinken würde. (5P)  
+**b)** Berechne die Anzahl der Bienenvölker gemäß der Funktion $ b $ im Jahr 2013 und ermittle, um wie viel Prozent die Population im Vergleich zu heute sinken würde.
 
 :::collapsible{title="Musterlösung" id="9442172"}
 
@@ -65,7 +65,7 @@ Die Anzahl der Bienenvölker würde also um etwa 11,75 % sinken.
 :::
 
 
-**c)** Berechne, nach wie vielen Jahren sich die Anzahl der Bienenvölker gemäß Funktion $ b $ halbiert. (5P)  
+**c)** Berechne, nach wie vielen Jahren sich die Anzahl der Bienenvölker gemäß Funktion $ b $ halbiert. 
 
 :::collapsible{title="Musterlösung" id="9442173"}
 
@@ -91,7 +91,7 @@ Das bedeutet, dass sich die Anzahl der Bienenvölker nach etwa 27 Jahren halbier
 
 :::
 
-**d)** Durch gezielte Schutzmaßnahmen wie das Anlegen von Blühstreifen und den Verzicht auf bestimmte Pestizide kann der Rückgang der Bienenvölker verlangsamt werden. Angenommen, durch diese Maßnahmen reduziert sich der jährliche Rückgang auf 1,5 %. Berechne, wie viel Prozent der Population nach fünf Jahren mit Schutzmaßnahmen noch vorhanden ist. (3P)  
+**d)** Durch gezielte Schutzmaßnahmen wie das Anlegen von Blühstreifen und den Verzicht auf bestimmte Pestizide kann der Rückgang der Bienenvölker verlangsamt werden. Angenommen, durch diese Maßnahmen reduziert sich der jährliche Rückgang auf 1,5 %. Berechne, wie viel Prozent der Population nach fünf Jahren mit Schutzmaßnahmen noch vorhanden ist. 
 
 :::collapsible{title="Musterlösung" id="9442174"}
 
