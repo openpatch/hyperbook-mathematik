@@ -42,7 +42,7 @@ Dabei gibt $ b(t) $ die Anzahl der Bienenvölker an, und $ t $ die Zeit in Jahre
 
 :::collapsible{title="Musterlösung" id="9442172"}
 
-Um die Anzahl der Bienenvölker im Jahr 2013 zu berechnen, setzen wir $ t = 5 $ in die Funktion $ b(t) $ ein:
+Um die Anzahl der Bienenvölker im Jahr 1996 zu berechnen, setzen wir $ t = 5 $ in die Funktion $ b(t) $ ein:
 
 $$
 
@@ -54,7 +54,7 @@ Um den prozentualen Rückgang zu berechnen, verwenden wir die Formel:
 
 $$
 
-\text{Prozentualer Rückgang} = \frac{b(0) - b(5)}{b(0)} \cdot 100
+\text{Prozentualer Rückgang} = \frac{b(0) - b(22)}{b(0)} \cdot 100
 
 = \frac{1.200.000 - 1.059.120}{1.200.000} \cdot 100 \approx 11,75 \%
 
