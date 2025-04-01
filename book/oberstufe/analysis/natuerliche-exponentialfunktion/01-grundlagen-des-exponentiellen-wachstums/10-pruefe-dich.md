@@ -38,7 +38,7 @@ Dabei gibt $ b(t) $ die Anzahl der Bienenvölker an, und $ t $ die Zeit in Jahre
 
 :::
 
-**b)** Berechne die Anzahl der Bienenvölker gemäß der Funktion $ b $ im Jahr 2013 und ermittle, um wie viel Prozent die Population im Vergleich zu heute sinken würde.
+**b)** Berechne die Anzahl der Bienenvölker gemäß der Funktion $ b $ im Jahr 1996 und ermittle, um wie viel Prozent die Population im Vergleich zu heute sinken würde.
 
 :::collapsible{title="Musterlösung" id="9442172"}
 
