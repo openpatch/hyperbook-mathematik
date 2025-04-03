@@ -6,6 +6,18 @@ lang: de
 
 # 💡 Tangente an der Stelle x0
 
+::::alert{info}
+
+Lies den Text oder schaue dir das Video an, um mehr über die Tangente an der Stelle $x_0$ zu erfahren.
+
+:::collapsible{title="Video" id="501153"}
+
+::youtube[title]{#hC_8k59BYxg}
+
+:::
+::::
+
+
 Die Tangente einer Funktion an der Stelle $x_0$ können wir bereits bestimmen, indem wir die folgende Formel verwenden:
 
 $$
