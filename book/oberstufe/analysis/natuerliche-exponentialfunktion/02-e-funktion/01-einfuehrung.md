@@ -6,18 +6,6 @@ lang: de
 
 # 💡 Einführung der natürlichen Exponentialfunktion
 
-::::alert{info}
-
-Lies den Text oder schaue dir das Video an, um zuerfahren wie man die natürliche Exponentialfunktion herleiten kann. 
-
-:::collapsible{title="Video" id="501153"}
-
-::youtube[title]{#XX4CBKTMfR4}
-
-:::
-
-::::
-
 Bis jetzt haben wir uns mit dem Exponentialwachstum beschäftigt. Dabei haben wir gesehen, dass die Funktion $f(x) = a \cdot b^x$ eine wichtige Rolle spielt. Diese Funktion beschreibt das Wachstum von Populationen, Geldanlagen und vielen anderen Phänomenen in der Natur.
 
 Zum Beispiel kann das Wachstum von Seerosen auf einem Teich durch die Funktion $f(x) = 2 \cdot 2^x$ beschrieben werden. Hierbei ist $x$ die Zeit in Tagen und $f(x)$ die Anzahl der Seerosen.
@@ -43,6 +31,18 @@ $$
 Diesen Prozess führen wir jetzt für eine Exponentialfunktion durch.
 
 ## Ableitung der Exponentialfunktion herleiten
+
+::::alert{info}
+
+Lies den Text oder schaue dir das Video an, um zuerfahren wie man die Ableitung einer Exponentialfunktion herleiten kann. 
+
+:::collapsible{title="Video" id="501153"}
+
+::youtube[title]{#XX4CBKTMfR4}
+
+:::
+
+::::
 
 Als Beispiel betrachten wir die Funktion $f(x) = \cdot 2^x$.
 
