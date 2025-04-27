@@ -10,7 +10,7 @@ Für einfache Funktionen wie $f(x) = 3 \cdot e^{x}$ kann das Integral leicht bes
 
 Das unbestimmte Integral ist $F(x) = 3 \cdot e^{x} + C$.
 
-Das Integral einer e-Funktion ist also wieder eine e-Funktion.
+Das Integral einer e-Funktion ist also wieder eine e-Funktion. Das folgt daraus, da wir bereits wissen, dass die Ableitung einer e-Funktion wieder die e-Funktion selbst ist.
 
 Auch Funktionen die per Addition oder Subtraktion mit einer e-Funktion verbunden sind, können wir mit der Summenregel integrieren.
 
