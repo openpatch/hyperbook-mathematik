@@ -37,5 +37,85 @@ Ergebnis: {Z{6,39|47,21}}
 
 b) $f(x) = e^x - x$ im Intervall [{X{0|2}}, {X{1|4}}]
 
-Ergenis: {Z{4,39|41,21}}
+Ergebnis: {Z{4,39|41,21}}
+:::
+
+## Aufgabe 3
+
+Bestimme die Stammfunktion von $g$, deren Graph durch den Punkt den Puntk $A$ verläuft.
+
+a) $g(x)=e^x$ und $A(0, 2)$
+
+:::collapsible{title="Musterlösung: Schritt 1" id="701796"}
+
+Zunächst bestimmen wir die Stammfunktion $G$ von $g$:
+
+$$
+
+G(x) = \int g(x) dx = \int e^x dx = e^x + C
+
+$$
+
+Weißt du, wie es jetzt weitergeht?
+
+:::
+
+:::collapsible{title="Musterlösung: Schritt 2" id="701798"}
+
+Nun setzen wir den Punkt $A(0, 2)$ in die Gleichung ein:
+
+$$
+
+G(0) = e^0 + C = 1 + C = 2
+
+$$
+
+Das ergibt $C = 1$.
+
+Die gesuchte Funktion ist also:
+
+$$
+
+G(x) = e^x + 1
+
+$$
+
+:::
+
+b) $g(x)=e^x - 2x^2$ und $A(-1, \frac{1}{e})$
+
+:::collapsible{title="Musterlösung: Schritt 1" id="701797"}
+
+Zunächst bestimmen wir die Stammfunktion $G$ von $g$:
+
+$$
+
+G(x) = \int g(x) dx = \int (e^x - 2x^2) dx = e^x - \frac{2}{3} x^3 + C
+
+$$
+
+Weißt du, wie es jetzt weitergeht?
+
+:::
+
+:::collapsible{title="Musterlösung: Schritt 2" id="701799"}
+
+Nun setzen wir den Punkt $A(-1, \frac{1}{e})$ in die Gleichung ein:
+
+$$
+
+G(-1) = e^{-1} - \frac{2}{3} (-1)^3 + C = \frac{1}{e} + \frac{2}{3} + C = \frac{1}{e}
+
+$$
+
+Das ergibt $C = -\frac{2}{3}$.
+
+Die gesuchte Funktion ist also:
+
+$$
+
+G(x) = e^x - \frac{2}{3} x^3 - \frac{2}{3}
+
+$$
+
 :::
