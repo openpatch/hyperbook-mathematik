@@ -6,6 +6,12 @@ lang: de
 
 # 💡 e-Funktionen mit linearen Exponenten
 
+:::collapsible{title="Videoerklärung" id="738012"}
+
+::youtube{#y0dXs2L2deg}
+
+:::
+
 Die Ableitung einer e-Funktion ist wieder eine e-Funktion. Das gilt auch für e-Funktionen mit linearen Exponenten. Das bedeutet, dass die Ableitung von $f(x) = a \cdot e^{b \cdot x + d}$ mit $a,b,c \in \mathbb{R}$ wieder eine e-Funktion ist. Jedoch wird der Faktor $b$ in der Ableitung berücksichtigt. Das bedeutet, dass die Ableitung von $f(x) = a \cdot e^{b \cdot x + d}$ wie folgt aussieht:
 
 $$

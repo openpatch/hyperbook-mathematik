@@ -8,6 +8,12 @@ lang: de
 
 ## Aufgabe 1
 
+:::collapsible{title="Videoerklärung" id="683733"}
+
+::youtube{#X2pTYWeXZ1k}
+
+:::
+
 Ordne den Funktionensgleichungen den passenden Graphen zu.
 
 :::multievent
@@ -86,6 +92,4 @@ board.create('functiongraph', [i], {
 });
 ```
 :::
-
-## Aufgabe 2
 
