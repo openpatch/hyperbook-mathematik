@@ -18,7 +18,7 @@ c) $f(x) = e^x - e^2$
 
 ## Aufgabe 2
 
-Gegeben ist die Funktion $f(x) = 4 \cdot e^{3 \cdot x + 2} - 5$.
+Gegeben ist die Funktion $f(x) = 4 \cdot e^{3 \cdot x - 8} - 5$.
 
 a) Beschreibe den Verlauf der Graphen der Funktion $f$ und der Funtkion $g=f'$ im Bereich $-5 < x < 5$.
 
