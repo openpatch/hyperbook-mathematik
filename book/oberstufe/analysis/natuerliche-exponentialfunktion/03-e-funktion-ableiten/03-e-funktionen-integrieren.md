@@ -72,7 +72,7 @@ b) $\int_{-1}^1 e^{3 \cdot x + 1} \, dx$
 
 :::multievent
 
-Ergebnis: {z{18,75}} Flächeinheiten (FE)
+Ergebnis: {z{18,15}} Flächeinheiten (FE)
 
 :::
 
