@@ -8,6 +8,12 @@ lang: de
 
 ## Aufgabe 1
 
+:::collapsible{title="Videoerklärung" id="7380112341"}
+
+::youtube{#oZvVranynZ0}
+
+:::
+
 Berechne die Ableitung $f'(x)$ der Funktion $f$.
 
 a) $f(x) = 3 \cdot e^{2 \cdot x + 1}$
@@ -17,6 +23,12 @@ b) $f(x) = -e^{-x} - x$
 c) $f(x) = e^x - e^2$
 
 ## Aufgabe 2
+
+:::collapsible{title="Videoerklärung" id="738011213"}
+
+::youtube{#gD2ng-nW55w}
+
+:::
 
 Gegeben ist die Funktion $f(x) = 4 \cdot e^{3 \cdot x - 8} - 5$.
 

@@ -8,6 +8,12 @@ lang: de
 
 ## Aufgabe 1
 
+:::collapsible{title="Videoerklärung" id="738011213asd"}
+
+::youtube{#cE0Z5uJYsJg}
+
+:::
+
 Gib eine Stammfunktion $F(x)$ der Funktion $f$ an.
 
 a) $f(x) = 3 \cdot e^{2 \cdot x}$
@@ -38,6 +44,12 @@ $ F(x) = 2 \cdot e^{2 \cdot x + 2} $
 
 
 ## Aufgabe 2
+
+:::collapsible{title="Videoerklärung" id="738011213asde"}
+
+::youtube{#pG7VztpieEU}
+
+:::
 
 Berechne die Integrale. Runde auf zwei Dezimalstellen.
 
