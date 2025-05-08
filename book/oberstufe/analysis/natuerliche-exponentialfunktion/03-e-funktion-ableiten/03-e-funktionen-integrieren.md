@@ -98,7 +98,7 @@ $$
 
 & = \frac{1}{3} \cdot e^{3 \cdot 1 + 1} - \frac{1}{3} \cdot e^{-3 + 1} \\
 
-& \approx 18,75
+& \approx 18,15
 
 \end{align*}
 
