@@ -6,7 +6,7 @@ lang: de
 
 # ✅ Prüfe dich
 
-## Aufgabe 1: Wirkstoffmenge im Blut
+## Aufgabe 1: 💉 Wirkstoffmenge im Blut
 
 Zu Beginn befindet keine Wirkstoffmenge im Blut. Ein Medikament wird kontinuierlich über eine Infusion zugeführt. Die momentane Zufuhrgeschwindigkeit ist gegeben durch:
 
@@ -129,7 +129,7 @@ $$
 
 :::
 
-## Aufgabe 2: Besucheranzahl auf einer Website
+## Aufgabe 2: 📈 Besucheranzahl auf einer Website
 
 Zu Beginn (t = 0) wurden 2000 Besucher auf einer neuen Website registriert. Die momentane Besucherzunahme kann durch folgende Funktion beschrieben werden:
 
@@ -208,7 +208,7 @@ t &\approx 1,01 \text{ Tage}
 $$
 :::
 
-## Aufgabe 3: Temperaturanstieg in einem Raum
+## Aufgabe 3: 🌞 Temperaturanstieg in einem Raum
 
 Ein Raum wird beheizt. Zu Beginn hat der Raum eine Temperatur von 12 °C. Die momentane Änderungsrate der Temperatur wird durch folgende Funktion beschrieben:
 
@@ -313,7 +313,7 @@ $$
 $$
 :::
 
-## Aufgabe 4: Aufladung eines Akkus
+## Aufgabe 4: 🪫 Aufladung eines Akkus
 
 Ein leerer Akku wird geladen. Die momentane Ladegeschwindigkeit ist gegeben durch:
 
@@ -402,7 +402,7 @@ Der Akku kann langfristig nicht 100 % erreichen, da die Exponentialfunktion $e^{
 
 :::
 
-## Aufgabe 5: Vergleichen von Exponentialfunktionen
+## Aufgabe 5: 🔍 Vergleichen von Exponentialfunktionen
 
 Gegeben sind die Exponentialfunktionen:
 
