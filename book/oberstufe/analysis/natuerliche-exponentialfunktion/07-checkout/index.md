@@ -1,5 +1,5 @@
 ---
 name: Checkout
-index: 1
+index: 7
 lang: de
 ---
