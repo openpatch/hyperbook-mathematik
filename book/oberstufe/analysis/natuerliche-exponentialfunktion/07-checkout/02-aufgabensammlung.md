@@ -317,16 +317,115 @@ board.create('functiongraph', [f], {
 
 a) Untersuche das Verhalten der Funktion im Unendlichen.
 
+:::collapsible{title="Musterlösung" id="926315"}
+
+Die Funktion $f(x)$ beschreibt die Bevölkerungsentwicklung. Um das Verhalten der Funktion im Unendlichen zu untersuchen, betrachten wir den Grenzwert:
+
+$$
+
+\begin{align*}
+\lim_{x \to \infty} f(x) &= \lim_{x \to \infty} (-6e^{-0,5x}+6e^{-3x}+6) \\
+&= \lim_{x \to \infty} (-6e^{-0,5x}) + \lim_{x \to \infty} (6e^{-3x}) + 6 \\
+&= 0 + 0 + 6 \\
+&= 6
+\end{align*}
+
+$$
+
+Das bedeutet, dass die Funktion sich langfristig einer maximalen Bevölkerungszahl von 6 (in 10.000) annähert.
+
+Das Verhalten der Funktion im Unendlichen zeigt, dass die Bevölkerungszahl langfristig stabil bleibt und sich nicht weiter erhöht.
+
+:::
+
 b) Beschreibe den Verlauf des Graphens im Intervall $[0,4]$
 
+:::collapsible{title="Musterlösung" id="926316"}
+
+Der Graph der Funktion $f(x)$ im Intervall $[0,4]$ zeigt zunächst einen Anstieg, gefolgt von einem Abfall.
+
+Im Intervall $[0,4]$ beginnt die Funktion bei $f(0) = 6$ und erreicht ihren Tiefpunkt bei $x \approx 0,7$. Danach steigt die Funktion wieder und annähert sich asymptotisch dem Wert 6.
+
+:::
+
 c) Für die Gleichung $f'(x)=0$ gilt, dass die gleichbedeutet zu der Gleichung $-0,5x=ln(6)-3x$ ist. Untersuche unter Verwendung dieses Hinweises die Funktion $f$ auf Extremstellen.
+
+:::collapsible{title="Musterlösung" id="926317"}
+
+Für Extremstellen setzen wir die Ableitung $f'(x)$ gleich 0:
+
+$$
+
+f'(x) = 0
+
+$$
+
+In der Aufgabenstellung wird uns der Hinweis gegeben, dass die Gleichung $f'(x)=0$ gleichbedeutend ist mit:
+
+$$
+
+-0,5x=\ln(6)-3x
+
+$$
+
+Daher können wir diese Gleichung nutzen, um die Extremstellen zu finden:
+
+$$
+
+\begin{align*}
+
+-0,5x &= \ln(6) - 3x \\
+-0,5x + 3x &= \ln(6) \\
+2,5x &= \ln(6) \\
+x &= \frac{\ln(6)}{2,5} \\
+x &\approx 0,792
+\end{align*}
+
+$$
+
+Die Extremstelle liegt also bei $x \approx 0,792$. Um den Extremwert zu finden, setzen wir diesen Wert in die Funktion $f(x)$ ein:
+
+$$
+
+\begin{align*}
+
+f(0,792) &= -6e^{-0,5 \cdot 0,792} + 6e^{-3 \cdot 0,792} + 6 \\
+
+&\approx -6 \cdot 0,451 + 6 \cdot 0,227 + 6 \\
+&\approx 2,506
+
+\end{align*}
+
+$$
+
+Der Extremwert liegt also bei $f(0,792) \approx 2,506$ (in 10.000 Personen).
+
+Dort ist ein Minimum, da die Funktion vorher steigt und danach wieder fällt. Dies können wir aus der Abbildung ablesen.
+
+:::
+
+---
 
 Diese Funktion könnte für die Prognose der Bevölkerungsentwicklung einer kleinen Stadt genutzt werden mit folgender Geschichte:
 
 In der kleinen Stadt hat ein großer Maschinenbauer sein Werk geschlossen. Dadurch haben viele Bewohner der Stadt ihren Arbeitsplatz verloren und sich dazu entschlossen mit ihren Familien in die Nachbarstadt zu ziehen. Um den entgegenzuwirken wurden neue Arbeitsplätze geschaffen. Jedoch dauert es eine gewisse Zeit bis die Maßnahme greift.
 
+---
+
 d) Interpretiere die Bedeutung des Extremwertes der Funktion im Sachzusammenhang.
 
+:::collapsible{title="Musterlösung" id="926318"}
+
+Nach ungefähr 7 Jahren, also im Jahr 1977, ist die Bevölkerung auf einen Tiefpunkt von etwa 2.506 (in 10.000) Personen gefallen. 
+
+:::
+
 e) Erkläre die Bedeutung der 6 in der Funktionsgleichung im Sachzusammenhang.
+
+:::collapsible{title="Musterlösung" id="926319"}
+
+Die 6 in der Funktionsgleichung $f(x) = -6e^{-0,5x} + 6e^{-3x} + 6$ repräsentiert die langfristige maximale Bevölkerungszahl, die die Stadt erreichen kann. Dies bedeutet, dass die Bevölkerung langfristig stabil bleibt und sich nicht weiter erhöht, selbst wenn Maßnahmen zur Verbesserung der Lebensbedingungen ergriffen werden.
+
+:::
 
 :::::
