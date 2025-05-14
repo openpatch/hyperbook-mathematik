@@ -1,10 +1,10 @@
 ---
-name: Aufgabensammlung
+name: ✅ Aufgabensammlung
 index: 2
 lang: de
 ---
 
-# Aufgabensammlung
+# ✅ Aufgabensammlung
 
 ::::::collapsible{title="Exponentialfunktionen ableiten" id="782279"}
 
@@ -695,95 +695,6 @@ $$
 $$
 :::
 
-## Aufgabe: 🪫 Aufladung eines Akkus
-
-Ein leerer Akku wird geladen. Die momentane Ladegeschwindigkeit ist gegeben durch:
-
-$L(t) = 8 \cdot e^{-0,2 \cdot t}$ ($t$ in Minuten, $L(t)$ in % Ladung pro Minute)
-
-a) Wird der Akku schneller oder langsamer geladen mit der Zeit?
-
-:::collapsible{title="Musterlösung" id="926311"}
-
-Die Funktion $L(t)$ beschreibt die momentane Ladegeschwindigkeit des Akkus. Es gilt $L(t) > 0$ für alle $t \geq 0$, da die Exponentialfunktion immer positiv ist. Das bedeutet, dass der Akku langsamer geladen wird mit der Zeit.
-
-:::
-
-b) Wie hoch ist der Ladezustand nach 10 Minuten? Runde auf zwei Dezimalstellen.
-
-:::multievent
-
-Antwort: Nach 10 Minuten beträgt der Ladezustand {z{34,59}} %.
-
-:::
-
-:::collapsible{title="Musterlösung" id="926312"}
-
-Um den Ladezustand nach 10 Minuten zu berechnen, müssen wir das Integral der Funktion $L(t)$ von 0 bis 10 berechnen:
-
-$$
-
-\begin{align*}
-
-L(10) &= \int_0^{10} L(t) \, dt \\
-
-L(10) &= \int_0^{10} 8 \cdot e^{-0,2 \cdot t} \, dt \\
-L(10) &= \left[-\frac{8}{0,2} \cdot e^{-0,2 \cdot t}\right]_0^{10} \\
-L(10) &= -40 \cdot e^{-2} + 40 \\
-L(10) &= -40 \cdot 0,1353 + 40 \\
-L(10) &\approx -5,41 + 40 \\
-L(10) &\approx 34,59 \text{ \%}
-\end{align*}
-
-$$
-
-:::
-
-c) Nach wie vielen Minuten ist der Akku zu 50 % geladen?
-
-:::multievent
-
-Antwort: Nach {z{6,93}} Minuten ist
-
-der Akku zu 50 % geladen.
-
-:::
-
-:::collapsible{title="Musterlösung" id="926313"}
-
-Um die Zeit zu berechnen, nach der der Akku zu 50 % geladen ist, setzen wir $L(t) = 50$ und lösen die Gleichung:
-
-$$
-
-\begin{align*}
-
-L(t) &= 50 \\
-50 &= \int_0^t L(t) \, dt \\
-50 &= \int_0^t 8 \cdot e^{-0,2 \cdot t} \, dt \\
-50 &= \left[-\frac{8}{0,2} \cdot e^{-0,2 \cdot t}\right]_0^t \\
-50 &= -40 \cdot e^{-0,2 \cdot t} + 40 \\
-50 - 40 &= -40 \cdot e^{-0,2 \cdot t} \\
-10 &= -40 \cdot e^{-0,2 \cdot t} \\
-10 &= -40 \cdot e^{-0,2 \cdot t} \\
-\frac{1}{4} &= e^{-0,2 \cdot t} \\
-\ln(\frac{1}{4}) &= -0,2 \cdot t \\
-\frac{\ln(\frac{1}{4})}{-0,2} &= t \\
-t &\approx \frac{-1,3863}{-0,2} \\
-t &\approx 6,93 \text{ Minuten}
-\end{align*}
-
-$$
-
-:::
-
-d) Begründe, warum der Akku in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
-
-:::collapsible{title="Musterlösung" id="926314"}
-
-Der Akku kann langfristig nicht 100 % erreichen, da die Exponentialfunktion $e^{-0,2 \cdot t}$ gegen 0 geht, wenn $t$ gegen unendlich geht. Das bedeutet, dass die Ladegeschwindigkeit immer langsamer wird und der Akku sich asymptotisch einer maximalen Ladung nähert, aber nie 100 % erreicht.
-
-:::
-
 :::::
 
 :::::collapsible{title="Sachaufgaben mit zusammengesetzten e-Funktionen" id="353221"}
@@ -844,7 +755,7 @@ b) Beschreibe den Verlauf des Graphens im Intervall $[0,4]$
 
 :::collapsible{title="Musterlösung" id="926316"}
 
-Der Graph der Funktion $f(x)$ im Intervall $[0,4]$ zeigt zunächst einen Anstieg, gefolgt von einem Abfall.
+Der Graph der Funktion $f(x)$ im Intervall $[0,4]$ zeigt zunächst starken einem Abfall, gefolgt von einem leichten Anstieg und einer Annäherung an den Wert 6.
 
 Im Intervall $[0,4]$ beginnt die Funktion bei $f(0) = 6$ und erreicht ihren Tiefpunkt bei $x \approx 0,7$. Danach steigt die Funktion wieder und annähert sich asymptotisch dem Wert 6.
 
