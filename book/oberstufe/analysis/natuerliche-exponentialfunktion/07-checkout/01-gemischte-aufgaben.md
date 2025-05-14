@@ -358,9 +358,9 @@ Der Akku kann langfristig nicht 100 % erreichen, da die Exponentialfunktion $e^{
 
 :::
 
-### Aufgabe 3: Temperaturverlauf in einem Kühlraum
+### Aufgabe 3: Temperaturverlauf eines Kühlvorgangs
 
-Nach dem Einlagern eines warmen Produkts in einen Kühlraum wurde folgende Funktion zur Temperaturentwicklung aufgestellt. Auf der y-Achse ist die Temperatur in °C, auf der x-Achse sind die Stunden seit der Einlagerung abgetragen.
+Nach der Schockkühlung eines warmen Produkts und der Einlagerung in einen Kühlraum wurde folgende Funktion zur Temperaturentwicklung aufgestellt. Auf der y-Achse ist die Temperatur in °C, auf der x-Achse sind die Stunden seit der Einlagerung abgetragen.
 
 $$
 
@@ -454,7 +454,7 @@ Damit ist $f''(5 \cdot \frac{ln(3)}{2}) > 0$ und es handelt sich um ein Minimum.
 
 Diese Funktion könnte für die Prognose der Temperaturentwicklung nach dem Einlagern eines warmen Produkts in einen gekühlten Lagerraum genutzt werden:
 
-Ein Produkt wird bei Raumtemperatur (ca. 20 °C) in einen Kühlraum gebracht. Durch die Einwirkung der Kälte sinkt die Temperatur zunächst stark ab. Später stabilisiert sich das Produkt auf die Umgebungstemperatur des Kühlraums. Aufgrund innerer chemischer Prozesse (z. B. leichte Wärmeerzeugung durch Reaktionen) steigt die Temperatur minimal, bevor sie sich langfristig bei 4 °C einpendelt.
+Ein Produkt wird bei Raumtemperatur (ca. 20 °C) Schockgekühlt, das heißt stark heruntergekühlt. Anschließend wurde das Produkt in den Kühlschrank gelegt.
 
 ---
 
@@ -462,7 +462,7 @@ d) Interpretiere die Bedeutung des Extremwertes der Funktion im Sachzusammenhang
 
 :::collapsible{title="Musterlösung" id="926317"}
 
-Der Extremwert der Funktion $f(x)$ beschreibt den Zeitpunkt, an dem die Temperatur des Produkts im Kühlraum am niedrigsten ist. Nach einer gewissen Zeit stabilisiert sich die Temperatur und geht langfristig gegen 4 °C.
+Der Extremwert der Funktion $f(x)$ beschreibt den Zeitpunkt, an dem die Temperatur des Produkts am niedrigsten ist. Dies ist die Temperatur nach der Schockkühlung. Im Kühlschrank stabilisiert sich die Temperatur und geht langfristig gegen 4 °C.
 
 :::
 
