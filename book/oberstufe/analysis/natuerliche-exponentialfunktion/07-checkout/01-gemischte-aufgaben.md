@@ -271,7 +271,7 @@ Die Kanninchenpopulation verdoppelt sich also alle 3,5 Jahre.
 
 ### Aufgabe 2: Akku laden
 
-Ein leerer Akku wird geladen. Die momentane Ladegeschwindigkeit ist gegeben durch:
+Ein Akku der zu $40\%$ geladen ist, wird nun weiter geladen. Die momentane Ladegeschwindigkeit ist gegeben durch:
 
 $L(t) = 8 \cdot e^{-0,2 \cdot t}$ ($t$ in Minuten, $L(t)$ in % Ladung pro Minute)
 
@@ -283,11 +283,13 @@ Die Funktion $L(t)$ beschreibt die momentane Ladegeschwindigkeit des Akkus. Es g
 
 :::
 
-b) Wie hoch ist der Ladezustand nach 10 Minuten? Runde auf zwei Dezimalstellen.
+b) Der Ladezustand des Akkus wird durch die Funktion $F(t)=-40 \cdot e^{-0.2 \cdot t} + 80$ beschrieben. Zeige, dass $F(t)$ eine Stammfunktion von $L(t)$ ist.
+
+b) Berechne wie hoch der Ladezustand nach 10 Minuten ist. Runde auf zwei Dezimalstellen.
 
 :::multievent
 
-Antwort: Nach 10 Minuten beträgt der Ladezustand {z{34,59}} %.
+Antwort: Nach 10 Minuten beträgt der Ladezustand {z{74,59}} %.
 
 :::
 
@@ -299,21 +301,19 @@ $$
 
 \begin{align*}
 
-L(10) &= \int_0^{10} L(t) \, dt \\
+F(10) &= -40 \cdot e^{-0.2 \cdot 10} + 80 \\
+&= -40 \cdot e^{-2} + 80 \\
+&\approx -40 \cdot 0.1353 + 80 \\
+&\approx -5.412 + 80 \\
+&\approx 74.59
 
-L(10) &= \int_0^{10} 8 \cdot e^{-0,2 \cdot t} \, dt \\
-L(10) &= \left[-\frac{8}{0,2} \cdot e^{-0,2 \cdot t}\right]_0^{10} \\
-L(10) &= -40 \cdot e^{-2} + 40 \\
-L(10) &= -40 \cdot 0,1353 + 40 \\
-L(10) &\approx -5,41 + 40 \\
-L(10) &\approx 34,59 \text{ \%}
 \end{align*}
 
 $$
 
 :::
 
-c) Angenommen, der Ladezustand kann mit der Funktion $F(x)=-40 \cdot e^{-0.2 \cdot t} + 80$ beschrieben werden. Begründe, warum der Akku in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
+c) Begründe, warum der Ladezustand des Akkus in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
 
 :::collapsible{title="Musterlösung" id="926314"}
 
