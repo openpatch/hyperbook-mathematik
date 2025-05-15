@@ -201,7 +201,7 @@ Der Flächeninhalt ist also $A = 4 \cdot \ln(4) - 3$.
 
 ### Aufgabe 1: Kanninchenpopulation
 
-Eine Kanninchenpopulation wächst exponentiell und hat sich in 10 Jahren von 100 auf 1200 Kanninchen vermehrt.
+Eine Kanninchenpopulation wächst exponentiell und hat sich in 10 Jahren von 100 auf 600 Kanninchen vermehrt.
 
 a) Bestimme die Funktion $f(t)$, die die Anzahl der Kanninchen in Abhängigkeit von der Zeit $t$ beschreibt.
 
