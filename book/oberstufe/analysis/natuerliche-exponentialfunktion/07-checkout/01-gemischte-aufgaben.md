@@ -313,48 +313,11 @@ $$
 
 :::
 
-c) Nach wie vielen Minuten ist der Akku zu 50 % geladen?
-
-:::multievent
-
-Antwort: Nach {z{6,93}} Minuten ist
-
-der Akku zu 50 % geladen.
-
-:::
-
-:::collapsible{title="Musterlösung" id="926313"}
-
-Um die Zeit zu berechnen, nach der der Akku zu 50 % geladen ist, setzen wir $L(t) = 50$ und lösen die Gleichung:
-
-$$
-
-\begin{align*}
-
-L(t) &= 50 \\
-50 &= \int_0^t L(t) \, dt \\
-50 &= \int_0^t 8 \cdot e^{-0,2 \cdot t} \, dt \\
-50 &= \left[-\frac{8}{0,2} \cdot e^{-0,2 \cdot t}\right]_0^t \\
-50 &= -40 \cdot e^{-0,2 \cdot t} + 40 \\
-50 - 40 &= -40 \cdot e^{-0,2 \cdot t} \\
-10 &= -40 \cdot e^{-0,2 \cdot t} \\
-10 &= -40 \cdot e^{-0,2 \cdot t} \\
-\frac{1}{4} &= e^{-0,2 \cdot t} \\
-\ln(\frac{1}{4}) &= -0,2 \cdot t \\
-\frac{\ln(\frac{1}{4})}{-0,2} &= t \\
-t &\approx \frac{-1,3863}{-0,2} \\
-t &\approx 6,93 \text{ Minuten}
-\end{align*}
-
-$$
-
-:::
-
-d) Begründe, warum der Akku in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
+c) Angenommen, der Ladezustand kann mit der Funktion $F(x)=-40 \cdot e^{-0.2 \cdot t} + 80$ beschrieben werden. Begründe, warum der Akku in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
 
 :::collapsible{title="Musterlösung" id="926314"}
 
-Der Akku kann langfristig nicht 100 % erreichen, da die Exponentialfunktion $e^{-0,2 \cdot t}$ gegen 0 geht, wenn $t$ gegen unendlich geht. Das bedeutet, dass die Ladegeschwindigkeit immer langsamer wird und der Akku sich asymptotisch einer maximalen Ladung nähert, aber nie 100 % erreicht.
+Langfristig nähert sich die Funktion $F(t) = -40 \cdot e^{-0.2 \cdot t} + 80$ dem Wert 80, da die Exponentialfunktion gegen 0 geht. Das bedeutet, dass der Akku langfristig nicht 100 % erreichen kann, sondern nur 80 %.
 
 :::
 
@@ -364,7 +327,7 @@ Nach der Schockkühlung eines warmen Produkts und der Einlagerung in einen Kühl
 
 $$
 
-f(x) = -8e^{-0,4x} + 8e^{-2x} + 4
+f(x) = -8e^{-0,4x} + 24e^{-1.2x} + 4
 
 $$
 
