@@ -511,85 +511,6 @@ Da die drei Terme $2^{x} \cdot \ln(2)$, $3^{x} \cdot \ln(3)$ und $e^{x}$ immer p
 
 :::::collapsible{title="Sachaufgaben mit einfachen e-Funktionen" id="746793"}
 
-## Aufgabe: 📈 Besucheranzahl auf einer Website
-
-Zu Beginn (t = 0) wurden 2000 Besucher auf einer neuen Website registriert. Die momentane Besucherzunahme kann durch folgende Funktion beschrieben werden:
-
-$g(t) = 600 \cdot e^{-0,4 \cdot t}$ (t in Tagen, $g(t)$ in Besuchern pro Tag)
-
-a) Nimmt die tägliche Besucherzahl zu oder ab?
-
-:::collapsible{title="Musterlösung" id="926304"}
-
-Die Funktion $g(t)$ beschreibt die momentane Besucherzunahme. Es gilt $g(t) > 0$ für alle $t \geq 0$, da die Exponentialfunktion immer positiv ist. Das bedeutet, dass die tägliche Besucherzahl abnimmt.
-
-:::
-
-b) Wie viele Besucher sind nach 3 Tagen insgesamt auf der Website gewesen? Runde auf ganze Zahlen.
-
-:::multievent
-
-Antwort: Nach 3 Tagen sind insgesamt {z{3048}} Besucher auf der Website gewesen.
-
-:::
-
-:::collapsible{title="Musterlösung" id="926305"}
-
-Um die Gesamtbesucherzahl nach 3 Tagen zu berechnen, müssen wir das Integral der Funktion $g(t)$ von 0 bis 3 berechnen und den Anfangswert von 2000 Besuchern hinzufügen:
-
-$$
-
-\begin{align*}
-
-F(t) &= \int_0^t g(t) \, dt + 2000 \\
-
-F(t) &= \int_0^3 600 \cdot e^{-0,4 \cdot t} \, dt + 2000 \\
-
-F(t) &= \left[-\frac{600}{0,4} \cdot e^{-0,4 \cdot t}\right]_0^3 + 2000 \\
-F(t) &= -\frac{600}{0,4} \cdot e^{-0,4 \cdot 3} + \frac{600}{0,4} + 2000 \\
-F(t) &= -451,8 + 1500 + 2000 \\
-F(t) &approx 3048 \text{ Besucher}
-\end{align*}
-$$
-
-:::
-
-c) Nach wie vielen Tagen wurde die Schwelle von 2500 Besuchern überschritten? Runde auf zwei Dezimalstellen.
-
-:::multievent
-
-Antwort: Nach {z{1,01}} Tagen wurde die Schwelle von 2500 Besuchern überschritten.
-
-:::
-
-:::collapsible{title="Musterlösung" id="926306"}
-
-Um die Zeit zu berechnen, nach der die Schwelle von 2500 Besuchern überschritten wird, setzen wir $F(t) = 2500$ und lösen die Gleichung:
-
-$$
-
-\begin{align*}
-
-F(t) &= 2500 \\
-
-2500 &= \int_0^t g(t) \, dt + 2000 \\
-
-2500 - 2000 &= \int_0^t g(t) \, dt \\
-500 &= \int_0^t 600 \cdot e^{-0,4 \cdot t} \, dt \\
-500 &= \left[-\frac{600}{0,4} \cdot e^{-0,4 \cdot t}\right]_0^t \\
-500 &= -\frac{600}{0,4} \cdot e^{-0,4 \cdot t} + \frac{600}{0,4} \\
-500 &= -\frac{600}{0,4} \cdot e^{-0,4 \cdot t} + 1500 \\
-500 - 1500 &= -\frac{600}{0,4} \cdot e^{-0,4 \cdot t} \\
--1000 &= -\frac{600}{0,4} \cdot e^{-0,4 \cdot t} \\
-\frac{2}{3} &= e^{-0,4 \cdot t} \\
-\ln(\frac{2}{3}) &= -0,4 \cdot t \\
-\frac{\ln(\frac{2}{3})}{-0,4} &= t \\
-t &\approx \frac{-0,4055}{-0,4} \\
-t &\approx 1,01 \text{ Tage}
-\end{align*}
-$$
-:::
-
 ## Aufgabe: 🌞 Temperaturanstieg in einem Raum
 
 Ein Raum wird beheizt. Zu Beginn hat der Raum eine Temperatur von 12 °C. Die momentane Änderungsrate der Temperatur wird durch folgende Funktion beschrieben:
@@ -614,23 +535,36 @@ Antwort: Nach 5 Stunden herrscht eine Temperatur von {z{16,72}} °C.
 
 :::collapsible{title="Musterlösung" id="926308"}
 
-Um die Temperatur nach 5 Stunden zu berechnen, müssen wir das Integral der Funktion $T'(t)$ von 0 bis 5 berechnen und den Anfangswert von 12 °C hinzufügen:
+Zuerst bestimmen wir die Bestandsfunktion $T(x)$:
+
+$$ 
+
+\begin{align*}
+T(x) = -\frac{1,2}{0,1} \cdot e ^{-0,1 \cdot t} + c
+\end{align*}
+
+$$
+
+Jetzt bestimmen wir noch c. Dafür nutzen wir, dass wir wissen, dass zu Beginn im Raum 12°C vorliegen.
 
 $$
 
 \begin{align*}
-
-T(5) &= \int_0^5 T'(t) \, dt + 12 \\
-T(5) &= \int_0^5 1,2 \cdot e^{-0,1 \cdot t} \, dt + 12 \\
-T(5) &= \left[-\frac{1,2}{0,1} \cdot e^{-0,1 \cdot t}\right]_0^5 + 12 \\
-T(5) &= -12 \cdot e^{-0,5} - (-12 \cdot e^{0}) + 12 \\
-T(5) &= -12 \cdot e^{-0,5} + 12 +12 \\
-T(5) &= -12 \cdot 0,6065 + 24 \\
-T(5) &\approx -7,28 + 24 \\
-T(5) &\approx 16,72 \text{ °C}
-
+T(0) = 12 &= -\frac{1,2}{0,1} \cdot e^{-0,1 \cdot 0} + c \\
+12 &=  -12 + c &&| +12 \\
+24 = c
 \end{align*}
+
 $$
+
+Darauf folgt folgende Funktionsgleichung:
+
+$$
+
+T(x)=-12 \cdot e^{-0,1 \cdot t} + 24
+
+$$
+
 :::
 
 c) Nach welcher Zeit ist die Temperatur auf 16 °C gestiegen? Runde auf zwei Dezimalstellen.
@@ -642,26 +576,21 @@ Antwort: Nach {z{4,05}} Stunden ist die Temperatur auf 16 °C gestiegen.
 :::
 
 :::collapsible{title="Musterlösung" id="926309"}
+
 Um die Zeit zu berechnen, nach der die Temperatur auf 16 °C gestiegen ist, setzen wir $T(t) = 16$ und lösen die Gleichung:
 
 $$
 
 \begin{align*}
 
-T(t) &= 16 \\
+T(x) = -12 \cdot e^{-0,1 \cdot t} + 24 &= 16 &&| -24 \\
+-12 \cdot e^{-0,1 \cdot t} &= -8 &&| : (-12) \\
+e^{-0,1 \cdot t} &= \frac{2}{3}  &&| \ln(...) \\
+-0,1 \cdot t &= \ln(\frac{2}{3}) &&| : -0,1 \\
+t &= \ln(\frac{2}{3}) : (-0,1) \\
+t &\approx 4,05
+ 
 
-16 &= \int_0^t T'(t) \, dt + 12 \\
-16 - 12 &= \int_0^t T'(t) \, dt \\
-4 &= \int_0^t 1,2 \cdot e^{-0,1 \cdot t} \, dt \\
-4 &= \left[-\frac{1,2}{0,1} \cdot e^{-0,1 \cdot t}\right]_0^t \\
-4 &= -12 \cdot e^{-0,1 \cdot t} + 12 \\
-4 - 12 &= -12 \cdot e^{-0,1 \cdot t} \\
--8 &= -12 \cdot e^{-0,1 \cdot t} \\
-\frac{2}{3} &= e^{-0,1 \cdot t} \\
-\ln(\frac{2}{3}) &= -0,1 \cdot t \\
-\frac{\ln(\frac{2}{3})}{-0,1} &= t \\
-t &\approx \frac{-0,4055}{-0,1} \\
-t &\approx 4,05 \text{ Stunden}
 \end{align*}
 $$
 :::
@@ -682,17 +611,16 @@ $$
 
 \begin{align*}
 
-\lim_{t \to \infty} T(t) &= \lim_{t \to \infty} \left[-\frac{1,2}{0,1} \cdot e^{-0,1 \cdot t}\right]_0^t + 12 \\
-
-\lim_{t \to \infty} T(t) &= \lim_{t \to \infty} \left[-\frac{1,2}{0,1} \cdot e^{-0,1 \cdot t} - (-\frac{1,2}{0,1})\right] + 12 \\
-
-\lim_{t \to \infty} T(t) &= 0 + \frac{1,2}{0,1} + 12 \\
+\lim_{t \to \infty} T(t) &= \lim_{t \to \infty}  -12 \cdot e^{-0,1 \cdot t} + 24
 
 &= 24 \text{ °C}
 \end{align*}
 
-
 $$
+
+Da $e^{-0,1 \cdot t}$ für $t \to \infty$ gegen 0 geht.
+
+
 :::
 
 :::::
