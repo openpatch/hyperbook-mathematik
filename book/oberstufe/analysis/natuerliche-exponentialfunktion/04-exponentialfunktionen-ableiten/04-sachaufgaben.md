@@ -8,6 +8,12 @@ lang: de
 
 ## Aufgabe: ⚛ Iod-Isotop
 
+:::collapsible{title="Videoerklärung" id="078599"}
+
+::youtube[title]{#ZXh4cfrKS1s}
+
+:::
+
 Der Mensch nimmt täglich Iod-131 auf, welches sich in der Regel in der Schilddrüse ablagert. Pro Tag zerfällt ca. 8,28% der Menge des Iod-131 Isotops.
 
 Ein Mensch hat 100 µg aufgenommen.
