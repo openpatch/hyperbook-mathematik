@@ -8,6 +8,12 @@ lang: de
 
 ## Aufgaben ohne Hilfsmittel
 
+:::collapsible{title="Videoerklärung" id="535752"}
+
+::youtube[title]{#7NXV4woFV1A}
+
+:::
+
 ### Aufgabe 1: Exponentilafunktionen ableiten
 
 Leite die folgenden Funktionen ab und fasse so weit wie möglich zusammen.
@@ -198,6 +204,13 @@ Der Flächeninhalt ist also $A = 4 \cdot \ln(4) - 3$.
 :::
 
 ## Aufgaben mit Hilfsmitteln
+
+:::collapsible{title="Videoerklärung" id="590885"}
+
+::youtube[title]{#uilbUOzV7R4}
+
+
+:::
 
 ### Aufgabe 1: Kanninchenpopulation
 

@@ -6,6 +6,12 @@ lang: de
 
 # 💡 Verdopplungs- und Halbwertszeit
 
+:::collapsible{title="Videoerklärung" id="107212"}
+
+::youtube[title]{#i4xy7AacLVc}
+
+:::
+
 In vielen Anwendungsbereichen ist es wichtig, die Verdopplungs- und Halbwertszeit einer Exponentialfunktion zu bestimmen. Diese Zeitpunkte geben an, wie lange es dauert, bis eine Größe sich verdoppelt oder halbiert hat.
 
 ## Verdopplungszeit

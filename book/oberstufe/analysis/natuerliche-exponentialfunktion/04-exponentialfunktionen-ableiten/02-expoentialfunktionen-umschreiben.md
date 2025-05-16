@@ -8,6 +8,12 @@ lang: de
 
 ## Aufgabe 1
 
+:::collapsible{title="Videoerklärung" id="161119"}
+
+::youtube[title]{#PrjUP2tuIwg}
+
+:::
+
 Schreibe die folgenden Exponentialfunktionen in die Form $f(x) = a \cdot e^{b \cdot x}$ um.
 
 a) $f(x) = 3^{x}$
@@ -35,6 +41,14 @@ $ f(x) = 2 \cdot 1,5^{x} + 1 = 2 \cdot e^{\ln(1,5) \cdot x} + 1$
 :::
 
 ## Aufgabe 2
+
+:::collapsible{title="Videoerklärung" id="153344"}
+
+::youtube[title]{#3qAvY-F9cbk}
+}
+
+
+:::
 
 Gegeben sind verschiedene Sachsituationen, die mit Exponentialfunktionen beschrieben werden können.
 

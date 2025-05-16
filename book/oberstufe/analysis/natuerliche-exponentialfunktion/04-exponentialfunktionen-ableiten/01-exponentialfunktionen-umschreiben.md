@@ -6,6 +6,12 @@ lang: de
 
 # 💡 Exponentialfunktionen umschreiben
 
+:::collapsible{title="Videoerklärung" id="934124"}
+
+::youtube[title]{#5I3btdrLgyM}
+
+:::
+
 In Anwendungskontexten werden in der Regel Wachstumsraten benötigt, die nicht dem Wert der eulerischen Zahl $e$ entsprechen. Dies ist für manche Fragestellungen ungünstig, da uns zum Beispiel nicht die Ableitung von $f(x) = 2^{x}$ bekannt ist.
 
 Wir kennen jedoch die Ableitung von Funktionen der Form $f(x) = a \cdot e^{b \cdot x + n}$ aus dem letzten Kapitel.
