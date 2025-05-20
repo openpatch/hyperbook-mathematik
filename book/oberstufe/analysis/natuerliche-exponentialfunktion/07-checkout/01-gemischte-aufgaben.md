@@ -298,7 +298,7 @@ Die Funktion $L(t)$ beschreibt die momentane Ladegeschwindigkeit des Akkus. Es g
 
 b) Der Ladezustand des Akkus wird durch die Funktion $F(t)=-40 \cdot e^{-0.2 \cdot t} + 80$ beschrieben. Zeige, dass $F(t)$ eine Stammfunktion von $L(t)$ ist.
 
-b) Berechne wie hoch der Ladezustand nach 10 Minuten ist. Runde auf zwei Dezimalstellen.
+c) Berechne wie hoch der Ladezustand nach 10 Minuten ist. Runde auf zwei Dezimalstellen.
 
 :::multievent
 
@@ -326,7 +326,7 @@ $$
 
 :::
 
-c) Begründe, warum der Ladezustand des Akkus in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
+d) Begründe, warum der Ladezustand des Akkus in dieser mathematischen Modellerung langfristig nicht 100 % erreichen kann.
 
 :::collapsible{title="Musterlösung" id="926314"}
 
