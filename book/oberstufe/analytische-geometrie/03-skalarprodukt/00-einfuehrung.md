@@ -1,7 +1,6 @@
 ---
 name: 💡 Einführung
 lang: de
-index: 0
 ---
 
 # Ausgangssituation
@@ -54,13 +53,13 @@ Angenommen zwei Vektoren $$ \vec{a} $$ und $$ \vec{b} $$ gehen vom selben Punkt 
 
 2. Bringe die Umforumgen in die richtige Reihenfolge und vollziehe sie nach.
 
-::embed{src="https://app.Lumi.education/api/v1/run/N5F7lo/embed" height=850}
+::embed{src="https://app.Lumi.education/api/v1/run/N5F7lo/embed" height="850px"}
 
 # Transfer in den Raum
 
 Gegeben sind die Punkte $$ P(5|4|10) $$, $$ Q(12|5|5,5) $$ und $$ S(3|9|8) $$.
 
-::embed{src="https://www.geogebra.org/calculator/guc3zt3c?embed" height=600}
+::embed{src="https://www.geogebra.org/calculator/guc3zt3c?embed" height="600px"}
 
 ## Forschungsauftrag
 

@@ -1,5 +1,5 @@
 ---
-name: 💻 Taschenrechner
+name: 💻 Betrag eines Vektores mit dem Taschenrechner
 index: 99
 lang: de
 ---

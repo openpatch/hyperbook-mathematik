@@ -1,6 +1,5 @@
 ---
 name: ✏️ Aufgaben
-index: 2
 lang: de
 ---
 
@@ -108,7 +107,7 @@ Stelle die beiden Katheten als Vektoren dar und berechne das Skalarprodukt.
 
 Natürlich ist das Dreieck rechtwinkling.
 
-::embed{src="https://www.geogebra.org/calculator/qsxhwe36?embed" height=600}
+::embed{src="https://www.geogebra.org/calculator/qsxhwe36?embed" height="600px"}
 
 
 :::

@@ -20,7 +20,7 @@ Die obere Ebene des Spiels soll auch mit der Parameterform beschrieben werden. D
 
 :::tab{title="3D Visualisierung" id="886209"}
 
-::embed{src="https://www.geogebra.org/calculator/v7qezvbj?embed" height=600}
+::embed{src="https://www.geogebra.org/calculator/v7qezvbj?embed" height="600px"}
 
 
 :::

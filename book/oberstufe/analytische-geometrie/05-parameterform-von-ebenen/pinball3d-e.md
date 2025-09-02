@@ -28,7 +28,7 @@ $$
 
 :::tab{title="3D Visualisierung" id="957605"}
 
-::embed{src="https://www.geogebra.org/calculator/zza6cmcm?embed" height=600}
+::embed{src="https://www.geogebra.org/calculator/zza6cmcm?embed" height="600px"}
 
 :::
 

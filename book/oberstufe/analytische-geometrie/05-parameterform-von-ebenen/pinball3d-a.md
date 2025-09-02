@@ -21,7 +21,7 @@ Für das Spiel Pinball 3D soll die Tischebene modelliert werden. Der Tisch hat d
 
 :::tab{title="3D Visualisierung" id="617342"}
 
-::embed{src="https://www.geogebra.org/calculator/xzbce9ag?embed" height=600}
+::embed{src="https://www.geogebra.org/calculator/xzbce9ag?embed" height="600px"}
 
 :::
 
