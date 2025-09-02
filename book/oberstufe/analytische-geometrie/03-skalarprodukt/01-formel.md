@@ -25,6 +25,6 @@ Für das Skalarprodukt von den Vektoren $$ \vec{a} $$, $$ \vec{b} $$ und $$ \vec
 
 Kannst du zeigen, dass die Rechengesetze für das Skalarprodukt wirklich stimmen?
 
-Hinweis: Fange bei der linken Seite der Gleichung an. Rechne Schritt für Schritt um, bis du die rechte Seite erhältst.
+**Hinweis:** Fange bei der linken Seite der Gleichung an. Rechne Schritt für Schritt um, bis du die rechte Seite erhältst.
 
 :::
