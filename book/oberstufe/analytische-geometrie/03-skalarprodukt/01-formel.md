@@ -18,3 +18,13 @@ Für das Skalarprodukt von den Vektoren $$ \vec{a} $$, $$ \vec{b} $$ und $$ \vec
 2. $$ r \cdot \vec{a} \cdot \vec{b} = r \cdot (\vec{a} \cdot \vec{b}) $$ für jede reele Zahl r. (Assoziativgesetz)
 3. $$ (\vec{a} \cdot \vec{b}) \cdot \vec{c} = \vec{a} \cdot \vec{c} + \vec{b} \cdot \vec{c} $$ (Distributivgesetz)
 4. $$ \vec{a} \cdot \vec{a} = |\vec{a}|^2 $$
+
+:::snippet{#brain}
+
+### Expertenfrage
+
+Kannst du zeigen, dass die Rechengesetze für das Skalarprodukt wirklich stimmen?
+
+Hinweis: Fange bei der linken Seite der Gleichung an. Rechne Schritt für Schritt um, bis du die rechte Seite erhältst.
+
+:::
