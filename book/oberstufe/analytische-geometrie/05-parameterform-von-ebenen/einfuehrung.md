@@ -15,7 +15,7 @@ Die dargestellte Ebene kann durch drei Punkte A, B und C definiert werden.
 
 1. Notiere dir welche Bestandteile in der Visualisierung zu erkennen sind.  
 
-::embed{src="https://www.geogebra.org/classic/phxgpest?embed" height=700}
+::embed{src="https://www.geogebra.org/classic/phxgpest?embed" height="700px"}
 
 2. Verändere die Parameter r und s. Beschreibe was passiert. Lasse dir auch die Spur anzeigen.
 

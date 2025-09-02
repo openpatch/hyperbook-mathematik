@@ -1,6 +1,5 @@
 ---
 name: 💻 Taschenrechner
-index: 99
 lang: de
 ---
 

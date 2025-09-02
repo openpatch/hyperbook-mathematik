@@ -32,8 +32,7 @@ $$
 
 :::tab{title="3D Visualisierung" id="894405"}
 
-::embed{src="https://www.geogebra.org/calculator/gcqgud2s?embed" height=600}
-
+::embed{src="https://www.geogebra.org/calculator/gcqgud2s?embed" height="600px"}
 
 :::
 
