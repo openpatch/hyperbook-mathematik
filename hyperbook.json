@@ -1,5 +1,6 @@
 {
   "name": "Mathematik",
+  "qrcode": true,
   "version": "0.0.1",
   "description": "In diesem Hyperbook lernst du viele Themen der Mathematik kennen.",
   "author": {
@@ -17,9 +18,11 @@
   "elements": {
     "bookmarks": false
   },
-  "links": [{
-    "href": "/glossary",
-    "label": "Glossar"
-  }],
+  "links": [
+    {
+      "href": "/glossary",
+      "label": "Glossar"
+    }
+  ],
   "repo": "https://github.com/openpatch/hyperbook-mathematik/edit/main"
 }
