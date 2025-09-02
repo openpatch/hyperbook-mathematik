@@ -1,6 +1,7 @@
 ---
 name: ✏️ Aufgaben
 lang: de
+index: 2
 ---
 
 # Aufgaben

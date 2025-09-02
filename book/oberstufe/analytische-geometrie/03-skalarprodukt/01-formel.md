@@ -1,6 +1,7 @@
 ---
 name: 🔖 Formel
 lang: de
+index: 1
 ---
 
 # Formel zur Berechnung des Skalarproduktes
