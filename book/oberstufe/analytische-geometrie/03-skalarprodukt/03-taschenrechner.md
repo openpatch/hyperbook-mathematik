@@ -1,6 +1,7 @@
 ---
 name: 💻 Taschenrechner
 lang: de
+index: 3
 ---
 
 # TI-Nspire CX
