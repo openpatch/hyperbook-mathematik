@@ -1,5 +1,6 @@
 {
   "name": "Mathematik",
+  "search": true,
   "qrcode": true,
   "version": "0.0.1",
   "description": "In diesem Hyperbook lernst du viele Themen der Mathematik kennen.",
