@@ -21,8 +21,8 @@ Dazu können wir mit dem Taschenrechner wie folgt vorgehen.
 Einen Vektor gibst du ein, indem du die $[]$ Taste (b) drückst und danach die Taste rechts unten, den umgeknickten Pfeil (c), drückst.
 :::
 
-![](/assets/oberstufe/analytische-geometrie/skalarprodukt/ti-dotP-annotation.png)
+![](./ti-dotP-annotation.png)
 
 ## Ergebnis
 
-![](/assets/oberstufe/analytische-geometrie/skalarprodukt/ti-dotP.jpg)
+![](./ti-dotP.jpg)

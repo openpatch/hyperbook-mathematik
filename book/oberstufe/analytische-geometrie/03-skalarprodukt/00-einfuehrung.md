@@ -8,7 +8,7 @@ index: 0
 
 Folgendes Schaubild zeigt die Vektoren $$ \vec{a} = \begin{pmatrix}-4\\6\end{pmatrix} $$ und $$ \vec{b} = \begin{pmatrix}3\\2\end{pmatrix} $$.
 
-![](/assets/oberstufe/analytische-geometrie/skalarprodukt/vektoren-rechteck.png)
+![](./vektoren-rechteck.png)
 
 ## Forschungsauftrag
 
@@ -32,7 +32,7 @@ Die jeweils gegenüber liegenden Seiten sind gleich lang. Beide Diagonalen sind 
 
 :::collapsible{title="Lösung" id="058936"}
 
-![](/assets/oberstufe/analytische-geometrie/skalarprodukt/vektoren-rechteck-diagonalen.png)
+![](./vektoren-rechteck-diagonalen.png)
 
 $$ \vec{d_1} = \vec{a} + \vec{b} = \begin{pmatrix}-4\\6\end{pmatrix} + \begin{pmatrix}3\\2\end{pmatrix} = \begin{pmatrix}-1\\8\end{pmatrix} $$
 
@@ -54,7 +54,7 @@ Angenommen zwei Vektoren $$ \vec{a} $$ und $$ \vec{b} $$ gehen vom selben Punkt 
 
 2. Bringe die Umforumgen in die richtige Reihenfolge und vollziehe sie nach.
 
-::embed{src="https://app.Lumi.education/api/v1/run/N5F7lo/embed" height="850px"}
+::h5p{src="./Umformungsschritte sortieren.h5p"}
 
 # Transfer in den Raum
 
@@ -92,6 +92,7 @@ heißt :t[Skalarprodukt]{#skalarprodukt}.
 
 # Satz
 
+::::snippet{#merken}
 Zwei Vektoren $$ \vec{a} $$ und $$ \vec{b} $$ sind orthogonal zueinander $$ (\vec{a} \perp \vec{b}) $$, wenn
 
 $$ \vec{a} \cdot \vec{b} = \dots $$
@@ -103,3 +104,4 @@ Ergänze die vorstehende Gleichung.
 $$ \vec{a} \cdot \vec{b} = a_1 \cdot b_1 + a_2 \cdot b_2 + \dots + a_n \cdot b_n = 0 $$
 
 :::
+::::

@@ -23,6 +23,19 @@
     {
       "href": "/glossary",
       "label": "Glossar"
+    },
+    {
+      "label": "Über",
+      "links": [
+        {
+          "href": "/impressum",
+          "label": "Impressum"
+        },
+        {
+          "href": "/mitmachen",
+          "label": "Mitmachen"
+        }
+      ]
     }
   ],
   "repo": "https://github.com/openpatch/hyperbook-mathematik/edit/main"
