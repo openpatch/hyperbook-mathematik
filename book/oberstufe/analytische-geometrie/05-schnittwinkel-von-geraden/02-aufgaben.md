@@ -60,9 +60,7 @@ Bestimme die Lagebeziehung der Geraden und berechne ggf. den Schnittwinkel.
 Richtungsvektoren vergleichen:
 $$ \vec{v_2} = \begin{pmatrix}4\\-2\\6\end{pmatrix} = 2 \cdot \begin{pmatrix}2\\-1\\3\end{pmatrix} = 2 \cdot \vec{v_1} $$
 
-Die Richtungsvektoren sind linear abhängig → **Geraden sind parallel**.
-
-Schnittwinkel: $$ \alpha = 0° $$
+Die Richtungsvektoren sind linear abhängig → **Geraden sind parallel**. Sie schneiden sich nicht.
 
 :::
 
