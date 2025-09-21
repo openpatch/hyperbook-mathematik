@@ -12,7 +12,7 @@ index: 2
 Berechne den Schnittwinkel der gegebenen Geraden.
 :::
 
-1. $$ g_1: \vec{x} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t \cdot \begin{pmatrix}1\\1\\0\end{pmatrix} $$
+1. $$ g_1: \vec{x} = \begin{pmatrix}0\\2\\3\end{pmatrix} + t \cdot \begin{pmatrix}1\\1\\0\end{pmatrix} $$
    $$ g_2: \vec{x} = \begin{pmatrix}0\\1\\2\end{pmatrix} + s \cdot \begin{pmatrix}0\\1\\1\end{pmatrix} $$
 
 :::collapsible{title="Lösung" id="14eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"}
@@ -30,7 +30,7 @@ Schnittwinkel: $$ \alpha = \arccos\left(\frac{1}{2}\right) = 60° $$
 :::
 
 2. $$ h_1: \vec{x} = \begin{pmatrix}2\\1\\3\end{pmatrix} + t \cdot \begin{pmatrix}1\\-1\\2\end{pmatrix} $$
-   $$ h_2: \vec{x} = \begin{pmatrix}1\\2\\1\end{pmatrix} + s \cdot \begin{pmatrix}2\\2\\-1\end{pmatrix} $$
+   $$ h_2: \vec{x} = \begin{pmatrix}1\\3\\1\end{pmatrix} + s \cdot \begin{pmatrix}2\\2\\-1\end{pmatrix} $$
 
 :::collapsible{title="Lösung" id="24eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"}
 
