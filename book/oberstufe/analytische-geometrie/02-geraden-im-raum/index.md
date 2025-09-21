@@ -1,4 +1,4 @@
 ---
-name: 🚧 Geraden im Raum
+name: Geraden im Raum
 index: 2
 ---
