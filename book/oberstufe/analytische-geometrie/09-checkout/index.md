@@ -1,4 +1,5 @@
 ---
-name: 🚧 Checkout
+name: ✅ Checkout
 index: 9
+lang: de
 ---
