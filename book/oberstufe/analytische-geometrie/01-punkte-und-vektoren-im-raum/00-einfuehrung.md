@@ -10,7 +10,35 @@ index: 0
 
 In der Mittelstufe hast du bereits mit Punkten und Vektoren in der Ebene (2D) gearbeitet. Nun erweitern wir unser Wissen auf den dreidimensionalen Raum.
 
-![Koordinatensystem](https://via.placeholder.com/400x300/397b96/ffffff?text=3D+Koordinatensystem)
+:::jsxgraph{height="500" width="600" boundingbox="[-8,8,8,-8]" axis=false grid=false}
+
+```js
+// 3D Koordinatensystem
+var view = board.create('view3d',
+    [[-6, -3], [8, 8],
+    [[-5, 5], [-5, 5], [-5, 5]]],
+    {});
+
+// Koordinatenachsen
+var xAxis = view.create('line3d', [[0,0,0], [4,0,0]], {strokeColor: 'red', strokeWidth: 3});
+var yAxis = view.create('line3d', [[0,0,0], [0,4,0]], {strokeColor: 'green', strokeWidth: 3});
+var zAxis = view.create('line3d', [[0,0,0], [0,0,4]], {strokeColor: 'blue', strokeWidth: 3});
+
+// Achsenbeschriftungen
+view.create('text3d', [[4.5,0,0], 'x'], {fontSize: 16, strokeColor: 'red'});
+view.create('text3d', [[0,4.5,0], 'y'], {fontSize: 16, strokeColor: 'green'});
+view.create('text3d', [[0,0,4.5], 'z'], {fontSize: 16, strokeColor: 'blue'});
+
+// Beispielpunkte
+var A = view.create('point3d', [2,3,1], {name: 'A(2|3|1)', size: 6, strokeColor: 'purple'});
+var B = view.create('point3d', [5,1,4], {name: 'B(5|1|4)', size: 6, strokeColor: 'orange'});
+var C = view.create('point3d', [1,6,2], {name: 'C(1|6|2)', size: 6, strokeColor: 'cyan'});
+
+// Verbindungsvektor AB
+var vectorAB = view.create('line3d', [[2,3,1], [5,1,4]], {strokeColor: 'purple', strokeWidth: 2, lastArrow: true});
+```
+
+:::
 
 ## Forschungsauftrag
 

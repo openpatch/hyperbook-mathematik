@@ -10,7 +10,39 @@ index: 0
 
 In der Ebene hattest du bereits Geraden kennengelernt. Nun erweitern wir das Konzept auf den dreidimensionalen Raum.
 
-![Gerade im Raum](https://via.placeholder.com/400x300/397b96/ffffff?text=Gerade+im+3D+Raum)
+:::jsxgraph{height="500" width="600" boundingbox="[-8,8,8,-8]" axis=false grid=false}
+
+```js
+// 3D Koordinatensystem für Gerade
+var view = board.create('view3d',
+    [[-6, -3], [8, 8],
+    [[-5, 5], [-5, 5], [-5, 5]]],
+    {});
+
+// Koordinatenachsen
+var xAxis = view.create('line3d', [[0,0,0], [3,0,0]], {strokeColor: 'red', strokeWidth: 2});
+var yAxis = view.create('line3d', [[0,0,0], [0,3,0]], {strokeColor: 'green', strokeWidth: 2});
+var zAxis = view.create('line3d', [[0,0,0], [0,0,3]], {strokeColor: 'blue', strokeWidth: 2});
+
+// Gerade im Raum: g: x = (1,2,0) + t*(2,-1,3)
+var stützpunkt = view.create('point3d', [1,2,0], {name: 'Stützpunkt', size: 6, strokeColor: 'red'});
+
+// Richtungsvektor
+var richtungsvektor = view.create('line3d', [[1,2,0], [3,1,3]], {strokeColor: 'green', strokeWidth: 3, lastArrow: true});
+
+// Gerade (mehrere Punkte auf der Geraden)
+var gerade = view.create('line3d', [[-1,3,-3], [5,0,6]], {strokeColor: 'blue', strokeWidth: 2});
+
+// Weitere Punkte auf der Geraden
+view.create('point3d', [-1,3,-3], {size: 4, strokeColor: 'blue'});
+view.create('point3d', [3,1,3], {size: 4, strokeColor: 'blue'});
+view.create('point3d', [5,0,6], {size: 4, strokeColor: 'blue'});
+
+// Beschriftung
+view.create('text3d', [[2,-1,4], 'Gerade g'], {fontSize: 14, strokeColor: 'blue'});
+```
+
+:::
 
 ## Forschungsauftrag
 

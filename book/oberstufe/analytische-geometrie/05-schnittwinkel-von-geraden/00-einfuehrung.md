@@ -10,7 +10,43 @@ index: 0
 
 Nachdem du gelernt hast, wie man den Winkel zwischen zwei Vektoren berechnet, können wir dies nun auf Geraden anwenden. Der Schnittwinkel zwischen zwei Geraden ist der Winkel zwischen ihren Richtungsvektoren.
 
-![Schnittwinkel von Geraden](https://via.placeholder.com/400x300/397b96/ffffff?text=Schnittwinkel+von+Geraden)
+:::jsxgraph{height="500" width="600" boundingbox="[-8,8,8,-8]" axis=false grid=false}
+
+```js
+// 3D Visualisierung für Schnittwinkel von Geraden
+var view = board.create('view3d',
+    [[-6, -3], [8, 8],
+    [[-5, 5], [-5, 5], [-5, 5]]],
+    {});
+
+// Koordinatenachsen
+var xAxis = view.create('line3d', [[0,0,0], [3,0,0]], {strokeColor: 'red', strokeWidth: 2});
+var yAxis = view.create('line3d', [[0,0,0], [0,3,0]], {strokeColor: 'green', strokeWidth: 2});
+var zAxis = view.create('line3d', [[0,0,0], [0,0,3]], {strokeColor: 'blue', strokeWidth: 2});
+
+// Gerade 1: g1: x = (1,2,0) + t*(1,0,1)
+var line1 = view.create('line3d', [[-1,2,-2], [3,2,2]], {strokeColor: 'blue', strokeWidth: 3});
+var direction1 = view.create('line3d', [[1,2,0], [2,2,1]], {strokeColor: 'blue', strokeWidth: 4, lastArrow: true});
+
+// Gerade 2: g2: x = (0,2,1) + s*(1,1,0)  
+var line2 = view.create('line3d', [[-2,0,1], [2,4,1]], {strokeColor: 'red', strokeWidth: 3});
+var direction2 = view.create('line3d', [[0,2,1], [1,3,1]], {strokeColor: 'red', strokeWidth: 4, lastArrow: true});
+
+// Schnittpunkt
+var intersection = view.create('point3d', [1,2,0], {name: 'S', size: 8, strokeColor: 'purple'});
+
+// Winkel-Visualisierung (vereinfacht)
+var angleArc = view.create('line3d', [[2,2,1], [1,3,1]], {strokeColor: 'orange', strokeWidth: 2, dash: 2});
+
+// Beschriftungen
+view.create('text3d', [[1.5,2,0.5], 'v⃗₁'], {fontSize: 14, strokeColor: 'blue'});
+view.create('text3d', [[0.5,2.5,1], 'v⃗₂'], {fontSize: 14, strokeColor: 'red'});
+view.create('text3d', [[1.5,2.5,0.5], 'α'], {fontSize: 14, strokeColor: 'orange'});
+view.create('text3d', [[2.5,2,1], 'g₁'], {fontSize: 12, strokeColor: 'blue'});
+view.create('text3d', [[1.5,3.5,1], 'g₂'], {fontSize: 12, strokeColor: 'red'});
+```
+
+:::
 
 ## Was ist ein Schnittwinkel?
 

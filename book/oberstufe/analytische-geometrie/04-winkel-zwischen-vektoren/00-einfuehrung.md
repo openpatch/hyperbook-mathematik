@@ -10,7 +10,41 @@ index: 0
 
 Du weißt bereits, wie man das Skalarprodukt zweier Vektoren berechnet. Nun lernst du, wie du mithilfe des Skalarprodukts den Winkel zwischen zwei Vektoren bestimmen kannst.
 
-![Winkel zwischen Vektoren](https://via.placeholder.com/400x300/397b96/ffffff?text=Winkel+zwischen+Vektoren)
+:::jsxgraph{height="500" width="600" boundingbox="[-8,8,8,-8]" axis=false grid=false}
+
+```js
+// 3D Visualisierung für Winkel zwischen Vektoren
+var view = board.create('view3d',
+    [[-6, -3], [8, 8],
+    [[-5, 5], [-5, 5], [-5, 5]]],
+    {});
+
+// Koordinatenachsen
+var xAxis = view.create('line3d', [[0,0,0], [4,0,0]], {strokeColor: 'red', strokeWidth: 2});
+var yAxis = view.create('line3d', [[0,0,0], [0,4,0]], {strokeColor: 'green', strokeWidth: 2});
+var zAxis = view.create('line3d', [[0,0,0], [0,0,4]], {strokeColor: 'blue', strokeWidth: 2});
+
+// Ursprung
+var origin = view.create('point3d', [0,0,0], {name: 'O', size: 4, strokeColor: 'black'});
+
+// Vektoren a und b
+var vectorA = view.create('line3d', [[0,0,0], [3,0,0]], {strokeColor: 'red', strokeWidth: 4, lastArrow: true});
+var vectorB = view.create('line3d', [[0,0,0], [0,4,0]], {strokeColor: 'green', strokeWidth: 4, lastArrow: true});
+
+// Endpunkte der Vektoren
+var pointA = view.create('point3d', [3,0,0], {name: 'A(3,0,0)', size: 6, strokeColor: 'red'});
+var pointB = view.create('point3d', [0,4,0], {name: 'B(0,4,0)', size: 6, strokeColor: 'green'});
+
+// Winkel-Bogen (vereinfacht als Linie zwischen den Endpunkten)
+var angleLine = view.create('line3d', [[3,0,0], [0,4,0]], {strokeColor: 'purple', strokeWidth: 2, dash: 2});
+
+// Beschriftungen
+view.create('text3d', [[1.5,0,0.5], 'a⃗'], {fontSize: 16, strokeColor: 'red'});
+view.create('text3d', [[0,2,0.5], 'b⃗'], {fontSize: 16, strokeColor: 'green'});
+view.create('text3d', [[1.5,2,0], 'α = 90°'], {fontSize: 14, strokeColor: 'purple'});
+```
+
+:::
 
 ## Forschungsauftrag
 
