@@ -104,8 +104,10 @@ Die Richtungsvektoren sind linear abhängig → **Geraden sind parallel**.
 Um zu prüfen, ob sie identisch sind: Liegt der Punkt $(3|0|1)$ auf $g_1$?
 $$ \begin{pmatrix}3\\0\\1\end{pmatrix} = \begin{pmatrix}1\\2\\0\end{pmatrix} + t \cdot \begin{pmatrix}2\\1\\3\end{pmatrix} $$
 
-x: $3 = 1 + 2t \Rightarrow t = 1$
-y: $0 = 2 + t \Rightarrow t = -2$
+\begin{align*}
+x: \quad 3 &= 1 + 2t \quad \Rightarrow \quad t = 1 \\
+y: \quad 0 &= 2 + t \quad \Rightarrow \quad t = -2
+\end{align*}
 
 Widerspruch → **Geraden sind echt parallel**.
 
@@ -122,9 +124,11 @@ Schnittpunkt suchen:
 $$ \begin{pmatrix}1+t\\t\\2+t\end{pmatrix} = \begin{pmatrix}2s\\1\\1+s\end{pmatrix} $$
 
 System:
-- $1 + t = 2s$
-- $t = 1$
-- $2 + t = 1 + s$
+\begin{align*}
+1 + t &= 2s \\
+t &= 1 \\
+2 + t &= 1 + s
+\end{align*}
 
 Aus der zweiten Gleichung: $t = 1$
 Einsetzen in die erste: $1 + 1 = 2s \Rightarrow s = 1$

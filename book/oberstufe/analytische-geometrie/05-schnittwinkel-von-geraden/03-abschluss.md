@@ -211,9 +211,11 @@ Prüfung auf Parallelität: Richtungsvektoren $$ \begin{pmatrix}1\\1\\0\end{pmat
 Schnittpunkt suchen: $$ \begin{pmatrix}1+t\\t\\0\end{pmatrix} = \begin{pmatrix}0\\s\\1+s\end{pmatrix} $$
 
 Gleichungssystem:
-- $1 + t = 0 \Rightarrow t = -1$
-- $t = s \Rightarrow s = -1$  
-- $0 = 1 + s \Rightarrow s = -1$
+\begin{align*}
+1 + t &= 0 \quad \Rightarrow \quad t = -1 \\
+t &= s \quad \Rightarrow \quad s = -1 \\
+0 &= 1 + s \quad \Rightarrow \quad s = -1
+\end{align*}
 
 Die dritte Gleichung ist erfüllt, aber die erste ergibt $0 = 1$ (Widerspruch).
 
