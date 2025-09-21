@@ -75,9 +75,9 @@ Berechne den Winkel zwischen $$ \vec{p} = \begin{pmatrix}2\\1\\2\end{pmatrix} $$
 
 | Situation | Skalarprodukt | Cosinus-Wert | Winkel |
 |-----------|---------------|--------------|--------|
-| Gleiche Richtung | $\vec{a} \cdot \vec{b} = |\vec{a}| \cdot |\vec{b}|$ | $\cos(\alpha) = 1$ | $\alpha = 0°$ |
+| Gleiche Richtung | $\vec{a} \cdot \vec{b} = \lvert\vec{a}\rvert \cdot \lvert\vec{b}\rvert$ | $\cos(\alpha) = 1$ | $\alpha = 0°$ |
 | Orthogonal | $\vec{a} \cdot \vec{b} = 0$ | $\cos(\alpha) = 0$ | $\alpha = 90°$ |
-| Entgegengesetzt | $\vec{a} \cdot \vec{b} = -|\vec{a}| \cdot |\vec{b}|$ | $\cos(\alpha) = -1$ | $\alpha = 180°$ |
+| Entgegengesetzt | $\vec{a} \cdot \vec{b} = -\lvert\vec{a}\rvert \cdot \lvert\vec{b}\rvert$ | $\cos(\alpha) = -1$ | $\alpha = 180°$ |
 
 :::
 

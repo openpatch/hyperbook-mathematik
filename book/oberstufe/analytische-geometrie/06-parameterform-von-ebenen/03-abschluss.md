@@ -197,7 +197,10 @@ Ein dreieckiges Dachfenster wird durch drei Eckpunkte definiert:
 :::snippet{#aufgabe}
 
 Zeige, dass die folgenden Gleichungen dieselbe Ebene beschreiben:
+
+
 $$ E_1: \vec{x} = \begin{pmatrix}1\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}0\\1\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\0\\1\end{pmatrix} $$
+
 $$ E_2: \vec{x} = \begin{pmatrix}2\\1\\1\end{pmatrix} + u \cdot \begin{pmatrix}0\\2\\0\end{pmatrix} + v \cdot \begin{pmatrix}0\\0\\3\end{pmatrix} $$
 
 :::
