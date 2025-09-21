@@ -10,21 +10,25 @@ lang: de
 
 Berechne die Beträge der folgenden Vektoren:
 
+$$
 \begin{align*}
 \vec{a} &= \begin{pmatrix}3\\4\\0\end{pmatrix} \\
 \vec{b} &= \begin{pmatrix}1\\-2\\2\end{pmatrix} \\
 \vec{c} &= \begin{pmatrix}-2\\-3\\6\end{pmatrix}
 \end{align*}
+$$
 
 :::collapsible{title="Musterlösung" id="vec-magnitude-sol-001"}
 
 Formel für den Betrag: $$ |\vec{v}| = \sqrt{v_1^2 + v_2^2 + v_3^2} $$
 
+$$
 \begin{align*}
 |\vec{a}| &= \sqrt{3^2 + 4^2 + 0^2} = \sqrt{9 + 16 + 0} = \sqrt{25} = 5 \\
 |\vec{b}| &= \sqrt{1^2 + (-2)^2 + 2^2} = \sqrt{1 + 4 + 4} = \sqrt{9} = 3 \\
 |\vec{c}| &= \sqrt{(-2)^2 + (-3)^2 + 6^2} = \sqrt{4 + 9 + 36} = \sqrt{49} = 7
 \end{align*}
+$$
 
 :::
 
@@ -34,10 +38,12 @@ Formel für den Betrag: $$ |\vec{v}| = \sqrt{v_1^2 + v_2^2 + v_3^2} $$
 
 Bestimme die Einheitsvektoren zu den gegebenen Vektoren:
 
+$$
 \begin{align*}
 \vec{u} &= \begin{pmatrix}6\\0\\8\end{pmatrix} \\
 \vec{v} &= \begin{pmatrix}2\\-1\\2\end{pmatrix}
 \end{align*}
+$$
 
 :::collapsible{title="Musterlösung" id="unit-vectors-sol-001"}
 
@@ -110,19 +116,27 @@ b) $$ \vec{c} = \begin{pmatrix}2\\2\\1\end{pmatrix} $$, $$ \vec{d} = \begin{pmat
 Formel: $$ \cos(\alpha) = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}| \cdot |\vec{v}|} $$
 
 a) Für $\vec{a}$ und $\vec{b}$:
+
+$$
 \begin{align*}
 \vec{a} \cdot \vec{b} &= 1 \cdot 1 + 0 \cdot 1 + 0 \cdot 0 = 1 \\
 |\vec{a}| &= 1, \quad |\vec{b}| = \sqrt{1 + 1} = \sqrt{2} \\
 \cos(\alpha) &= \frac{1}{1 \cdot \sqrt{2}} = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}
 \end{align*}
+$$
+
 Daher ist $\alpha = 45°$.
 
 b) Für $\vec{c}$ und $\vec{d}$:
+
+$$
 \begin{align*}
 \vec{c} \cdot \vec{d} &= 2 \cdot 1 + 2 \cdot (-1) + 1 \cdot 2 = 2 - 2 + 2 = 2 \\
 |\vec{c}| &= \sqrt{4 + 4 + 1} = 3, \quad |\vec{d}| = \sqrt{1 + 1 + 4} = \sqrt{6} \\
 \cos(\alpha) &= \frac{2}{3\sqrt{6}} = \frac{2\sqrt{6}}{18} = \frac{\sqrt{6}}{9}
 \end{align*}
+$$
+
 Daher ist $\alpha \approx 73{,}2°$.
 
 :::
@@ -164,22 +178,28 @@ b) $Q(0|4|2)$ auf $h: \vec{x} = \begin{pmatrix}2\\2\\0\end{pmatrix} + s \cdot \b
 a) Ansatz: $$ \begin{pmatrix}7\\1\\5\end{pmatrix} = \begin{pmatrix}1\\3\\1\end{pmatrix} + t \cdot \begin{pmatrix}2\\-1\\2\end{pmatrix} $$
 
 Komponentenweise:
+
+$$
 \begin{align*}
 x: \quad 7 &= 1 + 2t \quad \Rightarrow \quad t = 3 \\
 y: \quad 1 &= 3 - t \quad \Rightarrow \quad t = 2 \\
 z: \quad 5 &= 1 + 2t \quad \Rightarrow \quad t = 2
 \end{align*}
+$$
 
 Widerspruch: $t = 3$ vs. $t = 2$. Punkt $P$ liegt **nicht** auf der Geraden.
 
 b) Ansatz: $$ \begin{pmatrix}0\\4\\2\end{pmatrix} = \begin{pmatrix}2\\2\\0\end{pmatrix} + s \cdot \begin{pmatrix}-1\\1\\1\end{pmatrix} $$
 
 Komponentenweise:
+
+$$
 \begin{align*}
 x: \quad 0 &= 2 - s \quad \Rightarrow \quad s = 2 \\
 y: \quad 4 &= 2 + s \quad \Rightarrow \quad s = 2 \\
 z: \quad 2 &= 0 + s \quad \Rightarrow \quad s = 2
 \end{align*}
+$$
 
 Alle Gleichungen ergeben $s = 2$. Punkt $Q$ liegt **auf** der Geraden.
 
@@ -207,10 +227,12 @@ Die Geraden sind **parallel** oder **identisch**.
 Prüfung: Liegt $(1|0|2)$ auf $g_2$?
 $$ \begin{pmatrix}1\\0\\2\end{pmatrix} = \begin{pmatrix}3\\2\\0\end{pmatrix} + s \cdot \begin{pmatrix}4\\2\\-2\end{pmatrix} $$
 
+$$
 \begin{align*}
 x: \quad 1 &= 3 + 4s \quad \Rightarrow \quad s = -\frac{1}{2} \\
 y: \quad 0 &= 2 + 2s \quad \Rightarrow \quad s = -1
 \end{align*}
+$$
 
 Widerspruch → Die Geraden sind **echt parallel**.
 
@@ -232,12 +254,14 @@ Formel für Schnittwinkel: $$ \cos(\alpha) = \frac{|\vec{v_1} \cdot \vec{v_2}|}{
 
 Mit $\vec{v_1} = \begin{pmatrix}1\\0\\1\end{pmatrix}$ und $\vec{v_2} = \begin{pmatrix}0\\1\\2\end{pmatrix}$:
 
+$$
 \begin{align*}
 \vec{v_1} \cdot \vec{v_2} &= 1 \cdot 0 + 0 \cdot 1 + 1 \cdot 2 = 2 \\
 |\vec{v_1}| &= \sqrt{1 + 0 + 1} = \sqrt{2} \\
 |\vec{v_2}| &= \sqrt{0 + 1 + 4} = \sqrt{5} \\
 \cos(\alpha) &= \frac{|2|}{\sqrt{2} \cdot \sqrt{5}} = \frac{2}{\sqrt{10}} = \frac{2\sqrt{10}}{10} = \frac{\sqrt{10}}{5}
 \end{align*}
+$$
 
 Daher ist $\alpha \approx 50{,}8°$.
 
@@ -256,10 +280,13 @@ $A(1|0|2)$, $B(3|1|0)$, $C(0|2|1)$
 Stützvektor: $$ \vec{OA} = \begin{pmatrix}1\\0\\2\end{pmatrix} $$
 
 Spannvektoren:
+
+$$
 \begin{align*}
 \vec{AB} &= \begin{pmatrix}3\\1\\0\end{pmatrix} - \begin{pmatrix}1\\0\\2\end{pmatrix} = \begin{pmatrix}2\\1\\-2\end{pmatrix} \\
 \vec{AC} &= \begin{pmatrix}0\\2\\1\end{pmatrix} - \begin{pmatrix}1\\0\\2\end{pmatrix} = \begin{pmatrix}-1\\2\\-1\end{pmatrix}
 \end{align*}
+$$
 
 Ebenengleichung:
 $$ E: \vec{x} = \begin{pmatrix}1\\0\\2\end{pmatrix} + r \cdot \begin{pmatrix}2\\1\\-2\end{pmatrix} + s \cdot \begin{pmatrix}-1\\2\\-1\end{pmatrix} $$
@@ -279,11 +306,14 @@ $$ E: \vec{x} = \begin{pmatrix}1\\1\\2\end{pmatrix} + r \cdot \begin{pmatrix}1\\
 Ansatz: $$ \begin{pmatrix}2\\3\\1\end{pmatrix} = \begin{pmatrix}1\\1\\2\end{pmatrix} + r \cdot \begin{pmatrix}1\\0\\1\end{pmatrix} + s \cdot \begin{pmatrix}0\\2\\-1\end{pmatrix} $$
 
 Gleichungssystem:
+
+$$
 \begin{align*}
 x: \quad 2 &= 1 + r \quad \Rightarrow \quad r = 1 \\
 y: \quad 3 &= 1 + 2s \quad \Rightarrow \quad s = 1 \\
 z: \quad 1 &= 2 + r - s = 2 + 1 - 1 = 2
 \end{align*}
+$$
 
 Widerspruch in der z-Komponente: $1 \neq 2$.
 
