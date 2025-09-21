@@ -21,16 +21,22 @@ c) Berechne das Skalarprodukt $$ \vec{a} \cdot \vec{b} $$.
 :::collapsible{title="Musterlösung" id="f1e2d3c4-5b6a-7c8d-9e0f-123456789abc"}
 
 a) Vektoraddition und -subtraktion:
+
+$$
 \begin{align*}
 \vec{a} + \vec{b} &= \begin{pmatrix}2\\-1\\3\end{pmatrix} + \begin{pmatrix}1\\2\\-1\end{pmatrix} = \begin{pmatrix}3\\1\\2\end{pmatrix} \\
 \vec{a} - \vec{b} &= \begin{pmatrix}2\\-1\\3\end{pmatrix} - \begin{pmatrix}1\\2\\-1\end{pmatrix} = \begin{pmatrix}1\\-3\\4\end{pmatrix}
 \end{align*}
+$$
 
 b) Beträge der Vektoren:
+
+$$
 \begin{align*}
 |\vec{a}| &= \sqrt{2^2 + (-1)^2 + 3^2} = \sqrt{4 + 1 + 9} = \sqrt{14} \\
 |\vec{b}| &= \sqrt{1^2 + 2^2 + (-1)^2} = \sqrt{1 + 4 + 1} = \sqrt{6}
 \end{align*}
+$$
 
 c) Skalarprodukt:
 $$ \vec{a} \cdot \vec{b} = 2 \cdot 1 + (-1) \cdot 2 + 3 \cdot (-1) = 2 - 2 - 3 = -3 $$
@@ -49,11 +55,14 @@ Formel für den Winkel zwischen Vektoren:
 $$ \cos(\alpha) = \frac{\vec{u} \cdot \vec{v}}{|\vec{u}| \cdot |\vec{v}|} $$
 
 Berechnung der benötigten Werte:
+
+$$
 \begin{align*}
 \vec{u} \cdot \vec{v} &= 3 \cdot 0 + 0 \cdot 5 + 4 \cdot 0 = 0 \\
 |\vec{u}| &= \sqrt{3^2 + 0^2 + 4^2} = \sqrt{9 + 16} = 5 \\
 |\vec{v}| &= \sqrt{0^2 + 5^2 + 0^2} = 5
 \end{align*}
+$$
 
 Einsetzen:
 $$ \cos(\alpha) = \frac{0}{5 \cdot 5} = 0 $$
@@ -77,11 +86,14 @@ a) Punktprobe für $$ P(5|0|6) $$:
 Ansatz: $$ \begin{pmatrix}5\\0\\6\end{pmatrix} = \begin{pmatrix}1\\2\\0\end{pmatrix} + t \cdot \begin{pmatrix}2\\-1\\3\end{pmatrix} $$
 
 Komponentenweise:
+
+$$
 \begin{align*}
 x: \quad 5 &= 1 + 2t \quad \Rightarrow \quad t = 2 \\
 y: \quad 0 &= 2 - t \quad \Rightarrow \quad t = 2 \\
 z: \quad 6 &= 0 + 3t \quad \Rightarrow \quad t = 2
 \end{align*}
+$$
 
 Alle Gleichungen ergeben $t = 2$, daher liegt $P$ auf der Geraden.
 
@@ -105,11 +117,14 @@ Liegt der Punkt $$ Q(3|2|2) $$ auf der Ebene?
 Ansatz: $$ \begin{pmatrix}3\\2\\2\end{pmatrix} = \begin{pmatrix}2\\0\\1\end{pmatrix} + r \cdot \begin{pmatrix}1\\1\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\1\\1\end{pmatrix} $$
 
 Gleichungssystem:
+
+$$
 \begin{align*}
 x: \quad 3 &= 2 + r \quad \Rightarrow \quad r = 1 \\
 y: \quad 2 &= 0 + r + s \quad \Rightarrow \quad 1 + s = 2 \quad \Rightarrow \quad s = 1 \\
 z: \quad 2 &= 1 + s \quad \Rightarrow \quad s = 1
 \end{align*}
+$$
 
 Das System ist lösbar mit $r = 1, s = 1$. Der Punkt $Q$ liegt auf der Ebene.
 
@@ -168,10 +183,13 @@ b) Ein Schornstein soll am Punkt $$ S(5|4|h) $$ durch das Dach geführt werden. 
 :::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567"}
 
 a) Dachebene mit Stützvektor $\vec{OA} = \begin{pmatrix}0\\0\\3\end{pmatrix}$ und Spannvektoren:
+
+$$
 \begin{align*}
 \vec{AB} &= \begin{pmatrix}10\\0\\0\end{pmatrix} \\
 \vec{AD} &= \begin{pmatrix}0\\8\\2\end{pmatrix}
 \end{align*}
+$$
 
 Dachebene: $$ E: \vec{x} = \begin{pmatrix}0\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}10\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\8\\2\end{pmatrix} $$
 
@@ -180,11 +198,14 @@ b) Für den Schornstein am Punkt $$ S(5|4|h) $$:
 $$ \begin{pmatrix}5\\4\\h\end{pmatrix} = \begin{pmatrix}0\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}10\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\8\\2\end{pmatrix} $$
 
 Gleichungssystem:
+
+$$
 \begin{align*}
 x: \quad 5 &= 0 + 10r \quad \Rightarrow \quad r = 0{,}5 \\
 y: \quad 4 &= 0 + 8s \quad \Rightarrow \quad s = 0{,}5 \\
 z: \quad h &= 3 + 2s = 3 + 1 = 4
 \end{align*}
+$$
 
 Der Schornstein durchstößt das Dach bei $h = 4$ m.
 
@@ -214,11 +235,14 @@ Schnittpunkt suchen:
 $$ \begin{pmatrix}1+2t\\t\\2-t\end{pmatrix} = \begin{pmatrix}s\\1-s\\1+s\end{pmatrix} $$
 
 Gleichungssystem:
+
+$$
 \begin{align*}
 1 + 2t &= s \\
 t &= 1 - s \\
 2 - t &= 1 + s
 \end{align*}
+$$
 
 Aus (2): $s = 1 - t$, einsetzen in (1): $1 + 2t = 1 - t \Rightarrow t = 0$
 Also $s = 1$.
@@ -232,11 +256,13 @@ b) Schnittpunkt: $$ S = \begin{pmatrix}1\\0\\2\end{pmatrix} $$
 c) Schnittwinkel:
 $$ \cos(\alpha) = \frac{|\vec{v_1} \cdot \vec{v_2}|}{|\vec{v_1}| \cdot |\vec{v_2}|} $$
 
+$$
 \begin{align*}
 \vec{v_1} \cdot \vec{v_2} &= 2 \cdot 1 + 1 \cdot (-1) + (-1) \cdot 1 = 0 \\
 |\vec{v_1}| &= \sqrt{4 + 1 + 1} = \sqrt{6} \\
 |\vec{v_2}| &= \sqrt{1 + 1 + 1} = \sqrt{3}
 \end{align*}
+$$
 
 $$ \cos(\alpha) = \frac{0}{\sqrt{6} \cdot \sqrt{3}} = 0 $$
 
