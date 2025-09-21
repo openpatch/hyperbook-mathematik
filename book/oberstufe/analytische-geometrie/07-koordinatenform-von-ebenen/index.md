@@ -1,4 +1,4 @@
 ---
-name: 🚧 Koordinatenform von Ebenen
+name: Koordinatenform von Ebenen
 index: 7
 ---
