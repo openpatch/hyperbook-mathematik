@@ -25,7 +25,10 @@ var yAxis = view.create('line3d', [[0,0,0], [0,3,0]], {strokeColor: 'green', str
 var zAxis = view.create('line3d', [[0,0,0], [0,0,3]], {strokeColor: 'blue', strokeWidth: 2});
 
 // Gerade im Raum: g: x = (1,2,0) + t*(2,-1,3)
-var stützpunkt = view.create('point3d', [1,2,0], {name: 'Stützpunkt', size: 6, strokeColor: 'red'});
+var stützpunkt = view.create('point3d', [1,2,0], {size: 6, strokeColor: 'red'});
+
+// Stützvektor
+var stützvektor = view.create('line3d', [[0,0,0], [1,2,0]], {strokeColor: 'red', strokeWidth: 3, lastArrow: true});
 
 // Richtungsvektor
 var richtungsvektor = view.create('line3d', [[1,2,0], [3,1,3]], {strokeColor: 'green', strokeWidth: 3, lastArrow: true});
@@ -38,8 +41,9 @@ view.create('point3d', [-1,3,-3], {size: 4, strokeColor: 'blue'});
 view.create('point3d', [3,1,3], {size: 4, strokeColor: 'blue'});
 view.create('point3d', [5,0,6], {size: 4, strokeColor: 'blue'});
 
-// Beschriftung
 view.create('text3d', [[2,-1,4], 'Gerade g'], {fontSize: 14, strokeColor: 'blue'});
+view.create('text3d', [[1,2,0.5], 'Stützvektor'], {fontSize: 14, strokeColor: 'red'});
+view.create('text3d', [[2,1,1.5], 'Richtungsvektor v'], {fontSize: 14, strokeColor: 'green'});
 ```
 
 :::
