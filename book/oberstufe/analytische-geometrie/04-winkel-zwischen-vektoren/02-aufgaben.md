@@ -187,13 +187,13 @@ Zwei Kräfte $$ \vec{F_1} = \begin{pmatrix}30\\40\\0\end{pmatrix} $$ N und $$ \v
    
    Cosinus: $$ \cos(\alpha) = \frac{600}{50 \cdot 10\sqrt{13}} = \frac{6}{5\sqrt{13}} $$
    
-   Winkel: $$ \alpha \approx 56{,}3° $$
+   Winkel: $$ \alpha \approx 70{,}07° $$
 
 2. **Resultierende Kraft**:
    
    $$ \vec{F_R} = \begin{pmatrix}30\\40\\0\end{pmatrix} + \begin{pmatrix}20\\0\\30\end{pmatrix} = \begin{pmatrix}50\\40\\30\end{pmatrix} $$
    
-   Betrag: $$ |\vec{F_R}| = \sqrt{50^2 + 40^2 + 30^2} = \sqrt{4100} \approx 64{,}0 \text{ N} $$
+   Betrag: $$ |\vec{F_R}| = \sqrt{50^2 + 40^2 + 30^2} \approx 70{,}71 \text{ N} $$
 
 :::
 
