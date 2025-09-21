@@ -1,4 +1,4 @@
 ---
-name: 🚧 Winkel zwischen Vektoren
+name: Winkel zwischen Vektoren
 index: 4
 ---
