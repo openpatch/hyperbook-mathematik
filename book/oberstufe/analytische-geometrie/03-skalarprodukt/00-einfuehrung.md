@@ -8,7 +8,35 @@ index: 0
 
 Folgendes Schaubild zeigt die Vektoren $$ \vec{a} = \begin{pmatrix}-4\\6\end{pmatrix} $$ und $$ \vec{b} = \begin{pmatrix}3\\2\end{pmatrix} $$.
 
-![](./vektoren-rechteck.png)
+:::jsxgraph{height="400" width="500" boundingbox="[-6,8,5,-2]" axis=true grid=true}
+
+```js
+// Vektoren für das Skalarprodukt (2D Darstellung)
+var origin = board.create('point', [0,0], {name: 'O', size: 4, color: 'black'});
+
+// Vektor a
+var pointA = board.create('point', [-4,6], {name: 'A(-4|6)', size: 6, color: 'blue'});
+var vectorA = board.create('arrow', [origin, pointA], {strokeColor: 'blue', strokeWidth: 3});
+
+// Vektor b  
+var pointB = board.create('point', [3,2], {name: 'B(3|2)', size: 6, color: 'red'});
+var vectorB = board.create('arrow', [origin, pointB], {strokeColor: 'red', strokeWidth: 3});
+
+// Rechteck (Parallelogramm) zeigen
+var pointC = board.create('point', [-1,8], {name: 'C', size: 4, color: 'green'});
+var sideAC = board.create('line', [pointA, pointC], {strokeColor: 'gray', dash: 2});
+var sideBC = board.create('line', [pointB, pointC], {strokeColor: 'gray', dash: 2});
+
+// Diagonalen
+var diagonal1 = board.create('line', [origin, pointC], {strokeColor: 'purple', strokeWidth: 2, dash: 1});
+
+// Beschriftungen
+board.create('text', [-2,3], 'a⃗', {fontSize: 16, color: 'blue'});
+board.create('text', [1.5,1], 'b⃗', {fontSize: 16, color: 'red'});
+board.create('text', [-0.5,4], 'a⃗ + b⃗', {fontSize: 14, color: 'purple'});
+```
+
+:::
 
 ## Forschungsauftrag
 

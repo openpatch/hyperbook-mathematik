@@ -10,7 +10,49 @@ index: 0
 
 Du kennst bereits die Parameterform einer Geraden. Nun erweitern wir dieses Konzept auf Ebenen im dreidimensionalen Raum.
 
-![Ebene im Raum](https://via.placeholder.com/400x300/397b96/ffffff?text=Ebene+im+3D+Raum)
+:::jsxgraph{height="500" width="600" boundingbox="[-8,8,8,-8]" axis=false grid=false}
+
+```js
+// 3D Visualisierung für Ebenen
+var view = board.create('view3d',
+    [[-6, -3], [8, 8],
+    [[-5, 5], [-5, 5], [-5, 5]]],
+    {});
+
+// Koordinatenachsen
+var xAxis = view.create('line3d', [[0,0,0], [3,0,0]], {strokeColor: 'red', strokeWidth: 2});
+var yAxis = view.create('line3d', [[0,0,0], [0,3,0]], {strokeColor: 'green', strokeWidth: 2});
+var zAxis = view.create('line3d', [[0,0,0], [0,0,3]], {strokeColor: 'blue', strokeWidth: 2});
+
+// Ebene durch drei Punkte: A(1,0,2), B(3,1,1), C(0,2,3)
+var pointA = view.create('point3d', [1,0,2], {name: 'A', size: 6, strokeColor: 'red'});
+var pointB = view.create('point3d', [3,1,1], {name: 'B', size: 6, strokeColor: 'red'});
+var pointC = view.create('point3d', [0,2,3], {name: 'C', size: 6, strokeColor: 'red'});
+
+// Spannvektoren
+var vectorAB = view.create('line3d', [[1,0,2], [3,1,1]], {strokeColor: 'purple', strokeWidth: 3, lastArrow: true});
+var vectorAC = view.create('line3d', [[1,0,2], [0,2,3]], {strokeColor: 'orange', strokeWidth: 3, lastArrow: true});
+
+// Ebene als parametrische Fläche
+var plane = view.create('parametricsurface3d', [
+    function(u, v) { return 1 + u * 2 + v * (-1); },
+    function(u, v) { return 0 + u * 1 + v * 2; },
+    function(u, v) { return 2 + u * (-1) + v * 1; },
+    [-0.5, 1.5], [-0.5, 1.5]
+], {
+    strokeColor: 'lightblue',
+    strokeOpacity: 0.6,
+    fillColor: 'lightblue',
+    fillOpacity: 0.3
+});
+
+// Beschriftungen
+view.create('text3d', [[2.5,0.5,0.5], 'AB⃗'], {fontSize: 14, strokeColor: 'purple'});
+view.create('text3d', [[0.5,1,2.5], 'AC⃗'], {fontSize: 14, strokeColor: 'orange'});
+view.create('text3d', [[2,2,1], 'Ebene E'], {fontSize: 14, strokeColor: 'blue'});
+```
+
+:::
 
 ## Unterschied: Gerade vs. Ebene
 
