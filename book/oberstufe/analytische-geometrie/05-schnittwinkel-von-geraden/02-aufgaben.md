@@ -64,10 +64,44 @@ Die Richtungsvektoren sind linear abhängig → **Geraden sind parallel**. Sie s
 
 :::
 
-2. $$ g_3: \vec{x} = \begin{pmatrix}0\\1\\2\end{pmatrix} + t \cdot \begin{pmatrix}1\\0\\1\end{pmatrix} $$
+2. $$ g_3: \vec{x} = \begin{pmatrix}0\\0\\2\end{pmatrix} + t \cdot \begin{pmatrix}1\\0\\1\end{pmatrix} $$
    $$ g_4: \vec{x} = \begin{pmatrix}1\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}1\\2\\-1\end{pmatrix} $$
 
 :::collapsible{title="Lösung" id="44eebc99-9c0b-4ef8-bb6d-6bb9bd380a11"}
+
+Die Geraden schneiden sich, wenn es $t$ und $s$ gibt, so dass:
+
+$$
+
+\begin{align*}
+
+0 + t \cdot 1 & = 1 + s \cdot 1 \\
+0 + t \cdot 0 & = 0 + s \cdot 2 \\
+2 + t \cdot 1 & = 0 + s \cdot (-1) \\
+
+\end{align*}
+
+$$
+
+$$
+
+\begin{align*}
+
+t & = 1 + s \\
+t & = 2s \\
+2 + t & = -s \\
+
+\end{align*}
+
+$$
+
+$$
+
+2s = 1 + s \Rightarrow s = 1 \Rightarrow t = 2
+
+$$
+
+Die beiden Geraden schneiden sich.
 
 Richtungsvektoren: $$ \vec{v_1} = \begin{pmatrix}1\\0\\1\end{pmatrix} $$, $$ \vec{v_2} = \begin{pmatrix}1\\2\\-1\end{pmatrix} $$
 
