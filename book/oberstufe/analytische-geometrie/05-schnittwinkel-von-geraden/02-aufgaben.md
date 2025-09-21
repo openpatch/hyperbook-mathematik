@@ -9,7 +9,7 @@ index: 2
 ## Schnittwinkel berechnen
 
 :::snippet{#aufgabe}
-Berechne den Schnittwinkel der gegebenen Geraden.
+Berechne den Schnittwinkel der gegebenen Geraden. Gehe davon aus, dass die Geraden sich schneiden.
 :::
 
 1. $$ g_1: \vec{x} = \begin{pmatrix}0\\2\\3\end{pmatrix} + t \cdot \begin{pmatrix}1\\1\\0\end{pmatrix} $$
