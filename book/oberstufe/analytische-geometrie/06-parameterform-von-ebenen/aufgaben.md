@@ -65,7 +65,7 @@ $$
 
 :::
 
-## Ebene aus zwei Geraden sich schneidenden aufstellen
+## Ebene aus zwei sich schneidenden Geraden aufstellen
 
 Gegeben sind die Geraden g und f. Zeige, dass die Geraden sich schneiden. Gib die Parameterform der Ebene an, die durch die Geraden festgelegt ist.
 
