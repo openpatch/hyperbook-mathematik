@@ -68,9 +68,11 @@ Liegt der Punkt $$ P(7|-1|7) $$ auf der Geraden $$ g: \vec{x} = \begin{pmatrix}1
 Ansatz: $$ \begin{pmatrix}7\\-1\\7\end{pmatrix} = \begin{pmatrix}1\\3\\-2\end{pmatrix} + t \cdot \begin{pmatrix}3\\-2\\3\end{pmatrix} $$
 
 Komponentenweise:
-- x: $7 = 1 + 3t \Rightarrow t = 2$
-- y: $-1 = 3 - 2t \Rightarrow t = 2$
-- z: $7 = -2 + 3t \Rightarrow t = 3$
+\begin{align*}
+x: \quad 7 &= 1 + 3t \quad \Rightarrow \quad t = 2 \\
+y: \quad -1 &= 3 - 2t \quad \Rightarrow \quad t = 2 \\
+z: \quad 7 &= -2 + 3t \quad \Rightarrow \quad t = 3
+\end{align*}
 
 Da sich verschiedene Werte für $t$ ergeben, liegt P **nicht** auf der Geraden.
 

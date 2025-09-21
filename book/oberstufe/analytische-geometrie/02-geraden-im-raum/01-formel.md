@@ -68,9 +68,11 @@ Liegt $$ P(7|0|7) $$ auf $$ g: \vec{x} = \begin{pmatrix}1\\2\\3\end{pmatrix} + t
 Ansatz: $$ \begin{pmatrix}7\\0\\7\end{pmatrix} = \begin{pmatrix}1\\2\\3\end{pmatrix} + t \cdot \begin{pmatrix}3\\-1\\2\end{pmatrix} $$
 
 Komponentenweise:
-- x: $7 = 1 + 3t \Rightarrow t = 2$
-- y: $0 = 2 - t \Rightarrow t = 2$
-- z: $7 = 3 + 2t \Rightarrow t = 2$
+\begin{align*}
+x: \quad 7 &= 1 + 3t \quad \Rightarrow \quad t = 2 \\
+y: \quad 0 &= 2 - t \quad \Rightarrow \quad t = 2 \\
+z: \quad 7 &= 3 + 2t \quad \Rightarrow \quad t = 2
+\end{align*}
 
 Ja, P liegt auf der Geraden mit $t = 2$.
 

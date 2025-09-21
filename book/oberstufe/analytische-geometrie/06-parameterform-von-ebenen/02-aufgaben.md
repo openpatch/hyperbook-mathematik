@@ -69,9 +69,11 @@ Ebene: $$ E: \vec{x} = \begin{pmatrix}1\\2\\0\end{pmatrix} + r \cdot \begin{pmat
 Ansatz: $$ \begin{pmatrix}2\\2\\1\end{pmatrix} = \begin{pmatrix}1\\2\\0\end{pmatrix} + r \cdot \begin{pmatrix}1\\0\\1\end{pmatrix} + s \cdot \begin{pmatrix}0\\1\\2\end{pmatrix} $$
 
 Gleichungssystem:
-- x: $2 = 1 + r \Rightarrow r = 1$
-- y: $2 = 2 + s \Rightarrow s = 0$
-- z: $1 = 0 + r + 2s = 1 + 0 = 1$ ✓
+\begin{align*}
+x: \quad 2 &= 1 + r \quad \Rightarrow \quad r = 1 \\
+y: \quad 2 &= 2 + s \quad \Rightarrow \quad s = 0 \\
+z: \quad 1 &= 0 + r + 2s = 1 + 0 = 1 \quad \checkmark
+\end{align*}
 
 **P liegt auf der Ebene** mit $r = 1, s = 0$.
 
@@ -84,9 +86,11 @@ Gleichungssystem:
 Ansatz: $$ \begin{pmatrix}1\\4\\4\end{pmatrix} = \begin{pmatrix}1\\2\\0\end{pmatrix} + r \cdot \begin{pmatrix}1\\0\\1\end{pmatrix} + s \cdot \begin{pmatrix}0\\1\\2\end{pmatrix} $$
 
 Gleichungssystem:
-- x: $1 = 1 + r \Rightarrow r = 0$
-- y: $4 = 2 + s \Rightarrow s = 2$
-- z: $4 = 0 + 0 + 4 = 4$ ✓
+\begin{align*}
+x: \quad 1 &= 1 + r \quad \Rightarrow \quad r = 0 \\
+y: \quad 4 &= 2 + s \quad \Rightarrow \quad s = 2 \\
+z: \quad 4 &= 0 + 0 + 4 = 4 \quad \checkmark
+\end{align*}
 
 **Q liegt auf der Ebene** mit $r = 0, s = 2$.
 
@@ -218,9 +222,11 @@ $$ A(0|0|1) $$, $$ B(2|0|1) $$, $$ C(1|1{,}5|1) $$
    $$ \begin{pmatrix}1\\0{,}5\\1\end{pmatrix} = \begin{pmatrix}0\\0\\1\end{pmatrix} + r \cdot \begin{pmatrix}2\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}1\\1{,}5\\0\end{pmatrix} $$
    
    System:
-   - x: $1 = 0 + 2r + s$
-   - y: $0{,}5 = 0 + 0 + 1{,}5s \Rightarrow s = \frac{1}{3}$
-   - z: $1 = 1 + 0 + 0$ ✓
+   \begin{align*}
+   x: \quad 1 &= 0 + 2r + s \\
+   y: \quad 0{,}5 &= 0 + 0 + 1{,}5s \quad \Rightarrow \quad s = \frac{1}{3} \\
+   z: \quad 1 &= 1 + 0 + 0 \quad \checkmark
+   \end{align*}
    
    Aus der ersten Gleichung: $1 = 2r + \frac{1}{3} \Rightarrow r = \frac{1}{3}$
    

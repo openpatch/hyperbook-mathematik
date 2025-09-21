@@ -73,9 +73,11 @@ Liegt $$ P(4|3|0) $$ auf $$ E: \vec{x} = \begin{pmatrix}1\\0\\2\end{pmatrix} + r
 Ansatz: $$ \begin{pmatrix}4\\3\\0\end{pmatrix} = \begin{pmatrix}1\\0\\2\end{pmatrix} + r \cdot \begin{pmatrix}2\\1\\-1\end{pmatrix} + s \cdot \begin{pmatrix}-1\\2\\1\end{pmatrix} $$
 
 Gleichungssystem:
-- x: $4 = 1 + 2r - s \Rightarrow 2r - s = 3$
-- y: $3 = 0 + r + 2s \Rightarrow r + 2s = 3$
-- z: $0 = 2 - r + s \Rightarrow -r + s = -2$
+\begin{align*}
+x: \quad 4 &= 1 + 2r - s \quad \Rightarrow \quad 2r - s = 3 \\
+y: \quad 3 &= 0 + r + 2s \quad \Rightarrow \quad r + 2s = 3 \\
+z: \quad 0 &= 2 - r + s \quad \Rightarrow \quad -r + s = -2
+\end{align*}
 
 Lösung: $r = 1, s = 1$ → Ja, P liegt auf der Ebene.
 

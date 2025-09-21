@@ -68,9 +68,11 @@ Liegt der Punkt $$ P(2|3|0) $$ auf der Ebene $$ E: \vec{x} = \begin{pmatrix}1\\0
 Ansatz: $$ \begin{pmatrix}2\\3\\0\end{pmatrix} = \begin{pmatrix}1\\0\\2\end{pmatrix} + r \cdot \begin{pmatrix}1\\1\\-1\end{pmatrix} + s \cdot \begin{pmatrix}-1\\2\\1\end{pmatrix} $$
 
 Gleichungssystem:
-- x: $2 = 1 + r - s \Rightarrow r - s = 1$
-- y: $3 = 0 + r + 2s \Rightarrow r + 2s = 3$
-- z: $0 = 2 - r + s \Rightarrow -r + s = -2$
+\begin{align*}
+x: \quad 2 &= 1 + r - s \quad \Rightarrow \quad r - s = 1 \\
+y: \quad 3 &= 0 + r + 2s \quad \Rightarrow \quad r + 2s = 3 \\
+z: \quad 0 &= 2 - r + s \quad \Rightarrow \quad -r + s = -2
+\end{align*}
 
 Aus (1) und (3): $r - s = 1$ und $-r + s = -2$
 Addition: $0 = -1$ → Widerspruch!
@@ -135,9 +137,11 @@ Bestimme die Parameter $r$ und $s$, für die der Punkt $$ P(3|1|4) $$ auf der Eb
 Ansatz: $$ \begin{pmatrix}3\\1\\4\end{pmatrix} = \begin{pmatrix}1\\0\\1\end{pmatrix} + r \cdot \begin{pmatrix}1\\1\\1\end{pmatrix} + s \cdot \begin{pmatrix}0\\-1\\2\end{pmatrix} $$
 
 Gleichungssystem:
-- x: $3 = 1 + r \Rightarrow r = 2$
-- y: $1 = 0 + r - s = 2 - s \Rightarrow s = 1$
-- z: $4 = 1 + r + 2s = 1 + 2 + 2 = 5$ ✗
+\begin{align*}
+x: \quad 3 &= 1 + r \quad \Rightarrow \quad r = 2 \\
+y: \quad 1 &= 0 + r - s = 2 - s \quad \Rightarrow \quad s = 1 \\
+z: \quad 4 &= 1 + r + 2s = 1 + 2 + 2 = 5 \quad \times
+\end{align*}
 
 Das System ist **nicht lösbar** → P liegt nicht auf der Ebene.
 
@@ -176,9 +180,11 @@ Ein dreieckiges Dachfenster wird durch drei Eckpunkte definiert:
    $$ \begin{pmatrix}3\\0{,}5\\3{,}5\end{pmatrix} = \begin{pmatrix}2\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}2\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}1\\1\\1\end{pmatrix} $$
    
    System:
-   - x: $3 = 2 + 2r + s$
-   - y: $0{,}5 = 0 + 0 + s \Rightarrow s = 0{,}5$
-   - z: $3{,}5 = 3 + 0 + s = 3 + 0{,}5 = 3{,}5$ ✓
+   \begin{align*}
+   x: \quad 3 &= 2 + 2r + s \\
+   y: \quad 0{,}5 &= 0 + 0 + s \quad \Rightarrow \quad s = 0{,}5 \\
+   z: \quad 3{,}5 &= 3 + 0 + s = 3 + 0{,}5 = 3{,}5 \quad \checkmark
+   \end{align*}
    
    Aus der ersten Gleichung: $1 = 2r + 0{,}5 \Rightarrow r = 0{,}25$
    
