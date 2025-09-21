@@ -1,5 +1,5 @@
 ---
-name: 🚧 Schnittwinkel von Geraden
+name: Schnittwinkel von Geraden
 index: 5
 ---
 

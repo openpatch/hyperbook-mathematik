@@ -1,4 +1,4 @@
 ---
-name: 🚧 Punkte und Vektoren im Raum
+name: Punkte und Vektoren im Raum
 index: 1
 ---

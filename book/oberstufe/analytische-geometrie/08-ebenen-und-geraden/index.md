@@ -1,4 +1,4 @@
 ---
-name: 🚧 Ebenen und Geraden
+name: Ebenen und Geraden
 index: 8
 ---
