@@ -50,11 +50,15 @@ $$
 Einheitsvektor: $$ \vec{e} = \frac{\vec{v}}{|\vec{v}|} $$
 
 Für $\vec{u}$:
+
 $$ |\vec{u}| = \sqrt{6^2 + 0^2 + 8^2} = \sqrt{36 + 64} = 10 $$
+
 $$ \vec{e_u} = \frac{1}{10} \begin{pmatrix}6\\0\\8\end{pmatrix} = \begin{pmatrix}0{,}6\\0\\0{,}8\end{pmatrix} $$
 
 Für $\vec{v}$:
+
 $$ |\vec{v}| = \sqrt{2^2 + (-1)^2 + 2^2} = \sqrt{4 + 1 + 4} = 3 $$
+
 $$ \vec{e_v} = \frac{1}{3} \begin{pmatrix}2\\-1\\2\end{pmatrix} = \begin{pmatrix}\frac{2}{3}\\-\frac{1}{3}\\\frac{2}{3}\end{pmatrix} $$
 
 :::
@@ -89,6 +93,8 @@ a) $$ \vec{p} = \begin{pmatrix}3\\-2\\1\end{pmatrix} $$, $$ \vec{q} = \begin{pma
 
 b) $$ \vec{r} = \begin{pmatrix}1\\-1\\1\end{pmatrix} $$, $$ \vec{s} = \begin{pmatrix}1\\2\\1\end{pmatrix} $$
 
+c) $$ \vec{v} = \begin{pmatrix}1\\-2\\3\end{pmatrix} $$, $$ \vec{w} = \begin{pmatrix}4\\5\\6\end{pmatrix} $$
+
 :::collapsible{title="Musterlösung" id="orthogonality-sol-001"}
 
 Zwei Vektoren sind orthogonal, wenn ihr Skalarprodukt null ist.
@@ -98,6 +104,31 @@ a) $$ \vec{p} \cdot \vec{q} = 3 \cdot 2 + (-2) \cdot 3 + 1 \cdot 0 = 6 - 6 + 0 =
 
 b) $$ \vec{r} \cdot \vec{s} = 1 \cdot 1 + (-1) \cdot 2 + 1 \cdot 1 = 1 - 2 + 1 = 0 $$
 → Die Vektoren sind **orthogonal**.
+
+c) $$ \vec{v} \cdot \vec{w} = 1 \cdot 4 + (-2) \cdot 5 + 3 \cdot 6 = 4 - 10 + 18 = 12 $$
+→ Die Vektoren sind **nicht** orthogonal.
+
+:::
+
+::::::
+
+::::::collapsible{title="Ich kann einen orthogonalen Vektor angeben" id="orthogonality-002"}
+
+Gib einen Vektor an, der orthogonal zu den folgenden Vektoren ist:
+
+a) $$ \vec{a} = \begin{pmatrix}1\\2\\3\end{pmatrix} $$
+
+b) $$ \vec{b} = \begin{pmatrix}4\\0\\-1\end{pmatrix} $$
+
+:::collapsible{title="Musterlösung" id="orthogonality-sol-002"}
+
+a) $$ \vec{n} = \begin{pmatrix}2\\-1\\0\end{pmatrix} $$ (Beispiel)
+
+Da $$ \vec{a} \cdot \vec{n} = 1 \cdot 2 + 2 \cdot (-1) + 3 \cdot 0 = 2 - 2 + 0 = 0 $$
+
+b) $$ \vec{m} = \begin{pmatrix}1\\0\\4\end{pmatrix} $$ (Beispiel)
+
+Da $$ \vec{b} \cdot \vec{m} = 4 \cdot 1 + 0 \cdot 0 + (-1) \cdot 4 = 4 + 0 - 4 = 0 $$
 
 :::
 
@@ -137,7 +168,7 @@ $$
 \end{align*}
 $$
 
-Daher ist $\alpha \approx 73{,}2°$.
+Daher ist $\alpha \approx 74{,}21°$.
 
 :::
 
@@ -242,7 +273,7 @@ Widerspruch → Die Geraden sind **echt parallel**.
 
 ::::::collapsible{title="Ich kann Schnittwinkel von Geraden berechnen" id="line-intersection-angles-001"}
 
-Berechne den Schnittwinkel der Geraden:
+Berechne den Schnittwinkel der Geraden. Gehe davon aus, dass die Gerade sich schneiden:
 
 $$ g: \vec{x} = \begin{pmatrix}0\\1\\2\end{pmatrix} + t \cdot \begin{pmatrix}1\\0\\1\end{pmatrix} $$
 
@@ -323,6 +354,8 @@ Der Punkt $P$ liegt **nicht** auf der Ebene.
 
 ::::::
 
+<!--
+
 ::::::collapsible{title="Ich kann Ebenen in Koordinatenform umwandeln" id="coordinate-form-planes-001"}
 
 Wandle die Ebene in Koordinatenform um:
@@ -398,3 +431,5 @@ Die Gerade **schneidet** die Ebene im Punkt $S$.
 :::
 
 ::::::
+
+-->
