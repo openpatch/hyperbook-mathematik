@@ -130,59 +130,100 @@ Das System ist lösbar mit $r = 1, s = 1$. Der Punkt $Q$ liegt auf der Ebene.
 
 :::
 
-## Aufgaben mit Hilfsmitteln
+### Aufgabe 5: Dreieck
 
-### Aufgabe 1: Navigation im Raum
+Gegeben sind die Punkte $$ A(1|2|3) $$, $$ B(4|0|1) $$ und $$ C(2|5|4) $$.
 
-Ein Flugzeug startet am Punkt $$ A(0|0|0) $$ und fliegt entlang der Geraden 
-$$ g: \vec{x} = t \cdot \begin{pmatrix}100\\50\\10\end{pmatrix} $$ (Koordinaten in km).
+a) Überprüfe, ob die drei Punkte eine gleichschenkliges oder rechteckiges Dreieck bilden.
 
-Ein Kontrollturm befindet sich am Punkt $$ T(200|150|0) $$.
+b) Bestimme die Seitenlängen des Dreiecks.
 
-a) Bestimme den Punkt auf der Flugroute, der dem Kontrollturm am nächsten liegt.
+c) Stelle eine Ebene in Parameterform auf, in der das Dreieck liegt.
 
-b) Berechne die minimale Entfernung zwischen Flugzeug und Kontrollturm.
+d) Gib einen weiteren Punkt an der in der Ebene liegt.
 
-:::collapsible{title="Musterlösung" id="d5e6f7g8-9012-3456-7890-bcdef0123456"}
+:::collapsible{title="Musterlösung" id="c4d5e6f7-8901-2345-6789-abasdfkjsadf"}
 
-a) Für den Punkt $$ P(t) = t \cdot \begin{pmatrix}100\\50\\10\end{pmatrix} $$ auf der Flugroute ist der Abstand zum Turm:
+a) Um zu überprüfen, ob das Dreieck gleichschenklig oder rechtwinklig ist, berechnen wir die Seitenlängen:
 
-$$ \vec{TP}(t) = \begin{pmatrix}100t\\50t\\10t\end{pmatrix} - \begin{pmatrix}200\\150\\0\end{pmatrix} = \begin{pmatrix}100t-200\\50t-150\\10t\end{pmatrix} $$
+$$
 
-Für minimalen Abstand muss gelten: $$ \vec{TP}(t) \perp \vec{v} $$, wobei $$ \vec{v} = \begin{pmatrix}100\\50\\10\end{pmatrix} $$ der Richtungsvektor ist.
+\vec{AB} = \begin{pmatrix}4-1\\0-2\\1-3\end{pmatrix} = \begin{pmatrix}3\\-2\\-2\end{pmatrix}, \quad |\vec{AB}| = \sqrt{3^2 + (-2)^2 + (-2)^2} = \sqrt{9 + 4 + 4} = \sqrt{17} \\
+\vec{AC} = \begin{pmatrix}2-1\\5-2\\4-3\end{pmatrix} = \begin{pmatrix}1\\3\\1\end{pmatrix}, \quad |\vec{AC}| = \sqrt{1^2 + 3^2 + 1^2} = \sqrt{1 + 9 + 1} = \sqrt{11} \\
+\vec{BC} = \begin{pmatrix}2-4\\5-0\\4-1\end{pmatrix} = \begin{pmatrix}-2\\5\\3\end{pmatrix}, \quad |\vec{BC}| = \sqrt{(-2)^2 + 5^2 + 3^2} = \sqrt{4 + 25 + 9} = \sqrt{38}
 
-$$ \vec{TP}(t) \cdot \vec{v} = 0 $$
+$$
 
-$$ (100t-200) \cdot 100 + (50t-150) \cdot 50 + 10t \cdot 10 = 0 $$
+Da nicht zwei Seiten gleich lang sind, ist das Dreieck nicht gleichsenkling.
 
-$$ 10000t - 20000 + 2500t - 7500 + 100t = 0 $$
+Um zu prüfen, ob es rechtwinklig ist, berechnen wir die Skalarprodukte:
 
-$$ 12600t = 27500 $$
+$$
 
-$$ t = \frac{27500}{12600} = \frac{275}{126} \approx 2,18 $$
+\vec{AB} \cdot \vec{AC} = 3 \cdot 1 + (-2) \cdot 3 + (-2) \cdot 1 = 3 - 6 - 2 = -5 \\
 
-Der nächste Punkt ist: $$ P \approx \begin{pmatrix}218\\109\\21,8\end{pmatrix} $$
+\vec{AB} \cdot \vec{BC} = 3 \cdot (-2) + (-2) \cdot 5 + (-2) \cdot 3 = -6 - 10 - 6 = -22 \\
 
-b) Die minimale Entfernung ist:
-$$ |\vec{TP}| = \sqrt{(218-200)^2 + (109-150)^2 + (21,8-0)^2} \approx 48,5 \text{ km} $$
+\vec{AC} \cdot \vec{BC} = 1 \cdot (-2) + 3 \cdot 5 + 1 \cdot 3 = -2 + 15 + 3 = 16
+
+$$
+
+Da keine der Skalarprodukte null ist, ist das Dreieck nicht rechtwinklig.
+
+b) Die Seitenlängen wurden bereits in Teil a) berechnet.
+
+c) Eine Ebene, in der das Dreieck liegt, kann mit dem Stützvektor $$ \vec{OA} = \begin{pmatrix}1\\2\\3\end{pmatrix} $$ und den Spannvektoren $$ \vec{AB} $$ und $$ \vec{AC} $$ aufgestellt werden:
+
+$$
+
+E: \vec{x} = \begin{pmatrix}1\\2\\3\end{pmatrix} + r \cdot \begin{pmatrix}3\\-2\\-2\end{pmatrix} + s \cdot \begin{pmatrix}1\\3\\1\end{pmatrix}
+
+$$
+
+d) Ein weiterer Punkt in der Ebene kann durch Wahl von $r = 1$ und $s = 2$ gefunden werden:
+
+$$
+
+\vec{OP} = \begin{pmatrix}1\\2\\3\end{pmatrix} + 1 \cdot \begin{pmatrix}3\\-2\\-2\end{pmatrix} + 2 \cdot \begin{pmatrix}1\\3\\1\end{pmatrix} = \begin{pmatrix}1 + 3 + 2\\2 - 2 + 6\\3 - 2 + 2\end{pmatrix} = \begin{pmatrix}6\\6\\3\end{pmatrix}
+
+$$
+
+Damit liegt der Punkt $$ P(6|6|3) $$ in der Ebene.
 
 :::
 
-### Aufgabe 2: Architektur-Anwendung
 
-Ein Architekt plant ein Dach mit einer geneigten Ebene. Die Eckpunkte des rechteckigen Daches sind:
+## Aufgaben mit Hilfsmitteln
+
+### Aufgabe 1: Architektur-Anwendung
+
+Ein Architekt plant ein Dach einer großen Terrasse mit einer geneigten Ebene. Die Eckpunkte des rechteckigen Daches sind:
 - $$ A(0|0|3) $$
 - $$ B(10|0|3) $$  
 - $$ C(10|8|5) $$
 - $$ D(0|8|5) $$
 
-a) Bestimme die Gleichung der Dachebene in Parameterform.
+:::geogebra{perspective="T" height=400 width=700 coordsystem="0,12,0,12,0,8"}
+A(0|0|3)
+B(10|0|3)
+C(10|8|5)
+D(0|8|5)
+E(0|0|0)
+F(10|0|0)
+G(10|8|0)
+H(0|8|0)
+Polygon(A,B,C, D)
+Segment(C,G)
+Segment(D,H)
+Segment(F,B)
+Segment(A,E)
+:::
 
-b) Ein Schornstein soll am Punkt $$ S(5|4|h) $$ durch das Dach geführt werden. Berechne die Höhe $h$, bei der der Schornstein das Dach durchstößt.
+a) Weiße nach, dass alle Punkte in einer Ebene liegen, und stelle die Ebene in Parameterform auf.
 
-:::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567"}
+:::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-a"}
 
-a) Dachebene mit Stützvektor $\vec{OA} = \begin{pmatrix}0\\0\\3\end{pmatrix}$ und Spannvektoren:
+Dachebene mit Stützvektor $\vec{OA} = \begin{pmatrix}0\\0\\3\end{pmatrix}$ und Spannvektoren:
 
 $$
 \begin{align*}
@@ -193,25 +234,129 @@ $$
 
 Dachebene: $$ E: \vec{x} = \begin{pmatrix}0\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}10\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\8\\2\end{pmatrix} $$
 
-b) Für den Schornstein am Punkt $$ S(5|4|h) $$:
-
-$$ \begin{pmatrix}5\\4\\h\end{pmatrix} = \begin{pmatrix}0\\0\\3\end{pmatrix} + r \cdot \begin{pmatrix}10\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\8\\2\end{pmatrix} $$
-
-Gleichungssystem:
+Wir müssen noch zeigen, dass Punkt C in der Ebene liegt:
 
 $$
-\begin{align*}
-x: \quad 5 &= 0 + 10r \quad \Rightarrow \quad r = 0{,}5 \\
-y: \quad 4 &= 0 + 8s \quad \Rightarrow \quad s = 0{,}5 \\
-z: \quad h &= 3 + 2s = 3 + 1 = 4
-\end{align*}
+
+\vec{OC} = \begin{pmatrix}10\\8\\5\end{pmatrix} = \begin{pmatrix}0\\0\\3\end{pmatrix} + 1 \cdot \begin{pmatrix}10\\0\\0\end{pmatrix} + 1 \cdot \begin{pmatrix}0\\8\\2\end{pmatrix}
+
 $$
 
-Der Schornstein durchstößt das Dach bei $h = 4$ m.
+Damit liegt Punkt C in der Ebene.
 
 :::
 
-### Aufgabe 3: Schnittwinkel und Lagebeziehungen
+b) Die Mitte des Daches soll durch einen Balken verstärkt werden. Berechne die Koordinaten des Mittelpunktes $$ M $$ des Daches und dessen Höhe vom Boden ($x_1x_2$-Ebene).
+
+:::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-b"}
+
+Mittelpunkt $$ M $$ des Daches:
+
+$$
+
+\vec{OM} = \frac{1}{2}(\vec{OA} + \vec{OC}) = \frac{1}{2}\left(\begin{pmatrix}0\\0\\3\end{pmatrix} + \begin{pmatrix}10\\8\\5\end{pmatrix}\right) = \begin{pmatrix}5\\4\\4\end{pmatrix}
+
+$$
+
+Der Mittelpunkt $$ M $$ hat die Koordinaten $$ (5|4|4) $$ und die Höhe vom Boden beträgt 4 m.
+
+:::
+
+
+Zur Verschönerung sollen bunte Dachplatte mit den Maßen 90 cm x 60 cm auf das Dach gelegt werden.
+
+
+c) Berechne die Anzahl der Platten, die benötigt werden, um das gesamte Dach zu bedecken.
+
+:::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-c"}
+
+In die Breite können 11 Platten (10 m / 0,9 m = 11,11) und in die Tiefe 13 Platten (8 m / 0,6 m = 13,33) gelegt werden. Insgesamt werden also $$ 11 \cdot 13 = 143 $$ Platten benötigt.
+
+Werden die Platten um 90° gedreht, passen 8 Platten in die Breite (10 m / 0,6 m = 16,66) und 17 Platten in die Tiefe (8 m / 0,9 m = 8,88). Insgesamt werden also $$ 8 \cdot 17 = 136 $$ Platten benötigt.
+
+Also können maximal 143 Platten verlegt werden.
+
+:::
+
+Die Baugenehmigung für das Dach schreibt vor, dass es maximal 30° geneigt sein darf. In diesem Sachzusamenhang wird folgende Rechnung durchgeführt:
+
+$$
+
+(1) \vec{u} = \vec{AD} = \begin{pmatrix}0\\8\\2\end{pmatrix} \ \ \ \vec{v} = \begin{pmatrix}0\\8\\0\end{pmatrix} \\
+
+(2) \cos{\alpha} = \frac{\begin{pmatrix}0\\8\\2\end{pmatrix} \cdot \begin{pmatrix}0\\8\\0\end{pmatrix}}{\left\lvert\begin{pmatrix}0\\8\\2\end{pmatrix}\right\rvert \cdot \left\lvert\begin{pmatrix}0\\8\\0\end{pmatrix}\right\rvert} \\
+
+$$
+
+d) Erläutere den Ansatz in Zeile (1) und den Rechenschritt in Zeile (2). Berechne anschließend den Winkel $\alpha$ und deute das Ergebnis im Sachzusammenhang.
+
+:::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-d"}
+
+In Zeile (1) wird der Richtungsvektor $$ \vec{u} $$ der geneigten Kante $$ AD $$ und der Richtungsvektor $$ \vec{v} $$ der horizontalen Kante $$ AH $$ bestimmt. In Zeile (2) wird der Kosinus des Winkels $$ \alpha $$ zwischen den beiden Vektoren mit Hilfe des Skalarprodukts berechnet.
+
+Den Winkel $$ \alpha $$ berechnen:
+
+$$
+
+\begin{align*}
+
+\vec{u} \cdot \vec{v} &= 0 \cdot 0 + 8 \cdot 8 + 2 \cdot 0 = 64 \\
+
+\left\lvert\vec{u}\right\rvert &= \sqrt{0^2 + 8^2 + 2^2} = \sqrt{68} \\
+
+\left\lvert\vec{v}\right\rvert &= \sqrt{0^2 + 8^2 + 0^2} = 8 \\
+
+\alpha &= \cos^{-1}\left(\frac{64}{\sqrt{68} \cdot 8}\right) = \cos^{-1}\left(\frac{64}{8\sqrt{68}}\right) = \cos^{-1}\left(\frac{8}{\sqrt{68}}\right) \approx 14,04°
+
+\end{align*}
+
+$$
+
+Das Dach ist mit einem Winkel von ca. 14,04° geneigt, was innerhalb der zulässigen Neigung von 30° liegt.
+
+
+:::
+
+e) Bestimme für die Punkte D und C neue Koordinaten, sodass das Dach genau 30° geneigt ist. Gib die neuen Koordinaten an.
+
+:::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-e"}
+
+Um die Neigung auf genau 30° zu ändern, muss der Höhenunterschied zwischen den Punkten D und A angepasst werden. Dazu stellen wir einen Vektore mit einer fehlenden Höhe $$ h $$ auf:
+
+$$
+
+\vec{AD_{neu}} = \begin{pmatrix}0\\8\\h\end{pmatrix}
+
+$$
+
+Dieser muss den Winkel von 30° mit dem Vektor $$ \begin{pmatrix}0\\8\\3\end{pmatrix} $$ bilden. Wir verwenden die gleiche Formel wie zuvor:
+
+$$
+
+
+\begin{align*}
+
+\cos{30°} &= \frac{\vec{AD_{neu}} \cdot \begin{pmatrix}0\\8\\0\end{pmatrix}}{|\vec{AD_{neu}}| \cdot |\begin{pmatrix}0\\8\\0\end{pmatrix}|}
+\frac{\sqrt{3}}{2} &= \frac{0 \cdot 0 + 8 \cdot 8 + h \cdot 0}{\sqrt{0^2 + 8^2 + h^2} \cdot 8} \\
+\frac{\sqrt{3}}{2} &= \frac{64}{8\sqrt{64 + h^2}} &| \cdot \sqrt{64 + h^2}\\
+\sqrt{3} \cdot \sqrt{64 + h^2} &= 16 \\
+\sqrt{64 + h^2} &= \frac{16}{\sqrt{3}} &| (...)^2 \\
+64 + h^2 &= \frac{256}{3} \\
+h^2 &= \frac{64}{3} &| \sqrt{...} \\
+h &= \pm \sqrt{\frac{64}{3}} = \pm \frac{8}{\sqrt{3}} \approx \pm 4,62
+
+\end{align*}
+
+$$
+
+Da das Dach höher als Punkt A sein muss, wählen wir den positiven Wert. Die neuen Koordinaten von D und G sind somit:
+
+$$ D_{neu}(0|8|4,62) $$
+$$ G_{neu}(10|8|4,62) $$
+
+:::
+
+### Aufgabe 2: Schnittwinkel und Lagebeziehungen
 
 Gegeben sind die Geraden:
 - $$ g_1: \vec{x} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t \cdot \begin{pmatrix}2\\1\\-1\end{pmatrix} $$
