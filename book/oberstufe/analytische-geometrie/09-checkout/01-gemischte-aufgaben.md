@@ -250,11 +250,11 @@ b) Die Mitte des Daches soll durch einen Balken verstärkt werden. Berechne die 
 
 :::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-b"}
 
-Mittelpunkt $$ M $$ des Daches:
+Wir finden den Mittelpunkt $$ M $$ des Daches, indem wir vom Ursprung den Vektoren zum Mittelpunkt folgen.
 
 $$
 
-\vec{OM} = \frac{1}{2}(\vec{OA} + \vec{OC}) = \frac{1}{2}\left(\begin{pmatrix}0\\0\\3\end{pmatrix} + \begin{pmatrix}10\\8\\5\end{pmatrix}\right) = \begin{pmatrix}5\\4\\4\end{pmatrix}
+\vec{OM} = \vec{OA} + \frac{1}{2}\vec{AC} = \begin{pmatrix}0\\0\\3\end{pmatrix} + \frac{1}{2}\left(\begin{pmatrix}10\\8\\2\end{pmatrix}\right) = \begin{pmatrix}5\\4\\4\end{pmatrix}
 
 $$
 
