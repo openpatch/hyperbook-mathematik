@@ -197,6 +197,12 @@ Damit liegt der Punkt $$ P(6|6|3) $$ in der Ebene.
 
 ### Aufgabe 1: Architektur-Anwendung
 
+:::collapsible{title="Videoerklärung" id="e6f7g8h9-0123-4567-8901-cdef012345672394"}
+
+::youtube{#l0pMIJ2WgvM}
+
+:::
+
 Ein Architekt plant ein Dach einer großen Terrasse mit einer geneigten Ebene. Die Eckpunkte des rechteckigen Daches sind:
 - $$ A(0|0|3) $$
 - $$ B(10|0|3) $$  
