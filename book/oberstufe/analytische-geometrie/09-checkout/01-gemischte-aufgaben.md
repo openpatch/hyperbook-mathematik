@@ -270,11 +270,13 @@ c) Berechne die Anzahl der Platten, die benötigt werden, um das gesamte Dach zu
 
 :::collapsible{title="Musterlösung" id="e6f7g8h9-0123-4567-8901-cdef01234567-c"}
 
-In die Breite können 11 Platten (10 m / 0,9 m = 11,11) und in die Tiefe 13 Platten (8 m / 0,6 m = 13,33) gelegt werden. Insgesamt werden also $$ 11 \cdot 13 = 143 $$ Platten benötigt.
+Das Dach ist $ | \vec{AB} | = 10 \, m $ breit und $ | \vec{AD} | = \sqrt{0^2 + 8^2 + 2^2} = \sqrt{68} \approx 8,24 \, m $ tief.
 
-Werden die Platten um 90° gedreht, passen 8 Platten in die Breite (10 m / 0,6 m = 16,66) und 17 Platten in die Tiefe (8 m / 0,9 m = 8,88). Insgesamt werden also $$ 8 \cdot 17 = 136 $$ Platten benötigt.
+In die Breite passen 11 Platten (10 m / 0,9 m = 11,11) und in die Tiefe 13 Platten (8,24 m / 0,6 m = 13,73). Insgesamt werden also $$ 11 \cdot 13 = 143 $$ Platten benötigt.
 
-Also können maximal 143 Platten verlegt werden.
+Werden die Platten in der anderen Ausrichtung verlegt, also 60 cm in die Breite und 90 cm in die Tiefe, passen 16 Platten in die Breite (10 m / 0,6 m = 16,66) und 9 Platten in die Tiefe (8,24 m / 0,9 m = 9,15). Insgesamt werden also $$ 16 \cdot 9 = 144 $$ Platten benötigt.
+
+Also können maximal 144 Platten verlegt werden.
 
 :::
 
@@ -325,7 +327,7 @@ Um die Neigung auf genau 30° zu ändern, muss der Höhenunterschied zwischen de
 
 $$
 
-\vec{AD_{neu}} = \begin{pmatrix}0\\8\\h\end{pmatrix}
+\vec{AD_{neu}} = \begin{pmatrix}0\\8\\h-3\end{pmatrix}
 
 $$
 
@@ -337,13 +339,15 @@ $$
 \begin{align*}
 
 \cos{30°} &= \frac{\vec{AD_{neu}} \cdot \begin{pmatrix}0\\8\\0\end{pmatrix}}{|\vec{AD_{neu}}| \cdot |\begin{pmatrix}0\\8\\0\end{pmatrix}|}
-\frac{\sqrt{3}}{2} &= \frac{0 \cdot 0 + 8 \cdot 8 + h \cdot 0}{\sqrt{0^2 + 8^2 + h^2} \cdot 8} \\
-\frac{\sqrt{3}}{2} &= \frac{64}{8\sqrt{64 + h^2}} &| \cdot \sqrt{64 + h^2}\\
-\sqrt{3} \cdot \sqrt{64 + h^2} &= 16 \\
+\frac{\sqrt{3}}{2} &= \frac{0 \cdot 0 + 8 \cdot 8 + h \cdot 0}{\sqrt{0^2 + 8^2 + (h-3)^2} \cdot 8} \\
+\frac{\sqrt{3}}{2} &= \frac{64}{8\sqrt{64 + (h-3)^2}} &| \cdot \sqrt{64 + h^2}\\
+\sqrt{3} \cdot \sqrt{64 + (h-3)^2} &= 16 \\
 \sqrt{64 + h^2} &= \frac{16}{\sqrt{3}} &| (...)^2 \\
-64 + h^2 &= \frac{256}{3} \\
-h^2 &= \frac{64}{3} &| \sqrt{...} \\
-h &= \pm \sqrt{\frac{64}{3}} = \pm \frac{8}{\sqrt{3}} \approx \pm 4,62
+64 + (h-3)^2 &= \frac{256}{3} \\
+(h-3)^2 &= \frac{64}{3} &| \sqrt{...} \\
+h+3 &= \pm \sqrt{\frac{64}{3}} = \pm \frac{8}{\sqrt{3}}
+h &= \pm \frac{8}{\sqrt{3}} + 3
+h &\approx \pm 4,62 + 3 = \pm 7,62
 
 \end{align*}
 
@@ -351,8 +355,8 @@ $$
 
 Da das Dach höher als Punkt A sein muss, wählen wir den positiven Wert. Die neuen Koordinaten von D und G sind somit:
 
-$$ D_{neu}(0|8|4,62) $$
-$$ G_{neu}(10|8|4,62) $$
+$$ D_{neu}(0|8|7,62) $$
+$$ G_{neu}(10|8|7,62) $$
 
 :::
 
