@@ -10,6 +10,12 @@ lang: de
 
 ### Aufgabe 1: Vektoroperationen
 
+:::collapsible{title="Videoerklärung" id="e6f7gsfsafasdfs"}
+
+::youtube{#asrvzL9rtds}
+
+:::
+
 Gegeben sind die Vektoren $$ \vec{a} = \begin{pmatrix}2\\-1\\3\end{pmatrix} $$ und $$ \vec{b} = \begin{pmatrix}1\\2\\-1\end{pmatrix} $$.
 
 a) Berechne $$ \vec{a} + \vec{b} $$ und $$ \vec{a} - \vec{b} $$.
@@ -45,6 +51,12 @@ $$ \vec{a} \cdot \vec{b} = 2 \cdot 1 + (-1) \cdot 2 + 3 \cdot (-1) = 2 - 2 - 3 =
 
 ### Aufgabe 2: Winkel zwischen Vektoren
 
+:::collapsible{title="Videoerklärung" id="e6f7gsfsafasdfs2"}
+
+::youtube{#iXg8AAeYqoU}
+
+:::
+
 Gegeben sind $$ \vec{u} = \begin{pmatrix}3\\0\\4\end{pmatrix} $$ und $$ \vec{v} = \begin{pmatrix}0\\5\\0\end{pmatrix} $$.
 
 Berechne den Winkel $$ \alpha $$ zwischen den Vektoren.
@@ -72,6 +84,12 @@ Daher ist $$ \alpha = 90° $$. Die Vektoren stehen senkrecht aufeinander.
 :::
 
 ### Aufgabe 3: Geraden im Raum
+
+:::collapsible{title="Videoerklärung" id="e6f7gsfsafasdfs23"}
+
+::youtube{#7AV-jAFhBzM}
+
+:::
 
 Gegeben ist die Gerade $$ g: \vec{x} = \begin{pmatrix}1\\2\\0\end{pmatrix} + t \cdot \begin{pmatrix}2\\-1\\3\end{pmatrix} $$.
 
@@ -108,6 +126,12 @@ $$ \begin{pmatrix}7\\2-3\\0+9\end{pmatrix} = \begin{pmatrix}7\\-1\\9\end{pmatrix
 
 ### Aufgabe 4: Ebenen in Parameterform
 
+:::collapsible{title="Videoerklärung" id="e6f7gsfsafasdfs234"}
+
+::youtube{#ZB5zpfGa8uQ}
+
+:::
+
 Gegeben ist die Ebene $$ E: \vec{x} = \begin{pmatrix}2\\0\\1\end{pmatrix} + r \cdot \begin{pmatrix}1\\1\\0\end{pmatrix} + s \cdot \begin{pmatrix}0\\1\\1\end{pmatrix} $$.
 
 Liegt der Punkt $$ Q(3|2|2) $$ auf der Ebene?
@@ -131,6 +155,12 @@ Das System ist lösbar mit $r = 1, s = 1$. Der Punkt $Q$ liegt auf der Ebene.
 :::
 
 ### Aufgabe 5: Dreieck
+
+:::collapsible{title="Videoerklärung" id="e6f7gsfsafasdfs2345"}
+
+::youtube{#uCEozL9zzkY}
+
+:::
 
 Gegeben sind die Punkte $$ A(1|2|3) $$, $$ B(4|0|1) $$ und $$ C(2|5|4) $$.
 
@@ -367,6 +397,12 @@ $$ G_{neu}(10|8|7,62) $$
 :::
 
 ### Aufgabe 2: Schnittwinkel und Lagebeziehungen
+
+:::collapsible{title="Videoerklärung" id="e6f7gsfsafasdfs241342352"}
+
+::youtube{#YzDMUgzrP0M}
+
+:::
 
 Gegeben sind die Geraden:
 - $$ g_1: \vec{x} = \begin{pmatrix}1\\0\\2\end{pmatrix} + t \cdot \begin{pmatrix}2\\1\\-1\end{pmatrix} $$
