@@ -16,7 +16,7 @@ lang: de
 Starte mit der Grundaufgabe "Tischebene". Danach kannst du frei wählen, welche Aufgaben du bearbeiten möchtest.
 :::
 
-::excalidraw{src="/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball.excalidraw" aspectRatio="16/9" autoZoom=true center=true edit=false}
+::excalidraw{src="pinball.excalidraw" aspectRatio="16/9" autoZoom=true center=true edit=false}
 
 - Basisaufgabe: [Tischebene](pinball3d-a)
 - Aufgabe: [Soundcheck](pinball3d-b)
