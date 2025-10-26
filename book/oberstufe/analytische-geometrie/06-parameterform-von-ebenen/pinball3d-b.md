@@ -26,13 +26,13 @@ $$
 
 :::tab{title="2D Visualisierung" id="894404"}
 
-![](/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball3d-sound.png)
+![](./pinball3d-sound.png)
 
 :::
 
 :::tab{title="3D Visualisierung" id="894405"}
 
-::embed{src="https://www.geogebra.org/calculator/gcqgud2s?embed" height="600px"}
+::geogebra{src="./pinball3d-sound.ggb" appName="3d" height="600"}
 
 :::
 

@@ -10,7 +10,7 @@ Zur besseren Handhabung in der Programmierung soll der Ursprung des Koordinatens
 
 - Gib die Parameterform der Tischebenen für diesen Fall an.
 
-![](/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball3d-neuer-ursprung.png)
+![](./pinball3d-neuer-ursprung.png)
 
 :::collapsible{title="Tipp" id="437594"}
 

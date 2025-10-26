@@ -14,20 +14,20 @@ Die obere Ebene des Spiels soll auch mit der Parameterform beschrieben werden. D
 
 :::tab{title="2D Visualisierung" id="003676"}
 
-![](/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball3d-obere-ebene.png)
+![](./pinball3d-obere-ebene.png)
 
 :::
 
 :::tab{title="3D Visualisierung" id="886209"}
 
-::embed{src="https://www.geogebra.org/calculator/v7qezvbj?embed" height="600px"}
+::geogebra{src="./pinball3d-obere-ebene.ggb" appName="3d" height="600"}
 
 
 :::
 
 ::::
 
-:::collapsible{title="TIpp" id="982897"}
+:::collapsible{title="Tipp" id="982897"}
 
 Welche Eigenschaften haben zwei parallele Geraden? Kannst du Ähnliches für zwei parallele Ebenen beobachten?
 

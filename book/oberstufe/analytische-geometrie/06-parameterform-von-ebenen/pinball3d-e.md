@@ -22,13 +22,13 @@ $$
 
 :::tab{title="2D Visualisierung" id="043465"}
 
-![](/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball3d-beschränkt.png)
+![](./pinball3d-beschränkt.png)
 
 :::
 
 :::tab{title="3D Visualisierung" id="957605"}
 
-::embed{src="https://www.geogebra.org/calculator/zza6cmcm?embed" height="600px"}
+::geogebra{src="./pinball3d-beschränkt.ggb" appName="3d" height="600"}
 
 :::
 

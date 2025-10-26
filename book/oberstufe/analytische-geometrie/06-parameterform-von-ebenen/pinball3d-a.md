@@ -8,20 +8,20 @@ lang: de
 
 Für das Spiel Pinball 3D soll die Tischebene modelliert werden. Der Tisch hat die Eckpunkte $A(0|0|0)$, $B(0|56|0)$, $C(80|56|10)$ und $D(80|0|10)$. 
 
-- Gib eine [Parameterform der Ebene](/oberstufe/analytische-geometrie/parameterform-von-ebenen/formel) an. 
+- Gib eine [Parameterform der Ebene](./01-formel) an. 
 - Zeige rechnerisch, dass der vierte Punkt in der Ebene liegt.
 
 ::::tabs{id="079755"}
 
 :::tab{title="2D Visualisierung" id="344998"}
 
-![](/assets/oberstufe/analytische-geometrie/parameterform-von-ebenen/pinball3d-tischebene.png)
+![](./pinball3d-tischebene.png)
 
 :::
 
 :::tab{title="3D Visualisierung" id="617342"}
 
-::embed{src="https://www.geogebra.org/calculator/xzbce9ag?embed" height="600px"}
+::geogebra{src="./pinball3d-tischebene.ggb" appName="3d" height="600"}
 
 :::
 
