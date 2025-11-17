@@ -718,7 +718,8 @@
             "bookLocation": "S. 292"
           }
         ],
-        "color": "white"
+        "color": "white",
+        "summary": "Optional"
       }
     },
     {
