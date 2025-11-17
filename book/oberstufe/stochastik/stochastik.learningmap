@@ -93,8 +93,8 @@
       "id": "node-1761993889456",
       "type": "topic",
       "position": {
-        "x": -438.9866491661719,
-        "y": 464.21474260127576
+        "x": -407.7366491661719,
+        "y": 457.21474260127576
       },
       "zIndex": 30,
       "data": {
@@ -104,6 +104,16 @@
           "after": [
             "node-1761994225748"
           ]
+        },
+        "completion": {
+          "needs": [
+            "node-1763331953572",
+            "node-1763332107434",
+            "node-1761996699833"
+          ],
+          "optional": [
+            "node-1763332167878"
+          ]
         }
       }
     },
@@ -111,8 +121,8 @@
       "id": "node-1761993912520",
       "type": "topic",
       "position": {
-        "x": -514.9758718678714,
-        "y": 631.0801178046679
+        "x": -556.9758718678714,
+        "y": 649.0801178046679
       },
       "zIndex": 30,
       "data": {
@@ -196,7 +206,8 @@
           "after": [
             "node-1761993968127"
           ]
-        }
+        },
+        "summary": "Optional"
       }
     },
     {
@@ -351,7 +362,8 @@
           "after": [
             "node-1761994045070"
           ]
-        }
+        },
+        "summary": "Optional"
       }
     },
     {
@@ -375,7 +387,8 @@
             "node-1763207529911"
           ]
         },
-        "description": "Hier kannst du wichtige Grundlagen der Wahrscheinlichkeitsrechnung wiederholen, die du für den Themenbereich \"Stochastik\" benötigst."
+        "description": "Hier kannst du wichtige Grundlagen der Wahrscheinlichkeitsrechnung wiederholen, die du für den Themenbereich \"Stochastik\" benötigst.",
+        "summary": ""
       }
     },
     {
@@ -428,8 +441,8 @@
       "id": "node-1761995566557",
       "type": "image",
       "position": {
-        "x": -453.1666490866877,
-        "y": 339.2702141982028
+        "x": 36.8333509133123,
+        "y": 391.2702141982028
       },
       "width": 122.03508771929819,
       "height": 94,
@@ -492,14 +505,19 @@
       "id": "node-1761996699833",
       "type": "task",
       "position": {
-        "x": -707.5140585304745,
-        "y": 328.8930318996349
+        "x": -723.5140585304745,
+        "y": -9.106968100365123
       },
       "zIndex": 30,
       "data": {
         "label": "Erklärung",
         "state": "unlocked",
-        "color": "lila"
+        "color": "lila",
+        "unlock": {
+          "after": [
+            "node-1761994225748"
+          ]
+        }
       }
     },
     {
@@ -701,6 +719,158 @@
           }
         ],
         "color": "white"
+      }
+    },
+    {
+      "id": "node-1763331953572",
+      "type": "task",
+      "position": {
+        "x": -889.6802379740817,
+        "y": 163.07042750294522
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Ereignissen Beschreibungen zuordnen",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1761996699833"
+          ]
+        },
+        "resources": [
+          {
+            "label": "Aufgabe 1",
+            "type": "url",
+            "url": "./01-daten-und-wahrscheinlichkeiten/ereignis-beschreibung-zuordnen",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 295"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1763332107434",
+      "type": "task",
+      "position": {
+        "x": -825.375,
+        "y": 246
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Mengendiagramme",
+        "state": "unlocked",
+        "resources": [
+          {
+            "label": "Aufgabe 2",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 295"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1761996699833"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1763332167878",
+      "type": "task",
+      "position": {
+        "x": -803.375,
+        "y": 69.5
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Mengenvisualisierung",
+        "state": "unlocked",
+        "color": "white",
+        "resources": [
+          {
+            "label": "Visualisierung",
+            "type": "url",
+            "url": "/glossary/mengen"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1761996699833"
+          ]
+        },
+        "summary": "Optional",
+        "description": "Hier kannst du alles über Mengen in der Mathematik lernen. Dies wird dir auch bei den Stochastikaufgaben viel helfen."
+      }
+    },
+    {
+      "id": "node-1763334205661",
+      "type": "image",
+      "position": {
+        "x": -453.198437036868,
+        "y": 249.0778306438733
+      },
+      "width": 171.57142857142856,
+      "height": 176.14666666666665,
+      "zIndex": 10,
+      "data": {
+        "label": "image",
+        "state": "unlocked",
+        "data": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAwIDQxMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyB0cmFuc2Zvcm09Im1hdHJpeCgxMzQsMCwwLDEzNCwyMDUsMTQzKSI+PHBhdGggZmlsbD0iI2VlOGQ4MiIgZD0iTTEgMEExIDEgMCAwIDAtMSAwIi8+PHBhdGggZmlsbD0iI2VkZWUzOCIgZD0iTS0xIDBBMSAxIDAgMCAwIDAgMS43MyIvPjxwYXRoIGZpbGw9IiM3YWU5N2QiIGQ9Ik0wIDEuNzNBMSAxIDAgMCAwIDEgMCIvPjxwYXRoIGZpbGw9IiNiM2E0YTAiIGQ9Ik0wIDBBMSAxIDAgMCAwLTEgMCAxIDEgMCAwIDAtLjUuODciLz48cGF0aCBmaWxsPSIjYjJjYzMzIiBkPSJNLS41Ljg3QTEgMSAwIDAgMCAwIDEuNzMgMSAxIDAgMCAwIC41Ljg3Ii8+PHBhdGggZmlsbD0iI2JmYmU3NCIgZD0iTS41Ljg3QTEgMSAwIDAgMCAxIDAgMSAxIDAgMCAwIDAgMCIvPjxwYXRoIGZpbGw9IiM5ODg2ODQiIGQ9Ik0wIDBBMSAxIDAgMCAwLS41Ljg3IDEgMSAwIDAgMCAuNS44NyAxIDEgMCAwIDAgMCAwIi8+PC9nPjx0ZXh0IGZvbnQtc2l6ZT0iNTBweCI+PHRzcGFuIHg9IjE1MCIgeT0iODAiPjI8L3RzcGFuPjx0c3BhbiB4PSIyMzAiIHk9IjEwMCI+NTwvdHNwYW4+PHRzcGFuIHg9IjExMCIgeT0iMTkwIj4xPC90c3Bhbj48dHNwYW4geD0iNjAiIHk9IjMxMCI+NjwvdHNwYW4+PHRzcGFuIHg9IjI4MCIgeT0iMzQwIj43PC90c3Bhbj48dHNwYW4geD0iMzMwIiB5PSIyNjAiPjQ8L3RzcGFuPjwvdGV4dD48L3N2Zz4="
+      }
+    },
+    {
+      "id": "node-1763334292755",
+      "type": "task",
+      "position": {
+        "x": -927.350069001019,
+        "y": 324.4557654331463
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Mengen und Wahrscheinlichkeiten",
+        "state": "unlocked",
+        "resources": [
+          {
+            "label": "Aufgabe 4",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 295"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1761996699833"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1763334409730",
+      "type": "task",
+      "position": {
+        "x": -866.6348655325476,
+        "y": 405.8671906743406
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Baum- und Mengendiagramm",
+        "state": "unlocked",
+        "resources": [
+          {
+            "label": "Aufgabe 9",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 296"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1761996699833"
+          ]
+        }
       }
     }
   ],
@@ -1088,6 +1258,71 @@
       "target": "node-1763208082706",
       "sourceHandle": "bottom",
       "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993889456left-node-1763331953572right",
+      "source": "node-1761993889456",
+      "target": "node-1763331953572",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993889456left-node-1763332107434right",
+      "source": "node-1761993889456",
+      "target": "node-1763332107434",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993889456left-node-1763332167878right",
+      "source": "node-1761993889456",
+      "target": "node-1763332167878",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993889456left-node-1763334292755right",
+      "source": "node-1761993889456",
+      "target": "node-1763334292755",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993889456left-node-1763334409730right",
+      "source": "node-1761993889456",
+      "target": "node-1763334409730",
+      "sourceHandle": "left",
+      "targetHandle": "right",
       "animated": false,
       "type": "default",
       "style": {

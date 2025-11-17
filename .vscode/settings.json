@@ -2,5 +2,6 @@
     "github.copilot.chat.localeOverride": "de",
     "github.copilot.enable": {
         "markdown": true
-    }
+    },
+    "ltex.language": "de-DE-x-simple-language"
 }
