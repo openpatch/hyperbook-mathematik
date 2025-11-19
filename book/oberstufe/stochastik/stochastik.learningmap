@@ -506,8 +506,8 @@
       "id": "node-1761996699833",
       "type": "task",
       "position": {
-        "x": -728.5140585304745,
-        "y": -55.10696810036512
+        "x": -740.6597661716214,
+        "y": -8.04235099092077
       },
       "zIndex": 30,
       "data": {
@@ -1574,7 +1574,12 @@
     },
     "title": "Stochastik (Lambacher Schweitzer)",
     "language": "de",
-    "id": "mathematik.openpatch.org/stochastik"
+    "id": "mathematik.openpatch.org/stochastik",
+    "viewport": {
+      "x": 21,
+      "y": 20,
+      "zoom": 0.45
+    }
   },
   "version": 1,
   "type": "learningmap",
