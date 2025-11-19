@@ -518,7 +518,22 @@
           "after": [
             "node-1761994225748"
           ]
-        }
+        },
+        "description": "Lies dir die Erklärung im Buch durch oder schaue dir das Erklärvideo an.",
+        "resources": [
+          {
+            "label": "Erklärung im Buch",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 293"
+          },
+          {
+            "label": "Erklärvideo",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=ySNU9JirCM8"
+          }
+        ]
       }
     },
     {
@@ -912,7 +927,16 @@
       "data": {
         "label": "Fun Corner",
         "state": "unlocked",
-        "color": "teal"
+        "color": "teal",
+        "completion": {
+          "optional": [],
+          "needs": [
+            "node-1763510478775",
+            "node-1763510388712",
+            "node-1763510939240",
+            "node-1763510277601"
+          ]
+        }
       }
     },
     {
@@ -933,7 +957,7 @@
     },
     {
       "id": "node-1763510277601",
-      "type": "topic",
+      "type": "task",
       "position": {
         "x": -1.3678521394643042,
         "y": -498.93984515446834
@@ -955,7 +979,7 @@
     },
     {
       "id": "node-1763510388712",
-      "type": "topic",
+      "type": "task",
       "position": {
         "x": -514.1538070525065,
         "y": -500.7422562437936
@@ -972,7 +996,7 @@
     },
     {
       "id": "node-1763510478775",
-      "type": "topic",
+      "type": "task",
       "position": {
         "x": -461.88388546207335,
         "y": -368.2650411783855
@@ -1019,10 +1043,10 @@
     },
     {
       "id": "node-1763510939240",
-      "type": "topic",
+      "type": "task",
       "position": {
-        "x": 76.1411328734635,
-        "y": -365.67376779833654
+        "x": 35.206364189228296,
+        "y": -381.0425196112167
       },
       "width": 252,
       "height": 89,
