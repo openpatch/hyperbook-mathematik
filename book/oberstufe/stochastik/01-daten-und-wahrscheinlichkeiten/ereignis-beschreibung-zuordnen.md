@@ -1,7 +1,6 @@
 ---
-name: Ergeignis einer Beschreibung zuordnen
+name: "Ergeignis einer Beschreibung zuordnen"
 layout: standalone
-lang: de
 scripts:
   - /wc/mengen-visualisierung.js
 ---
