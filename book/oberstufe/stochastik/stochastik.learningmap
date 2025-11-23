@@ -1256,7 +1256,12 @@
       "zIndex": 30,
       "data": {
         "label": "Simulationen durch Würfelwürfe",
-        "state": "unlocked"
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1763929582618"
+          ]
+        }
       }
     },
     {
@@ -1269,7 +1274,12 @@
       "zIndex": 30,
       "data": {
         "label": "Schätzung vs. Simulation",
-        "state": "unlocked"
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1763929582618"
+          ]
+        }
       }
     },
     {
@@ -1282,7 +1292,12 @@
       "zIndex": 30,
       "data": {
         "label": "Versuchswiederholungen",
-        "state": "unlocked"
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1763929582618"
+          ]
+        }
       }
     },
     {
@@ -1306,7 +1321,12 @@
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 301"
           }
-        ]
+        ],
+        "unlock": {
+          "after": [
+            "node-1761994225748"
+          ]
+        }
       }
     },
     {
@@ -1322,7 +1342,12 @@
       "data": {
         "label": "Erklärung: Daten erheben und Kenngrößen berechnen",
         "state": "unlocked",
-        "color": "lila"
+        "color": "lila",
+        "unlock": {
+          "after": [
+            "node-1761994225748"
+          ]
+        }
       }
     },
     {
@@ -1377,7 +1402,12 @@
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 307"
           }
-        ]
+        ],
+        "unlock": {
+          "after": [
+            "node-1763929856414"
+          ]
+        }
       }
     }
   ],
