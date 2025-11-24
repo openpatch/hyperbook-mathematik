@@ -10,8 +10,24 @@ class MengenVisualisierung extends HTMLElement {
     this.mengeB = this.getAttribute('menge-b') ? 
       this.getAttribute('menge-b').split(',').map(s => s.trim()) : 
       ['3', '4', '5', '6', '7'];
+    
+    // Grundmenge (optional)
+    if (this.getAttribute('grundmenge')) {
+      this.grundmenge = this.getAttribute('grundmenge').split(',').map(s => s.trim());
+      // Stelle sicher, dass die Grundmenge beide Mengen enthält
+      const allElements = [...new Set([...this.mengeA, ...this.mengeB])];
+      allElements.forEach(elem => {
+        if (!this.grundmenge.includes(elem)) {
+          this.grundmenge.push(elem);
+        }
+      });
+    } else {
+      this.grundmenge = null;
+    }
+    
     this.labelA = this.getAttribute('label-a') || 'A';
     this.labelB = this.getAttribute('label-b') || 'B';
+    this.labelGrundmenge = this.getAttribute('label-grundmenge') || 'G';
     this.currentOperation = 'union';
   }
 
@@ -37,13 +53,19 @@ class MengenVisualisierung extends HTMLElement {
   }
 
   getKomplementA() {
-    const vereinigung = this.getVereinigung();
-    return vereinigung.filter(elem => !this.mengeA.includes(elem));
+    const basis = this.grundmenge || this.getVereinigung();
+    return basis.filter(elem => !this.mengeA.includes(elem));
   }
 
   getKomplementB() {
+    const basis = this.grundmenge || this.getVereinigung();
+    return basis.filter(elem => !this.mengeB.includes(elem));
+  }
+
+  getElementeNurInGrundmenge() {
+    if (!this.grundmenge) return [];
     const vereinigung = this.getVereinigung();
-    return vereinigung.filter(elem => !this.mengeB.includes(elem));
+    return this.grundmenge.filter(elem => !vereinigung.includes(elem));
   }
 
   isInHighlightedArea(element) {
@@ -72,22 +94,19 @@ class MengenVisualisierung extends HTMLElement {
     const schnittmenge = this.getSchnittmenge();
     const nurA = this.getDifferenzAB();
     const nurB = this.getDifferenzBA();
+    const nurGrundmenge = this.getElementeNurInGrundmenge();
     
     this.shadowRoot.innerHTML = `
       <style>
         :host {
           display: block;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-          max-width: 800px;
-          margin: 2rem auto;
+          margin: 0rem auto;
         }
 
         .container {
           background: white;
-          border: 1px solid #e0e0e0;
           border-radius: 8px;
-          padding: 2rem;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .controls {
@@ -108,7 +127,15 @@ class MengenVisualisierung extends HTMLElement {
           font-weight: 500;
           transition: all 0.2s;
           flex: 1;
-          min-width: 140px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.25rem;
+        }
+
+        .controls button .math-notation {
+          font-size: 0.85rem;
+          opacity: 0.8;
         }
 
         .controls button:hover {
@@ -135,6 +162,14 @@ class MengenVisualisierung extends HTMLElement {
         svg {
           width: 100%;
           height: 100%;
+        }
+
+        .grundmenge-rect {
+          fill: none;
+          stroke: #3c3c3c;
+          stroke-width: 3;
+          stroke-dasharray: 5, 5;
+          rx: 10;
         }
 
         .circle {
@@ -228,6 +263,12 @@ class MengenVisualisierung extends HTMLElement {
           fill: #242428;
         }
 
+        .grundmenge-label {
+          font-size: 20px;
+          font-weight: bold;
+          fill: #3c3c3c;
+        }
+
         .element {
           font-size: 18px;
           fill: #242428;
@@ -295,12 +336,28 @@ class MengenVisualisierung extends HTMLElement {
 
       <div class="container">
         <div class="controls">
-          <button data-operation="union">Vereinigung (A ∪ B)</button>
-          <button data-operation="intersection">Schnittmenge (A ∩ B)</button>
-          <button data-operation="differenceAB">Differenz (A \\ B)</button>
-          <button data-operation="differenceBA">Differenz (B \\ A)</button>
-          <button data-operation="complementA">Komplement A</button>
-          <button data-operation="complementB">Komplement B</button>
+          <button data-operation="union">
+            <span>Vereinigung</span>
+            <span class="math-notation">${this.labelA} ∪ ${this.labelB}</span>
+          </button>
+          <button data-operation="intersection">
+            <span>Schnittmenge</span>
+            <span class="math-notation">${this.labelA} ∩ ${this.labelB}</span>
+          </button>
+          <button data-operation="differenceAB">
+            <span>Differenz</span>
+            <span class="math-notation">${this.labelA} \\ ${this.labelB}</span>
+          </button>
+          <button data-operation="differenceBA">
+            <span>Differenz</span>
+            <span class="math-notation">${this.labelB} \\ ${this.labelA}</span>
+          </button>
+          <button data-operation="complementA">
+            <span>Komplement ${this.labelA}</span>
+          </button>
+          <button data-operation="complementB">
+            <span>Komplement ${this.labelB}</span>
+          </button>
         </div>
 
         <div class="venn-container">
@@ -323,6 +380,12 @@ class MengenVisualisierung extends HTMLElement {
                 <circle cx="220" cy="200" r="120" fill="black" />
               </mask>
             </defs>
+
+            ${this.grundmenge ? `
+              <!-- Grundmenge als Rechteck -->
+              <rect class="grundmenge-rect" x="50" y="50" width="500" height="300" />
+              <text class="grundmenge-label" x="60" y="75">${this.labelGrundmenge}</text>
+            ` : ''}
 
             <!-- Kreis A -->
             <circle class="circle circle-a" cx="220" cy="200" r="120" />
@@ -357,6 +420,9 @@ class MengenVisualisierung extends HTMLElement {
 
             <!-- Elemente nur in B -->
             ${this.renderElements(nurB, 450, 200, 'right')}
+
+            <!-- Elemente nur in Grundmenge (außerhalb von A und B) -->
+            ${this.grundmenge ? this.renderGrundmengeElements(nurGrundmenge) : ''}
           </svg>
         </div>
 
@@ -405,6 +471,36 @@ class MengenVisualisierung extends HTMLElement {
     }).join('');
   }
 
+  renderGrundmengeElements(elements) {
+    if (elements.length === 0) return '';
+
+    // Positioniere Elemente außerhalb der Kreise, aber innerhalb des Rechtecks
+    const positions = [
+      { x: 90, y: 120 },   // oben links
+      { x: 510, y: 120 },  // oben rechts
+      { x: 90, y: 330 },   // unten links
+      { x: 510, y: 330 },  // unten rechts
+      { x: 300, y: 80 },   // oben mittig
+      { x: 90, y: 200 },   // links mittig
+      { x: 510, y: 200 },  // rechts mittig
+      { x: 300, y: 340 },  // unten mittig
+    ];
+
+    return elements.map((elem, index) => {
+      const pos = positions[index % positions.length];
+      const isHighlighted = this.isInHighlightedArea(elem);
+      const opacity = isHighlighted ? '1' : '0.4';
+      const fontSize = isHighlighted ? '20' : '18';
+
+      return `
+        <text class="element" x="${pos.x}" y="${pos.y}" 
+              style="opacity: ${opacity}; font-size: ${fontSize}px;">
+          ${elem}
+        </text>
+      `;
+    }).join('');
+  }
+
   getOperationTitle() {
     switch (this.currentOperation) {
       case 'union':
@@ -425,6 +521,7 @@ class MengenVisualisierung extends HTMLElement {
   }
 
   getOperationDescription() {
+    const basis = this.grundmenge ? this.labelGrundmenge : 'die Vereinigung';
     switch (this.currentOperation) {
       case 'union':
         return `Alle Elemente, die in mindestens einer der beiden Mengen vorkommen.`;
@@ -435,9 +532,9 @@ class MengenVisualisierung extends HTMLElement {
       case 'differenceBA':
         return `Alle Elemente, die in ${this.labelB}, aber nicht in ${this.labelA} enthalten sind.`;
       case 'complementA':
-        return `Alle Elemente (bezogen auf die Vereinigung), die nicht in ${this.labelA} enthalten sind.`;
+        return `Alle Elemente (bezogen auf ${basis}), die nicht in ${this.labelA} enthalten sind.`;
       case 'complementB':
-        return `Alle Elemente (bezogen auf die Vereinigung), die nicht in ${this.labelB} enthalten sind.`;
+        return `Alle Elemente (bezogen auf ${basis}), die nicht in ${this.labelB} enthalten sind.`;
       default:
         return '';
     }

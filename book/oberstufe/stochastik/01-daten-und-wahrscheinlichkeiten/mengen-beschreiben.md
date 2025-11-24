@@ -18,8 +18,10 @@ Zeichne ein Mengendiagramm zur Darstellung der Ereignisse E und F.
 <mengen-visualisierung
   menge-a="1,2,4"
   menge-b="2,4,6,8"
+  grundmenge="1,2,3,4,5,6,7,8"
   label-a="E"
-  label-b="F">
+  label-b="F"
+  label-grundmenge="S">
 </mengen-visualisierung>
 
 :::
