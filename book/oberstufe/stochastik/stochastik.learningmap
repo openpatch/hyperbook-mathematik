@@ -826,6 +826,11 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 295"
+          },
+          {
+            "label": "Aufgaben",
+            "type": "url",
+            "url": "./01-daten-und-wahrscheinlichkeiten/mengen-beschreiben"
           }
         ],
         "unlock": {
@@ -1119,6 +1124,11 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 297 und S. 298"
+          },
+          {
+            "label": "Weiteres Beispiel mit Erklärungen",
+            "type": "url",
+            "url": "https://de.serlo.org/mathe/236914/einfuehrendes-beispiel-zur-bedingten-wahrscheinlichkeit"
           }
         ],
         "unlock": {
