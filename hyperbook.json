@@ -16,6 +16,7 @@
     "brandDark": "#9fe1f8",
     "brandText": "#9fe1f8"
   },
+  "styles": ["/styles.css"],
   "logo": "/logo.png",
   "elements": {
     "bookmarks": false

@@ -3,6 +3,7 @@ name: Mengen beschreiben
 hide: true
 scripts:
   - /wc/mengen-visualisierung.js
+layout: standalone
 ---
 
 # Mengen beschreiben
