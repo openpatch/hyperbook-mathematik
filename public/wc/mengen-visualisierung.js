@@ -25,6 +25,7 @@ class MengenVisualisierung extends HTMLElement {
       this.grundmenge = null;
     }
     
+    this.readOnly = this.getAttribute('readonly') === "true" || this.getAttribute("readonly") === "";
     this.labelA = this.getAttribute('label-a') || 'A';
     this.labelB = this.getAttribute('label-b') || 'B';
     this.labelGrundmenge = this.getAttribute('label-grundmenge') || 'G';
@@ -95,6 +96,7 @@ class MengenVisualisierung extends HTMLElement {
     const nurA = this.getDifferenzAB();
     const nurB = this.getDifferenzBA();
     const nurGrundmenge = this.getElementeNurInGrundmenge();
+    console.log(this.readOnly);
     
     this.shadowRoot.innerHTML = `
       <style>
@@ -107,6 +109,7 @@ class MengenVisualisierung extends HTMLElement {
         .container {
           background: white;
           border-radius: 8px;
+          padding: 8px;
         }
 
         .controls {
@@ -335,6 +338,7 @@ class MengenVisualisierung extends HTMLElement {
       </style>
 
       <div class="container">
+        ${!this.readOnly ? `
         <div class="controls">
           <button data-operation="union">
             <span>Vereinigung</span>
@@ -358,7 +362,8 @@ class MengenVisualisierung extends HTMLElement {
           <button data-operation="complementB">
             <span>Komplement ${this.labelB}</span>
           </button>
-        </div>
+        </div>`
+        : ''}
 
         <div class="venn-container">
           <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
@@ -413,37 +418,33 @@ class MengenVisualisierung extends HTMLElement {
             <text class="label" x="430" y="100">${this.labelB}</text>
 
             <!-- Elemente nur in A -->
-            ${this.renderElements(nurA, 150, 200, 'left')}
+            ${this.renderElements(nurA, 180, 200, 'left')}
 
             <!-- Elemente in Schnittmenge -->
             ${this.renderElements(schnittmenge, 300, 200, 'center')}
 
             <!-- Elemente nur in B -->
-            ${this.renderElements(nurB, 450, 200, 'right')}
+            ${this.renderElements(nurB, 400, 200, 'right')}
 
             <!-- Elemente nur in Grundmenge (außerhalb von A und B) -->
             ${this.grundmenge ? this.renderGrundmengeElements(nurGrundmenge) : ''}
           </svg>
         </div>
 
+        ${!this.readOnly ? `
         <div class="info-box">
           <h3>${this.getOperationTitle()}</h3>
           <p>${this.getOperationDescription()}</p>
           <p class="result">Ergebnis: {${this.getOperationResult().join(', ')}}</p>
-        </div>
+        </div>` : ''}
       </div>
     `;
   }
 
-  renderElements(elements, centerX, centerY, position) {
+renderElements(elements, centerX, centerY, position) {
     if (elements.length === 0) return '';
 
-    // Kleinerer Radius, damit Elemente innerhalb der Kreise bleiben
-    const radius = 40;
-    const angleStep = (2 * Math.PI) / Math.max(elements.length, 3);
-    
     return elements.map((elem, index) => {
-      const angle = angleStep * index - Math.PI / 2;
       let x, y;
 
       if (elements.length === 1) {
@@ -453,9 +454,42 @@ class MengenVisualisierung extends HTMLElement {
         // Bei 2 Elementen: vertikal anordnen
         x = centerX;
         y = centerY + (index === 0 ? -25 : 25);
+      } else if (elements.length === 3) {
+        // Bei 3 Elementen: Dreieck-Formation
+        const positions = [
+          { x: centerX, y: centerY - 35 },      // oben
+          { x: centerX - 30, y: centerY + 25 }, // unten links
+          { x: centerX + 30, y: centerY + 25 }  // unten rechts
+        ];
+        x = positions[index].x;
+        y = positions[index].y;
+      } else if (elements.length === 4) {
+        // Bei 4 Elementen: Quadrat/Raute
+        const positions = [
+          { x: centerX, y: centerY - 35 },      // oben
+          { x: centerX - 35, y: centerY },      // links
+          { x: centerX + 35, y: centerY },      // rechts
+          { x: centerX, y: centerY + 35 }       // unten
+        ];
+        x = positions[index].x;
+        y = positions[index].y;
       } else {
-        x = centerX + radius * Math.cos(angle);
-        y = centerY + radius * Math.sin(angle);
+        // Bei 5+ Elementen: Mehrere Reihen in organischer Anordnung
+        const rows = Math.ceil(Math.sqrt(elements.length));
+        const itemsPerRow = Math.ceil(elements.length / rows);
+        const row = Math.floor(index / itemsPerRow);
+        const col = index % itemsPerRow;
+        const itemsInThisRow = Math.min(itemsPerRow, elements.length - row * itemsPerRow);
+        
+        // Versatz für zentrierte Anordnung
+        const rowWidth = (itemsInThisRow - 1) * 35;
+        const startX = centerX - rowWidth / 2;
+        
+        // Leichter Versatz zwischen Reihen für organischeres Aussehen
+        const rowOffset = (row % 2) * 15;
+        
+        x = startX + col * 35 + rowOffset;
+        y = centerY - ((rows - 1) * 30) / 2 + row * 30;
       }
 
       const isHighlighted = this.isInHighlightedArea(elem);
