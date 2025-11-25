@@ -4,8 +4,8 @@
       "id": "node-1761993745554",
       "type": "topic",
       "position": {
-        "x": 496.80794155294745,
-        "y": 310.25005758458565
+        "x": 454.6608926472335,
+        "y": 314.0816074851051
       },
       "width": 205,
       "height": 92,
@@ -60,8 +60,8 @@
       "id": "node-1761993796321",
       "type": "topic",
       "position": {
-        "x": 1088.8005189066214,
-        "y": -95.59684858425172
+        "x": 1525.74795832619,
+        "y": -149.85829530955766
       },
       "width": 215,
       "height": 76,
@@ -93,8 +93,8 @@
       "id": "node-1761993889456",
       "type": "topic",
       "position": {
-        "x": -407.7366491661719,
-        "y": 457.21474260127576
+        "x": -549.6985231158676,
+        "y": 334.6113060083568
       },
       "zIndex": 30,
       "data": {
@@ -122,8 +122,8 @@
       "id": "node-1761993912520",
       "type": "topic",
       "position": {
-        "x": -731.0950358833251,
-        "y": 614.2562850015772
+        "x": -863.7399699155276,
+        "y": 673.9707972744835
       },
       "zIndex": 30,
       "data": {
@@ -151,8 +151,8 @@
       "id": "node-1761993938256",
       "type": "topic",
       "position": {
-        "x": -399.3297306430148,
-        "y": 877.412306606888
+        "x": -274.89700868852356,
+        "y": 931.7608427102207
       },
       "zIndex": 30,
       "data": {
@@ -177,8 +177,8 @@
       "id": "node-1761993947416",
       "type": "topic",
       "position": {
-        "x": -264.27790394982856,
-        "y": 1032.727375897186
+        "x": -115.86321754787402,
+        "y": 1168.2364373946227
       },
       "zIndex": 30,
       "data": {
@@ -203,8 +203,8 @@
       "id": "node-1761993968127",
       "type": "topic",
       "position": {
-        "x": 502.6569372329692,
-        "y": 1003.595180567502
+        "x": 702.6941232529949,
+        "y": 1145.5570545171977
       },
       "zIndex": 30,
       "data": {
@@ -231,8 +231,8 @@
       "id": "node-1761993986735",
       "type": "topic",
       "position": {
-        "x": 531.9950323391665,
-        "y": 762.7616178799186
+        "x": 619.1080004446616,
+        "y": 720.8183369402358
       },
       "zIndex": 30,
       "data": {
@@ -251,8 +251,8 @@
       "id": "node-1761993999311",
       "type": "topic",
       "position": {
-        "x": 767.683278273483,
-        "y": -331.66174330084255
+        "x": 1204.6307176930516,
+        "y": -385.92319002614846
       },
       "zIndex": 30,
       "data": {
@@ -269,8 +269,8 @@
       "id": "node-1761994010591",
       "type": "topic",
       "position": {
-        "x": 971.8701704317953,
-        "y": -433.3495508362705
+        "x": 1408.8176098513638,
+        "y": -487.6109975615764
       },
       "zIndex": 30,
       "data": {
@@ -287,8 +287,8 @@
       "id": "node-1761994022943",
       "type": "topic",
       "position": {
-        "x": 1513.3487587771804,
-        "y": -432.7936405686114
+        "x": 1950.296198196749,
+        "y": -487.0550872939173
       },
       "zIndex": 30,
       "data": {
@@ -305,8 +305,8 @@
       "id": "node-1761994034846",
       "type": "topic",
       "position": {
-        "x": 1542.4376308580254,
-        "y": -106.61537332346225
+        "x": 1979.385070277594,
+        "y": -160.8768200487682
       },
       "zIndex": 30,
       "data": {
@@ -323,8 +323,8 @@
       "id": "node-1761994045070",
       "type": "topic",
       "position": {
-        "x": 1681.4333057272308,
-        "y": 16.98007429019944
+        "x": 2118.380745146799,
+        "y": -37.281372435106505
       },
       "zIndex": 30,
       "data": {
@@ -341,8 +341,8 @@
       "id": "node-1761994208332",
       "type": "task",
       "position": {
-        "x": 559.8550869174429,
-        "y": -140.73492329264175
+        "x": 996.8025263370115,
+        "y": -194.99637001794767
       },
       "zIndex": 30,
       "data": {
@@ -360,7 +360,7 @@
       "id": "node-1761994225748",
       "type": "task",
       "position": {
-        "x": -171.90618468592095,
+        "x": -197.71743449495654,
         "y": 363.5044833733672
       },
       "width": 222,
@@ -387,8 +387,8 @@
       "id": "node-1761994269027",
       "type": "topic",
       "position": {
-        "x": 1579.4279356356972,
-        "y": 196.77218700945494
+        "x": 2016.3753750552657,
+        "y": 142.51074028414905
       },
       "zIndex": 30,
       "data": {
@@ -407,8 +407,8 @@
       "id": "node-1761994482168",
       "type": "topic",
       "position": {
-        "x": 1359.4823767059574,
-        "y": 740.5903884248643
+        "x": 1785.3679985550443,
+        "y": 805.1185129474532
       },
       "width": 214,
       "height": 79,
@@ -432,8 +432,8 @@
       "id": "node-1761995344022",
       "type": "image",
       "position": {
-        "x": 595.6764614606884,
-        "y": -392.4784547649025
+        "x": 1032.623900880257,
+        "y": -446.7399014902084
       },
       "width": 131,
       "height": 146.1742826780021,
@@ -449,8 +449,8 @@
       "id": "node-1761995412093",
       "type": "image",
       "position": {
-        "x": 926.7521536176527,
-        "y": -259.7970323735161
+        "x": 1363.6995930372213,
+        "y": -314.05847909882203
       },
       "width": 114.82440476190479,
       "height": 82,
@@ -465,8 +465,8 @@
       "id": "node-1761995503234",
       "type": "image",
       "position": {
-        "x": 984.4276571130524,
-        "y": 679.7363381939266
+        "x": 1423.218903866657,
+        "y": 744.2644627165156
       },
       "zIndex": 10,
       "data": {
@@ -495,8 +495,8 @@
       "id": "node-1761995856027",
       "type": "image",
       "position": {
-        "x": -427.15482053832125,
-        "y": 1286.7244131283437
+        "x": -288.41935281475503,
+        "y": 1473.8559742438517
       },
       "width": 320,
       "height": 160,
@@ -511,8 +511,8 @@
       "id": "node-1761995979636",
       "type": "image",
       "position": {
-        "x": 146.36822014665898,
-        "y": 1193.8584047856612
+        "x": 285.1036878702252,
+        "y": 1380.9899659011692
       },
       "width": 261.0416666666667,
       "height": 179,
@@ -527,8 +527,8 @@
       "id": "node-1761996170103",
       "type": "image",
       "position": {
-        "x": 1216.0660001610324,
-        "y": -680.2200036570052
+        "x": 1653.013439580601,
+        "y": -734.4814503823111
       },
       "width": 278.72658227848103,
       "height": 234,
@@ -543,8 +543,8 @@
       "id": "node-1761996699833",
       "type": "task",
       "position": {
-        "x": -910.4259510866888,
-        "y": -10.21884054111394
+        "x": -1126.5951682373616,
+        "y": -136.04868336016236
       },
       "zIndex": 30,
       "data": {
@@ -577,8 +577,8 @@
       "id": "node-1763207473120",
       "type": "topic",
       "position": {
-        "x": 1117.5510497399546,
-        "y": 898.1188071493275
+        "x": 1543.4366715890415,
+        "y": 962.6469316719164
       },
       "zIndex": 30,
       "data": {
@@ -600,8 +600,8 @@
       "id": "node-1763207529911",
       "type": "topic",
       "position": {
-        "x": 1612.7189751259468,
-        "y": 897.9694835840849
+        "x": 2038.6045969750337,
+        "y": 962.4976081066737
       },
       "zIndex": 30,
       "data": {
@@ -623,8 +623,8 @@
       "id": "node-1763207584743",
       "type": "task",
       "position": {
-        "x": 922.4751343017897,
-        "y": 998.6055169171747
+        "x": 1403.209661995077,
+        "y": 1043.7752040829869
       },
       "zIndex": 30,
       "data": {
@@ -647,8 +647,8 @@
       "id": "node-1763207728728",
       "type": "task",
       "position": {
-        "x": 1866.709881846411,
-        "y": 991.8854616431739
+        "x": 2292.595503695498,
+        "y": 1056.4135861657628
       },
       "zIndex": 30,
       "data": {
@@ -671,8 +671,8 @@
       "id": "node-1763207775528",
       "type": "task",
       "position": {
-        "x": 1382.2657273627065,
-        "y": 974.1164971297779
+        "x": 1808.1513492117933,
+        "y": 1038.6446216523668
       },
       "zIndex": 30,
       "data": {
@@ -699,8 +699,8 @@
       "id": "node-1763207835936",
       "type": "task",
       "position": {
-        "x": 1393.2657273627065,
-        "y": 1059.532330469498
+        "x": 1819.1513492117933,
+        "y": 1124.0604549920868
       },
       "zIndex": 30,
       "data": {
@@ -727,8 +727,8 @@
       "id": "node-1763207872305",
       "type": "task",
       "position": {
-        "x": 1411.2657273627065,
-        "y": 1141.801336158066
+        "x": 1837.1513492117933,
+        "y": 1206.3294606806548
       },
       "zIndex": 30,
       "data": {
@@ -755,8 +755,8 @@
       "id": "node-1763208082706",
       "type": "task",
       "position": {
-        "x": 1406.2657273627065,
-        "y": 1226.7970126045366
+        "x": 1832.1513492117933,
+        "y": 1291.3251371271253
       },
       "zIndex": 30,
       "data": {
@@ -785,8 +785,8 @@
       "id": "node-1763331953572",
       "type": "task",
       "position": {
-        "x": -888.5057760028681,
-        "y": 163.07042750294522
+        "x": -1104.674993153541,
+        "y": 37.2405846838968
       },
       "zIndex": 30,
       "data": {
@@ -813,8 +813,8 @@
       "id": "node-1763332107434",
       "type": "task",
       "position": {
-        "x": -825.375,
-        "y": 246
+        "x": -1041.544217150673,
+        "y": 120.17015718095158
       },
       "zIndex": 30,
       "data": {
@@ -846,8 +846,8 @@
       "id": "node-1763332167878",
       "type": "task",
       "position": {
-        "x": -812.375,
-        "y": 68.5
+        "x": -1028.544217150673,
+        "y": -57.32984281904842
       },
       "zIndex": 30,
       "data": {
@@ -874,8 +874,8 @@
       "id": "node-1763334205661",
       "type": "image",
       "position": {
-        "x": -423.40318045078584,
-        "y": 255.12285121547927
+        "x": -571.8178668527405,
+        "y": 122.84019594417191
       },
       "width": 171.57142857142856,
       "height": 176.14666666666665,
@@ -890,8 +890,8 @@
       "id": "node-1763334292755",
       "type": "task",
       "position": {
-        "x": -927.350069001019,
-        "y": 324.4557654331463
+        "x": -1143.519286151692,
+        "y": 198.6259226140979
       },
       "zIndex": 30,
       "data": {
@@ -923,8 +923,8 @@
       "id": "node-1763334409730",
       "type": "task",
       "position": {
-        "x": -866.6348655325476,
-        "y": 405.8671906743406
+        "x": -1082.8040826832205,
+        "y": 280.0373478552922
       },
       "zIndex": 30,
       "data": {
@@ -956,8 +956,8 @@
       "id": "node-1763510174672",
       "type": "image",
       "position": {
-        "x": 754.1484598810484,
-        "y": 363.6495190899276
+        "x": 719.6645107763733,
+        "y": 371.3126188909665
       },
       "width": 134,
       "height": 121.4375,
@@ -1115,8 +1115,8 @@
       "id": "node-1763927624464",
       "type": "task",
       "position": {
-        "x": -1139.2185240557956,
-        "y": 494.260047432933
+        "x": -1297.3124291361382,
+        "y": 642.6747338348875
       },
       "zIndex": 30,
       "data": {
@@ -1154,8 +1154,8 @@
       "id": "node-1763927735991",
       "type": "task",
       "position": {
-        "x": -1064.3748358401563,
-        "y": 589.0838972813602
+        "x": -1222.468740920499,
+        "y": 737.4985836833148
       },
       "zIndex": 30,
       "data": {
@@ -1182,8 +1182,8 @@
       "id": "node-1763927760185",
       "type": "task",
       "position": {
-        "x": -1060.0218567397699,
-        "y": 669.6140106385076
+        "x": -1218.1157618201128,
+        "y": 818.0286970404621
       },
       "zIndex": 30,
       "data": {
@@ -1209,8 +1209,8 @@
       "id": "node-1763927780503",
       "type": "task",
       "position": {
-        "x": -1055.6688776393835,
-        "y": 752.3206135458479
+        "x": -1213.7627827197261,
+        "y": 900.7352999478024
       },
       "zIndex": 30,
       "data": {
@@ -1236,8 +1236,8 @@
       "id": "node-1763927801737",
       "type": "task",
       "position": {
-        "x": -1051.3158985389973,
-        "y": 835.0272164531884
+        "x": -1209.40980361934,
+        "y": 983.441902855143
       },
       "zIndex": 30,
       "data": {
@@ -1264,8 +1264,8 @@
       "id": "node-1763927824972",
       "type": "task",
       "position": {
-        "x": -1027.3745134868723,
-        "y": 909.0278611597564
+        "x": -1185.468418567215,
+        "y": 1057.4425475617109
       },
       "zIndex": 30,
       "data": {
@@ -1292,8 +1292,8 @@
       "id": "node-1763928026528",
       "type": "image",
       "position": {
-        "x": -1297.7865172874701,
-        "y": 760.1472360051231
+        "x": -1455.880422367813,
+        "y": 908.5619224070776
       },
       "width": 198,
       "height": 198,
@@ -1308,8 +1308,8 @@
       "id": "node-1763928373753",
       "type": "task",
       "position": {
-        "x": -755.8835524491807,
-        "y": 872.283176465522
+        "x": -704.1229618511368,
+        "y": 1004.8940078757981
       },
       "zIndex": 30,
       "data": {
@@ -1319,15 +1319,25 @@
           "after": [
             "node-1763929582618"
           ]
-        }
+        },
+        "resources": [
+          {
+            "label": "Aufgabe 1",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 303"
+          }
+        ],
+        "description": "Bearbeite die Aufgabe in deinem Heft."
       }
     },
     {
       "id": "node-1763928469513",
       "type": "task",
       "position": {
-        "x": -730.1736428840567,
-        "y": 955.5027967208067
+        "x": -670.959500352018,
+        "y": 1073.2065242630933
       },
       "zIndex": 30,
       "data": {
@@ -1337,15 +1347,35 @@
           "after": [
             "node-1763929582618"
           ]
-        }
+        },
+        "description": "Bearbeite die Aufgabe. \n\nFür die Simulation kannst du die verlinkte Webseite nutzen. \n\nZur Dokumentation deiner Ergebnisse steht dir das Formular „Ergebnissammlung“ zur Verfügung. \n\nAnschließend kannst du auch einsehen, was die anderen gewürfelt haben.",
+        "resources": [
+          {
+            "label": "Aufgabe 2",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 303"
+          },
+          {
+            "label": "Würfelsimulation",
+            "type": "url",
+            "url": "https://www.wuerfelonline.de/3-wuerfel/6-seitig.html"
+          },
+          {
+            "label": "Ergebnissammlung",
+            "type": "url",
+            "url": "https://cryptpad.fr/form/#/2/form/view/4AQU0AgjDCx2jZxq0PI-GXEMa8-1V5QgVZ6gUxRuJwg/"
+          }
+        ]
       }
     },
     {
       "id": "node-1763928502656",
       "type": "task",
       "position": {
-        "x": -719.4021359789255,
-        "y": 1042.5405175886303
+        "x": -619.1934578099167,
+        "y": 1139.7469773124321
       },
       "zIndex": 30,
       "data": {
@@ -1355,15 +1385,30 @@
           "after": [
             "node-1763929582618"
           ]
-        }
+        },
+        "description": "Bearbeite die Aufgabe in deinem Heft.\n\nFür die Simulation kannst du den Münzwurf-Simulator verwenden.",
+        "resources": [
+          {
+            "label": "Aufgabe 10",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 304"
+          },
+          {
+            "label": "Münzwurfsimulator",
+            "type": "url",
+            "url": "https://zufallszahlen-generator.de/werfen-sie-eine-munze-kopf-oder-zahl"
+          }
+        ]
       }
     },
     {
       "id": "node-1763929582618",
       "type": "task",
       "position": {
-        "x": -684.113291333699,
-        "y": 761.2975911027766
+        "x": -643.1741943979234,
+        "y": 926.1652531302151
       },
       "zIndex": 30,
       "data": {
@@ -1391,8 +1436,8 @@
       "id": "node-1763929856414",
       "type": "task",
       "position": {
-        "x": -639.1943780340738,
-        "y": 1195.2405768290769
+        "x": -500.4589103105076,
+        "y": 1382.372137944585
       },
       "width": 250,
       "height": 66,
@@ -1412,8 +1457,8 @@
       "id": "node-1763929896923",
       "type": "task",
       "position": {
-        "x": -365.1957946710303,
-        "y": 1206.3310315388035
+        "x": -226.46032694746407,
+        "y": 1393.4625926543115
       },
       "width": 236,
       "height": 53,
@@ -1442,8 +1487,8 @@
       "id": "node-1763929962584",
       "type": "task",
       "position": {
-        "x": -93.81361415072931,
-        "y": 1196.623174517259
+        "x": 44.92185357283688,
+        "y": 1383.754735632767
       },
       "width": 256,
       "height": 55,
@@ -1472,8 +1517,8 @@
       "id": "node-1763938051769",
       "type": "task",
       "position": {
-        "x": 121.11111111111114,
-        "y": 1115.5555555555554
+        "x": 259.84657883467736,
+        "y": 1302.6871166710634
       },
       "zIndex": 30,
       "data": {
@@ -1500,8 +1545,8 @@
       "id": "node-1763929962585",
       "type": "task",
       "position": {
-        "x": 365.8405796533364,
-        "y": 1122.4617340646048
+        "x": 565.8777656733621,
+        "y": 1264.4236080143005
       },
       "zIndex": 30,
       "data": {
@@ -1529,8 +1574,8 @@
       "id": "node-1763938290054",
       "type": "task",
       "position": {
-        "x": 520.8501877191934,
-        "y": 1202.3653293503035
+        "x": 720.8873737392191,
+        "y": 1344.3272032999992
       },
       "zIndex": 30,
       "data": {
@@ -1557,8 +1602,8 @@
       "id": "node-1763938291166",
       "type": "task",
       "position": {
-        "x": 942.1362127402391,
-        "y": 1158.4275230597648
+        "x": 1142.1733987602647,
+        "y": 1300.3893970094605
       },
       "zIndex": 30,
       "data": {
@@ -1586,8 +1631,8 @@
       "id": "node-1763938292252",
       "type": "task",
       "position": {
-        "x": 880.0396689322856,
-        "y": 1238.6853039243208
+        "x": 1080.0768549523114,
+        "y": 1380.6471778740165
       },
       "zIndex": 30,
       "data": {
@@ -1614,8 +1659,8 @@
       "id": "node-1763938298862",
       "type": "task",
       "position": {
-        "x": 683.3387816649015,
-        "y": 1231.2033710131377
+        "x": 883.3759676849272,
+        "y": 1373.1652449628334
       },
       "zIndex": 30,
       "data": {
@@ -1696,8 +1741,8 @@
       "id": "node-1763939210687",
       "type": "task",
       "position": {
-        "x": -1286.4255316668268,
-        "y": 313.8759935235251
+        "x": -1485.0947488174997,
+        "y": 190.54615070447664
       },
       "zIndex": 30,
       "data": {
@@ -1721,37 +1766,22 @@
       }
     },
     {
-      "id": "node-1764102536725",
-      "type": "image",
-      "position": {
-        "x": 332.38265077491144,
-        "y": -122.57989537688968
-      },
-      "width": 205,
-      "height": 205,
-      "zIndex": 10,
-      "data": {
-        "label": "image",
-        "state": "unlocked",
-        "data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgOTYwIDk2MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTYwIDk2MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGNERBNDA7fQoJLnN0MXtmaWxsOiNGRkVENkM7fQoJLnN0MntmaWxsOiNBNjdDNTI7fQoJLnN0M3tmaWxsOiM3NTRDMjQ7fQoJLnN0NHtmaWxsOiNGQkIwM0I7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0zNTIuMSw0MjAuMmMtNjguMSwwLjktMTI0LjItNDkuOC0xMjUtMTEzYy0wLjgtNjMuMSw1My45LTExNS4yLDEyMi0xMTYuMXMxMjQuMiw0OS44LDEyNSwxMTMgICAgQzQ3NC45LDM2Ny4zLDQyMC4yLDQxOS40LDM1Mi4xLDQyMC4yeiBNMzUwLjYsMjE2LjFjLTU1LjEsMC05OS45LDQwLjItOTkuOSw4OS42czQ0LjgsODkuNiw5OS45LDg5LjZzOTkuOS00MC4yLDk5LjktODkuNiAgICBTNDA1LjcsMjE2LjEsMzUwLjYsMjE2LjF6Ii8+CgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTYxMC45LDQyMC4yYy02OC4xLDAuOS0xMjQuMi00OS44LTEyNS0xMTNTNTM5LjgsMTkxLjksNjA4LDE5MS4xYzY4LjEtMC45LDEyNC4yLDQ5LjgsMTI1LDExMyAgICBDNzMzLjcsMzY3LjMsNjc5LDQxOS40LDYxMC45LDQyMC4yeiBNNjA5LjQsMjE2LjFjLTU1LjEsMC05OS45LDQwLjItOTkuOSw4OS42czQ0LjgsODkuNiw5OS45LDg5LjZzOTkuOS00MC4yLDk5LjktODkuNiAgICBDNzA5LjMsMjU2LjMsNjY0LjUsMjE2LjEsNjA5LjQsMjE2LjF6Ii8+CgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTU3Mi45LDY1OC40aC0xODlsMzQuMy00Ni43YzIxLjEtMjguOCwzMi41LTYzLjUsMzIuNS05OS4ydi0zNi4xSDUwNmwwLjEsMzYuNGMwLjEsMzUuNSwxMS40LDcwLDMyLjMsOTguNiAgICBMNTcyLjksNjU4LjR6Ii8+CgkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTY2NC43LDE2Nkg0NzguNUgyOTIuMWMwLDAtNSw3Ni4zLDE1LjcsMTQ2LjNjMjguMiw5NC44LDExOC41LDE4My4yLDE3MC42LDE4My4zbC0wLjEsMC40aDAuN3YwLjhsMCwwICAgIGM1MC0wLjIsMTQyLjEtODkuNywxNzAuMy0xODQuNUM2NzAsMjQyLjMsNjY0LjcsMTY2LDY2NC43LDE2NnoiLz4KCQk8cmVjdCB4PSIzMjkuMiIgeT0iNjU4LjQiIGNsYXNzPSJzdDIiIHdpZHRoPSIyOTguNCIgaGVpZ2h0PSIxMjguMyIvPgoJCTxyZWN0IHg9IjM2Mi42IiB5PSI2ODMuNyIgY2xhc3M9InN0MSIgd2lkdGg9IjIzMS43IiBoZWlnaHQ9Ijc3LjgiLz4KCQk8cGF0aCBjbGFzcz0ic3QzIiBkPSJNNjQ1LjQsODE3LjdoLTMzNHYtMjAuMWMwLTYsNC44LTEwLjgsMTAuOC0xMC44aDMxMi4zYzYsMCwxMC44LDQuOCwxMC44LDEwLjh2MjAuMUg2NDUuNHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNNTcyLjksNjU4LjRoLTE4OVY2NDJjMC02LjQsNS4yLTExLjUsMTEuNS0xMS41aDE2NS45YzYuNCwwLDExLjUsNS4yLDExLjUsMTEuNXYxNi40SDU3Mi45eiIvPgoJCTxjaXJjbGUgY2xhc3M9InN0NCIgY3g9IjM4NC40IiBjeT0iNzAyLjEiIHI9IjguOCIvPgoJCTxjaXJjbGUgY2xhc3M9InN0NCIgY3g9IjU3NS4yIiBjeT0iNzAyLjEiIHI9IjguOCIvPgoJCTxjaXJjbGUgY2xhc3M9InN0NCIgY3g9IjM4NC40IiBjeT0iNzQyLjkiIHI9IjguOCIvPgoJCTxjaXJjbGUgY2xhc3M9InN0NCIgY3g9IjU3NS4yIiBjeT0iNzQyLjkiIHI9IjguOCIvPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02NjYuOSwxNjYuOUgyODkuNGMtNi44LDAtMTIuMy01LjUtMTIuMy0xMi4zbDAsMGMwLTYuOCw1LjUtMTIuMywxMi4zLTEyLjNoMzc3LjRjNi44LDAsMTIuMyw1LjUsMTIuMywxMi4zICAgIGwwLDBDNjc5LjEsMTYxLjQsNjczLjYsMTY2LjksNjY2LjksMTY2Ljl6Ii8+Cgk8L2c+Cgk8cG9seWdvbiBjbGFzcz0ic3Q0IiBwb2ludHM9IjQ3OC4xLDIyMy41IDQ5OC42LDI4Ni41IDU2NSwyODYuNSA1MTEuMywzMjUuNSA1MzEuOCwzODguNiA0NzguMSwzNDkuNiA0MjQuNSwzODguNiA0NDUsMzI1LjUgICAgMzkxLjMsMjg2LjUgNDU3LjcsMjg2LjUgICIvPgo8L2c+Cjwvc3ZnPg=="
-      }
-    },
-    {
       "id": "node-1764102590120",
       "type": "topic",
       "position": {
-        "x": 351.25214408067785,
-        "y": 61.633719426266936
+        "x": 477.69329079781994,
+        "y": 170.4228340650424
       },
       "zIndex": 30,
       "data": {
         "label": "Siegesstraße",
         "state": "unlocked",
         "summary": "Teste dich!",
-        "description": "Hier kannst du kleine Test bearbeiten, bei denen du dein Können unter Beweis stellen musst.",
+        "description": "Wenn du alle Siegesstraßen Aufgaben bearbeitet hast, dann hast du dir diesen Pokal wahrlich verdient.",
         "color": "black",
         "completion": {
           "needs": [
+            "node-1764102725561",
             "node-1764102725561"
           ]
         },
@@ -1762,12 +1792,12 @@
       "id": "node-1764102725561",
       "type": "task",
       "position": {
-        "x": 121.50399211200019,
-        "y": -45.142706144169786
+        "x": -534.7529652833227,
+        "y": 402.4505802134981
       },
       "zIndex": 30,
       "data": {
-        "label": "Doppelter Münzwurf",
+        "label": "🏆 Doppelter Münzwurf",
         "state": "unlocked",
         "unlock": {
           "after": [
@@ -1781,7 +1811,52 @@
             "url": "siegesstrasse/doppelter-muenzwurf"
           }
         ],
-        "color": "black"
+        "color": "black",
+        "summary": "Siegesstraße",
+        "description": "Diese Aufgabe stellt dein ganzes Können zum Verknüpfen von Ereignissen auf die Probe."
+      }
+    },
+    {
+      "id": "node-1764103722020",
+      "type": "text",
+      "position": {
+        "x": 472.34031883969357,
+        "y": -17.047927410111143
+      },
+      "zIndex": 20,
+      "data": {
+        "label": "text",
+        "state": "unlocked",
+        "text": "🏆",
+        "fontSize": 150
+      }
+    },
+    {
+      "id": "node-1764103722021",
+      "type": "task",
+      "position": {
+        "x": -814.2552866793606,
+        "y": 771.1979091500655
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "🏆 Film vs Buch",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1761993912520"
+          ]
+        },
+        "resources": [
+          {
+            "label": "Aufgabe",
+            "type": "url",
+            "url": "siegesstrasse/doppelter-muenzwurf"
+          }
+        ],
+        "color": "black",
+        "summary": "Siegesstraße",
+        "description": "Diese Aufgabe stellt dein ganzes Können zu bedingten Wahrscheinlichkeiten auf die Probe."
       }
     }
   ],
@@ -2554,11 +2629,24 @@
       }
     },
     {
-      "id": "xy-edge__node-1764102590120left-node-1764102725561right",
-      "source": "node-1764102590120",
-      "target": "node-1764102725561",
-      "sourceHandle": "left",
-      "targetHandle": "right",
+      "id": "xy-edge__node-1764102725561top-node-1761993889456bottom",
+      "source": "node-1764102725561",
+      "target": "node-1761993889456",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1764103722021top-node-1761993912520bottom",
+      "source": "node-1764103722021",
+      "target": "node-1761993912520",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
       "animated": false,
       "type": "default",
       "style": {
