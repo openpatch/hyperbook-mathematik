@@ -1173,9 +1173,14 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 299"
+          },
+          {
+            "label": "Aufgabe",
+            "type": "url",
+            "url": "02-bedingte-wahrscheinlichkeiten/vierfeldertafeln"
           }
         ],
-        "description": "Bearbeite die Aufgabe."
+        "description": "Bearbeite die Aufgabe in deinem Heft oder bearbeite die Online-Aufgabe."
       }
     },
     {
