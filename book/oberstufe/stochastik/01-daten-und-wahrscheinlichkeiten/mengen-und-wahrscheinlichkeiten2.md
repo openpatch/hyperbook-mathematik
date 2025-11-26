@@ -8,7 +8,7 @@ layout: standalone
 
 # Mengen und Wahrscheinlichkeiten 2
 
-Die Ereignisse V und K beim Ziehen aus einer Urne mit acht Kugeln, die mit den Buchstaben A bis P beschriftet sind, können in einem Mengendiagramm dargestellt werden.
+Die Ereignisse V und K beim Ziehen aus einer Urne mit 16 Kugeln, die mit den Buchstaben A bis P beschriftet sind, können in einem Mengendiagramm dargestellt werden.
 
 <mengen-visualisierung
   readonly
@@ -24,17 +24,17 @@ Die Ereignisse V und K beim Ziehen aus einer Urne mit acht Kugeln, die mit den B
 :::snippet{#aufgabe}
 Bestimme die folgenden Wahrscheinlichkeiten als Dezimalzahl. Runde auf zwei Nachkommastellen.
 
-(1) $ P(V \cup K) $ = {z{0,88}}
+(1) $ P(V \cup K) $ = {z{0,75}}
 
 (2) $ P(V \cap K) $ = {z{0,00}}
 
 (3) $ P(\overline{V}) $ = {z{0,75}}
 
-(4) $ P(\overline{V \cap K}) $ = {z{0,88}}
+(4) $ P(\overline{V \cap K}) $ = {z{1,00}}
 
-(5) $ P(\overline{V} \cup \overline{K}) $ = {z{0,25}}
+(5) $ P(\overline{V} \cup \overline{K}) $ = {z{1,00}}
 
-(6) $ P(V \setminus K) $ = {z{0,50}}
+(6) $ P(V \setminus K) $ = {z{0,25}}
 
 :::
 ::::
