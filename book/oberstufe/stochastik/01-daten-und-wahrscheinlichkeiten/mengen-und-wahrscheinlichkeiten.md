@@ -24,7 +24,7 @@ Die Ereignisse E und F beim Ziehen aus einer Urne mit acht Kugeln, die mit den Z
 :::snippet{#aufgabe}
 Bestimme die folgenden Wahrscheinlichkeiten als Dezimalzahl. Runde auf zwei Nachkommastellen.
 
-(1) $ P(E \cup F) $ = {z{0,75}}
+(1) $ P(E \cup F) $ = {z{0,88}}
 
 (2) $ P(E \cap F) $ = {z{0,38}}
 
@@ -32,7 +32,7 @@ Bestimme die folgenden Wahrscheinlichkeiten als Dezimalzahl. Runde auf zwei Nach
 
 (4) $ P(\overline{E \cap F}) $ = {z{0,63}}
 
-(5) $ P(\overline{E} \cup \overline{F}) $ = {z{0,25}}
+(5) $ P(\overline{E} \cup \overline{F}) $ = {z{0,63}}
 
 (6) $ P(E \setminus F) $ = {z{0,38}}
 :::
