@@ -28,9 +28,9 @@ Es gibt mehrere Möglichkeiten, die Mengen A und B zu definieren. Eine mögliche
   menge-a="2,3,1"
   menge-b="1,7,8,9,10,11,12,13,14,15,16,17,18"
   grundmenge="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18"
-  label-a="Ungerade Zahlen"
-  label-b="Gerade Zahlen"
-  label-grundmenge="G">
+  label-a="A"
+  label-b="B"
+  label-grundmenge="S">
 </mengen-visualisierung>
 
 Diese Überlegungen führen zu den Mengen:
@@ -42,6 +42,8 @@ Wenn man den linken Zweig des Baums weiter verfolgt, dann erkennt man, dass die 
 Dann schaut man sich den rechten Zweig an. Die Wahrscheinlichkeit für $\overline{A}$ ist $\frac{5}{6}$. Das heißt, 15 von 18 Kugeln müssen in $\overline{A}$ liegen. Von diesen 15 Kugeln muss laut Baumdiagramm die Wahrscheinlichkeit für B unter der Bedingung, dass $\overline{A}$ eingetreten ist, $\frac{4}{5}$ sein. Das heißt, von den 15 Kugeln in $\overline{A}$ müssen 12 Kugeln in B liegen.
 
 Somit bleiben 3 Kugeln übrig, die außerhalb von A und B liegen.
+
+Die Zahlen der Kugeln in den Mengen sind willkürlich gewählt und können variieren.
 :::
 
 ## Aufgabe 2
