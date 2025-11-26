@@ -25,9 +25,9 @@ Vervollständige die folgende Vierfeldertafel.
 
 ::::multievent
 :::snippet{#aufgabe}
-Berechne mit Hilfer der Vierfeldertafel aus Aufgabe 1 die bedingten Wahrscheinlichkeiten.
+Berechne mit Hilfe der Vierfeldertafel aus Aufgabe 1 die bedingten Wahrscheinlichkeiten.
 
-(1) $ P_K(U) $ = {z{0,67}}
+(1) $ P_K(U) $ = {z{0,57}}
 
 (2) $ P_U(K) $ = {z{0,67}}
 :::
