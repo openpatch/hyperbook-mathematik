@@ -7,7 +7,7 @@ name: Gemischte Aufgaben
 ## Aufgabe 1
 
 :::snippet{#aufgabe}
-Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
+Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
 :::
 
 :::multievent
@@ -23,7 +23,7 @@ Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkom
 ## Aufgabe 2
 
 :::snippet{#aufgabe}
-Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
+Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
 ::: 
 
 :::multievent
