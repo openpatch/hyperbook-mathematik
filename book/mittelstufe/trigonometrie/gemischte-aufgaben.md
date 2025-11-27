@@ -2,7 +2,9 @@
 name: Gemischte Aufgaben
 ---
 
-# Aufgabe 1
+# Gemischte Aufgaben
+
+## Aufgabe 1
 
 :::snippet{#aufgabe}
 Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
@@ -18,7 +20,7 @@ Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkom
 
 :::
 
-# Aufgabe 2
+## Aufgabe 2
 
 :::snippet{#aufgabe}
 Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
@@ -34,7 +36,7 @@ Berechne die fehlenden Größen im rechtwinkligen Dreick. Runde auf zwei Nachkom
 
 :::
 
-# Aufgabe 3
+## Aufgabe 3
 
 :::snippet{#aufgabe}
 Eine Leiter lehnt an einer Wand. Die Leiter ist 5 Meter lang und steht in einem Winkel von 70° zur Wand. Berechne die Höhe, in der die Leiter die Wand berührt. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
@@ -46,7 +48,7 @@ Die Leiter berührt die Wand in einer Höhe von {z{4,70}} Metern.
 
 :::
 
-# Aufgabe 4
+## Aufgabe 4
 
 :::snippet{#aufgabe}
 Ein Baum wirft einen Schatten von 8 Metern Länge. Der Winkel zwischen dem Boden und der Sonne beträgt 40°. Berechne die Höhe des Baumes. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
@@ -58,7 +60,7 @@ Die Höhe des Baumes beträgt {z{6,70}} Meter.
 
 :::
 
-# Aufgabe 5
+## Aufgabe 5
 
 Von einem 20 Meter hohen Turm wird mit zwei Peilungen der Abstand zwischen zwei Schiffen auf dem Wasser bestimmt. Die Situation ist in der Skizze dargestellt.
 
