@@ -35,7 +35,7 @@ Es gibt mehrere Möglichkeiten, die Mengen A und B zu definieren. Eine mögliche
 
 Diese Überlegungen führen zu den Mengen:
 
-Die Wahrscheinlichkeit für A ist $\frac{1}{6}. Das heißt, 3 von 18 Kugeln müssen in A liegen.
+Die Wahrscheinlichkeit für A ist $\frac{1}{6}$. Das heißt, 3 von 18 Kugeln müssen in A liegen.
 
 Wenn man den linken Zweig des Baums weiter verfolgt, dann erkennt man, dass die Wahrscheinlichkeit für B unter der Bedingung, dass A eingetreten ist, $\frac{1}{3}$ ist. Das heißt, von den 3 Kugeln in A muss 1 Kugel in B liegen.
 
