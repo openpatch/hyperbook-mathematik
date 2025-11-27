@@ -20,6 +20,12 @@ Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachko
 
 :::
 
+:::collapsible{title="Video Erklärung" id="988165"}
+
+::youtube[title]{#BORpvpFj1So}
+
+:::
+
 ## Aufgabe 2
 
 :::snippet{#aufgabe}
@@ -48,6 +54,12 @@ Die Leiter berührt die Wand in einer Höhe von {z{4,70}} Metern.
 
 :::
 
+:::collapsible{title="Video Erklärung" id="98810230165"}
+
+::youtube[title]{#G1YkmUSwpYY}
+
+:::
+
 ## Aufgabe 4
 
 :::snippet{#aufgabe}
@@ -73,5 +85,11 @@ Berechne den Abstand zwischen den beiden Schiffen. Runde auf zwei Nachkommastell
 :::multievent
 
 Der Abstand zwischen den beiden Schiffen beträgt {z{13,77}} Meter.
+
+:::
+
+:::collapsible{title="Video Erklärung" id="98810230165isdaf"}
+
+::youtube[title]{#xod30oYcDjc}
 
 :::
