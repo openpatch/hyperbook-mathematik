@@ -72,6 +72,6 @@ Berechne den Abstand zwischen den beiden Schiffen. Runde auf zwei Nachkommastell
 
 :::multievent
 
-Der Abstand zwischen den beiden Schiffen beträgt {z{34,64}} Meter.
+Der Abstand zwischen den beiden Schiffen beträgt {z{13,77}} Meter.
 
 :::
