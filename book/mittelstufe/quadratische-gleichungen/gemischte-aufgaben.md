@@ -21,6 +21,13 @@ Wähle bei jeder Gleichung aus, ob sie eine, zwei oder keine Lösung hat.
 :::
 
 
+:::::collapsible{title="Videoerklärung" id="067537"}
+
+::youtube[title]{#lP3VlzPpxUg}
+
+:::
+
+
 ## Aufgabe 2
 
 :::snippet{#aufgabe}

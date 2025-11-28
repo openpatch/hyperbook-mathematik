@@ -20,7 +20,7 @@ Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachko
 
 :::
 
-:::collapsible{title="Video Erklärung" id="988165"}
+:::collapsible{title="Videoerklärung" id="988165"}
 
 ::youtube[title]{#BORpvpFj1So}
 
@@ -54,7 +54,7 @@ Die Leiter berührt die Wand in einer Höhe von {z{4,70}} Metern.
 
 :::
 
-:::collapsible{title="Video Erklärung" id="98810230165"}
+:::collapsible{title="Videoerklärung" id="98810230165"}
 
 ::youtube[title]{#G1YkmUSwpYY}
 
@@ -88,7 +88,7 @@ Der Abstand zwischen den beiden Schiffen beträgt {z{13,77}} Meter.
 
 :::
 
-:::collapsible{title="Video Erklärung" id="98810230165isdaf"}
+:::collapsible{title="Videoerklärung" id="98810230165isdaf"}
 
 ::youtube[title]{#xod30oYcDjc}
 
