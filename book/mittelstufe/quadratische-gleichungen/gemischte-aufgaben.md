@@ -21,7 +21,7 @@ Wähle bei jeder Gleichung aus, ob sie eine, zwei oder keine Lösung hat.
 :::
 
 
-:::::collapsible{title="Videoerklärung" id="067537"}
+:::collapsible{title="Videoerklärung" id="067537"}
 
 ::youtube[title]{#lP3VlzPpxUg}
 
