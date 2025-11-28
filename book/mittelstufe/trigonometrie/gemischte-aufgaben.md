@@ -68,7 +68,7 @@ Ein Baum wirft einen Schatten von 8 Metern Länge. Der Winkel zwischen dem Boden
 
 :::multievent
 
-Die Höhe des Baumes beträgt {z{6,70}} Meter.
+Die Höhe des Baumes beträgt {z{6,71}} Meter.
 
 :::
 
