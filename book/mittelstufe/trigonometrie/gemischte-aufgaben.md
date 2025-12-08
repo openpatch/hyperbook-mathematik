@@ -7,16 +7,16 @@ name: Gemischte Aufgaben
 ## Aufgabe 1
 
 :::snippet{#aufgabe}
-Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
+Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf eine Nachkommastellen. Fertige zunächst eine Skizze an.
 :::
 
 :::multievent
 
 |     | $\alpha$ | $\beta$     | $\gamma$    | $a$          | $b$          | $c$         |
 | --- | -------- | ----------- | ----------- | ------------ | ------------ | ----------- |
-| a   | 35°      | {z{55}}°    | 90°         | {z{3,44}} cm | {z{4,91}} cm | 6 cm        |
-| b   | 90°      | {z{33,37}}° | {z{56,63}}° | 10 cm        | 5,5 cm       | {z{8,35}}cm |
-| c   | {z{50}}° | 40°         | 90°         | {z{9,96}}cm  | {z{8,35}}cm  | 13 cm       |
+| a   | 35°      | {z{55}}°    | 90°         | {z{3,4}} cm | {z{4,9}} cm | 6 cm        |
+| b   | 90°      | {z{33,4}}° | {z{56,6}}° | 10 cm        | 5,5 cm       | {z{8,4}}cm |
+| c   | {z{50}}° | 40°         | 90°         | {z{10}}cm  | {z{8,4}}cm  | 13 cm       |
 
 :::
 
@@ -29,16 +29,16 @@ Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachko
 ## Aufgabe 2
 
 :::snippet{#aufgabe}
-Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf zwei Nachkommastellen. Fertige zunächst eine Skizze an.
+Berechne die fehlenden Größen im rechtwinkligen Dreieck. Runde auf eine Nachkommastellen. Fertige zunächst eine Skizze an.
 ::: 
 
 :::multievent
 
 |     | $\alpha$ | $\beta$     | $\gamma$    | $a$         | $b$          | $c$          |
 | --- | -------- | ----------- | ----------- | ----------- | ------------ | ------------ |
-| a   | 42°      | {z{48}}°    | 90°         | {z{7,20}}cm | 8 cm         | {z{10,77}}cm |
-| b   | 90°      | {z{48,59}}° | {z{41,41}}° | 12 cm       | 9 cm         | {z{7,94}}cm    |
-| c   | {z{38}}° | 52°         | 90°         | {z{9,23}} cm | {z{11,82}} cm | 15 cm        |
+| a   | 42°      | {z{48}}°    | 90°         | {z{7,2}}cm | 8 cm         | {z{10,8}}cm |
+| b   | 90°      | {z{48,6}}° | {z{41,4}}° | 12 cm       | 9 cm         | {z{7,9}}cm    |
+| c   | {z{38}}° | 52°         | 90°         | {z{9,2}} cm | {z{11,8}} cm | 15 cm        |
 
 :::
 
