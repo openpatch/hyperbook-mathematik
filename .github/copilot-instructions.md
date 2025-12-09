@@ -74,3 +74,7 @@ Verwende keine eigenen Schriftarten, sondern die Systemschriftarten.
 Benutze immer Deutsch als Spracheinstellung.
 
 Die Web Component soll in /book/wc.md dokumentiert werden.
+
+## Mathematische Schreibweisen
+
+Benutze für bedingte Wahrscheinlichkeiten diese Schreibwesie: $P_B(A)$.

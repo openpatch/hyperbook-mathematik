@@ -354,8 +354,6 @@ Der Punkt $P$ liegt **nicht** auf der Ebene.
 
 ::::::
 
-<!--
-
 ::::::collapsible{title="Ich kann Ebenen in Koordinatenform umwandeln" id="coordinate-form-planes-001"}
 
 Wandle die Ebene in Koordinatenform um:
@@ -431,5 +429,3 @@ Die Gerade **schneidet** die Ebene im Punkt $S$.
 :::
 
 ::::::
-
--->
