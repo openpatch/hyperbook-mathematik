@@ -5,7 +5,7 @@ lang: de
 ---
 
 # ✅ Aufgabensammlung
-.
+
 Hier findest du eine Sammlung von Aufgaben zu verschiedenen Bereichen der Stochastik.
 
 ::::::collapsible{title="Ich kann Vierfeldertafel erstellen und interpretieren"}
