@@ -1,4 +1,3 @@
 ---
-name: Checkout
-hide: true
+name: ✅ Checkout
 ---
