@@ -82,7 +82,7 @@ Das Baumdiagramm zeigt die möglichen Ergebnisse des Ziehens von drei Kugeln ohn
       /   \      /   \
    Rot(4) Blau(3) Rot(5) Blau(2)
    / \      / \     / \     / \
-Rot(3) Blau(2) Rot(4) Blau(1) Rot(4) Blau(1) Rot(5) Blau(0)
+Rot(3) Blau(3) Rot(4) Blau(2) Rot(4) Blau(2) Rot(5) Blau(1)
 ``` 
 
 ::::
