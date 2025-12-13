@@ -446,7 +446,7 @@ b) Bestimmen Sie die Wahrscheinlichkeit, dass beide Drehungen die Farbe Rot erge
 
 c) Bestimmen Sie die Wahrscheinlichkeit, dass beide Drehungen dieselbe Farbe ergeben, in Abhängigkeit von $ n $ und $ m $.
 
-d) Untersuchen Sie die Ereignisse $ A $: "Erste Drehung ergibt Rot" und $ B $: "Zweite Drehung ergibt Rot" auf stochastische Unabhängigkeit. Was unterscheidet diese Situation vom Ziehen ohne Zurücklegen?
+d) Untersuchen Sie die Ereignisse $ A $: "Rot nur in der ersten Drehnung" und $ B $: "Rot nur in der zweiten Drehnung" auf stochastische Unabhängigkeit.
 
 :::collapsible{title="Musterlösung" id="lsg-gluecksrad"}
 
@@ -473,47 +473,21 @@ c) Wahrscheinlichkeit für gleiche Farben:
 $$
 \begin{align*}
 P(\text{gleiche Farbe}) &= P(RR) + P(BB) \\
-&= \frac{m^2}{n^2} + \frac{(n-m)^2}{n^2} \\
-&= \frac{m^2 + n^2 - 2mn + m^2}{n^2} \\
-&= \frac{2m^2 - 2mn + n^2}{n^2}
+&= \frac{m^2}{n^2} + \frac{(n-m)^2}{n^2}
 \end{align*}
-$$
-
-**Alternative Schreibweise:**
-$$
-P(\text{gleiche Farbe}) = \left(\frac{m}{n}\right)^2 + \left(\frac{n-m}{n}\right)^2
 $$
 
 d) Test auf Unabhängigkeit:
 
-Ereignisse:
-- $ A $: Erste Drehung ergibt Rot
-- $ B $: Zweite Drehung ergibt Rot
-
-Wahrscheinlichkeiten:
 $$
 \begin{align*}
-P(A) &= \frac{m}{n} \\
-P(B) &= \frac{m}{n} \\
-P(A \cap B) &= P(RR) = \frac{m^2}{n^2}
+P(A) &= P(RB) = \frac{m}{n} \cdot \frac{n-m}{n} = \frac{m(n-m)}{n^2} \\
+P(B) &= P(BR) = \frac{n-m}{n} \cdot \frac{m}{n} = \frac{m(n-m)}{n^2} \\
+P(A \cap B) &= 0 \text{ (da beide Ereignisse sich gegenseitig ausschließen)} \\
+P(A) \cdot P(B) &= \left(\frac{m(n-m)}{n^2}\right)^2 = \frac{m^2(n-m)^2}{n^4} \neq 0
 \end{align*}
 $$
 
-Prüfung:
-$$
-P(A) \cdot P(B) = \frac{m}{n} \cdot \frac{m}{n} = \frac{m^2}{n^2} = P(A \cap B)
-$$
-
-Die Ereignisse $ A $ und $ B $ sind **stochastisch unabhängig**.
-
-**Unterschied zum Ziehen ohne Zurücklegen:**
-
-Beim Glücksrad ändert sich die Zusammensetzung nicht zwischen den Drehungen. Bei jedem Dreh ist die Wahrscheinlichkeit für Rot gleich $ \frac{m}{n} $. Das Ergebnis der ersten Drehung hat keinen Einfluss auf die zweite Drehung.
-
-Beim Ziehen ohne Zurücklegen wird eine Kugel entfernt, wodurch sich die Gesamtzahl und die Anzahl der roten Kugeln ändern. Das erste Ergebnis beeinflusst die Wahrscheinlichkeiten beim zweiten Zug, weshalb keine Unabhängigkeit vorliegt.
-
-**Beispiel:** Bei $ n = 10 $ und $ m = 4 $:
-- Glücksrad: $ P(R) = 0{,}4 $ bei beiden Drehungen
-- Urne ohne Zurücklegen: Erste Ziehung $ P(R) = 0{,}4 $, zweite Ziehung (wenn erste Rot war) $ P(R) = \frac{3}{9} \approx 0{,}33 $
+Da $$ P(A \cap B) \neq P(A) \cdot P(B) $$, sind die Ereignisse stochastisch abhängig.
 
 :::
