@@ -183,7 +183,7 @@ a) Bestimmen Sie die Gleichung der Ebene, in der die Seitenfläche $ ABS $ liegt
 b) Berechnen Sie den Flächeninhalt der Seitenfläche $ ABS $ mithilfe des Kreuzprodukts, indem du diese Formel anwendest:
 
 $$
-A = \frac{1}{2} \left|\overrightarrow{AB} \times \overrightarrow{AS}\right|
+A_{ABS} = \frac{1}{2} \left|\overrightarrow{AB} \times \overrightarrow{AS}\right|
 $$
 
 c) Berechnen Sie den Winkel zwischen der Seitenfläche $ ABS $ und der Grundfläche $ ABCD $.
