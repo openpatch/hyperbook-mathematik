@@ -1457,7 +1457,27 @@
           "after": [
             "node-1761994225748"
           ]
-        }
+        },
+        "resources": [
+          {
+            "label": "Erklärtext",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 305"
+          },
+          {
+            "label": "Erklärvideo: Mittelwert und Standardabweichung",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=okdH2Lt8yd8&pp=ygUdZW1waXJpc2NoZSBzdGFuZGFyZGFid2VpY2h1bmfSBwkJTQoBhyohjO8%3D"
+          },
+          {
+            "label": "Erklärvideo: Beispiel",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=ntY34-xGdng"
+          }
+        ],
+        "description": "Lies den Erklärtext oder schaue die Erklärvideos an."
       }
     },
     {
