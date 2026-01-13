@@ -4,6 +4,25 @@ title: Konzeptkarten
 
 # Konzeptkarten
 
+Hier findest du Konzeptkarten, die für den Grundkurs Mathematik in NRW erstellt wurden.
+
+Am besten druckst du dir die Karten aus.
+
+Dann kannst du zum Beispiel mit der Feynman-Methode vorgehen:
+
+Hier ein Auszug von [Serlo](https://de.serlo.org/lerntipps/134818/erklaeren-verstehen-mit-der-feynman-methode) zu dieser Methode.
+
+1. Erkläre dir selbst oder jemand anderem ein Thema - vollständig, möglichst einfach und in eigenen Worten.
+2. Gerätst du in Erklärungsnot?
+3. Identifiziere Wissenslücken und schreibe sie auf.
+4. Fülle die zuvor notierten Wissenslücken und versuche, für Fachbegriffe einfache Worte oder Alltagsbeispiele zu finden.
+5. Wiederhole den Prozess, bis du den Stoff ohne Probleme und ohne Fachbegriffe erklären kannst.
+
+:::alert{info}
+In der Ecke steht der Themenbereich. 
+A = "Analysis", G = "Analytische Geometrie" und S = "Stochastik".
+:::
+
 :::typst{mode="edit"}
 
 ```typ
