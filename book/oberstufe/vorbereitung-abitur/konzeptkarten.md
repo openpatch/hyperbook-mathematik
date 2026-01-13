@@ -20,21 +20,21 @@ title: Konzeptkarten
 
 #let karte(konzept, bereich) = box(
   width: 1fr,
-  height: 1fr,
+  height: 50mm,
   stroke: 0.5pt,
   inset: 6pt,
 )[
-  align(right)[
-    text(size: 9pt)[#bereich]
+  #align(right)[
+    #text(size: 9pt)[#bereich]
   ]
 
-  v(1fr)
+  #v(1fr)
 
-  align(center)[
-    text(size: 14pt, weight: "bold")[#konzept]
+  #align(center)[
+    #text(size: 14pt, weight: "bold")[#konzept]
   ]
 
-  v(1fr)
+  #v(1fr)
 ]
 
 #let seite(karten) = {
