@@ -4,9 +4,9 @@ title: Konzeptkarten
 
 # Konzeptkarten
 
-:::typst
+:::typst{mode="edit"}
 
-```typ{mode="editor"}
+```typ
 #set page(
   width: 210mm,
   height: 297mm,
