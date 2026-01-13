@@ -4,7 +4,7 @@
       "id": "node-1761993745554",
       "type": "topic",
       "position": {
-        "x": 454.6608926472335,
+        "x": 458.39816742824894,
         "y": 314.0816074851051
       },
       "width": 205,
@@ -46,11 +46,11 @@
             "node-1761993889456",
             "node-1761993912520",
             "node-1761993947416",
-            "node-1761993968127"
+            "node-1761993968127",
+            "node-1761993938256"
           ],
           "optional": [
-            "node-1761993986735",
-            "node-1761993938256"
+            "node-1761993986735"
           ]
         },
         "fontSize": 18
@@ -171,8 +171,8 @@
             "node-1763928502656"
           ]
         },
-        "summary": "Optional",
-        "color": "white"
+        "summary": "",
+        "color": "yellow"
       }
     },
     {
@@ -1588,6 +1588,11 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 310 und S. 311"
+          },
+          {
+            "label": "Erklärvideo",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=uQ_yFKCLzFM&pp=ygUeenVmYWxsc2dyw7bDn2VuIGVyd2FydHVuZ3N3ZXJ0"
           }
         ],
         "unlock": {
@@ -1796,7 +1801,7 @@
       "id": "node-1764102590120",
       "type": "topic",
       "position": {
-        "x": 477.69329079781994,
+        "x": 478.89816742824894,
         "y": 170.4228340650424
       },
       "zIndex": 30,
@@ -1847,7 +1852,7 @@
       "id": "node-1764103722020",
       "type": "text",
       "position": {
-        "x": 472.34031883969357,
+        "x": 467.39816742824894,
         "y": -17.047927410111143
       },
       "zIndex": 20,

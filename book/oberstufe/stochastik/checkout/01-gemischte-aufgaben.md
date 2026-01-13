@@ -8,62 +8,11 @@ lang: de
 
 ## Aufgaben ohne Hilfsmittel
 
-### Aufgabe 1: Ebene in Koordinatenform
-
-:::collapsible{title="Videoerklärung" id="vid-ebene-koordinaten"}
-
-
-:::
-
-Gegeben ist die Parameterform einer Ebene $$ E $$:
-
-$$
-E: \vec{x} = \begin{pmatrix}2\\1\\0\end{pmatrix} + r \cdot \begin{pmatrix}2\\0\\-2\end{pmatrix} + s \cdot \begin{pmatrix}0\\4\\1\end{pmatrix}
-$$
-
-a) Zeigen Sie, dass der Vektor $$ \vec{n} = \begin{pmatrix}4\\-1\\4\end{pmatrix} $$ ein Normalenvektor der Ebene $$ E $$ ist.
-
-b) Stellen Sie die Koordinatenform der Ebene $$ E $$ auf.
-
-:::collapsible{title="Musterlösung" id="lsg-ebene-koordinaten"}
-
-a) Überprüfung durch Skalarprodukte:
-
-$$
-\begin{align*}
-\vec{n} \cdot \vec{r_1} &= \begin{pmatrix}4\\-1\\4\end{pmatrix} \cdot \begin{pmatrix}2\\0\\-2\end{pmatrix} = 4 \cdot 2 + (-1) \cdot 0 + 4 \cdot (-2) = 8 + 0 - 8 = 0 \\
-\end{align*}
-$$
-
-b) Koordinatenform aufstellen:
-
-Mit dem Normalenvektor $$ \vec{n} = \begin{pmatrix}4\\-1\\4\end{pmatrix} $$ und dem Stützvektor $$ \vec{p} = \begin{pmatrix}2\\1\\0\end{pmatrix} $$:
-
-$$
-\begin{align*}
-\vec{n} \cdot \vec{x} &= d \\
-4x_1 - 1x_2 + 4x_3 &= d
-\end{align*}
-$$
-
-Bestimmung von $$ d $$ durch Einsetzen von $$ \vec{p} $$:
-
-$$
-4 \cdot 2 - 1 \cdot 1 + 4 \cdot 0 = 8 - 1 + 0 = 7
-$$  
-
-Also lautet die Koordinatenform der Ebene:
-
-$$
-4x_1 - x_2 + 4x_3 = 7
-$$
-
-:::
-
-### Aufgabe 2: Mengenoperationen
+### Aufgabe 1: Mengenoperationen
 
 :::collapsible{title="Videoerklärung" id="vid-mengen"}
 
+::youtube{#qn4jVfTqWk4}
 
 :::
 
@@ -108,10 +57,11 @@ $$
 
 :::
 
-### Aufgabe 3: Würfelwurf mit Ereignissen
+### Aufgabe 2: Würfelwurf mit Ereignissen
 
 :::collapsible{title="Videoerklärung" id="vid-wuerfel"}
 
+::youtube{#1iUczMOGXXg}
 
 :::
 
@@ -165,110 +115,11 @@ $$
 
 ## Aufgaben mit Hilfsmitteln
 
-### Aufgabe 1: Pyramide und Schnittwinkel
-
-:::collapsible{title="Videoerklärung" id="vid-pyramide"}
-
-::youtube{#7AV-jAFhBzM}
-
-:::
-
-Eine quadratische Pyramide hat die Grundfläche $ ABCD $ in der $ x_1x_2 $-Ebene mit den Eckpunkten:
-$ A(0|0|0) $, $ B(6|0|0) $, $ C(6|6|0) $, $ D(0|6|0) $
-
-Die Spitze der Pyramide liegt bei $ S(3|3|8) $.
-
-a) Bestimmen Sie die Gleichung der Ebene, in der die Seitenfläche $ ABS $ liegt, in Parameterform.
-
-b) Berechnen Sie den Flächeninhalt der Seitenfläche $ ABS $ mithilfe des Kreuzprodukts, indem du diese Formel anwendest:
-
-$$
-A_{ABS} = \frac{1}{2} \left|\overrightarrow{AB} \times \overrightarrow{AS}\right|
-$$
-
-c) Berechnen Sie den Winkel zwischen der Seitenfläche $ ABS $ und der Grundfläche $ ABCD $.
-
-d) Die Gerade $ g: \vec{x} = \begin{pmatrix}3\\0\\0\end{pmatrix} + t \cdot \begin{pmatrix}0\\1\\1\end{pmatrix} $ verläuft durch die Pyramide. Bestimmen Sie die Schnittpunkte von $ g $ mit der Seitenfläche $ ABS $.
-
-:::collapsible{title="Musterlösung" id="lsg-pyramide"}
-
-a) Parameterform der Ebene durch $ ABS $:
-
-Stützvektor: $ \vec{OA} = \begin{pmatrix}0\\0\\0\end{pmatrix} $
-
-Richtungsvektoren:
-
-$$
-\begin{align*}
-\overrightarrow{AB} &= \begin{pmatrix}6\\0\\0\end{pmatrix} \\
-\overrightarrow{AS} &= \begin{pmatrix}3\\3\\8\end{pmatrix}
-\end{align*}
-$$
-
-Ebenengleichung:
-
-$$
-E_{ABS}: \vec{x} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}6\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}3\\3\\8\end{pmatrix}
-$$
-
-b) Flächeninhalt mit Kreuzprodukt:
-
-$$
-\overrightarrow{AB} \times \overrightarrow{AS} = \begin{pmatrix}6\\0\\0\end{pmatrix} \times \begin{pmatrix}3\\3\\8\end{pmatrix} = \begin{pmatrix}0 \cdot 8 - 0 \cdot 3\\0 \cdot 3 - 6 \cdot 8\\6 \cdot 3 - 0 \cdot 3\end{pmatrix} = \begin{pmatrix}0\\-48\\18\end{pmatrix}
-$$
-
-Flächeninhalt des Dreiecks $ ABS $:
-
-$$
-A = \frac{1}{2} \left|\overrightarrow{AB} \times \overrightarrow{AS}\right| = \frac{1}{2}\sqrt{0^2 + (-48)^2 + 18^2} = \frac{1}{2}\sqrt{2304 + 324} = \frac{1}{2}\sqrt{2628} \approx 25{,}64 \text{ FE}
-$$
-
-c) Winkel zwischen den Ebenen:
-
-Normalenvektor der Seitenfläche: $ \vec{n_1} = \begin{pmatrix}0\\-48\\18\end{pmatrix} $ (oder vereinfacht: $ \begin{pmatrix}0\\-8\\3\end{pmatrix} $)
-
-Normalenvektor der Grundfläche: $ \vec{n_2} = \begin{pmatrix}0\\0\\1\end{pmatrix} $
-
-$$
-\cos(\alpha) = \frac{|\vec{n_1} \cdot \vec{n_2}|}{|\vec{n_1}| \cdot |\vec{n_2}|} = \frac{|0 \cdot 0 + (-8) \cdot 0 + 3 \cdot 1|}{\sqrt{64 + 9} \cdot 1} = \frac{3}{\sqrt{73}} \approx 0{,}351
-$$
-
-$$
-\alpha = \arccos(0{,}351) \approx 69{,}4°
-$$
-
-d) Schnittpunkt von $ g $ mit der Ebene $ ABS $:
-
-Einsetzen der Geradengleichung in die Ebenengleichung:
-
-$$
-\begin{pmatrix}3\\t\\t\end{pmatrix} = \begin{pmatrix}0\\0\\0\end{pmatrix} + r \cdot \begin{pmatrix}6\\0\\0\end{pmatrix} + s \cdot \begin{pmatrix}3\\3\\8\end{pmatrix}
-$$
-
-Gleichungssystem:
-
-$$
-\begin{align*}
-x_1: \quad 3 &= 6r + 3s \\
-x_2: \quad t &= 3s \\
-x_3: \quad t &= 8s
-\end{align*}
-$$
-
-Aus den letzten beiden Gleichungen: $ 3s = 8s \Rightarrow s = 0 $ (nur für $ s = 0 $ lösbar, was $ t = 0 $ bedeutet)
-
-Aus der ersten Gleichung mit $ s = 0 $: $ 3 = 6r \Rightarrow r = 0{,}5 $
-
-Schnittpunkt: $ \begin{pmatrix}3\\0\\0\end{pmatrix} $ (Punkt auf der Kante $ AB $)
-
-Die Gerade schneidet die Seitenfläche nur im Punkt $ (3|0|0) $, da sie parallel zur Ebene verläuft, sobald sie in die Pyramide eindringt.
-
-:::
-
-### Aufgabe 2: Vierfeldertafel und bedingte Wahrscheinlichkeit
+### Aufgabe 1: Vierfeldertafel und bedingte Wahrscheinlichkeit
 
 :::collapsible{title="Videoerklärung" id="vid-vierfeldertafel"}
 
+::youtube{#Wbma0RaIl8U}
 
 :::
 
@@ -329,7 +180,7 @@ Da $$ P(S) \cdot P(H) \neq P(S \cap H) $$, sind die Ereignisse **nicht** stochas
 
 :::
 
-### Aufgabe 3: Urnenmodell ohne Zurücklegen
+### Aufgabe 2: Urnenmodell ohne Zurücklegen
 
 :::collapsible{title="Videoerklärung" id="vid-urne"}
 
@@ -388,10 +239,11 @@ Da $$ P(A) \cdot P(B) \neq P(A \cap B) $$, sind die Ereignisse **nicht** stochas
 
 :::
 
-### Aufgabe 4: Aussagen zu Wahrscheinlichkeiten
+### Aufgabe 3: Aussagen zu Wahrscheinlichkeiten
 
 :::collapsible{title="Videoerklärung" id="vid-aussagen"}
 
+::youtube{#7XsxEd46dBo}
 
 :::
 
@@ -431,10 +283,11 @@ Die Schnittmenge kann nicht wahrscheinlicher sein als die Menge selbst.
 
 :::
 
-### Aufgabe 5: Glücksrad mit Parametern
+### Aufgabe 4: Glücksrad mit Parametern
 
 :::collapsible{title="Videoerklärung" id="vid-gluecksrad"}
 
+::youtube{#f7oMjCJ6m-A}
 
 :::
 
