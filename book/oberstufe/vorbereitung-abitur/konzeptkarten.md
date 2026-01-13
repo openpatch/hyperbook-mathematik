@@ -63,7 +63,7 @@ A = "Analysis", G = "Analytische Geometrie" und S = "Stochastik".
     gutter: 6mm,
     ..karten
   )
-  pagebreak()
+  pagebreak(weak: true)
 }
 
 = Konzeptkarten Abitur Mathematik
