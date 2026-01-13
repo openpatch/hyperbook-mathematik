@@ -1,0 +1,3 @@
+{{#each pages}}
+- [{{{ name }}} - ({{#each keywords}}{{this}}{{#unless @last}}, {{/unless}}{{/each}})]({{ href }})
+{{/each}}
