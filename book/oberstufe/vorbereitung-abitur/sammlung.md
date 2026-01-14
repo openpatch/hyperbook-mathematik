@@ -36,11 +36,15 @@ Im Lambacher Schweitzer NRW GK/LK ab S. 396.
 
 ### Mündliche Beispielprüfungen aus Thüringen mit Erwartungshorizont
 
-[Mündliche Prüfung zum Abitur in Mathematik](http://groolfs.de/Aufgaben/muendl.%20Abitur.pdf)
+[Mündliche Prüfungen zum Abitur in Mathematik](http://groolfs.de/Aufgaben/muendl.%20Abitur.pdf)
 
 ### Mündliche Bespielprüfungen aus Baden-Württemberg mit Lösungen
 
-[Mündliche Prüfung zum Abitur in Mathematik](https://rpk.baden-wuerttemberg.de/fileadmin/RP-Internet/Karlsruhe/Abteilung_7/Referat_75/_DocumentLibraries/Documents/Mathematik/Abi_2023/07_2023-BF.pdf)
+[Mündliche Prüfungen zum Abitur in Mathematik](https://rpk.baden-wuerttemberg.de/fileadmin/RP-Internet/Karlsruhe/Abteilung_7/Referat_75/_DocumentLibraries/Documents/Mathematik/Abi_2023/07_2023-BF.pdf)
+
+### Mündliche Bespielprüfungen aus Schleswig-Holstein
+
+[Mündliche Prüfungen zum Abitur in Mathematik](https://fachportal.lernnetz.de/files/Inhalte%20der%20Unterrichtsfächer/Mathematik/oberste%20Ebene/Fachfortbildung/Downloadbereich%20Fortbildungsmaterialien/Materialien%20ausgewählter%20Veranstaltungen/Abiturprüfung%20Mathematik%20auf%20grundlegendem%20Niveau.pdf)
 
 ### Beispielaufgaben des IQB:
 
