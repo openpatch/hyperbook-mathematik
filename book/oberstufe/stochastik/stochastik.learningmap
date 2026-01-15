@@ -61,7 +61,7 @@
       "type": "topic",
       "position": {
         "x": 1525.74795832619,
-        "y": -149.85829530955766
+        "y": -152.42857987619783
       },
       "width": 215,
       "height": 76,
@@ -253,8 +253,8 @@
       "id": "node-1761993999311",
       "type": "topic",
       "position": {
-        "x": 1204.6307176930516,
-        "y": -385.92319002614846
+        "x": 792.5956435034426,
+        "y": -328.5820636776686
       },
       "zIndex": 30,
       "data": {
@@ -264,6 +264,16 @@
           "after": [
             "node-1761994208332"
           ]
+        },
+        "completion": {
+          "needs": [
+            "node-1768513465173",
+            "node-1768513463251",
+            "node-1768513460044",
+            "node-1768513463724",
+            "node-1768513464196",
+            "node-1768513464699"
+          ]
         }
       }
     },
@@ -271,8 +281,8 @@
       "id": "node-1761994010591",
       "type": "topic",
       "position": {
-        "x": 1408.8176098513638,
-        "y": -487.6109975615764
+        "x": 1167.3823013724257,
+        "y": -708.4397293643976
       },
       "zIndex": 30,
       "data": {
@@ -282,6 +292,17 @@
           "after": [
             "node-1761993999311"
           ]
+        },
+        "completion": {
+          "needs": [
+            "node-1768484288824",
+            "node-1768514715773",
+            "node-1768484288820",
+            "node-1768484288821",
+            "node-1768484288823",
+            "node-1768484288825",
+            "node-1768484288822"
+          ]
         }
       }
     },
@@ -289,8 +310,8 @@
       "id": "node-1761994022943",
       "type": "topic",
       "position": {
-        "x": 1950.296198196749,
-        "y": -487.0550872939173
+        "x": 2043.0050706651814,
+        "y": -593.1061801817054
       },
       "zIndex": 30,
       "data": {
@@ -307,8 +328,8 @@
       "id": "node-1761994034846",
       "type": "topic",
       "position": {
-        "x": 1979.385070277594,
-        "y": -160.8768200487682
+        "x": 2529.42596753859,
+        "y": -232.84478791469297
       },
       "zIndex": 30,
       "data": {
@@ -325,8 +346,8 @@
       "id": "node-1761994045070",
       "type": "topic",
       "position": {
-        "x": 2118.380745146799,
-        "y": -37.281372435106505
+        "x": 2545.0479832090673,
+        "y": 245.44992989531227
       },
       "zIndex": 30,
       "data": {
@@ -343,8 +364,8 @@
       "id": "node-1761994208332",
       "type": "task",
       "position": {
-        "x": 996.8025263370115,
-        "y": -194.99637001794767
+        "x": 1279.5338286674303,
+        "y": -38.20901145289734
       },
       "zIndex": 30,
       "data": {
@@ -389,8 +410,8 @@
       "id": "node-1761994269027",
       "type": "topic",
       "position": {
-        "x": 2016.3753750552657,
-        "y": 142.51074028414905
+        "x": 1813.3228942906921,
+        "y": 289.0169605826387
       },
       "zIndex": 30,
       "data": {
@@ -434,8 +455,8 @@
       "id": "node-1761995344022",
       "type": "image",
       "position": {
-        "x": 1032.623900880257,
-        "y": -446.7399014902084
+        "x": 1047.6937596824885,
+        "y": -352.0108972038909
       },
       "width": 131,
       "height": 146.1742826780021,
@@ -451,8 +472,8 @@
       "id": "node-1761995412093",
       "type": "image",
       "position": {
-        "x": 1363.6995930372213,
-        "y": -314.05847909882203
+        "x": 1429.4746190280434,
+        "y": -240.50077946810492
       },
       "width": 114.82440476190479,
       "height": 82,
@@ -529,11 +550,11 @@
       "id": "node-1761996170103",
       "type": "image",
       "position": {
-        "x": 1653.013439580601,
-        "y": -734.4814503823111
+        "x": 1426.9898204986825,
+        "y": -644.9610386005089
       },
-      "width": 278.72658227848103,
-      "height": 234,
+      "width": 242.07692307692307,
+      "height": 203.03225806451613,
       "zIndex": 10,
       "data": {
         "label": "image",
@@ -1816,7 +1837,8 @@
             "node-1764102725561",
             "node-1764103722021",
             "node-1764140241979",
-            "node-1768484288816"
+            "node-1768484288816",
+            "node-1768484288818"
           ]
         },
         "fontSize": 18
@@ -1826,8 +1848,8 @@
       "id": "node-1764102725561",
       "type": "task",
       "position": {
-        "x": -534.7529652833227,
-        "y": 402.4505802134981
+        "x": -536.3133784694497,
+        "y": 411.8130593302602
       },
       "zIndex": 30,
       "data": {
@@ -2022,6 +2044,466 @@
             "url": "siegesstrasse/lotterie"
           }
         ]
+      }
+    },
+    {
+      "id": "node-1768513460044",
+      "type": "task",
+      "position": {
+        "x": 419.22246492110884,
+        "y": -413.4712206836692
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Glücksrad",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1768484288817"
+          ]
+        },
+        "resources": [
+          {
+            "label": "Aufgabe 5",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 330"
+          }
+        ],
+        "description": "Bearbeite die Aufgabe."
+      }
+    },
+    {
+      "id": "node-1768513463251",
+      "type": "task",
+      "position": {
+        "x": 326.11575339100193,
+        "y": -278.2964380880092
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Binomialverteilung ohne Taschenrechner",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1768484288817"
+          ]
+        },
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 3",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 330"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1768513463724",
+      "type": "task",
+      "position": {
+        "x": 749.2039313090803,
+        "y": -594.0721480436667
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Kreisel",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1768484288817"
+          ]
+        },
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 9",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 331"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1768513464196",
+      "type": "task",
+      "position": {
+        "x": 630.8840927995756,
+        "y": -102.14188773087453
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Pascal-Dreieck",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1768484288817"
+          ]
+        },
+        "resources": [
+          {
+            "label": "Aufgabe 1",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 330"
+          }
+        ],
+        "description": "Bearbeite die Aufgabe."
+      }
+    },
+    {
+      "id": "node-1768513464699",
+      "type": "task",
+      "position": {
+        "x": 475.2373790979767,
+        "y": -526.5033457527534
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Wahrscheinlichkeitsverteilung",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1768484288817"
+          ]
+        },
+        "resources": [
+          {
+            "label": "Aufgabe 8",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 331"
+          }
+        ],
+        "description": "Bearbeite die Aufgabe."
+      }
+    },
+    {
+      "id": "node-1768513465173",
+      "type": "task",
+      "position": {
+        "x": 407.4373372432445,
+        "y": -178.7858550164354
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Binomialkoeffizent berechnen",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1768484288817"
+          ]
+        },
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 2",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 330"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1768484288817",
+      "type": "task",
+      "position": {
+        "x": 736.0376965356082,
+        "y": -173.10653163182081
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Erklärung: Bernoulliexperimente",
+        "state": "unlocked",
+        "color": "lila",
+        "unlock": {
+          "after": [
+            "node-1761994208332"
+          ]
+        },
+        "description": "Lies dir die Erklärung im Buch durch oder schaue dir das Erklärvideo an.",
+        "resources": [
+          {
+            "label": "Erklärung im Buch",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 328f"
+          },
+          {
+            "label": "Erklärvideo",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=ySNU9JirCM8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1768484288818",
+      "type": "task",
+      "position": {
+        "x": 795.9941110633708,
+        "y": -418.6121271089636
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "🏆 Doppelter Münzwurf (copy)",
+        "state": "unlocked",
+        "unlock": {
+          "after": [
+            "node-1761993999311"
+          ]
+        },
+        "resources": [
+          {
+            "label": "Aufgabe",
+            "type": "url",
+            "url": "siegesstrasse/doppelter-muenzwurf"
+          }
+        ],
+        "color": "black",
+        "summary": "Siegesstraße",
+        "description": "Diese Aufgabe stellt dein ganzes Können zum Verknüpfen von Ereignissen auf die Probe."
+      }
+    },
+    {
+      "id": "node-1768514715773",
+      "type": "task",
+      "position": {
+        "x": 888.046525547864,
+        "y": -656.8790667731316
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Histogramme zuordnen",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 1",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 336"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288819",
+      "type": "task",
+      "position": {
+        "x": 1047.8341807592938,
+        "y": -580.1020535458143
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Erklärung: Erwartungswert und Histogramme",
+        "state": "unlocked",
+        "color": "lila",
+        "unlock": {
+          "after": [
+            "node-1761993999311"
+          ]
+        },
+        "description": "Lies dir die Erklärung im Buch durch oder schaue dir das Erklärvideo an.",
+        "resources": [
+          {
+            "label": "Erklärung im Buch",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 335f"
+          },
+          {
+            "label": "Erklärvideo",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=ySNU9JirCM8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1768484288820",
+      "type": "task",
+      "position": {
+        "x": 839.3489435081534,
+        "y": -736.9789208585007
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Erwartungswert berechnen",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 2",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 337"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288821",
+      "type": "task",
+      "position": {
+        "x": 857.2935308810559,
+        "y": -814.0683721921447
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Histogramm und Erwartungswert",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 3",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 337"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288822",
+      "type": "task",
+      "position": {
+        "x": 1579.6361530822137,
+        "y": -746.1659868663672
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Aussageben prüfen",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 10",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 338"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288823",
+      "type": "task",
+      "position": {
+        "x": 989.6957508852229,
+        "y": -900.0271878820356
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Ergebnis interpretieren",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 4",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 337"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288824",
+      "type": "task",
+      "position": {
+        "x": 1310.004145552723,
+        "y": -930.1365824965532
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Histogramme beschreiben",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 7",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 337"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288825",
+      "type": "task",
+      "position": {
+        "x": 1506.4134805322467,
+        "y": -837.8542009051323
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Histograme beschreiben II",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 8",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 337"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288819"
+          ]
+        }
       }
     }
   ],
@@ -2838,6 +3320,214 @@
       "target": "node-1761993968127",
       "sourceHandle": "left",
       "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993999311left-node-1768513465173right",
+      "source": "node-1761993999311",
+      "target": "node-1768513465173",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993999311left-node-1768513464196top",
+      "source": "node-1761993999311",
+      "target": "node-1768513464196",
+      "sourceHandle": "left",
+      "targetHandle": "top",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993999311left-node-1768513463251top",
+      "source": "node-1761993999311",
+      "target": "node-1768513463251",
+      "sourceHandle": "left",
+      "targetHandle": "top",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1768513460044bottom-node-1761993999311left",
+      "source": "node-1768513460044",
+      "target": "node-1761993999311",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1768513464699bottom-node-1761993999311left",
+      "source": "node-1768513464699",
+      "target": "node-1761993999311",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1768513463724bottom-node-1761993999311left",
+      "source": "node-1768513463724",
+      "target": "node-1761993999311",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993999311bottom-node-1768484288817top",
+      "source": "node-1761993999311",
+      "target": "node-1768484288817",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761993999311top-node-1768484288818bottom",
+      "source": "node-1761993999311",
+      "target": "node-1768484288818",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591bottom-node-1768484288819top",
+      "source": "node-1761994010591",
+      "target": "node-1768484288819",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591left-node-1768514715773right",
+      "source": "node-1761994010591",
+      "target": "node-1768514715773",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591left-node-1768484288820right",
+      "source": "node-1761994010591",
+      "target": "node-1768484288820",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591left-node-1768484288821right",
+      "source": "node-1761994010591",
+      "target": "node-1768484288821",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591top-node-1768484288823right",
+      "source": "node-1761994010591",
+      "target": "node-1768484288823",
+      "sourceHandle": "top",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591top-node-1768484288824bottom",
+      "source": "node-1761994010591",
+      "target": "node-1768484288824",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591top-node-1768484288822left",
+      "source": "node-1761994010591",
+      "target": "node-1768484288822",
+      "sourceHandle": "top",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994010591top-node-1768484288825left",
+      "source": "node-1761994010591",
+      "target": "node-1768484288825",
+      "sourceHandle": "top",
+      "targetHandle": "left",
       "animated": false,
       "type": "default",
       "style": {
