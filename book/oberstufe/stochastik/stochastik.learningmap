@@ -310,8 +310,8 @@
       "id": "node-1761994022943",
       "type": "topic",
       "position": {
-        "x": 2043.0050706651814,
-        "y": -593.1061801817054
+        "x": 2068.8047819677754,
+        "y": -594.9490167033193
       },
       "zIndex": 30,
       "data": {
@@ -364,8 +364,8 @@
       "id": "node-1761994208332",
       "type": "task",
       "position": {
-        "x": 1279.5338286674303,
-        "y": -38.20901145289734
+        "x": 1251.8912808432221,
+        "y": -51.1088671041945
       },
       "zIndex": 30,
       "data": {
@@ -2239,11 +2239,6 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 328f"
-          },
-          {
-            "label": "Erklärvideo",
-            "type": "url",
-            "url": "https://www.youtube.com/watch?v=ySNU9JirCM8"
           }
         ]
       }
@@ -2329,11 +2324,6 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 335f"
-          },
-          {
-            "label": "Erklärvideo",
-            "type": "url",
-            "url": "https://www.youtube.com/watch?v=ySNU9JirCM8"
           }
         ]
       }
@@ -2502,6 +2492,182 @@
         "unlock": {
           "after": [
             "node-1768484288819"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288826",
+      "type": "task",
+      "position": {
+        "x": 1917.3818172232914,
+        "y": -493.75993876771474
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Erklärung: Kumulierte Wahrscheinlichkeiten",
+        "state": "unlocked",
+        "color": "lila",
+        "unlock": {
+          "after": [
+            "node-1761993999311"
+          ]
+        },
+        "description": "Lies dir die Erklärung im Buch durch oder schaue dir das Erklärvideo an.",
+        "resources": [
+          {
+            "label": "Erklärung im Buch",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 339f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "node-1768484288827",
+      "type": "task",
+      "position": {
+        "x": 1805.5079115738224,
+        "y": -688.4784893783203
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Ereignisse veranschaulichen",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 1",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 340"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288826"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288828",
+      "type": "task",
+      "position": {
+        "x": 1943.4494489571102,
+        "y": -786.4200267616084
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Wahrscheinlichkeit mit Parametern bestimmen",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgaben. Löse nur so viele Teilaufgaben bis du dir sicher bist.",
+        "resources": [
+          {
+            "label": "Aufgabe 3",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 340"
+          },
+          {
+            "label": "Aufgabe 6",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 341"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288826"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288831",
+      "type": "task",
+      "position": {
+        "x": 2342.5313689340646,
+        "y": -759.5910841506583
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Graphen vergleichen",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 10",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 341"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288826"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288832",
+      "type": "task",
+      "position": {
+        "x": 2390.1739167582723,
+        "y": -649.2920945915782
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Glücksrad",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 12",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 342"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288826"
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-1768484288833",
+      "type": "task",
+      "position": {
+        "x": 2389.9027150205197,
+        "y": -527.936085902815
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "Knopf",
+        "state": "unlocked",
+        "description": "Bearbeite die Aufgabe.",
+        "resources": [
+          {
+            "label": "Aufgabe 13",
+            "type": "book",
+            "url": "",
+            "bookName": "Lambacher Schweitzer GK/LK NRW",
+            "bookLocation": "S. 342"
+          }
+        ],
+        "unlock": {
+          "after": [
+            "node-1768484288826"
           ]
         }
       }
@@ -3527,6 +3693,84 @@
       "source": "node-1761994010591",
       "target": "node-1768484288825",
       "sourceHandle": "top",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994022943bottom-node-1768484288826top",
+      "source": "node-1761994022943",
+      "target": "node-1768484288826",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994022943top-node-1768484288827bottom",
+      "source": "node-1761994022943",
+      "target": "node-1768484288827",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994022943top-node-1768484288828bottom",
+      "source": "node-1761994022943",
+      "target": "node-1768484288828",
+      "sourceHandle": "top",
+      "targetHandle": "bottom",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994022943right-node-1768484288831left",
+      "source": "node-1761994022943",
+      "target": "node-1768484288831",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994022943right-node-1768484288832left",
+      "source": "node-1761994022943",
+      "target": "node-1768484288832",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1761994022943right-node-1768484288833left",
+      "source": "node-1761994022943",
+      "target": "node-1768484288833",
+      "sourceHandle": "right",
       "targetHandle": "left",
       "animated": false,
       "type": "default",
