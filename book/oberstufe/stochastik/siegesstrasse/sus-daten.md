@@ -44,3 +44,5 @@ empirische Standardabweichung: {z{41}}
 :::snippet{#aufgabe}
 Beschreibe, was diese drei Streuungsmaße über die Verteilung der Schüler:innenzahlen pro Gesamtschule aussagen.
 :::
+
+::textinput
