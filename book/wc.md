@@ -6,6 +6,7 @@ scripts:
   - /wc/draw-input.js
   - https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js
   - /wc/tree-diagram.js
+  - /wc/lotterie-spiel.js
 ---
 
 # Dokumentation zu Web Components
@@ -290,3 +291,53 @@ Die `draw-input` Web Component ermöglicht das Zeichnen von Formen auf einer Zei
   \frac{4}{5}:B
   \frac{1}{5}:\overline{B}
 </tree-diagram>
+
+## Lotterie-Spiel
+
+Das `lotterie-spiel` Web Component ist ein interaktives Glücksspiel, bei dem man ein Glücksrad dreht und Kugeln aus einer Urne zieht.
+
+### Verwendung
+
+```html
+<lotterie-spiel></lotterie-spiel>
+```
+
+<lotterie-spiel></lotterie-spiel>
+
+### Spielregeln
+
+1. **Einsatz**: 50 Cent pro Spiel
+2. **Glücksrad drehen**: Das Rad zeigt entweder Rot (80% Wahrscheinlichkeit) oder Blau (20% Wahrscheinlichkeit)
+3. **Kugel ziehen**: Je nach Farbe des Glücksrads zieht man eine Kugel aus der entsprechenden Urne:
+   - **Rote Urne**: Enthält Kugeln mit Werten 0, 1, 2 (mit Wahrscheinlichkeiten 0,3, 0,2, 0,5)
+   - **Blaue Urne**: Enthält Kugeln mit Werten 0, 4, 8 (mit Wahrscheinlichkeiten 0,1, 0,4, 0,5)
+4. **Gewinnberechnung**:
+   - **Rote Kugel**: Man muss den Wert zahlen (Verlust + Einsatz)
+   - **Blaue Kugel**: Man erhält den Wert ausgezahlt (Gewinn - Einsatz)
+
+### Funktionen
+
+- **Interaktives Glücksrad**: Klicke auf das Rad oder den Button zum Drehen
+- **Urnenziehung**: Wähle nach dem Drehen eine Kugel aus der entsprechenden Urne
+- **Echtzeit-Statistik**: Verfolge deine Bilanz über mehrere Spiele
+- **Gewinn/Verlust-Anzeige**: Sofortiges Feedback nach jedem Spiel
+
+### Statistik
+
+Das Component zeigt folgende Statistiken:
+- Anzahl gespielter Spiele
+- Gesamt-Einsatz
+- Gesamt-Gewinn/Verlust
+- Aktuelle Bilanz
+
+### Einbindung in Hyperbook
+
+Im Frontmatter der Seite muss das Script eingebunden werden:
+
+```yaml
+---
+name: Meine Seite
+scripts:
+  - /wc/lotterie-spiel.js
+---
+```

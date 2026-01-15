@@ -1815,7 +1815,8 @@
           "needs": [
             "node-1764102725561",
             "node-1764103722021",
-            "node-1764140241979"
+            "node-1764140241979",
+            "node-1768484288816"
           ]
         },
         "fontSize": 18
@@ -1976,8 +1977,8 @@
       "id": "node-1764140241979",
       "type": "task",
       "position": {
-        "x": 308.7687875236362,
-        "y": 1155.2528471208507
+        "x": 308.0529939011708,
+        "y": 1155.9686407433162
       },
       "zIndex": 30,
       "data": {
@@ -1997,7 +1998,30 @@
         ],
         "color": "black",
         "summary": "Siegesstraße",
-        "description": "Diese Aufgabe stellt dein ganzes Können zu bedingten Wahrscheinlichkeiten auf die Probe."
+        "description": "Diese Aufgabe stellt dein ganzes Können zu Kenngrößen berechnen auf die Probe."
+      }
+    },
+    {
+      "id": "node-1768484288816",
+      "type": "task",
+      "position": {
+        "x": 1079.9928658693423,
+        "y": 1117.5750466425638
+      },
+      "zIndex": 30,
+      "data": {
+        "label": "🏆 Lotterie",
+        "state": "unlocked",
+        "color": "black",
+        "summary": "Siegesstraße",
+        "description": "Diese Aufgabe stellt dein ganzes Können zu Zufallsgrößen auf die Probe.",
+        "resources": [
+          {
+            "label": "Aufgabe",
+            "type": "url",
+            "url": "siegesstrasse/lotterie"
+          }
+        ]
       }
     }
   ],
@@ -2799,6 +2823,19 @@
       "id": "xy-edge__node-1764140241979left-node-1761993947416right",
       "source": "node-1764140241979",
       "target": "node-1761993947416",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "animated": false,
+      "type": "default",
+      "style": {
+        "stroke": "#94a3b8",
+        "strokeWidth": 2
+      }
+    },
+    {
+      "id": "xy-edge__node-1768484288816left-node-1761993968127right",
+      "source": "node-1768484288816",
+      "target": "node-1761993968127",
       "sourceHandle": "left",
       "targetHandle": "right",
       "animated": false,
