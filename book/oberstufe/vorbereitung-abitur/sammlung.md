@@ -34,6 +34,8 @@ Im Lambacher Schweitzer NRW GK/LK ab S. 396.
 
 [Serlo: Abitur NRW](https://de.serlo.org/mathe/313659/abitur-nrw-mathematik-mit-loesungen)
 
+[Beispielaufgaben NRW](https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/mathematik-gost) (Nach unten scrollen)
+
 ### Mündliche Beispielprüfungen aus Thüringen mit Erwartungshorizont
 
 [Mündliche Prüfungen zum Abitur in Mathematik](http://groolfs.de/Aufgaben/muendl.%20Abitur.pdf)
