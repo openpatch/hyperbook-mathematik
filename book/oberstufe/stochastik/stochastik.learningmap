@@ -71,7 +71,7 @@
         "state": "unlocked",
         "unlock": {
           "after": [
-            "node-1761994208332"
+            "node-1761993777953"
           ]
         },
         "completion": {
@@ -356,25 +356,6 @@
         "unlock": {
           "after": [
             "node-1761994034846"
-          ]
-        }
-      }
-    },
-    {
-      "id": "node-1761994208332",
-      "type": "task",
-      "position": {
-        "x": 1251.8912808432221,
-        "y": -51.1088671041945
-      },
-      "zIndex": 30,
-      "data": {
-        "label": "Check-In: Bionomialverteilung",
-        "state": "unlocked",
-        "color": "lila",
-        "unlock": {
-          "after": [
-            "node-1761993777953"
           ]
         }
       }
@@ -2050,8 +2031,8 @@
       "id": "node-1768513460044",
       "type": "task",
       "position": {
-        "x": 419.22246492110884,
-        "y": -413.4712206836692
+        "x": 410.0836753508327,
+        "y": -436.31819460935947
       },
       "zIndex": 30,
       "data": {
@@ -2078,8 +2059,8 @@
       "id": "node-1768513463251",
       "type": "task",
       "position": {
-        "x": 326.11575339100193,
-        "y": -278.2964380880092
+        "x": 312.40756903558776,
+        "y": -295.43166853227694
       },
       "zIndex": 30,
       "data": {
@@ -2106,8 +2087,8 @@
       "id": "node-1768513463724",
       "type": "task",
       "position": {
-        "x": 749.2039313090803,
-        "y": -594.0721480436667
+        "x": 748.061582612796,
+        "y": -559.8016871551313
       },
       "zIndex": 30,
       "data": {
@@ -2134,8 +2115,8 @@
       "id": "node-1768513464196",
       "type": "task",
       "position": {
-        "x": 630.8840927995756,
-        "y": -102.14188773087453
+        "x": 540.6385457930988,
+        "y": -130.70060513798742
       },
       "zIndex": 30,
       "data": {
@@ -2190,8 +2171,8 @@
       "id": "node-1768513465173",
       "type": "task",
       "position": {
-        "x": 407.4373372432445,
-        "y": -178.7858550164354
+        "x": 248.65086845969677,
+        "y": -199.34813154955668
       },
       "zIndex": 30,
       "data": {
@@ -2218,27 +2199,42 @@
       "id": "node-1768484288817",
       "type": "task",
       "position": {
-        "x": 736.0376965356082,
-        "y": -173.10653163182081
+        "x": 749.2394739075899,
+        "y": -168.27730942272427
       },
       "zIndex": 30,
       "data": {
-        "label": "Erklärung: Bernoulliexperimente",
+        "label": "Erklärung: Bernoulli-Experimente",
         "state": "unlocked",
         "color": "lila",
         "unlock": {
           "after": [
-            "node-1761994208332"
+            "node-1761993777953"
           ]
         },
-        "description": "Lies dir die Erklärung im Buch durch oder schaue dir das Erklärvideo an.",
+        "description": "Schaue dir entweder die drei Erklärvideos an oder lies den Erklärtext und die Beispiel im Buch.\n\nDer Erklärtext ist kompakt und auf das Wesentliche reduziert.\n\nDie Erklärvideos zeigen auch verschiedene Anwendungsbereichen und habe wirklich gute Visualisierungen.",
         "resources": [
           {
-            "label": "Erklärung im Buch",
+            "label": "Erklärvideo (Bernoulli-Experimente)",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=Utr6JZqG8bs"
+          },
+          {
+            "label": "Erklärvideo (Bernoulli-Kette)",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=kJ-VmWm7qpQ"
+          },
+          {
+            "label": "Erklärvideo (Binomialverteilung)",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=pncoDj4SbLA"
+          },
+          {
+            "label": "Erklärtext",
             "type": "book",
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
-            "bookLocation": "S. 328f"
+            "bookLocation": "S. 328-329"
           }
         ]
       }
@@ -2247,12 +2243,12 @@
       "id": "node-1768484288818",
       "type": "task",
       "position": {
-        "x": 795.9941110633708,
-        "y": -418.6121271089636
+        "x": 834.8339667370443,
+        "y": -448.313193212361
       },
       "zIndex": 30,
       "data": {
-        "label": "🏆 Doppelter Münzwurf (copy)",
+        "label": "🏆 Bernoulli-Kette",
         "state": "unlocked",
         "unlock": {
           "after": [
@@ -2324,6 +2320,16 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 335f"
+          },
+          {
+            "label": "Erklärvideo (Histogramme)",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=LgWlsOk4xmw"
+          },
+          {
+            "label": "Erklärvideo (Erwartungswert)",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=NTMFstFcgos"
           }
         ]
       }
@@ -2500,8 +2506,8 @@
       "id": "node-1768484288826",
       "type": "task",
       "position": {
-        "x": 1917.3818172232914,
-        "y": -493.75993876771474
+        "x": 1978.0915614430437,
+        "y": -495.10904419482034
       },
       "zIndex": 30,
       "data": {
@@ -2521,6 +2527,11 @@
             "url": "",
             "bookName": "Lambacher Schweitzer GK/LK NRW",
             "bookLocation": "S. 339f"
+          },
+          {
+            "label": "Erklärvideo",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=5dE86BNPy-4"
           }
         ]
       }
@@ -2810,19 +2821,6 @@
       "target": "node-1761993777953",
       "sourceHandle": "left",
       "targetHandle": "right",
-      "animated": false,
-      "type": "simplebezier",
-      "style": {
-        "stroke": "#94a3b8",
-        "strokeWidth": 2
-      }
-    },
-    {
-      "id": "xy-edge__node-1761994208332right-node-1761993796321left",
-      "source": "node-1761994208332",
-      "target": "node-1761993796321",
-      "sourceHandle": "right",
-      "targetHandle": "left",
       "animated": false,
       "type": "simplebezier",
       "style": {
