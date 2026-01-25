@@ -4,8 +4,8 @@
       "id": "node-1761993745554",
       "type": "topic",
       "position": {
-        "x": 458.39816742824894,
-        "y": 314.0816074851051
+        "x": 468.0110059593244,
+        "y": 370.156498916379
       },
       "width": 205,
       "height": 92,
@@ -27,8 +27,8 @@
       "id": "node-1761993777953",
       "type": "topic",
       "position": {
-        "x": -86.92180858565949,
-        "y": 535.5732082455348
+        "x": -50.07259421653666,
+        "y": 556.4010250628652
       },
       "width": 275,
       "height": 93,
@@ -70,9 +70,7 @@
         "label": "Binomialverteilung",
         "state": "unlocked",
         "unlock": {
-          "after": [
-            "node-1761993777953"
-          ]
+          "after": []
         },
         "completion": {
           "needs": [
@@ -261,9 +259,7 @@
         "label": "Bernoulli-Experimente",
         "state": "unlocked",
         "unlock": {
-          "after": [
-            "node-1761993777953"
-          ]
+          "after": []
         },
         "completion": {
           "needs": [
@@ -1873,8 +1869,8 @@
       "id": "node-1764103722021",
       "type": "task",
       "position": {
-        "x": -809.0089902541415,
-        "y": 797.4750693430728
+        "x": -732.1062820055373,
+        "y": 789.4643705671766
       },
       "zIndex": 30,
       "data": {
