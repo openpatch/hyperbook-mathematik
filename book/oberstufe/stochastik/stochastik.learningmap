@@ -2205,9 +2205,7 @@
         "state": "unlocked",
         "color": "lila",
         "unlock": {
-          "after": [
-            "node-1761993777953"
-          ]
+          "after": []
         },
         "description": "Schaue dir entweder die drei Erklärvideos an oder lies den Erklärtext und die Beispiel im Buch.\n\nDer Erklärtext ist kompakt und auf das Wesentliche reduziert.\n\nDie Erklärvideos zeigen auch verschiedene Anwendungsbereichen und habe wirklich gute Visualisierungen.",
         "resources": [
