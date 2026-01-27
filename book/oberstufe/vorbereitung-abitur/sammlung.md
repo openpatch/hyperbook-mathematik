@@ -36,6 +36,10 @@ Im Lambacher Schweitzer NRW GK/LK ab S. 396.
 
 [Beispielaufgaben NRW](https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/mathematik-gost) (Nach unten scrollen)
 
+### Aufgabensammlung vom IQB
+
+[Aufgabensammlung IQB - Grundkurs WTR](https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-mathematik/?Anforderungsniveau=2174&Digitales+Hilfsmittel+%28nur+Pr%C3%BCfungsteil+B+-+Bearbeitung+mit+Hilfsmitteln%29=2179)
+
 ### Mündliche Beispielprüfungen aus Thüringen mit Erwartungshorizont
 
 [Mündliche Prüfungen zum Abitur in Mathematik](http://groolfs.de/Aufgaben/muendl.%20Abitur.pdf)
