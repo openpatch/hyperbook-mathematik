@@ -3,7 +3,7 @@
   "search": true,
   "allowDangerousHtml": true,
   "qrcode": true,
-  "version": "0.0.1",
+  "version": "text",
   "description": "In diesem Hyperbook lernst du viele Themen der Mathematik kennen.",
   "author": {
     "name": "OpenPatch",
