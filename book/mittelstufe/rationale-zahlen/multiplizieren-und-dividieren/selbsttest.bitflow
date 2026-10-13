@@ -1,0 +1,405 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-selbsttest",
+    "title": "Selbsttest ohne Taschenrechner",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "free",
+    "allowSkip": true,
+    "sections": [],
+    "pools": [],
+    "timeLimit": 1200
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Selbsttest ohne Taschenrechner",
+        "markdown": "Elf gemischte Aufgaben in 20 Minuten. Es gibt keine Hinweise – erst am Ende siehst du, was richtig war. Arbeite ohne Taschenrechner, Notizen auf Papier sind erlaubt.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "s1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-9) \\cdot  (-7)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "63",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "s2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-0{,}3) \\cdot  4=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-1.2",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "s3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-56) : 8=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-7",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "s4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "4{,}8 : (-0{,}6)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "s5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne und kürze.",
+        "latex": "\\left(-\\frac{4}{9}\\right)\\cdot\\frac{3}{8}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{1}{6}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "s6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne und kürze.",
+        "latex": "\\left(-\\frac{5}{6}\\right):\\left(-\\frac{10}{9}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "\\frac{3}{4}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "s7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-1)^{5} \\cdot  (-2)^{3}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "s8",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "-3^{4}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-81",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "s9",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "20 - 6 \\cdot  (-3)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "38",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "s10",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-48) : (4 - 12)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "6",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      }
+    },
+    {
+      "id": "s11",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $(-5) : 0 = 0$",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1540
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1680
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau dir in der Übersicht an, welche Aufgaben noch nicht geklappt haben, und wiederhole die passende Seite.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-s1",
+      "source": "start",
+      "target": "s1"
+    },
+    {
+      "id": "e-s1-s2",
+      "source": "s1",
+      "target": "s2"
+    },
+    {
+      "id": "e-s2-s3",
+      "source": "s2",
+      "target": "s3"
+    },
+    {
+      "id": "e-s3-s4",
+      "source": "s3",
+      "target": "s4"
+    },
+    {
+      "id": "e-s4-s5",
+      "source": "s4",
+      "target": "s5"
+    },
+    {
+      "id": "e-s5-s6",
+      "source": "s5",
+      "target": "s6"
+    },
+    {
+      "id": "e-s6-s7",
+      "source": "s6",
+      "target": "s7"
+    },
+    {
+      "id": "e-s7-s8",
+      "source": "s7",
+      "target": "s8"
+    },
+    {
+      "id": "e-s8-s9",
+      "source": "s8",
+      "target": "s9"
+    },
+    {
+      "id": "e-s9-s10",
+      "source": "s9",
+      "target": "s10"
+    },
+    {
+      "id": "e-s10-s11",
+      "source": "s10",
+      "target": "s11"
+    },
+    {
+      "id": "e-s11-ende",
+      "source": "s11",
+      "target": "ende"
+    }
+  ]
+}

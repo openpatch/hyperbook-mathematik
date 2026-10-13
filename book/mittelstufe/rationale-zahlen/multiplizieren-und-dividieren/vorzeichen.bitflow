@@ -1,0 +1,938 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-vorzeichen",
+    "title": "Vorzeichen-Check",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Vorzeichen-Check",
+        "markdown": "Acht abwechslungsreiche Aufgaben rund um die Vorzeichen beim Multiplizieren und Dividieren. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "v-regeln",
+      "type": "task-fill-in-the-blank",
+      "data": {
+        "instruction": "Trage das Vorzeichen des Ergebnisses ein (+ oder −).",
+        "text": "(+) · (+) → [[1]]\n(−) · (−) → [[2]]\n(+) · (−) → [[3]]\n(−) · (+) → [[4]]\n(−) : (−) → [[5]]\n(+) : (−) → [[6]]",
+        "blanks": {
+          "1": [
+            "+",
+            "plus"
+          ],
+          "2": [
+            "+",
+            "plus"
+          ],
+          "3": [
+            "-",
+            "−",
+            "minus"
+          ],
+          "4": [
+            "-",
+            "−",
+            "minus"
+          ],
+          "5": [
+            "+",
+            "plus"
+          ],
+          "6": [
+            "-",
+            "−",
+            "minus"
+          ]
+        },
+        "caseSensitive": false,
+        "trim": true,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-v-regeln",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      }
+    },
+    {
+      "id": "v-negativ",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welche Ergebnisse sind negativ? Wähle alle aus.",
+        "variant": "multiple",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$(-3) \\cdot  4$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$(-2) \\cdot  (-5)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Zwei Minuszeichen ergeben plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$7 : (-1)$",
+            "correct": true
+          },
+          {
+            "id": "o4",
+            "markdown": "$(-1) \\cdot  (-1) \\cdot  (-1)$",
+            "correct": true
+          },
+          {
+            "id": "o5",
+            "markdown": "$(-2)^{2}$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "(−2)² = (−2) · (−2) = 4.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o6",
+            "markdown": "$-2^{2}$",
+            "correct": true
+          },
+          {
+            "id": "o7",
+            "markdown": "$(-8) \\cdot  0$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Mal 0 ergibt 0 – und 0 ist weder positiv noch negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": true,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-v-negativ",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      }
+    },
+    {
+      "id": "v-zahlengerade",
+      "type": "task-number-line",
+      "data": {
+        "instruction": "Rechne aus und setze jedes Ergebnis an die richtige Stelle der Zahlengeraden.",
+        "min": -4,
+        "max": 4,
+        "tickStep": 1,
+        "minorTicks": 1,
+        "labelTicks": true,
+        "tolerance": 0.2,
+        "snap": "minor",
+        "partialCredit": true,
+        "items": [
+          {
+            "id": "i1",
+            "label": "(−2) · 1,5",
+            "value": -3
+          },
+          {
+            "id": "i2",
+            "label": "(−0,5) · (−4)",
+            "value": 2
+          },
+          {
+            "id": "i3",
+            "label": "3 · (−0,5)",
+            "value": -1.5
+          },
+          {
+            "id": "i4",
+            "label": "(−6) : (−4)",
+            "value": 1.5
+          },
+          {
+            "id": "i5",
+            "label": "(−1) : 2",
+            "value": -0.5
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-v-zahlengerade",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Erst rechnen, dann einzeichnen",
+        "markdown": "Bestimme zuerst das Vorzeichen, dann den Betrag.\n\n- (−2) · 1,5 = −3\n- 3 · (−0,5) = −1,5\n\nNegative Zahlen liegen links von 0."
+      }
+    },
+    {
+      "id": "v-rechenart",
+      "type": "task-matching",
+      "data": {
+        "instruction": "Achte auf die Rechenart! Ordne zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "(−12) + 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−9"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "(−12) − 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−15"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "(−12) · 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−36"
+            }
+          },
+          {
+            "id": "p4",
+            "left": {
+              "kind": "text",
+              "label": "(−12) : 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−4"
+            }
+          },
+          {
+            "id": "p5",
+            "left": {
+              "kind": "text",
+              "label": "(−12) · (−3)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "36"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-v-rechenart",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Rechenart beachten",
+        "markdown": "Die Vorzeichenregel gilt nur für **mal** und **geteilt**.\n\nBeim Addieren und Subtrahieren denkst du an die Zahlengerade: (−12) + 3 = −9."
+      }
+    },
+    {
+      "id": "v-aussage1",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? **Ist bei zwei Faktoren einer negativ, dann ist das Produkt immer negativ.**",
+        "correctAnswer": false,
+        "feedbackWhenYes": {
+          "message": "Gegenbeispiel: (−3) · 0 = 0. Das Produkt ist 0, also nicht negativ.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-v-aussage1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Gegenbeispiel suchen",
+        "markdown": "Eine Aussage mit »immer« ist falsch, sobald du ein einziges Gegenbeispiel findest. Denke an die Zahl 0."
+      }
+    },
+    {
+      "id": "v-aussage2",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? **Das Produkt von fünf negativen Zahlen ist negativ.**",
+        "correctAnswer": true,
+        "feedbackWhenNo": {
+          "message": "Fünf Minuszeichen – eine ungerade Anzahl – ergeben minus.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-v-aussage2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 910
+      },
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      }
+    },
+    {
+      "id": "v-aussage3",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? **Das Produkt zweier negativer Zahlen ist größer als jeder der beiden Faktoren.**",
+        "correctAnswer": true,
+        "feedbackWhenNo": {
+          "message": "Das Produkt ist positiv – und jede positive Zahl ist größer als jede negative Zahl.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-v-aussage3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1050
+      },
+      "data": {
+        "title": "Positiv gegen negativ",
+        "markdown": "Minus mal minus ist positiv. Positive Zahlen sind immer größer als negative.\n\nBeispiel: (−0,5) · (−0,5) = 0,25 > −0,5"
+      }
+    },
+    {
+      "id": "v-tabelle",
+      "type": "task-table",
+      "data": {
+        "instruction": "Fülle die Tabelle aus.",
+        "caption": "Multiplizieren und Dividieren mit negativen Zahlen",
+        "columns": [
+          {
+            "id": "a",
+            "header": "a",
+            "kind": "number"
+          },
+          {
+            "id": "m",
+            "header": "a · (−3)",
+            "kind": "number"
+          },
+          {
+            "id": "d",
+            "header": "a : (−2)",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "a": {
+                "given": "6"
+              },
+              "m": {
+                "accepted": [
+                  "-18",
+                  "−18"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "-3",
+                  "−3"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "a": {
+                "given": "−8"
+              },
+              "m": {
+                "accepted": [
+                  "24"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "4"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "a": {
+                "given": "−12"
+              },
+              "m": {
+                "accepted": [
+                  "36"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "6"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "a": {
+                "given": "0"
+              },
+              "m": {
+                "accepted": [
+                  "0"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "0"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r5",
+            "cells": {
+              "a": {
+                "given": "−10"
+              },
+              "m": {
+                "accepted": [
+                  "30"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "5"
+                ]
+              }
+            }
+          }
+        ],
+        "rowHeaders": false,
+        "rowOrder": "fixed",
+        "caseSensitive": false,
+        "ignoreWhitespace": true,
+        "numberTolerance": 0,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-v-tabelle",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1190
+      },
+      "data": {
+        "title": "Vorzeichenregel beim Dividieren",
+        "markdown": "1. Dividiere die Beträge.\n2. Gleiche Vorzeichen → **plus**, verschiedene → **minus**.\n\nProbe mit der Multiplikation: (−12) : 3 = −4, denn (−4) · 3 = −12."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du kennst die Vorzeichenregeln. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-v-regeln",
+      "source": "start",
+      "target": "v-regeln"
+    },
+    {
+      "id": "e-v-regeln-v-negativ",
+      "source": "v-regeln",
+      "target": "v-negativ"
+    },
+    {
+      "id": "e-v-regeln-falsch",
+      "source": "v-regeln",
+      "target": "hilfe-v-regeln",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-regeln",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-regeln-zurueck",
+      "source": "hilfe-v-regeln",
+      "target": "v-regeln",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-regeln"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-regeln-weiter",
+      "source": "hilfe-v-regeln",
+      "target": "v-negativ",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-negativ-v-zahlengerade",
+      "source": "v-negativ",
+      "target": "v-zahlengerade"
+    },
+    {
+      "id": "e-v-negativ-falsch",
+      "source": "v-negativ",
+      "target": "hilfe-v-negativ",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-negativ",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-negativ-zurueck",
+      "source": "hilfe-v-negativ",
+      "target": "v-negativ",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-negativ"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-negativ-weiter",
+      "source": "hilfe-v-negativ",
+      "target": "v-zahlengerade",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-zahlengerade-v-rechenart",
+      "source": "v-zahlengerade",
+      "target": "v-rechenart"
+    },
+    {
+      "id": "e-v-zahlengerade-falsch",
+      "source": "v-zahlengerade",
+      "target": "hilfe-v-zahlengerade",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-zahlengerade",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-zahlengerade-zurueck",
+      "source": "hilfe-v-zahlengerade",
+      "target": "v-zahlengerade",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-zahlengerade"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-zahlengerade-weiter",
+      "source": "hilfe-v-zahlengerade",
+      "target": "v-rechenart",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-rechenart-v-aussage1",
+      "source": "v-rechenart",
+      "target": "v-aussage1"
+    },
+    {
+      "id": "e-v-rechenart-falsch",
+      "source": "v-rechenart",
+      "target": "hilfe-v-rechenart",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-rechenart",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-rechenart-zurueck",
+      "source": "hilfe-v-rechenart",
+      "target": "v-rechenart",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-rechenart"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-rechenart-weiter",
+      "source": "hilfe-v-rechenart",
+      "target": "v-aussage1",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-aussage1-v-aussage2",
+      "source": "v-aussage1",
+      "target": "v-aussage2"
+    },
+    {
+      "id": "e-v-aussage1-falsch",
+      "source": "v-aussage1",
+      "target": "hilfe-v-aussage1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-aussage1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-aussage1-zurueck",
+      "source": "hilfe-v-aussage1",
+      "target": "v-aussage1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-aussage1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-aussage1-weiter",
+      "source": "hilfe-v-aussage1",
+      "target": "v-aussage2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-aussage2-v-aussage3",
+      "source": "v-aussage2",
+      "target": "v-aussage3"
+    },
+    {
+      "id": "e-v-aussage2-falsch",
+      "source": "v-aussage2",
+      "target": "hilfe-v-aussage2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-aussage2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-aussage2-zurueck",
+      "source": "hilfe-v-aussage2",
+      "target": "v-aussage2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-aussage2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-aussage2-weiter",
+      "source": "hilfe-v-aussage2",
+      "target": "v-aussage3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-aussage3-v-tabelle",
+      "source": "v-aussage3",
+      "target": "v-tabelle"
+    },
+    {
+      "id": "e-v-aussage3-falsch",
+      "source": "v-aussage3",
+      "target": "hilfe-v-aussage3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-aussage3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-aussage3-zurueck",
+      "source": "hilfe-v-aussage3",
+      "target": "v-aussage3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-aussage3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-aussage3-weiter",
+      "source": "hilfe-v-aussage3",
+      "target": "v-tabelle",
+      "label": "weiter"
+    },
+    {
+      "id": "e-v-tabelle-ende",
+      "source": "v-tabelle",
+      "target": "ende"
+    },
+    {
+      "id": "e-v-tabelle-falsch",
+      "source": "v-tabelle",
+      "target": "hilfe-v-tabelle",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "v-tabelle",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-v-tabelle-zurueck",
+      "source": "hilfe-v-tabelle",
+      "target": "v-tabelle",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "v-tabelle"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-v-tabelle-weiter",
+      "source": "hilfe-v-tabelle",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

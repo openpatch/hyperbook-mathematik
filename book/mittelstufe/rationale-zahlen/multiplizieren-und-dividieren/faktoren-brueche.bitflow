@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-faktoren-brueche",
+    "title": "Mehrere Brüche multiplizieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Mehrere Brüche multiplizieren",
+        "markdown": "Drei Aufgaben. Gib das Ergebnis als Bruch ein (Bruch-Taste oder `/`) und kürze so weit wie möglich. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "fb1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne möglichst vorteilhaft.",
+        "latex": "\\frac{5}{7}\\cdot \\frac{4}{9}\\cdot \\left(-\\frac{7}{10}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{2}{9}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{2}{9}",
+            "feedback": {
+              "message": "Ein negativer Faktor – das Produkt ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-fb1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Erst kürzen, dann rechnen",
+        "markdown": "1. Vorzeichen bestimmen: Minuszeichen zählen.\n2. Alles auf einen Bruchstrich schreiben.\n3. Kreuz und quer kürzen, bevor du multiplizierst.\n\nTipp: Gleiche Zahlen oben und unten (wie 17 und 37) heben sich ganz auf."
+      }
+    },
+    {
+      "id": "fb2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne möglichst vorteilhaft.",
+        "latex": "\\left(-\\frac{2}{9}\\right)\\cdot \\left(-\\frac{3}{8}\\right)\\cdot \\frac{3}{2}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "\\frac{1}{8}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-\\frac{1}{8}",
+            "feedback": {
+              "message": "Zwei negative Faktoren – das Produkt ist positiv.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-fb2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Erst kürzen, dann rechnen",
+        "markdown": "1. Vorzeichen bestimmen: Minuszeichen zählen.\n2. Alles auf einen Bruchstrich schreiben.\n3. Kreuz und quer kürzen, bevor du multiplizierst.\n\nTipp: Gleiche Zahlen oben und unten (wie 17 und 37) heben sich ganz auf."
+      }
+    },
+    {
+      "id": "fb3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne möglichst vorteilhaft. Tipp: Vertausche die Faktoren.",
+        "latex": "\\left(-\\frac{17}{37}\\cdot \\frac{2}{3}\\right)\\cdot \\left(-\\frac{37}{17}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "\\frac{2}{3}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-\\frac{2}{3}",
+            "feedback": {
+              "message": "Zwei negative Faktoren – das Produkt ist positiv.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-fb3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Kehrwerte finden",
+        "markdown": "17/37 und 37/17 sind Kehrwerte voneinander: ihr Produkt ist 1.\n\n(−17/37) · (−37/17) = 1, also bleibt 1 · 2/3."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 560
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du multiplizierst mehrere Brüche geschickt. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-fb1",
+      "source": "start",
+      "target": "fb1"
+    },
+    {
+      "id": "e-fb1-fb2",
+      "source": "fb1",
+      "target": "fb2"
+    },
+    {
+      "id": "e-fb1-falsch",
+      "source": "fb1",
+      "target": "hilfe-fb1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fb1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fb1-zurueck",
+      "source": "hilfe-fb1",
+      "target": "fb1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fb1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-fb1-weiter",
+      "source": "hilfe-fb1",
+      "target": "fb2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-fb2-fb3",
+      "source": "fb2",
+      "target": "fb3"
+    },
+    {
+      "id": "e-fb2-falsch",
+      "source": "fb2",
+      "target": "hilfe-fb2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fb2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fb2-zurueck",
+      "source": "hilfe-fb2",
+      "target": "fb2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fb2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-fb2-weiter",
+      "source": "hilfe-fb2",
+      "target": "fb3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-fb3-ende",
+      "source": "fb3",
+      "target": "ende"
+    },
+    {
+      "id": "e-fb3-falsch",
+      "source": "fb3",
+      "target": "hilfe-fb3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fb3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fb3-zurueck",
+      "source": "hilfe-fb3",
+      "target": "fb3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fb3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-fb3-weiter",
+      "source": "hilfe-fb3",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

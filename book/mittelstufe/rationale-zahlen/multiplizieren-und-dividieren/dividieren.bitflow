@@ -1,0 +1,827 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-dividieren",
+    "title": "Rationale Zahlen dividieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Rationale Zahlen dividieren",
+        "markdown": "Acht Aufgaben zum Dividieren. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "d-zuordnen",
+      "type": "task-matching",
+      "data": {
+        "instruction": "Ordne jedem Quotienten das Ergebnis zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "(−45) : (−9)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "5"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "77 : (−7)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−11"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "(−96) : 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−32"
+            }
+          },
+          {
+            "id": "p4",
+            "left": {
+              "kind": "text",
+              "label": "(−54) : (−6)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "9"
+            }
+          },
+          {
+            "id": "p5",
+            "left": {
+              "kind": "text",
+              "label": "0 : (−5)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "0"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-d-zuordnen",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Vorzeichenregel beim Dividieren",
+        "markdown": "1. Dividiere die Beträge.\n2. Gleiche Vorzeichen → **plus**, verschiedene → **minus**.\n\nProbe mit der Multiplikation: (−12) : 3 = −4, denn (−4) · 3 = −12."
+      }
+    },
+    {
+      "id": "d1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-1{,}5) : 3=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-0.5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "0.5",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-4.5",
+            "feedback": {
+              "message": "Geteilt, nicht mal.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-d1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Vorzeichenregel beim Dividieren",
+        "markdown": "1. Dividiere die Beträge.\n2. Gleiche Vorzeichen → **plus**, verschiedene → **minus**.\n\nProbe mit der Multiplikation: (−12) : 3 = −4, denn (−4) · 3 = −12."
+      }
+    },
+    {
+      "id": "d2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "6 : (-0{,}3)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-20",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-2",
+            "feedback": {
+              "message": "Komma verschieben: 6 : 0,3 = 60 : 3 = 20.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "20",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-d2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Durch eine Dezimalzahl teilen",
+        "markdown": "Verschiebe bei beiden Zahlen das Komma um gleich viele Stellen, bis der Divisor eine ganze Zahl ist.\n\n6 : 0,3 = 60 : 3 = 20 → mit Vorzeichen: 6 : (−0,3) = −20"
+      }
+    },
+    {
+      "id": "d3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-3{,}6) : (-0{,}9)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-4",
+            "feedback": {
+              "message": "Gleiche Vorzeichen – der Quotient ist positiv.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "0.4",
+            "feedback": {
+              "message": "36 : 9 = 4 – beide Kommas werden um eine Stelle verschoben.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-d3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Durch eine Dezimalzahl teilen",
+        "markdown": "Verschiebe bei beiden Zahlen das Komma um gleich viele Stellen, bis der Divisor eine ganze Zahl ist.\n\n6 : 0,3 = 60 : 3 = 20 → mit Vorzeichen: 6 : (−0,3) = −20"
+      }
+    },
+    {
+      "id": "d4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Gib das Ergebnis als Bruch an.",
+        "latex": "\\left(-\\frac{3}{4}\\right):\\frac{2}{7}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{21}{8}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{21}{8}",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-\\frac{6}{28}",
+            "feedback": {
+              "message": "Das ist mal 2/7. Beim Teilen multiplizierst du mit dem Kehrwert 7/2.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-\\frac{3}{14}",
+            "feedback": {
+              "message": "Das ist mal 2/7. Beim Teilen multiplizierst du mit dem Kehrwert 7/2.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-d4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Durch einen Bruch teilen",
+        "markdown": "Mit dem **Kehrwert** multiplizieren: Zähler und Nenner tauschen.\n\n(−3/4) : 2/7 = (−3/4) · 7/2 = −21/8"
+      }
+    },
+    {
+      "id": "d5",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $(-7) : 0 = 0$",
+        "correctAnswer": false,
+        "feedbackWhenYes": {
+          "message": "Probe: 0 · 0 = 0, nicht −7. Durch 0 darf man nicht teilen.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-d5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 910
+      },
+      "data": {
+        "title": "Division mit 0",
+        "markdown": "Jede Division kann man mit der Multiplikation prüfen.\n\n- 0 : (−7) = 0, denn 0 · (−7) = 0. ✓\n- (−7) : 0 = ?, dann müsste ? · 0 = −7 sein. Das geht nicht. Durch 0 darf man nie teilen."
+      }
+    },
+    {
+      "id": "d6",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $0 : (-7) = 0$",
+        "correctAnswer": true,
+        "feedbackWhenNo": {
+          "message": "Probe: 0 · (−7) = 0. Also ist 0 : (−7) = 0.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-d6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1050
+      },
+      "data": {
+        "title": "Division mit 0",
+        "markdown": "Jede Division kann man mit der Multiplikation prüfen.\n\n- 0 : (−7) = 0, denn 0 · (−7) = 0. ✓\n- (−7) : 0 = ?, dann müsste ? · 0 = −7 sein. Das geht nicht. Durch 0 darf man nie teilen."
+      }
+    },
+    {
+      "id": "d7",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Ein Vereinsbeitrag von 192 € wird einmal im Jahr abgebucht. Er soll stattdessen in 12 gleichen Monatsraten abgebucht werden. Welche Kontobewegung (mit Vorzeichen) ergibt sich jeden Monat?",
+        "expected": "-16",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "16",
+            "feedback": {
+              "message": "Eine Abbuchung ist eine negative Kontobewegung: (−192) : 12.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-d7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1190
+      },
+      "data": {
+        "title": "Abbuchung als negative Zahl",
+        "markdown": "Jahresbuchung: −192 €. Monatlich: (−192) : 12 = −16.\n\nProbe: 12 · (−16) = −192."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du dividierst rationale Zahlen sicher. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-d-zuordnen",
+      "source": "start",
+      "target": "d-zuordnen"
+    },
+    {
+      "id": "e-d-zuordnen-d1",
+      "source": "d-zuordnen",
+      "target": "d1"
+    },
+    {
+      "id": "e-d-zuordnen-falsch",
+      "source": "d-zuordnen",
+      "target": "hilfe-d-zuordnen",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d-zuordnen",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d-zuordnen-zurueck",
+      "source": "hilfe-d-zuordnen",
+      "target": "d-zuordnen",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d-zuordnen"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d-zuordnen-weiter",
+      "source": "hilfe-d-zuordnen",
+      "target": "d1",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d1-d2",
+      "source": "d1",
+      "target": "d2"
+    },
+    {
+      "id": "e-d1-falsch",
+      "source": "d1",
+      "target": "hilfe-d1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d1-zurueck",
+      "source": "hilfe-d1",
+      "target": "d1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d1-weiter",
+      "source": "hilfe-d1",
+      "target": "d2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d2-d3",
+      "source": "d2",
+      "target": "d3"
+    },
+    {
+      "id": "e-d2-falsch",
+      "source": "d2",
+      "target": "hilfe-d2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d2-zurueck",
+      "source": "hilfe-d2",
+      "target": "d2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d2-weiter",
+      "source": "hilfe-d2",
+      "target": "d3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d3-d4",
+      "source": "d3",
+      "target": "d4"
+    },
+    {
+      "id": "e-d3-falsch",
+      "source": "d3",
+      "target": "hilfe-d3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d3-zurueck",
+      "source": "hilfe-d3",
+      "target": "d3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d3-weiter",
+      "source": "hilfe-d3",
+      "target": "d4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d4-d5",
+      "source": "d4",
+      "target": "d5"
+    },
+    {
+      "id": "e-d4-falsch",
+      "source": "d4",
+      "target": "hilfe-d4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d4-zurueck",
+      "source": "hilfe-d4",
+      "target": "d4",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d4"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d4-weiter",
+      "source": "hilfe-d4",
+      "target": "d5",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d5-d6",
+      "source": "d5",
+      "target": "d6"
+    },
+    {
+      "id": "e-d5-falsch",
+      "source": "d5",
+      "target": "hilfe-d5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d5-zurueck",
+      "source": "hilfe-d5",
+      "target": "d5",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d5"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d5-weiter",
+      "source": "hilfe-d5",
+      "target": "d6",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d6-d7",
+      "source": "d6",
+      "target": "d7"
+    },
+    {
+      "id": "e-d6-falsch",
+      "source": "d6",
+      "target": "hilfe-d6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d6-zurueck",
+      "source": "hilfe-d6",
+      "target": "d6",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d6"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d6-weiter",
+      "source": "hilfe-d6",
+      "target": "d7",
+      "label": "weiter"
+    },
+    {
+      "id": "e-d7-ende",
+      "source": "d7",
+      "target": "ende"
+    },
+    {
+      "id": "e-d7-falsch",
+      "source": "d7",
+      "target": "hilfe-d7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "d7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-d7-zurueck",
+      "source": "hilfe-d7",
+      "target": "d7",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "d7"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-d7-weiter",
+      "source": "hilfe-d7",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

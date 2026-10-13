@@ -1,0 +1,511 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-geschickt-multiplizieren",
+    "title": "Geschickt multiplizieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Geschickt multiplizieren",
+        "markdown": "Fünf Aufgaben mit Brüchen und Dezimalzahlen. Gib das Ergebnis als Dezimalzahl ein. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "gm1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-3{,}5\\right) \\cdot  \\frac{3}{5}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-2.1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "2.1",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – das Produkt ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-gm1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Bruch als Anteil",
+        "markdown": "Oft ist es am einfachsten, den Bruch als Anteil zu nehmen: erst durch den Nenner teilen, dann mit dem Zähler malnehmen.\n\n3/5 von 3,5: 3,5 : 5 = 0,7 → 0,7 · 3 = 2,1. Das Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "gm2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "0{,}16 \\cdot  \\left(-\\frac{5}{8}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-0.1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "0.1",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – das Produkt ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-gm2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Bruch als Anteil",
+        "markdown": "Oft ist es am einfachsten, den Bruch als Anteil zu nehmen: erst durch den Nenner teilen, dann mit dem Zähler malnehmen.\n\n3/5 von 3,5: 3,5 : 5 = 0,7 → 0,7 · 3 = 2,1. Das Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "gm3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-4{,}9\\right) \\cdot  \\left(-\\frac{4}{7}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "2.8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-2.8",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-gm3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Bruch als Anteil",
+        "markdown": "Oft ist es am einfachsten, den Bruch als Anteil zu nehmen: erst durch den Nenner teilen, dann mit dem Zähler malnehmen.\n\n3/5 von 3,5: 3,5 : 5 = 0,7 → 0,7 · 3 = 2,1. Das Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "gm4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-\\frac{9}{2}\\right) \\cdot  \\left(-0{,}5\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "2.25",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-2.25",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-gm4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Bruch in Dezimalzahl umwandeln",
+        "markdown": "9/2 = 4,5. Dann 4,5 · 0,5 = 2,25. Zwei negative Faktoren – das Ergebnis ist positiv."
+      }
+    },
+    {
+      "id": "gm5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-\\frac{3}{8}\\right) \\cdot  0=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "0",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-0.375",
+            "feedback": {
+              "message": "Mal 0 ergibt immer 0.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-gm5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Mal null",
+        "markdown": "Für jede Zahl a gilt: a · 0 = 0."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du wählst geschickte Rechenwege. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-gm1",
+      "source": "start",
+      "target": "gm1"
+    },
+    {
+      "id": "e-gm1-gm2",
+      "source": "gm1",
+      "target": "gm2"
+    },
+    {
+      "id": "e-gm1-falsch",
+      "source": "gm1",
+      "target": "hilfe-gm1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "gm1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-gm1-zurueck",
+      "source": "hilfe-gm1",
+      "target": "gm1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "gm1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-gm1-weiter",
+      "source": "hilfe-gm1",
+      "target": "gm2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-gm2-gm3",
+      "source": "gm2",
+      "target": "gm3"
+    },
+    {
+      "id": "e-gm2-falsch",
+      "source": "gm2",
+      "target": "hilfe-gm2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "gm2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-gm2-zurueck",
+      "source": "hilfe-gm2",
+      "target": "gm2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "gm2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-gm2-weiter",
+      "source": "hilfe-gm2",
+      "target": "gm3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-gm3-gm4",
+      "source": "gm3",
+      "target": "gm4"
+    },
+    {
+      "id": "e-gm3-falsch",
+      "source": "gm3",
+      "target": "hilfe-gm3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "gm3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-gm3-zurueck",
+      "source": "hilfe-gm3",
+      "target": "gm3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "gm3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-gm3-weiter",
+      "source": "hilfe-gm3",
+      "target": "gm4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-gm4-gm5",
+      "source": "gm4",
+      "target": "gm5"
+    },
+    {
+      "id": "e-gm4-falsch",
+      "source": "gm4",
+      "target": "hilfe-gm4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "gm4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-gm4-zurueck",
+      "source": "hilfe-gm4",
+      "target": "gm4",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "gm4"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-gm4-weiter",
+      "source": "hilfe-gm4",
+      "target": "gm5",
+      "label": "weiter"
+    },
+    {
+      "id": "e-gm5-ende",
+      "source": "gm5",
+      "target": "ende"
+    },
+    {
+      "id": "e-gm5-falsch",
+      "source": "gm5",
+      "target": "hilfe-gm5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "gm5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-gm5-zurueck",
+      "source": "hilfe-gm5",
+      "target": "gm5",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "gm5"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-gm5-weiter",
+      "source": "hilfe-gm5",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

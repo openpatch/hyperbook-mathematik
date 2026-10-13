@@ -1,0 +1,839 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-terme",
+    "title": "Terme mit rationalen Zahlen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Terme mit rationalen Zahlen",
+        "markdown": "Acht Aufgaben: Achte auf die Reihenfolge – Klammer vor Potenz vor Punkt vor Strich. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "t-reihenfolge",
+      "type": "task-ordering",
+      "data": {
+        "instruction": "Bringe die Rechenschritte für $14 - 4 \\cdot  (-2)^{3}$ in die richtige Reihenfolge.",
+        "items": [
+          {
+            "id": "s1",
+            "kind": "text",
+            "label": "(−2)³ = −8"
+          },
+          {
+            "id": "s2",
+            "kind": "text",
+            "label": "4 · (−8) = −32"
+          },
+          {
+            "id": "s3",
+            "kind": "text",
+            "label": "14 − (−32) = 14 + 32"
+          },
+          {
+            "id": "s4",
+            "kind": "text",
+            "label": "= 46"
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-t-reihenfolge",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Reihenfolge beim Rechnen",
+        "markdown": "1. Klammern\n2. Potenzen\n3. Punktrechnung (· und :)\n4. Strichrechnung (+ und −)\n5. Sonst von links nach rechts."
+      }
+    },
+    {
+      "id": "t1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-7 - 3) \\cdot  (-5)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "50",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-50",
+            "feedback": {
+              "message": "(−10) · (−5): Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "8",
+            "feedback": {
+              "message": "Erst die Klammer: −7 − 3 = −10.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-t1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Reihenfolge beim Rechnen",
+        "markdown": "1. Klammern\n2. Potenzen\n3. Punktrechnung (· und :)\n4. Strichrechnung (+ und −)\n5. Sonst von links nach rechts."
+      }
+    },
+    {
+      "id": "t2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "12 + 8 : (-2)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-10",
+            "feedback": {
+              "message": "Punkt vor Strich: Erst 8 : (−2) = −4, dann 12 + (−4).",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-t2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Reihenfolge beim Rechnen",
+        "markdown": "1. Klammern\n2. Potenzen\n3. Punktrechnung (· und :)\n4. Strichrechnung (+ und −)\n5. Sonst von links nach rechts."
+      }
+    },
+    {
+      "id": "t3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-2)^{4} - 24=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-40",
+            "feedback": {
+              "message": "(−2)⁴ = +16, denn vier Minuszeichen ergeben plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-32",
+            "feedback": {
+              "message": "(−2)⁴ bedeutet (−2)·(−2)·(−2)·(−2), nicht (−2) · 4.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-t3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      }
+    },
+    {
+      "id": "t4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "-6 + (-4)^{3}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-70",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "58",
+            "feedback": {
+              "message": "(−4)³ = −64, denn drei Minuszeichen ergeben minus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-18",
+            "feedback": {
+              "message": "(−4)³ = (−4)·(−4)·(−4), nicht (−4) · 3.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-t4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      }
+    },
+    {
+      "id": "t5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-12) \\cdot  (-5) \\cdot  (-9) \\cdot  (-1)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "540",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-540",
+            "feedback": {
+              "message": "Vier negative Faktoren – gerade Anzahl, also plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-t5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 910
+      },
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      }
+    },
+    {
+      "id": "t6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "200 : (-40) : 5=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-25",
+            "feedback": {
+              "message": "Von links nach rechts: erst 200 : (−40) = −5, dann (−5) : 5.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "1",
+            "feedback": {
+              "message": "Ein negativer Divisor – das Ergebnis ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-t6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1050
+      },
+      "data": {
+        "title": "Reihenfolge beim Rechnen",
+        "markdown": "1. Klammern\n2. Potenzen\n3. Punktrechnung (· und :)\n4. Strichrechnung (+ und −)\n5. Sonst von links nach rechts."
+      }
+    },
+    {
+      "id": "t7",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welchen Wert hat $-3^{2}$?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$-9$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$9$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Die Hochzahl gehört nur zur 3: −3² = −(3 · 3).",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$-6$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "3² = 3 · 3, nicht 3 · 2.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$6$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "3² = 9, und das Minus bleibt davor.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-t7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1190
+      },
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du berechnest Terme mit rationalen Zahlen in der richtigen Reihenfolge. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-t-reihenfolge",
+      "source": "start",
+      "target": "t-reihenfolge"
+    },
+    {
+      "id": "e-t-reihenfolge-t1",
+      "source": "t-reihenfolge",
+      "target": "t1"
+    },
+    {
+      "id": "e-t-reihenfolge-falsch",
+      "source": "t-reihenfolge",
+      "target": "hilfe-t-reihenfolge",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t-reihenfolge",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t-reihenfolge-zurueck",
+      "source": "hilfe-t-reihenfolge",
+      "target": "t-reihenfolge",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t-reihenfolge"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t-reihenfolge-weiter",
+      "source": "hilfe-t-reihenfolge",
+      "target": "t1",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t1-t2",
+      "source": "t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t1-falsch",
+      "source": "t1",
+      "target": "hilfe-t1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t1-zurueck",
+      "source": "hilfe-t1",
+      "target": "t1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t1-weiter",
+      "source": "hilfe-t1",
+      "target": "t2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t2-t3",
+      "source": "t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t2-falsch",
+      "source": "t2",
+      "target": "hilfe-t2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t2-zurueck",
+      "source": "hilfe-t2",
+      "target": "t2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t2-weiter",
+      "source": "hilfe-t2",
+      "target": "t3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t3-t4",
+      "source": "t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t3-falsch",
+      "source": "t3",
+      "target": "hilfe-t3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t3-zurueck",
+      "source": "hilfe-t3",
+      "target": "t3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t3-weiter",
+      "source": "hilfe-t3",
+      "target": "t4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t4-t5",
+      "source": "t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t4-falsch",
+      "source": "t4",
+      "target": "hilfe-t4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t4-zurueck",
+      "source": "hilfe-t4",
+      "target": "t4",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t4"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t4-weiter",
+      "source": "hilfe-t4",
+      "target": "t5",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t5-t6",
+      "source": "t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t5-falsch",
+      "source": "t5",
+      "target": "hilfe-t5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t5-zurueck",
+      "source": "hilfe-t5",
+      "target": "t5",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t5"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t5-weiter",
+      "source": "hilfe-t5",
+      "target": "t6",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t6-t7",
+      "source": "t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t6-falsch",
+      "source": "t6",
+      "target": "hilfe-t6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t6-zurueck",
+      "source": "hilfe-t6",
+      "target": "t6",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t6"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t6-weiter",
+      "source": "hilfe-t6",
+      "target": "t7",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t7-ende",
+      "source": "t7",
+      "target": "ende"
+    },
+    {
+      "id": "e-t7-falsch",
+      "source": "t7",
+      "target": "hilfe-t7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t7-zurueck",
+      "source": "hilfe-t7",
+      "target": "t7",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t7"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-t7-weiter",
+      "source": "hilfe-t7",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

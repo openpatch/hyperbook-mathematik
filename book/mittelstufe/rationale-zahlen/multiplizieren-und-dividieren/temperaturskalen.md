@@ -1,6 +1,6 @@
 ---
 name: Temperaturskalen
-index: 4
+index: 8
 lang: de
 ---
 
@@ -29,10 +29,9 @@ Zur Umrechnung von der Fahrenheitskala zur Celsiusskala kann man wie folgt vorge
 
 ## Aufgaben
 
-Stelle einen Term auf und berechne die folgenden Temperaturen um:
+Stelle einen Term für die Umrechnung auf und rechne damit Temperaturen von Fahrenheit in Celsius um. Achte bei Temperaturen unter 32 °F auf das Vorzeichen.
 
-- 212 °F
-- 50 °F
+::bitflow{id="rationale-zahlen-temperatur" src="temperatur.bitflow" height="auto" maxHeight="85vh"}
 
 # Temperaturskala Kelvin
 

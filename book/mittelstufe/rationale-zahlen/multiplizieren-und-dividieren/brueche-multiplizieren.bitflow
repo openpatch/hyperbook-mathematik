@@ -1,0 +1,619 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-brueche-multiplizieren",
+    "title": "Brüche multiplizieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Sechs Aufgaben. Gib das Ergebnis als Bruch oder ganze Zahl ein – mit der Bruch-Taste der Bildschirmtastatur oder mit `/`. Kürze so weit wie möglich. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "bm1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Kürze, wenn möglich.",
+        "latex": "\\left(-\\frac{2}{3}\\right)\\cdot \\left(-\\frac{3}{4}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "\\frac{1}{2}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-\\frac{1}{2}",
+            "feedback": {
+              "message": "Das Vorzeichen stimmt nicht. Verschiedene Vorzeichen → minus, gleiche Vorzeichen → plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-bm1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      }
+    },
+    {
+      "id": "bm2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Kürze, wenn möglich.",
+        "latex": "\\frac{1}{3}\\cdot \\left(-\\frac{2}{7}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{2}{21}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{2}{21}",
+            "feedback": {
+              "message": "Das Vorzeichen stimmt nicht. Verschiedene Vorzeichen → minus, gleiche Vorzeichen → plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-bm2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      }
+    },
+    {
+      "id": "bm3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Kürze, wenn möglich.",
+        "latex": "\\frac{3}{4}\\cdot \\left(-\\frac{12}{21}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{3}{7}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{3}{7}",
+            "feedback": {
+              "message": "Das Vorzeichen stimmt nicht. Verschiedene Vorzeichen → minus, gleiche Vorzeichen → plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-bm3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      }
+    },
+    {
+      "id": "bm4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Kürze, wenn möglich.",
+        "latex": "\\left(-\\frac{4}{7}\\right)\\cdot (-14)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-8",
+            "feedback": {
+              "message": "Das Vorzeichen stimmt nicht. Verschiedene Vorzeichen → minus, gleiche Vorzeichen → plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "\\frac{2}{49}",
+            "feedback": {
+              "message": "Die 14 gehört in den Zähler: 14 = 14/1.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-bm4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      }
+    },
+    {
+      "id": "bm5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Kürze, wenn möglich.",
+        "latex": "\\left(-\\frac{3}{4}\\right)\\cdot 28=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-21",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "21",
+            "feedback": {
+              "message": "Das Vorzeichen stimmt nicht. Verschiedene Vorzeichen → minus, gleiche Vorzeichen → plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-\\frac{3}{112}",
+            "feedback": {
+              "message": "Die 28 gehört in den Zähler: 28 = 28/1.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-bm5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      }
+    },
+    {
+      "id": "bm6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Kürze, wenn möglich.",
+        "latex": "\\frac{14}{33}\\cdot \\left(-\\frac{121}{98}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{11}{21}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{11}{21}",
+            "feedback": {
+              "message": "Das Vorzeichen stimmt nicht. Verschiedene Vorzeichen → minus, gleiche Vorzeichen → plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-bm6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 910
+      },
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du multiplizierst Brüche mit Vorzeichen sicher. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-bm1",
+      "source": "start",
+      "target": "bm1"
+    },
+    {
+      "id": "e-bm1-bm2",
+      "source": "bm1",
+      "target": "bm2"
+    },
+    {
+      "id": "e-bm1-falsch",
+      "source": "bm1",
+      "target": "hilfe-bm1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "bm1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-bm1-zurueck",
+      "source": "hilfe-bm1",
+      "target": "bm1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "bm1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-bm1-weiter",
+      "source": "hilfe-bm1",
+      "target": "bm2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-bm2-bm3",
+      "source": "bm2",
+      "target": "bm3"
+    },
+    {
+      "id": "e-bm2-falsch",
+      "source": "bm2",
+      "target": "hilfe-bm2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "bm2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-bm2-zurueck",
+      "source": "hilfe-bm2",
+      "target": "bm2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "bm2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-bm2-weiter",
+      "source": "hilfe-bm2",
+      "target": "bm3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-bm3-bm4",
+      "source": "bm3",
+      "target": "bm4"
+    },
+    {
+      "id": "e-bm3-falsch",
+      "source": "bm3",
+      "target": "hilfe-bm3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "bm3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-bm3-zurueck",
+      "source": "hilfe-bm3",
+      "target": "bm3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "bm3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-bm3-weiter",
+      "source": "hilfe-bm3",
+      "target": "bm4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-bm4-bm5",
+      "source": "bm4",
+      "target": "bm5"
+    },
+    {
+      "id": "e-bm4-falsch",
+      "source": "bm4",
+      "target": "hilfe-bm4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "bm4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-bm4-zurueck",
+      "source": "hilfe-bm4",
+      "target": "bm4",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "bm4"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-bm4-weiter",
+      "source": "hilfe-bm4",
+      "target": "bm5",
+      "label": "weiter"
+    },
+    {
+      "id": "e-bm5-bm6",
+      "source": "bm5",
+      "target": "bm6"
+    },
+    {
+      "id": "e-bm5-falsch",
+      "source": "bm5",
+      "target": "hilfe-bm5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "bm5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-bm5-zurueck",
+      "source": "hilfe-bm5",
+      "target": "bm5",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "bm5"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-bm5-weiter",
+      "source": "hilfe-bm5",
+      "target": "bm6",
+      "label": "weiter"
+    },
+    {
+      "id": "e-bm6-ende",
+      "source": "bm6",
+      "target": "ende"
+    },
+    {
+      "id": "e-bm6-falsch",
+      "source": "bm6",
+      "target": "hilfe-bm6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "bm6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-bm6-zurueck",
+      "source": "hilfe-bm6",
+      "target": "bm6",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "bm6"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-bm6-weiter",
+      "source": "hilfe-bm6",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

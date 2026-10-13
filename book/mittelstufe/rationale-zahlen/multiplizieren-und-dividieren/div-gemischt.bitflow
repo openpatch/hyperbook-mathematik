@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-div-gemischt",
+    "title": "Brüche und Dezimalzahlen dividieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Brüche und Dezimalzahlen dividieren",
+        "markdown": "Fünf Aufgaben. Gib das Ergebnis als Dezimalzahl oder – wenn das nicht geht – als Bruch ein. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "dg1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-0{,}6\\right) : \\frac{1}{2}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-1.2",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-0.3",
+            "feedback": {
+              "message": "Durch 1/2 teilen heißt mal 2 nehmen.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "1.2",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-dg1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "dg2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\frac{7}{8} : \\left(-0{,}25\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-3.5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "3.5",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-0.21875",
+            "feedback": {
+              "message": "Durch 0,25 = 1/4 teilen heißt mal 4 nehmen.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-dg2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "dg3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Gib das Ergebnis als Bruch an.",
+        "latex": "\\left(-\\frac{1}{3}\\right):(-0{,}2)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "\\frac{5}{3}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-\\frac{5}{3}",
+            "feedback": {
+              "message": "Gleiche Vorzeichen – der Quotient ist positiv.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "\\frac{1}{15}",
+            "feedback": {
+              "message": "Durch 0,2 = 1/5 teilen heißt mal 5 nehmen.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-dg3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "dg4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Gib das Ergebnis als Bruch an.",
+        "latex": "1{,}75:\\left(-\\frac{3}{4}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{7}{3}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{7}{3}",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-\\frac{21}{16}",
+            "feedback": {
+              "message": "Du hast mit 3/4 multipliziert. Nimm den Kehrwert 4/3.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-dg4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "dg5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-0{,}4\\right) : \\left(-\\frac{1}{10}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-4",
+            "feedback": {
+              "message": "Gleiche Vorzeichen – der Quotient ist positiv.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "0.04",
+            "feedback": {
+              "message": "Durch 1/10 teilen heißt mal 10 nehmen.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-dg5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du dividierst sicher mit Brüchen und Dezimalzahlen. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-dg1",
+      "source": "start",
+      "target": "dg1"
+    },
+    {
+      "id": "e-dg1-dg2",
+      "source": "dg1",
+      "target": "dg2"
+    },
+    {
+      "id": "e-dg1-falsch",
+      "source": "dg1",
+      "target": "hilfe-dg1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "dg1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-dg1-zurueck",
+      "source": "hilfe-dg1",
+      "target": "dg1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "dg1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-dg1-weiter",
+      "source": "hilfe-dg1",
+      "target": "dg2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-dg2-dg3",
+      "source": "dg2",
+      "target": "dg3"
+    },
+    {
+      "id": "e-dg2-falsch",
+      "source": "dg2",
+      "target": "hilfe-dg2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "dg2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-dg2-zurueck",
+      "source": "hilfe-dg2",
+      "target": "dg2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "dg2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-dg2-weiter",
+      "source": "hilfe-dg2",
+      "target": "dg3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-dg3-dg4",
+      "source": "dg3",
+      "target": "dg4"
+    },
+    {
+      "id": "e-dg3-falsch",
+      "source": "dg3",
+      "target": "hilfe-dg3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "dg3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-dg3-zurueck",
+      "source": "hilfe-dg3",
+      "target": "dg3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "dg3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-dg3-weiter",
+      "source": "hilfe-dg3",
+      "target": "dg4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-dg4-dg5",
+      "source": "dg4",
+      "target": "dg5"
+    },
+    {
+      "id": "e-dg4-falsch",
+      "source": "dg4",
+      "target": "hilfe-dg4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "dg4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-dg4-zurueck",
+      "source": "hilfe-dg4",
+      "target": "dg4",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "dg4"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-dg4-weiter",
+      "source": "hilfe-dg4",
+      "target": "dg5",
+      "label": "weiter"
+    },
+    {
+      "id": "e-dg5-ende",
+      "source": "dg5",
+      "target": "ende"
+    },
+    {
+      "id": "e-dg5-falsch",
+      "source": "dg5",
+      "target": "hilfe-dg5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "dg5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-dg5-zurueck",
+      "source": "hilfe-dg5",
+      "target": "dg5",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "dg5"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-dg5-weiter",
+      "source": "hilfe-dg5",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}

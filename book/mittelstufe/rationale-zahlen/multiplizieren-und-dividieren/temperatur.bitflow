@@ -1,0 +1,570 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-temperatur",
+    "title": "Fahrenheit in Celsius umrechnen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Fahrenheit in Celsius umrechnen",
+        "markdown": "Sechs Aufgaben zur Umrechnung von Fahrenheit (°F) in Celsius (°C). Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "tp-term",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welcher Term rechnet eine Temperatur F in °F in Grad Celsius um?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$(F - 32) \\cdot  5 : 9$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$F - 32 \\cdot  5 : 9$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Ohne Klammer gilt Punkt vor Strich – dann würde nur 32 mal 5 : 9 gerechnet.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$(F + 32) \\cdot  5 : 9$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Es wird 32 subtrahiert, nicht addiert.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$F \\cdot  5 : 9 - 32$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Zuerst wird 32 subtrahiert, danach mit 5 multipliziert und durch 9 geteilt.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-tp-term",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 210
+      },
+      "data": {
+        "title": "Von Fahrenheit nach Celsius",
+        "markdown": "Term: (F − 32) · 5 : 9\n\nBeispiel 212 °F: (212 − 32) · 5 : 9 = 180 · 5 : 9 = 900 : 9 = 100 °C\n\nAchte auf die Klammer: Erst wird 32 abgezogen, dann multipliziert."
+      }
+    },
+    {
+      "id": "tp1",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Rechne 212 °F in °C um.",
+        "expected": "100",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "194.2",
+            "feedback": {
+              "message": "Klammer vergessen? Erst 212 − 32 = 180, dann · 5 : 9.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-tp1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 350
+      },
+      "data": {
+        "title": "Von Fahrenheit nach Celsius",
+        "markdown": "Term: (F − 32) · 5 : 9\n\nBeispiel 212 °F: (212 − 32) · 5 : 9 = 180 · 5 : 9 = 900 : 9 = 100 °C\n\nAchte auf die Klammer: Erst wird 32 abgezogen, dann multipliziert."
+      }
+    },
+    {
+      "id": "tp2",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Rechne 50 °F in °C um.",
+        "expected": "10",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-tp2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 490
+      },
+      "data": {
+        "title": "Von Fahrenheit nach Celsius",
+        "markdown": "Term: (F − 32) · 5 : 9\n\nBeispiel 212 °F: (212 − 32) · 5 : 9 = 180 · 5 : 9 = 900 : 9 = 100 °C\n\nAchte auf die Klammer: Erst wird 32 abgezogen, dann multipliziert."
+      }
+    },
+    {
+      "id": "tp3",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Rechne 14 °F in °C um.",
+        "expected": "-10",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "10",
+            "feedback": {
+              "message": "14 − 32 = −18. Das Ergebnis ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-tp3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 630
+      },
+      "data": {
+        "title": "Von Fahrenheit nach Celsius",
+        "markdown": "Term: (F − 32) · 5 : 9\n\nBeispiel 212 °F: (212 − 32) · 5 : 9 = 180 · 5 : 9 = 900 : 9 = 100 °C\n\nAchte auf die Klammer: Erst wird 32 abgezogen, dann multipliziert."
+      }
+    },
+    {
+      "id": "tp4",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Rechne −40 °F in °C um.",
+        "expected": "-40",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-tp4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 770
+      },
+      "data": {
+        "title": "Von Fahrenheit nach Celsius",
+        "markdown": "Term: (F − 32) · 5 : 9\n\nBeispiel 212 °F: (212 − 32) · 5 : 9 = 180 · 5 : 9 = 900 : 9 = 100 °C\n\nAchte auf die Klammer: Erst wird 32 abgezogen, dann multipliziert."
+      }
+    },
+    {
+      "id": "tp5",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Rechne 0 °F in °C um. Runde auf eine Nachkommastelle.",
+        "expected": "-17.8",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "17.8",
+            "feedback": {
+              "message": "0 − 32 = −32. Das Ergebnis ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-tp5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 910
+      },
+      "data": {
+        "title": "Von Fahrenheit nach Celsius",
+        "markdown": "Term: (F − 32) · 5 : 9\n\nBeispiel 212 °F: (212 − 32) · 5 : 9 = 180 · 5 : 9 = 900 : 9 = 100 °C\n\nAchte auf die Klammer: Erst wird 32 abgezogen, dann multipliziert."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Du rechnest Temperaturen sicher um. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-tp-term",
+      "source": "start",
+      "target": "tp-term"
+    },
+    {
+      "id": "e-tp-term-tp1",
+      "source": "tp-term",
+      "target": "tp1"
+    },
+    {
+      "id": "e-tp-term-falsch",
+      "source": "tp-term",
+      "target": "hilfe-tp-term",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "tp-term",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-tp-term-zurueck",
+      "source": "hilfe-tp-term",
+      "target": "tp-term",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "tp-term"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-tp-term-weiter",
+      "source": "hilfe-tp-term",
+      "target": "tp1",
+      "label": "weiter"
+    },
+    {
+      "id": "e-tp1-tp2",
+      "source": "tp1",
+      "target": "tp2"
+    },
+    {
+      "id": "e-tp1-falsch",
+      "source": "tp1",
+      "target": "hilfe-tp1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "tp1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-tp1-zurueck",
+      "source": "hilfe-tp1",
+      "target": "tp1",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "tp1"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-tp1-weiter",
+      "source": "hilfe-tp1",
+      "target": "tp2",
+      "label": "weiter"
+    },
+    {
+      "id": "e-tp2-tp3",
+      "source": "tp2",
+      "target": "tp3"
+    },
+    {
+      "id": "e-tp2-falsch",
+      "source": "tp2",
+      "target": "hilfe-tp2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "tp2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-tp2-zurueck",
+      "source": "hilfe-tp2",
+      "target": "tp2",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "tp2"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-tp2-weiter",
+      "source": "hilfe-tp2",
+      "target": "tp3",
+      "label": "weiter"
+    },
+    {
+      "id": "e-tp3-tp4",
+      "source": "tp3",
+      "target": "tp4"
+    },
+    {
+      "id": "e-tp3-falsch",
+      "source": "tp3",
+      "target": "hilfe-tp3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "tp3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-tp3-zurueck",
+      "source": "hilfe-tp3",
+      "target": "tp3",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "tp3"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-tp3-weiter",
+      "source": "hilfe-tp3",
+      "target": "tp4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-tp4-tp5",
+      "source": "tp4",
+      "target": "tp5"
+    },
+    {
+      "id": "e-tp4-falsch",
+      "source": "tp4",
+      "target": "hilfe-tp4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "tp4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-tp4-zurueck",
+      "source": "hilfe-tp4",
+      "target": "tp4",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "tp4"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-tp4-weiter",
+      "source": "hilfe-tp4",
+      "target": "tp5",
+      "label": "weiter"
+    },
+    {
+      "id": "e-tp5-ende",
+      "source": "tp5",
+      "target": "ende"
+    },
+    {
+      "id": "e-tp5-falsch",
+      "source": "tp5",
+      "target": "hilfe-tp5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "tp5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-tp5-zurueck",
+      "source": "hilfe-tp5",
+      "target": "tp5",
+      "label": "noch ein Versuch",
+      "resetTarget": "result",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "tp5"
+        },
+        "op": "lt",
+        "right": 2
+      }
+    },
+    {
+      "id": "e-hilfe-tp5-weiter",
+      "source": "hilfe-tp5",
+      "target": "ende",
+      "label": "weiter"
+    }
+  ]
+}
