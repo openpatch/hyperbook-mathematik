@@ -1,6 +1,6 @@
 ---
 name: 🏁 Selbsttest
-index: 7
+index: 8
 lang: de
 ---
 
@@ -32,3 +32,4 @@ Wenn noch etwas nicht geklappt hat, wiederhole die passende Seite:
 - Potenzen und mehrere Faktoren → [Mehrere Faktoren und Potenzen](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/03-mehrere-faktoren-und-potenzen)
 - Dividieren, Brüche, durch 0 → [Dividieren](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/04-dividieren)
 - Reihenfolge beim Rechnen → [Terme berechnen](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/05-terme-berechnen)
+- Mehr Übung → [✏️ Übungen](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/06-uebungen)

@@ -1,94 +1,114 @@
 ---
-name: Dividieren
+name: ➗ Dividieren
 index: 4
 lang: de
 ---
 
 # Rationale Zahlen dividieren
 
-## Einstieg: Das Jahresabo
+:::alert{info}
 
-Lena hat ein Streaming-Abo. Einmal im Jahr werden **95,88 €** von ihrem Konto abgebucht. Auf dem Kontoauszug steht deshalb $-95{,}88$ €. Lena überlegt, auf monatliche Zahlung umzustellen.
-
-:::snippet{#aufgabe}
-
-Welche Kontobewegung ergibt sich dann jeden Monat? Schreibe die Rechnung mit negativen Zahlen.
+**Darum geht's:** Beim Teilen gilt **dieselbe Vorzeichenregel** wie beim Malnehmen. Und du erfährst, warum man niemals durch 0 teilen darf.
 
 :::
+
+## Einstieg: Das Jahresabo
+
+Lena zahlt für ihr Streaming-Abo einmal im Jahr **95,88 €**. Auf dem Kontoauszug steht deshalb $-95{,}88$ €. Sie möchte lieber jeden Monat zahlen.
+
+<figure style="text-align:center;margin:1.2em 0;">
+<svg viewBox="0 0 640 175" width="640" style="max-width:100%;height:auto;" role="img" aria-label="Ein Jahresbetrag von minus 95,88 Euro wird auf 12 Monate zu je minus 7,99 Euro aufgeteilt">
+<rect x="40" y="22" width="548" height="34" rx="6" fill="#bb0a21"/>
+<text x="314" y="45" font-size="17" font-weight="bold" text-anchor="middle" fill="#fff">ein Jahr: −95,88 €</text>
+<text x="314" y="80" font-size="15" text-anchor="middle" fill="currentColor">: 12</text>
+<rect x="40" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="61.0" y="112" font-size="13" text-anchor="middle" fill="#fff">J</text>
+<rect x="86" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="107.0" y="112" font-size="13" text-anchor="middle" fill="#fff">F</text>
+<rect x="132" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="153.0" y="112" font-size="13" text-anchor="middle" fill="#fff">M</text>
+<rect x="178" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="199.0" y="112" font-size="13" text-anchor="middle" fill="#fff">A</text>
+<rect x="224" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="245.0" y="112" font-size="13" text-anchor="middle" fill="#fff">M</text>
+<rect x="270" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="291.0" y="112" font-size="13" text-anchor="middle" fill="#fff">J</text>
+<rect x="316" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="337.0" y="112" font-size="13" text-anchor="middle" fill="#fff">J</text>
+<rect x="362" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="383.0" y="112" font-size="13" text-anchor="middle" fill="#fff">A</text>
+<rect x="408" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="429.0" y="112" font-size="13" text-anchor="middle" fill="#fff">S</text>
+<rect x="454" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="475.0" y="112" font-size="13" text-anchor="middle" fill="#fff">O</text>
+<rect x="500" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="521.0" y="112" font-size="13" text-anchor="middle" fill="#fff">N</text>
+<rect x="546" y="92" width="42" height="30" rx="4" fill="#bb0a21" fill-opacity="0.75"/><text x="567.0" y="112" font-size="13" text-anchor="middle" fill="#fff">D</text>
+<path d="M 40 132 L 40 140 L 82 140 L 82 132" fill="none" stroke="currentColor"/>
+<text x="61" y="160" font-size="14" text-anchor="middle" fill="currentColor">−7,99 €</text>
+<text x="350" y="160" font-size="14" text-anchor="middle" fill="currentColor">jeden Monat gleich viel</text>
+</svg>
+</figure>
 
 :::multievent
 
-$(-95{,}88) : 12 =$ {z{-7,99}}
-
-Probe mit der Umkehraufgabe: $12 \cdot (-7{,}99) =$ {z{-95,88}}
-
-{b{Der Jahresbetrag ist zwölfmal so groß wie der Monatsbetrag. Also teilst du durch 12. Weil Geld abgebucht wird, ist das Ergebnis negativ.}}
+Rechnung: $(-95{,}88) : 12 =$ {z{-7,99}} € $\qquad$ Probe: $12 \cdot (-7{,}99) =$ {z{-95,88}} €
 
 :::
 
-## Dividieren ist die Umkehrung des Multiplizierens
+## Geteilt ist umgekehrtes Mal
 
-Jede Divisionsaufgabe gehört zu einer Multiplikationsaufgabe. Damit kannst du das Vorzeichen herausfinden.
+<figure style="text-align:center;margin:1.2em 0;">
+<svg viewBox="0 0 440 190" width="440" style="max-width:100%;height:auto;" role="img" aria-label="3 mal minus 4 ergibt minus 12, und minus 12 geteilt durch minus 4 ergibt wieder 3">
+<defs>
+<marker id="rz-pfeil-b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#397b96"/></marker>
+<marker id="rz-pfeil-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9A6B2F"/></marker>
+</defs>
+<circle cx="80" cy="95" r="40" fill="#397b96" fill-opacity="0.15" stroke="#397b96" stroke-width="2"/>
+<text x="80" y="104" font-size="28" text-anchor="middle" fill="currentColor">3</text>
+<circle cx="360" cy="95" r="40" fill="#bb0a21" fill-opacity="0.15" stroke="#bb0a21" stroke-width="2"/>
+<text x="360" y="104" font-size="28" text-anchor="middle" fill="currentColor">−12</text>
+<path d="M 115 70 Q 220 5 322 70" fill="none" stroke="#397b96" stroke-width="3" marker-end="url(#rz-pfeil-b)"/>
+<text x="220" y="30" font-size="20" text-anchor="middle" fill="#397b96">· (−4)</text>
+<path d="M 325 122 Q 220 185 118 122" fill="none" stroke="#9A6B2F" stroke-width="3" marker-end="url(#rz-pfeil-r)"/>
+<text x="220" y="178" font-size="20" text-anchor="middle" fill="#9A6B2F">: (−4)</text>
+</svg>
+<figcaption style="font-size:0.9em;opacity:0.8;margin-top:0.3em;">Geteilt durch (−4) macht rückgängig, was mal (−4) gemacht hat.</figcaption>
+</figure>
 
-:::snippet{#aufgabe}
-
-Ergänze mithilfe der Multiplikation.
-
-:::
+Zu jeder Geteilt-Aufgabe gehört eine Mal-Aufgabe. Damit findest du das Vorzeichen heraus:
 
 :::multievent
 
 | weil … | … ist |
 | --- | --- |
-| $4 \cdot 3 = 12$ | $12 : 3 =$ {z{4}} |
 | $(-4) \cdot 3 = -12$ | $(-12) : 3 =$ {z{-4}} |
 | $4 \cdot (-3) = -12$ | $(-12) : (-3) =$ {z{4}} |
 | $(-4) \cdot (-3) = 12$ | $12 : (-3) =$ {z{-4}} |
 
-Haben Dividend und Divisor **gleiche** Vorzeichen, ist der Quotient {A{!positiv|negativ}}.
-Haben sie **verschiedene** Vorzeichen, ist der Quotient {A{positiv|!negativ}}.
+Gleiche Vorzeichen → {A{!positiv|negativ}} $\qquad$ Verschiedene Vorzeichen → {A{positiv|!negativ}}
 
 :::
 
 :::snippet{#merken}
 
-**Rationale Zahlen dividieren**
+**So dividierst du rationale Zahlen**
 
-1. Dividiere die **Beträge**.
-2. Setze das **Vorzeichen** – genau wie beim Multiplizieren:
-   - **gleiche** Vorzeichen → der Quotient ist **positiv**
-   - **verschiedene** Vorzeichen → der Quotient ist **negativ**
-
-Durch $0$ darf man **nicht** dividieren.
+1. Teile die Zahlen **ohne Vorzeichen**.
+2. Setze das **Vorzeichen** wie beim Malnehmen:
+   - gleiche Vorzeichen → **plus**
+   - verschiedene Vorzeichen → **minus**
 
 :::
 
 :::snippet{#beispiel}
 
-$$
-\begin{aligned}
-(+7{,}5) : (+2{,}5) &= +(7{,}5 : 2{,}5) = +3 \\
-(-7{,}5) : (-2{,}5) &= +(7{,}5 : 2{,}5) = +3 \\
-(-7{,}5) : (+2{,}5) &= -(7{,}5 : 2{,}5) = -3 \\
-(+7{,}5) : (-2{,}5) &= -(7{,}5 : 2{,}5) = -3
-\end{aligned}
-$$
+$(-7{,}5) : (-2{,}5) = 3 \qquad (-7{,}5) : 2{,}5 = -3 \qquad 7{,}5 : (-2{,}5) = -3$
 
 :::
 
 :::alert{warn}
 
-**Warum darf man nicht durch 0 teilen?**
+**🚫 Niemals durch 0 teilen!**
 
-Angenommen, $(-26) : 0$ wäre eine Zahl $r$. Dann müsste $r \cdot 0 = -26$ sein. Aber jede Zahl mal $0$ ergibt $0$, niemals $-26$. Deshalb gibt es kein Ergebnis.
+Wäre $(-6) : 0$ eine Zahl, dann müsste diese Zahl mal $0$ wieder $-6$ ergeben. Aber jede Zahl mal $0$ ergibt $0$. Deshalb gibt es kein Ergebnis.
 
-Umgekehrt geht es: $0 : (-26) = 0$, denn $0 \cdot (-26) = 0$.
+Andersherum geht es: $0 : (-6) = 0$, denn $0 \cdot (-6) = 0$.
 
 :::
 
-## Die Divisionsmaschine
+## Ausprobieren: die Divisionsmaschine
 
-Stelle den Dividenden $x$ und den Divisor $y$ ein. Der blaue Pfeil ist $x$, der rote Pfeil ist das Ergebnis $x : y$. Probiere auch $y = 0$ aus.
+Stelle $x$ und $y$ ein. Der blaue Pfeil ist $x$, der rote Pfeil ist das Ergebnis $x : y$. Probiere auch $y = 0$ aus!
 
 :::jsxgraph{height="340" width="720" boundingbox="[-13,4.6,13,-3]" axis=false grid=false}
 
@@ -149,41 +169,35 @@ board.create('text', [-12.6, -2.4, function () {
 
 :::
 
+## Üben
+
 :::snippet{#aufgabe}
 
-Berechne. Du kannst die Divisionsmaschine zur Kontrolle nutzen.
+**1** Berechne.
 
 :::
 
 :::multievent
 
-| a) | b) | c) | d) |
+| | | | |
 | --- | --- | --- | --- |
-| $(-45) : (-9) =$ {z{5}} | $77 : (-7) =$ {z{-11}} | $(-96) : (-3) =$ {z{32}} | $54 : 6 =$ {z{9}} |
-| $(-280) : (-4) =$ {z{70}} | $360 : 2 =$ {z{180}} | $480 : (-8) =$ {z{-60}} | $(-360) : 3 =$ {z{-120}} |
-| $(-270) : (-90) =$ {z{3}} | $(-240) : 60 =$ {z{-4}} | $480 : (-60) =$ {z{-8}} | $630 : 70 =$ {z{9}} |
-| $(-169) : 13 =$ {z{-13}} | $144 : (-8) =$ {z{-18}} | $(-96) : (-12) =$ {z{8}} | $121 : 11 =$ {z{11}} |
+| $(-45) : (-9) =$ {z{5}} | $77 : (-7) =$ {z{-11}} | $(-96) : 3 =$ {z{-32}} | $0 : (-5) =$ {z{0}} |
+| $(-240) : 60 =$ {z{-4}} | $(-96) : (-12) =$ {z{8}} | $144 : (-8) =$ {z{-18}} | $(-169) : 13 =$ {z{-13}} |
 
 :::
 
-## Dezimalzahlen dividieren
+:::snippet{#aufgabe}
 
-:::snippet{#merken}
-
-Teilst du durch eine Dezimalzahl, verschiebst du bei **beiden** Zahlen das Komma um gleich viele Stellen nach rechts, bis der Divisor eine ganze Zahl ist. Das Vorzeichen bestimmst du wie immer.
-
-$$6 : (-0{,}3) = -(60 : 3) = -20$$
+**2** Durch eine Dezimalzahl teilen: Verschiebe bei **beiden** Zahlen das Komma gleich weit, bis hinten eine ganze Zahl steht. Zum Beispiel ist $6 : (-0{,}3) = -(60 : 3) = -20$.
 
 :::
 
 :::multievent
 
-| a) | b) | c) | d) |
+| | | | |
 | --- | --- | --- | --- |
-| $(-3) : 8 =$ {z{-0,375}} | $(-1{,}5) : 3 =$ {z{-0,5}} | $(-1{,}5) : (-0{,}5) =$ {z{3}} | $12 : (-0{,}5) =$ {z{-24}} |
-| $(-4) : (-1) =$ {z{4}} | $(-0{,}72) : (-6) =$ {z{0,12}} | $4{,}2 : 2{,}1 =$ {z{2}} | $(-6) : (-0{,}1) =$ {z{60}} |
-| $6 : (-6) =$ {z{-1}} | $6 : (-0{,}3) =$ {z{-20}} | $(-3{,}6) : 0{,}9 =$ {z{-4}} | $5 : 0{,}2 =$ {z{25}} |
-| $(-6) : 8 =$ {z{-0,75}} | $(-4) : (-0{,}8) =$ {z{5}} | $6{,}8 : (-1{,}7) =$ {z{-4}} | $(-9) : 0{,}3 =$ {z{-30}} |
+| $(-1{,}5) : 3 =$ {z{-0,5}} | $(-1{,}5) : (-0{,}5) =$ {z{3}} | $12 : (-0{,}5) =$ {z{-24}} | $(-3{,}6) : 0{,}9 =$ {z{-4}} |
+| $(-0{,}72) : (-6) =$ {z{0,12}} | $5 : 0{,}2 =$ {z{25}} | $(-9) : 0{,}3 =$ {z{-30}} | $6{,}8 : (-1{,}7) =$ {z{-4}} |
 
 :::
 
@@ -191,113 +205,24 @@ $$6 : (-0{,}3) = -(60 : 3) = -20$$
 
 :::snippet{#merken}
 
-Durch einen Bruch dividierst du, indem du mit seinem **Kehrwert** multiplizierst. Den Kehrwert erhältst du, wenn du Zähler und Nenner vertauschst. Das Vorzeichen setzt du nach der Vorzeichenregel.
+Durch einen Bruch teilst du, indem du mit dem **Kehrwert** malnimmst. Beim Kehrwert sind Zähler und Nenner vertauscht. Das Vorzeichen bestimmst du wie immer.
 
 :::
 
 :::snippet{#beispiel}
 
-$$
-\left(+\frac{3}{8}\right) : \left(-\frac{9}{16}\right)
-= -\left(\frac{3}{8} \cdot \frac{16}{9}\right)
-= -\frac{\cancel{3}^{\,1} \cdot \cancel{16}^{\,2}}{\cancel{8}_{\,1} \cdot \cancel{9}_{\,3}}
-= -\frac{2}{3}
-$$
+$$\left(-\frac{3}{4}\right) : \frac{2}{7} = \left(-\frac{3}{4}\right) \cdot \frac{7}{2} = -\frac{21}{8}$$
 
 :::
-
-:::snippet{#aufgabe}
-
-**1** Berechne die Quotienten. Gib die Ergebnisse direkt als Bruch ein (Bruch-Taste der Bildschirmtastatur oder `/`) und kürze so weit wie möglich.
-
-:::
-
-::bitflow{id="rationale-zahlen-brueche-dividieren" src="brueche-dividieren.bitflow" height="auto" maxHeight="85vh"}
-
-:::snippet{#aufgabe}
-
-**2** Berechne. Überlege zuerst, ob du mit Brüchen oder mit Dezimalzahlen rechnest.
-
-:::
-
-::bitflow{id="rationale-zahlen-div-gemischt" src="div-gemischt.bitflow" height="auto" maxHeight="85vh"}
-
-## Mal und geteilt vertauschen
-
-:::snippet{#merken}
-
-Aufeinanderfolgende Multiplikations- und Divisionsschritte darf man vertauschen. Jede Zahl nimmt dabei **ihr Rechenzeichen mit**.
-
-$$a \cdot b : c = a : c \cdot b \qquad a : b : c = a : c : b$$
-
-:::
-
-:::snippet{#beispiel}
-
-$$
-\begin{aligned}
--80 \cdot 17 : (-40) &= -80 : (-40) \cdot 17 &&\text{vertauschen, damit es leichter wird} \\
-&= 2 \cdot 17 \\
-&= 34
-\end{aligned}
-$$
-
-:::
-
-:::multievent
-
-- $36 \cdot 7 : (-18) =$ {z{-14}}
-- $-54 \cdot (-39) : 27 =$ {z{78}}
-- $-2{,}5 : 0{,}8 \cdot (-4) =$ {z{12,5}}
-- $165 : (-0{,}3) : (-5) =$ {z{110}}
-- $-210 : 0{,}5 : (-70) =$ {z{6}}
-
-:::
-
-:::snippet{#aufgabe}
-
-**Fehlersuche:** Jonas hat beim Vertauschen nicht immer aufgepasst. Entscheide, ob die Rechnung richtig ist.
-
-:::
-
-:::multievent
-
-| Rechnung | |
-| --- | --- |
-| $(-18) \cdot (-2) : 6 = (-18) \cdot 6 \cdot (-2) = 216$ | {A{richtig\|!falsch}} |
-| $(-35) : 10 \cdot 4 = (-35) \cdot 4 : 10 = -140 : 10 = -14$ | {A{!richtig\|falsch}} |
-| $3{,}6 : (-0{,}5) \cdot (-10) = 3{,}6 \cdot (-10) : (-0{,}5) = -36 : (-0{,}5) = -18$ | {A{richtig\|!falsch}} |
-| $(-4) \cdot 2{,}5 + 3 = (-4) \cdot 3 + 2{,}5 = -9{,}5$ | {A{richtig\|!falsch}} |
-
-{b{1. Zeile: Das »: 6« wurde zu »· 6«. Richtig ist (−18) : 6 · (−2) = 6. — 3. Zeile: −36 : (−0,5) = 72, nicht −18. — 4. Zeile: Ein Plus-Schritt darf nicht mit einem Mal-Schritt vertauscht werden. Richtig ist −10 + 3 = −7.}}
-
-:::
-
-## Alle vier Rechenarten
-
-:::snippet{#aufgabe}
-
-Achte auf das Rechenzeichen! Die Vorzeichenregel gilt nur für mal und geteilt.
-
-:::
-
-:::multievent
-
-| a) | b) | c) |
-| --- | --- | --- |
-| $(-48) + (-12) =$ {z{-60}} | $36 + (-9) =$ {z{27}} | $(-4{,}5) + (-5) =$ {z{-9,5}} |
-| $(-48) - (-12) =$ {z{-36}} | $36 - (-9) =$ {z{45}} | $(-4{,}5) - (-5) =$ {z{0,5}} |
-| $(-48) \cdot (-12) =$ {z{576}} | $36 \cdot (-9) =$ {z{-324}} | $(-4{,}5) \cdot (-5) =$ {z{22,5}} |
-| $(-48) : (-12) =$ {z{4}} | $36 : (-9) =$ {z{-4}} | $(-4{,}5) : (-5) =$ {z{0,9}} |
-
-:::
-
-## Erklärvideo
-
-::youtube{#9t6niouU4BQ}
 
 ## Teste dich
 
-Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.
+Zuerst kommen Grundlagen. Wenn sie sitzen, geht es mit Profi-Aufgaben weiter (Brüche, gemischte Aufgaben, eine Textaufgabe), sonst mit einer Extra-Übung.
 
 ::bitflow{id="rationale-zahlen-dividieren" src="dividieren.bitflow" height="auto" maxHeight="85vh"}
+
+::::collapsible{title="🎬 Erklärvideo" id="rz-div-video"}
+
+::youtube{#9t6niouU4BQ}
+
+::::

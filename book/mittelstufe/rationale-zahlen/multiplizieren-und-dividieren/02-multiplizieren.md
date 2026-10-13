@@ -1,23 +1,27 @@
 ---
-name: Multiplizieren
+name: ✖️ Multiplizieren
 index: 2
 lang: de
 ---
 
 # Rationale Zahlen multiplizieren
 
-Auf der Seite [Muster entdecken](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/01-muster-entdecken) hast du herausgefunden, welches Vorzeichen ein Produkt hat. Hier ist die Regel zusammengefasst.
+:::alert{info}
+
+**Darum geht's:** Du lernst die Vorzeichenregel für das Malnehmen und wendest sie auf ganze Zahlen, Dezimalzahlen und Brüche an.
+
+:::
+
+## Die Regel
 
 :::snippet{#merken}
 
-**Rationale Zahlen multiplizieren**
+**So multiplizierst du rationale Zahlen**
 
-1. Multipliziere die **Beträge** – also die Zahlen ohne Vorzeichen.
+1. Multipliziere die Zahlen **ohne Vorzeichen**.
 2. Setze das **Vorzeichen**:
-   - Beide Faktoren haben das **gleiche** Vorzeichen → das Produkt ist **positiv**.
-   - Die Faktoren haben **verschiedene** Vorzeichen → das Produkt ist **negativ**.
-
-Für jede Zahl $a$ gilt außerdem: $a \cdot 0 = 0$ und $0 \cdot a = 0$.
+   - gleiche Vorzeichen → **plus**
+   - verschiedene Vorzeichen → **minus**
 
 :::
 
@@ -25,38 +29,27 @@ Für jede Zahl $a$ gilt außerdem: $a \cdot 0 = 0$ und $0 \cdot a = 0$.
 
 $$
 \begin{aligned}
-(+2{,}5) \cdot (+4) &= +(2{,}5 \cdot 4) = +10 \\
-(-2{,}5) \cdot (-4) &= +(2{,}5 \cdot 4) = +10 \\
-(+2{,}5) \cdot (-4) &= -(2{,}5 \cdot 4) = -10 \\
-(-2{,}5) \cdot (+4) &= -(2{,}5 \cdot 4) = -10
+(+2{,}5) \cdot (+4) &= +10 &&\text{gleich → plus} \\
+(-2{,}5) \cdot (-4) &= +10 &&\text{gleich → plus} \\
+(+2{,}5) \cdot (-4) &= -10 &&\text{verschieden → minus} \\
+(-2{,}5) \cdot (+4) &= -10 &&\text{verschieden → minus}
 \end{aligned}
 $$
 
-| | $+$ | $-$ |
-| :---: | :---: | :---: |
-| $+$ | $+$ | $-$ |
-| $-$ | $-$ | $+$ |
-
 :::
 
-## Eselsbrücken
+### Eselsbrücke: Memory
 
-Such dir die Eselsbrücke aus, die du dir am besten merken kannst.
+<figure style="text-align:center;margin:1.2em 0;">
+<svg viewBox="0 0 650 150" width="650" style="max-width:100%;height:auto;" role="img" aria-label="Memory: zwei gleiche Karten ergeben plus, zwei verschiedene Karten ergeben minus">
+<rect x="15" y="20" width="56" height="76" rx="8" fill="#397b96"/><text x="43" y="72" font-size="40" font-weight="bold" text-anchor="middle" fill="#fff">+</text><rect x="79" y="20" width="56" height="76" rx="8" fill="#397b96"/><text x="107" y="72" font-size="40" font-weight="bold" text-anchor="middle" fill="#fff">+</text><text x="155" y="66" font-size="26" text-anchor="middle" fill="currentColor">→</text><text x="193" y="66" font-size="34" text-anchor="middle">😊</text><text x="193" y="108" font-size="32" font-weight="bold" text-anchor="middle" fill="#397b96">+</text><text x="75" y="140" font-size="15" text-anchor="middle" fill="currentColor">gleich</text>
+<rect x="230" y="20" width="56" height="76" rx="8" fill="#bb0a21"/><text x="258" y="72" font-size="40" font-weight="bold" text-anchor="middle" fill="#fff">−</text><rect x="294" y="20" width="56" height="76" rx="8" fill="#bb0a21"/><text x="322" y="72" font-size="40" font-weight="bold" text-anchor="middle" fill="#fff">−</text><text x="370" y="66" font-size="26" text-anchor="middle" fill="currentColor">→</text><text x="408" y="66" font-size="34" text-anchor="middle">😊</text><text x="408" y="108" font-size="32" font-weight="bold" text-anchor="middle" fill="#397b96">+</text><text x="290" y="140" font-size="15" text-anchor="middle" fill="currentColor">gleich</text>
+<rect x="445" y="20" width="56" height="76" rx="8" fill="#397b96"/><text x="473" y="72" font-size="40" font-weight="bold" text-anchor="middle" fill="#fff">+</text><rect x="509" y="20" width="56" height="76" rx="8" fill="#bb0a21"/><text x="537" y="72" font-size="40" font-weight="bold" text-anchor="middle" fill="#fff">−</text><text x="585" y="66" font-size="26" text-anchor="middle" fill="currentColor">→</text><text x="623" y="66" font-size="34" text-anchor="middle">😞</text><text x="623" y="108" font-size="32" font-weight="bold" text-anchor="middle" fill="#bb0a21">−</text><text x="505" y="140" font-size="15" text-anchor="middle" fill="currentColor">verschieden</text>
+</svg>
+<figcaption style="font-size:0.9em;opacity:0.8;margin-top:0.3em;">Zwei gleiche Karten: Du freust dich – plus. Zwei verschiedene Karten: schade – minus.</figcaption>
+</figure>
 
-:::::tabs
-
-::::tab{title="Memory"}
-
-Stell dir vor, du spielst Memory.
-
-- Du deckst **zwei gleiche** Karten auf – du freust dich: 😊 **plus**.
-  $(+) \cdot (+) = +$ und $(-) \cdot (-) = +$
-- Du deckst **zwei verschiedene** Karten auf – du bist traurig: 😞 **minus**.
-  $(+) \cdot (-) = -$ und $(-) \cdot (+) = -$
-
-::::
-
-::::tab{title="Freund und Feind"}
+::::collapsible{title="🤝 Noch eine Eselsbrücke: Freund und Feind" id="rz-mul-freund-feind"}
 
 Plus ist ein **Freund**, minus ist ein **Feind**.
 
@@ -67,22 +60,11 @@ Plus ist ein **Freund**, minus ist ein **Feind**.
 
 ::::
 
-::::tab{title="Gegenteil"}
-
-Ein Minuszeichen bedeutet »das Gegenteil«.
-
-- »Ich mag Pizza nicht **nicht**.« Zweimal »nicht« heißt: Ich mag Pizza. $(-) \cdot (-) = +$
-- Jedes weitere Minus dreht die Aussage wieder um.
-
-::::
-
-:::::
-
-## Das Malkreuz
+## Üben
 
 :::snippet{#aufgabe}
 
-Fülle das Malkreuz aus. Multipliziere jeweils die Zahl am Zeilenanfang mit der Zahl oben in der Spalte.
+**1** Fülle das Malkreuz aus: Zahl am Zeilenanfang mal Zahl oben in der Spalte.
 
 :::
 
@@ -98,87 +80,38 @@ Fülle das Malkreuz aus. Multipliziere jeweils die Zahl am Zeilenanfang mit der 
 
 :::snippet{#aufgabe}
 
-Berechne im Kopf.
+**2** Rechne im Kopf.
 
 :::
 
 :::multievent
 
-| a) | b) | c) | d) |
+| | | | |
 | --- | --- | --- | --- |
-| $(-4) \cdot 7 =$ {z{-28}} | $(-3{,}5) \cdot (-2) =$ {z{7}} | $(-1{,}7) \cdot 3 =$ {z{-5,1}} | $0{,}5 \cdot 0{,}2 =$ {z{0,1}} |
-| $4 \cdot (-7) =$ {z{-28}} | $3{,}5 \cdot 2 =$ {z{7}} | $1{,}7 \cdot (-3) =$ {z{-5,1}} | $(-0{,}5) \cdot 0{,}2 =$ {z{-0,1}} |
-| $4 \cdot 7 =$ {z{28}} | $(-3{,}5) \cdot 2 =$ {z{-7}} | $(-1{,}7) \cdot (-3) =$ {z{5,1}} | $0{,}5 \cdot (-0{,}2) =$ {z{-0,1}} |
-| $(-4) \cdot (-7) =$ {z{28}} | $3{,}5 \cdot (-2) =$ {z{-7}} | $1{,}7 \cdot 3 =$ {z{5,1}} | $(-0{,}5) \cdot (-0{,}2) =$ {z{0,1}} |
-
-:::
-
-## Mal (−1): die Gegenzahl
-
-:::snippet{#merken}
-
-Multiplizierst du eine Zahl mit $(-1)$, erhältst du ihre **Gegenzahl**. Auf der Zahlengeraden wird die Zahl an der $0$ gespiegelt.
-
-Ein Minuszeichen vor einer Zahl oder Klammer ist eine Abkürzung für »mal $(-1)$«:
-
-$$-a = (-1) \cdot a$$
-
-:::
-
-:::snippet{#beispiel}
-
-$$-(-7) = (-1) \cdot (-7) = 7 \qquad -(+5) = (-1) \cdot (+5) = -5$$
-
-:::
-
-:::alert{info}
-
-**Das Minuszeichen hat drei Bedeutungen**
-
-1. **Vorzeichen** einer Zahl: $-3$ ist eine negative Zahl.
-2. **Rechenzeichen** für die Subtraktion: $8 - 3$
-3. Zeichen für die **Gegenzahl**: $-(-3)$ ist die Gegenzahl von $-3$.
-
-:::
-
-:::snippet{#aufgabe}
-
-Berechne.
-
-:::
-
-:::multievent
-
-- $-(+2) =$ {z{-2}}
-- $-(-0{,}3) =$ {z{0,3}}
-- $-(-1) =$ {z{1}}
-- $-(-(-7)) =$ {z{-7}}
-- $-\big((-23) + (-43)\big) =$ {z{66}}
-- $-\big[(-12) \cdot 3\big] =$ {z{36}}
-
-Welche Bedeutung hat das Minuszeichen? $\;8 \;\underline{-}\; 3$: {A{Vorzeichen|!Rechenzeichen|Gegenzahl}} $\quad \underline{-}3$: {A{!Vorzeichen|Rechenzeichen|Gegenzahl}} $\quad \underline{-}(-3)$: {A{Vorzeichen|Rechenzeichen|!Gegenzahl}}
+| $(-4) \cdot 7 =$ {z{-28}} | $(-3{,}5) \cdot (-2) =$ {z{7}} | $(-1{,}7) \cdot 3 =$ {z{-5,1}} | $(-0{,}5) \cdot 0{,}2 =$ {z{-0,1}} |
+| $(-4) \cdot (-7) =$ {z{28}} | $3{,}5 \cdot (-2) =$ {z{-7}} | $(-1{,}7) \cdot (-3) =$ {z{5,1}} | $(-0{,}5) \cdot (-0{,}2) =$ {z{0,1}} |
 
 :::
 
 ## Brüche und Dezimalzahlen
 
-Die Vorzeichenregel gilt für alle rationalen Zahlen. Für die Beträge rechnest du so, wie du es von Brüchen und Dezimalzahlen kennst.
+Die Vorzeichenregel gilt für **alle** rationalen Zahlen. Den Rest rechnest du so, wie du es von Brüchen und Dezimalzahlen kennst.
 
 :::snippet{#beispiel}
 
-Berechne $(-1{,}2) \cdot \frac{3}{4}$. Das Vorzeichen ist in jedem Fall **minus**, denn die Faktoren haben verschiedene Vorzeichen. Für den Betrag gibt es drei Wege – klicke sie an.
+$(-1{,}2) \cdot \frac{3}{4}$: Die Vorzeichen sind verschieden, also ist das Ergebnis **negativ**. Für die Zahl gibt es drei Wege:
 
 :::
 
 ::::tabs
 
-:::tab{title="In Brüche umwandeln"}
+:::tab{title="Mit Brüchen"}
 
 $$(-1{,}2) \cdot \frac{3}{4} = -\frac{6}{5} \cdot \frac{3}{4} = -\frac{18}{20} = -\frac{9}{10}$$
 
 :::
 
-:::tab{title="In Dezimalzahlen umwandeln"}
+:::tab{title="Mit Dezimalzahlen"}
 
 $$(-1{,}2) \cdot \frac{3}{4} = (-1{,}2) \cdot 0{,}75 = -0{,}9$$
 
@@ -186,83 +119,34 @@ $$(-1{,}2) \cdot \frac{3}{4} = (-1{,}2) \cdot 0{,}75 = -0{,}9$$
 
 :::tab{title="Bruch als Anteil"}
 
-$$(-1{,}2) \cdot \frac{3}{4} = \frac{3}{4} \text{ von } (-1{,}2) = -0{,}9$$
-
-Ein Viertel von $-1{,}2$ ist $-0{,}3$, drei Viertel sind $-0{,}9$.
+$\frac{3}{4}$ von $-1{,}2$: Ein Viertel von $-1{,}2$ ist $-0{,}3$, drei Viertel sind $-0{,}9$.
 
 :::
 
 ::::
 
-:::snippet{#aufgabe}
+## Teste dich
 
-**1** Berechne die Produkte. Gib die Ergebnisse direkt als Bruch ein (Bruch-Taste der Bildschirmtastatur oder `/`) und kürze so weit wie möglich.
+Zuerst kommen Grundlagen. Wenn sie sitzen, geht es mit Profi-Aufgaben weiter (Brüche, Dezimalzahlen, eine Textaufgabe), sonst mit einer Extra-Übung.
 
-:::
+::bitflow{id="rationale-zahlen-multiplizieren" src="multiplizieren.bitflow" height="auto" maxHeight="85vh"}
 
-::bitflow{id="rationale-zahlen-brueche-multiplizieren" src="brueche-multiplizieren.bitflow" height="auto" maxHeight="85vh"}
+:::::collapsible{title="🎬 Erklärvideos" id="rz-mul-videos"}
 
-:::snippet{#aufgabe}
+::::tabs
 
-**2** Berechne möglichst geschickt. Entscheide selbst, ob du mit Brüchen oder Dezimalzahlen rechnest. Gib das Ergebnis als Dezimalzahl ein.
-
-:::
-
-::bitflow{id="rationale-zahlen-geschickt-multiplizieren" src="geschickt-multiplizieren.bitflow" height="auto" maxHeight="85vh"}
-
-:::snippet{#aufgabe}
-
-**3** Schreibe als Produkt und berechne.
-
-:::
-
-:::multievent
-
-- $(+9{,}5) + (+9{,}5) + (+9{,}5) =$ {z{3}} $\cdot\; 9{,}5 =$ {z{28,5}}
-- $(-2{,}9) + (-2{,}9) + (-2{,}9) + (-2{,}9) = 4 \cdot (-2{,}9) =$ {z{-11,6}}
-- $(-12{,}1) + (-12{,}1) + (-12{,}1) =$ {z{-36,3}}
-
-:::
-
-:::snippet{#aufgabe}
-
-**4** Schreibe die Zahl auf vier verschiedene Weisen als Produkt aus zwei Faktoren. Verwende auch negative Zahlen und Dezimalzahlen.
-
-a) $36$ $\quad$ b) $-36$ $\quad$ c) $-2$ $\quad$ d) $-\frac{1}{8}$
-
-:::
-
-::::collapsible{title="Lösungsbeispiele" id="rz-mul-loes-4"}
-
-a) $4 \cdot 9$, $(-4) \cdot (-9)$, $(-6) \cdot (-6)$, $0{,}5 \cdot 72$
-b) $4 \cdot (-9)$, $(-4) \cdot 9$, $(-6) \cdot 6$, $(-0{,}5) \cdot 72$
-c) $1 \cdot (-2)$, $(-1) \cdot 2$, $(-4) \cdot 0{,}5$, $0{,}2 \cdot (-10)$
-d) $\left(-\frac{1}{2}\right) \cdot \frac{1}{4}$, $\frac{1}{2} \cdot \left(-\frac{1}{4}\right)$, $(-1) \cdot \frac{1}{8}$, $0{,}25 \cdot (-0{,}5)$
-
-Es gibt viele weitere richtige Lösungen.
-
-::::
-
-## Erklärvideos
-
-:::::tabs
-
-::::tab{title="Video 1"}
+:::tab{title="Video 1"}
 
 ::youtube{#bCffZc1w8kM}
 
-::::
+:::
 
-::::tab{title="Video 2"}
+:::tab{title="Video 2"}
 
 ::youtube{#PUFGO2wzPrI}
+
+:::
 
 ::::
 
 :::::
-
-## Teste dich
-
-Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.
-
-::bitflow{id="rationale-zahlen-multiplizieren" src="multiplizieren.bitflow" height="auto" maxHeight="85vh"}

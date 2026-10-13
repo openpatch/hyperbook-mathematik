@@ -1,0 +1,2625 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-training",
+    "title": "Trainingslager",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": [
+      {
+        "id": "stufe1",
+        "label": "🟢 Grundlagen"
+      },
+      {
+        "id": "stufe2",
+        "label": "🟡 Fortgeschritten"
+      },
+      {
+        "id": "stufe3",
+        "label": "🔴 Profi"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "data": {
+        "title": "Trainingslager",
+        "showOutline": false,
+        "markdown": "Wähle eine Stufe und übe, so lange du möchtest. Nach jeder Stufe kannst du aufhören oder weitermachen.\n\n- 🟢 **Grundlagen:** Vorzeichenregeln mit ganzen Zahlen\n- 🟡 **Fortgeschritten:** Dezimalzahlen und Brüche\n- 🔴 **Profi:** Potenzen, Terme, Textaufgaben und Knobelfragen"
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "wahl",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Mit welcher Stufe möchtest du anfangen?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "🟢 Grundlagen",
+            "correct": false
+          },
+          {
+            "id": "o2",
+            "markdown": "🟡 Fortgeschritten",
+            "correct": false
+          },
+          {
+            "id": "o3",
+            "markdown": "🔴 Profi",
+            "correct": false
+          }
+        ],
+        "shuffle": false,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "skip",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "s1-regeln",
+      "type": "task-fill-in-the-blank",
+      "data": {
+        "instruction": "Trage das Vorzeichen des Ergebnisses ein (+ oder −).",
+        "text": "(+) · (+) → [[1]]\n(−) · (−) → [[2]]\n(+) · (−) → [[3]]\n(−) · (+) → [[4]]\n(−) : (−) → [[5]]\n(+) : (−) → [[6]]",
+        "blanks": {
+          "1": [
+            "+",
+            "plus"
+          ],
+          "2": [
+            "+",
+            "plus"
+          ],
+          "3": [
+            "-",
+            "−",
+            "minus"
+          ],
+          "4": [
+            "-",
+            "−",
+            "minus"
+          ],
+          "5": [
+            "+",
+            "plus"
+          ],
+          "6": [
+            "-",
+            "−",
+            "minus"
+          ]
+        },
+        "caseSensitive": false,
+        "trim": true,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-regeln",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-rechenart",
+      "type": "task-matching",
+      "data": {
+        "instruction": "Achte auf die Rechenart! Ordne zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "(−12) + 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−9"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "(−12) − 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−15"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "(−12) · 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−36"
+            }
+          },
+          {
+            "id": "p4",
+            "left": {
+              "kind": "text",
+              "label": "(−12) : 3"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−4"
+            }
+          },
+          {
+            "id": "p5",
+            "left": {
+              "kind": "text",
+              "label": "(−12) · (−3)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "36"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-rechenart",
+      "type": "title-simple",
+      "data": {
+        "title": "Rechenart beachten",
+        "markdown": "Die Vorzeichenregel gilt nur für **mal** und **geteilt**.\n\nBeim Addieren und Subtrahieren denkst du an die Zahlengerade: (−12) + 3 = −9."
+      },
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-8) \\cdot  (-7)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "56",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-56",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-1",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-63) : 9=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-7",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "7",
+            "feedback": {
+              "message": "Minus geteilt durch plus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-2",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel beim Dividieren",
+        "markdown": "1. Dividiere die Beträge.\n2. Gleiche Vorzeichen → **plus**, verschiedene → **minus**.\n\nProbe mit der Multiplikation: (−12) : 3 = −4, denn (−4) · 3 = −12."
+      },
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-zahlengerade",
+      "type": "task-number-line",
+      "data": {
+        "instruction": "Rechne aus und setze jedes Ergebnis an die richtige Stelle der Zahlengeraden.",
+        "min": -4,
+        "max": 4,
+        "tickStep": 1,
+        "minorTicks": 1,
+        "labelTicks": true,
+        "tolerance": 0.2,
+        "snap": "minor",
+        "partialCredit": true,
+        "items": [
+          {
+            "id": "i1",
+            "label": "(−2) · 1,5",
+            "value": -3
+          },
+          {
+            "id": "i2",
+            "label": "(−0,5) · (−4)",
+            "value": 2
+          },
+          {
+            "id": "i3",
+            "label": "3 · (−0,5)",
+            "value": -1.5
+          },
+          {
+            "id": "i4",
+            "label": "(−6) : (−4)",
+            "value": 1.5
+          },
+          {
+            "id": "i5",
+            "label": "(−1) : 2",
+            "value": -0.5
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-zahlengerade",
+      "type": "title-simple",
+      "data": {
+        "title": "Erst rechnen, dann einzeichnen",
+        "markdown": "Bestimme zuerst das Vorzeichen, dann den Betrag. Negative Zahlen liegen links von 0."
+      },
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-tabelle",
+      "type": "task-table",
+      "data": {
+        "instruction": "Fülle die Tabelle aus.",
+        "caption": "Multiplizieren und Dividieren mit negativen Zahlen",
+        "columns": [
+          {
+            "id": "a",
+            "header": "a",
+            "kind": "number"
+          },
+          {
+            "id": "m",
+            "header": "a · (−3)",
+            "kind": "number"
+          },
+          {
+            "id": "d",
+            "header": "a : (−2)",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "a": {
+                "given": "6"
+              },
+              "m": {
+                "accepted": [
+                  "-18",
+                  "−18"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "-3",
+                  "−3"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "a": {
+                "given": "−8"
+              },
+              "m": {
+                "accepted": [
+                  "24"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "4"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "a": {
+                "given": "−12"
+              },
+              "m": {
+                "accepted": [
+                  "36"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "6"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "a": {
+                "given": "−10"
+              },
+              "m": {
+                "accepted": [
+                  "30"
+                ]
+              },
+              "d": {
+                "accepted": [
+                  "5"
+                ]
+              }
+            }
+          }
+        ],
+        "rowHeaders": false,
+        "rowOrder": "fixed",
+        "caseSensitive": false,
+        "ignoreWhitespace": true,
+        "numberTolerance": 0,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-tabelle",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel beim Dividieren",
+        "markdown": "1. Dividiere die Beträge.\n2. Gleiche Vorzeichen → **plus**, verschiedene → **minus**.\n\nProbe mit der Multiplikation: (−12) : 3 = −4, denn (−4) · 3 = −12."
+      },
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-4) \\cdot  25=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-100",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "100",
+            "feedback": {
+              "message": "Minus mal plus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-3",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s1-4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-90) : (-15)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "6",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-6",
+            "feedback": {
+              "message": "Minus geteilt durch minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "hilfe-s1-4",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel beim Dividieren",
+        "markdown": "1. Dividiere die Beträge.\n2. Gleiche Vorzeichen → **plus**, verschiedene → **minus**.\n\nProbe mit der Multiplikation: (−12) : 3 = −4, denn (−4) · 3 = −12."
+      },
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "nach-1",
+      "type": "task-choice",
+      "data": {
+        "instruction": "🟢 geschafft! Wie geht es weiter?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "Weiter mit 🟡 Fortgeschritten",
+            "correct": false
+          },
+          {
+            "id": "o2",
+            "markdown": "Aufhören",
+            "correct": false
+          }
+        ],
+        "shuffle": false,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "skip",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "section": "stufe1"
+    },
+    {
+      "id": "s2-1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-1{,}2) \\cdot  0{,}5=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-0.6",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "0.6",
+            "feedback": {
+              "message": "Minus mal plus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-1",
+      "type": "title-simple",
+      "data": {
+        "title": "Dezimalzahlen multiplizieren",
+        "markdown": "Rechne erst ohne Komma, dann setze das Komma: Das Ergebnis hat so viele Nachkommastellen wie beide Faktoren zusammen.\n\n1,5 · 0,4: 15 · 4 = 60 → zwei Nachkommastellen → 0,60 = 0,6"
+      },
+      "position": {
+        "x": 360,
+        "y": 1540
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-0{,}3) \\cdot  (-0{,}3)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "0.09",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-0.09",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "0.9",
+            "feedback": {
+              "message": "Zwei Faktoren mit je einer Nachkommastelle: 0,09.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1680
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-2",
+      "type": "title-simple",
+      "data": {
+        "title": "Dezimalzahlen multiplizieren",
+        "markdown": "Rechne erst ohne Komma, dann setze das Komma: Das Ergebnis hat so viele Nachkommastellen wie beide Faktoren zusammen.\n\n1,5 · 0,4: 15 · 4 = 60 → zwei Nachkommastellen → 0,60 = 0,6"
+      },
+      "position": {
+        "x": 360,
+        "y": 1680
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-4{,}8) : 0{,}6=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "8",
+            "feedback": {
+              "message": "Minus geteilt durch plus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1820
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-3",
+      "type": "title-simple",
+      "data": {
+        "title": "Durch eine Dezimalzahl teilen",
+        "markdown": "Verschiebe bei beiden Zahlen das Komma um gleich viele Stellen, bis der Divisor eine ganze Zahl ist.\n\n6 : 0,3 = 60 : 3 = 20 → mit Vorzeichen: 6 : (−0,3) = −20"
+      },
+      "position": {
+        "x": 360,
+        "y": 1820
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-4{,}9\\right) \\cdot  \\left(-\\frac{4}{7}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "2.8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-2.8",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1960
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-4",
+      "type": "title-simple",
+      "data": {
+        "title": "Bruch als Anteil",
+        "markdown": "Oft ist es am einfachsten, den Bruch als Anteil zu nehmen: erst durch den Nenner teilen, dann mit dem Zähler malnehmen.\n\n3/5 von 3,5: 3,5 : 5 = 0,7 → 0,7 · 3 = 2,1. Das Vorzeichen bestimmst du mit der Vorzeichenregel."
+      },
+      "position": {
+        "x": 360,
+        "y": 1960
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\frac{7}{8} : \\left(-0{,}25\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-3.5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "3.5",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – der Quotient ist negativ.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-0.21875",
+            "feedback": {
+              "message": "Durch 0,25 = 1/4 teilen heißt mal 4 nehmen.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2100
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-5",
+      "type": "title-simple",
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      },
+      "position": {
+        "x": 360,
+        "y": 2100
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne und kürze.",
+        "latex": "\\frac{14}{33}\\cdot \\left(-\\frac{121}{98}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{11}{21}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{11}{21}",
+            "feedback": {
+              "message": "Plus mal minus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2240
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-6",
+      "type": "title-simple",
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      },
+      "position": {
+        "x": 360,
+        "y": 2240
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Gib das Ergebnis als Bruch an.",
+        "latex": "\\frac{7}{8}:\\left(-\\frac{2}{3}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{21}{16}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{21}{16}",
+            "feedback": {
+              "message": "Plus geteilt durch minus ergibt minus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-\\frac{7}{12}",
+            "feedback": {
+              "message": "Du hast mit 2/3 multipliziert. Nimm den Kehrwert 3/2.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2380
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-7",
+      "type": "title-simple",
+      "data": {
+        "title": "Durch einen Bruch teilen",
+        "markdown": "Mit dem **Kehrwert** multiplizieren: Zähler und Nenner tauschen.\n\n(−3/4) : 2/7 = (−3/4) · 7/2 = −21/8"
+      },
+      "position": {
+        "x": 360,
+        "y": 2380
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s2-8",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne. Gib das Ergebnis als Bruch an.",
+        "latex": "1{,}75:\\left(-\\frac{3}{4}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{7}{3}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{7}{3}",
+            "feedback": {
+              "message": "Plus geteilt durch minus ergibt minus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-\\frac{21}{16}",
+            "feedback": {
+              "message": "Du hast mit 3/4 multipliziert. Nimm den Kehrwert 4/3.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2520
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "hilfe-s2-8",
+      "type": "title-simple",
+      "data": {
+        "title": "Brüche oder Dezimalzahlen?",
+        "markdown": "- Lässt sich der Bruch leicht als Dezimalzahl schreiben (1/2 = 0,5, 3/4 = 0,75, 1/10 = 0,1), rechne mit Dezimalzahlen.\n- Sonst schreibe die Dezimalzahl als Bruch (0,2 = 1/5) und multipliziere mit dem Kehrwert.\n\nDas Vorzeichen bestimmst du mit der Vorzeichenregel."
+      },
+      "position": {
+        "x": 360,
+        "y": 2520
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "nach-2",
+      "type": "task-choice",
+      "data": {
+        "instruction": "🟡 geschafft! Wie geht es weiter?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "Weiter mit 🔴 Profi",
+            "correct": false
+          },
+          {
+            "id": "o2",
+            "markdown": "Aufhören",
+            "correct": false
+          }
+        ],
+        "shuffle": false,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "skip",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2660
+      },
+      "section": "stufe2"
+    },
+    {
+      "id": "s3-aussage1",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? **Ist bei zwei Faktoren einer negativ, dann ist das Produkt immer negativ.**",
+        "correctAnswer": false,
+        "feedbackWhenYes": {
+          "message": "Gegenbeispiel: (−3) · 0 = 0. Das Produkt ist 0, also nicht negativ.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2800
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-aussage1",
+      "type": "title-simple",
+      "data": {
+        "title": "Gegenbeispiel suchen",
+        "markdown": "Eine Aussage mit »immer« ist falsch, sobald du ein einziges Gegenbeispiel findest. Denke an die Zahl 0."
+      },
+      "position": {
+        "x": 360,
+        "y": 2800
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-aussage2",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? **Das Produkt zweier negativer Zahlen ist größer als jeder der beiden Faktoren.**",
+        "correctAnswer": true,
+        "feedbackWhenNo": {
+          "message": "Das Produkt ist positiv – und jede positive Zahl ist größer als jede negative Zahl.",
+          "severity": "warning"
+        },
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2940
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-aussage2",
+      "type": "title-simple",
+      "data": {
+        "title": "Positiv gegen negativ",
+        "markdown": "Minus mal minus ist positiv. Positive Zahlen sind immer größer als negative."
+      },
+      "position": {
+        "x": 360,
+        "y": 2940
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-1)^{5} \\cdot  (-2)^{3}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-8",
+            "feedback": {
+              "message": "(−1)⁵ = −1 und (−2)³ = −8. Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 3080
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-1",
+      "type": "title-simple",
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      },
+      "position": {
+        "x": 360,
+        "y": 3080
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "-80 \\cdot  17 : (-40)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "34",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-34",
+            "feedback": {
+              "message": "Zwei Minuszeichen – also plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 3220
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-2",
+      "type": "title-simple",
+      "data": {
+        "title": "Mal und geteilt vertauschen",
+        "markdown": "Du darfst Mal- und Geteilt-Schritte vertauschen: −80 : (−40) · 17 = 2 · 17."
+      },
+      "position": {
+        "x": 360,
+        "y": 3220
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-0{,}1) \\cdot  (-0{,}02) \\cdot  (-0{,}05)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-0.0001",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "0.0001",
+            "feedback": {
+              "message": "Drei Minuszeichen – ungerade Anzahl, also minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 3360
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-3",
+      "type": "title-simple",
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      },
+      "position": {
+        "x": 360,
+        "y": 3360
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "20 - 6 \\cdot  (-3)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "38",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-42",
+            "feedback": {
+              "message": "Punkt vor Strich: Erst 6 · (−3) = −18, dann 20 − (−18).",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 3500
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-4",
+      "type": "title-simple",
+      "data": {
+        "title": "Reihenfolge beim Rechnen",
+        "markdown": "1. Klammern\n2. Potenzen\n3. Punktrechnung (· und :)\n4. Strichrechnung (+ und −)\n5. Sonst von links nach rechts."
+      },
+      "position": {
+        "x": 360,
+        "y": 3500
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-5",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Eine Tiefenbohrung beginnt auf Meereshöhe. Jeden Tag wird 15 m tiefer gebohrt. Der Bohrer ist jetzt bei −135 m. Wie viele Tage wurde gebohrt?",
+        "expected": "9",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "-9",
+            "feedback": {
+              "message": "Die Anzahl der Tage ist positiv: (−135) : (−15).",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 3640
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-5",
+      "type": "title-simple",
+      "data": {
+        "title": "Höhe durch Änderung pro Tag",
+        "markdown": "Höhe −135 m, Änderung pro Tag −15 m: (−135) : (−15) = 9 Tage."
+      },
+      "position": {
+        "x": 360,
+        "y": 3640
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "s3-6",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Wie viel °F sind −13,5 °C? Rechne: Celsius · 1,8 + 32.",
+        "expected": "7.7",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "56.3",
+            "feedback": {
+              "message": "Erst −13,5 · 1,8 = −24,3, dann + 32.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 3780
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "hilfe-s3-6",
+      "type": "title-simple",
+      "data": {
+        "title": "Celsius in Fahrenheit",
+        "markdown": "−13,5 · 1,8 + 32 = −24,3 + 32 = 7,7"
+      },
+      "position": {
+        "x": 360,
+        "y": 3780
+      },
+      "section": "stufe3"
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "data": {
+        "title": "Training beendet",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true,
+        "markdown": "Gut gemacht! In der Übersicht siehst du, welche Aufgaben schon sitzen. Mit dem Knopf unten rechts kannst du neu starten und eine andere Stufe wählen."
+      },
+      "position": {
+        "x": 0,
+        "y": 3920
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-z-start",
+      "source": "start",
+      "target": "wahl"
+    },
+    {
+      "id": "e-wahl-b-gruen",
+      "source": "wahl",
+      "target": "s1-regeln",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "answer",
+          "nodeId": "wahl",
+          "path": "selected.0"
+        },
+        "op": "eq",
+        "right": "o1"
+      }
+    },
+    {
+      "id": "e-wahl-c-gelb",
+      "source": "wahl",
+      "target": "s2-1",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "answer",
+          "nodeId": "wahl",
+          "path": "selected.0"
+        },
+        "op": "eq",
+        "right": "o2"
+      }
+    },
+    {
+      "id": "e-wahl-d-rot",
+      "source": "wahl",
+      "target": "s3-aussage1",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "answer",
+          "nodeId": "wahl",
+          "path": "selected.0"
+        },
+        "op": "eq",
+        "right": "o3"
+      }
+    },
+    {
+      "id": "e-wahl-z-default",
+      "source": "wahl",
+      "target": "s1-regeln"
+    },
+    {
+      "id": "e-s1-regeln-a-falsch",
+      "source": "s1-regeln",
+      "target": "hilfe-s1-regeln",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-regeln",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-regeln-a-zurueck",
+      "source": "hilfe-s1-regeln",
+      "target": "s1-regeln",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-regeln"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-regeln-z-s1-rechenart",
+      "source": "hilfe-s1-regeln",
+      "target": "s1-rechenart"
+    },
+    {
+      "id": "e-s1-regeln-z-s1-rechenart",
+      "source": "s1-regeln",
+      "target": "s1-rechenart"
+    },
+    {
+      "id": "e-s1-rechenart-a-falsch",
+      "source": "s1-rechenart",
+      "target": "hilfe-s1-rechenart",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-rechenart",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-rechenart-a-zurueck",
+      "source": "hilfe-s1-rechenart",
+      "target": "s1-rechenart",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-rechenart"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-rechenart-z-s1-1",
+      "source": "hilfe-s1-rechenart",
+      "target": "s1-1"
+    },
+    {
+      "id": "e-s1-rechenart-z-s1-1",
+      "source": "s1-rechenart",
+      "target": "s1-1"
+    },
+    {
+      "id": "e-s1-1-a-falsch",
+      "source": "s1-1",
+      "target": "hilfe-s1-1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-1-a-zurueck",
+      "source": "hilfe-s1-1",
+      "target": "s1-1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-1-z-s1-2",
+      "source": "hilfe-s1-1",
+      "target": "s1-2"
+    },
+    {
+      "id": "e-s1-1-z-s1-2",
+      "source": "s1-1",
+      "target": "s1-2"
+    },
+    {
+      "id": "e-s1-2-a-falsch",
+      "source": "s1-2",
+      "target": "hilfe-s1-2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-2-a-zurueck",
+      "source": "hilfe-s1-2",
+      "target": "s1-2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-2-z-s1-zahlengerade",
+      "source": "hilfe-s1-2",
+      "target": "s1-zahlengerade"
+    },
+    {
+      "id": "e-s1-2-z-s1-zahlengerade",
+      "source": "s1-2",
+      "target": "s1-zahlengerade"
+    },
+    {
+      "id": "e-s1-zahlengerade-a-falsch",
+      "source": "s1-zahlengerade",
+      "target": "hilfe-s1-zahlengerade",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-zahlengerade",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-zahlengerade-a-zurueck",
+      "source": "hilfe-s1-zahlengerade",
+      "target": "s1-zahlengerade",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-zahlengerade"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-zahlengerade-z-s1-tabelle",
+      "source": "hilfe-s1-zahlengerade",
+      "target": "s1-tabelle"
+    },
+    {
+      "id": "e-s1-zahlengerade-z-s1-tabelle",
+      "source": "s1-zahlengerade",
+      "target": "s1-tabelle"
+    },
+    {
+      "id": "e-s1-tabelle-a-falsch",
+      "source": "s1-tabelle",
+      "target": "hilfe-s1-tabelle",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-tabelle",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-tabelle-a-zurueck",
+      "source": "hilfe-s1-tabelle",
+      "target": "s1-tabelle",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-tabelle"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-tabelle-z-s1-3",
+      "source": "hilfe-s1-tabelle",
+      "target": "s1-3"
+    },
+    {
+      "id": "e-s1-tabelle-z-s1-3",
+      "source": "s1-tabelle",
+      "target": "s1-3"
+    },
+    {
+      "id": "e-s1-3-a-falsch",
+      "source": "s1-3",
+      "target": "hilfe-s1-3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-3-a-zurueck",
+      "source": "hilfe-s1-3",
+      "target": "s1-3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-3-z-s1-4",
+      "source": "hilfe-s1-3",
+      "target": "s1-4"
+    },
+    {
+      "id": "e-s1-3-z-s1-4",
+      "source": "s1-3",
+      "target": "s1-4"
+    },
+    {
+      "id": "e-s1-4-a-falsch",
+      "source": "s1-4",
+      "target": "hilfe-s1-4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s1-4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s1-4-a-zurueck",
+      "source": "hilfe-s1-4",
+      "target": "s1-4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s1-4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s1-4-z-nach-1",
+      "source": "hilfe-s1-4",
+      "target": "nach-1"
+    },
+    {
+      "id": "e-s1-4-z-nach-1",
+      "source": "s1-4",
+      "target": "nach-1"
+    },
+    {
+      "id": "e-nach-1-b-weiter",
+      "source": "nach-1",
+      "target": "s2-1",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "answer",
+          "nodeId": "nach-1",
+          "path": "selected.0"
+        },
+        "op": "eq",
+        "right": "o1"
+      }
+    },
+    {
+      "id": "e-nach-1-z-ende",
+      "source": "nach-1",
+      "target": "ende"
+    },
+    {
+      "id": "e-s2-1-a-falsch",
+      "source": "s2-1",
+      "target": "hilfe-s2-1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-1-a-zurueck",
+      "source": "hilfe-s2-1",
+      "target": "s2-1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-1-z-s2-2",
+      "source": "hilfe-s2-1",
+      "target": "s2-2"
+    },
+    {
+      "id": "e-s2-1-z-s2-2",
+      "source": "s2-1",
+      "target": "s2-2"
+    },
+    {
+      "id": "e-s2-2-a-falsch",
+      "source": "s2-2",
+      "target": "hilfe-s2-2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-2-a-zurueck",
+      "source": "hilfe-s2-2",
+      "target": "s2-2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-2-z-s2-3",
+      "source": "hilfe-s2-2",
+      "target": "s2-3"
+    },
+    {
+      "id": "e-s2-2-z-s2-3",
+      "source": "s2-2",
+      "target": "s2-3"
+    },
+    {
+      "id": "e-s2-3-a-falsch",
+      "source": "s2-3",
+      "target": "hilfe-s2-3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-3-a-zurueck",
+      "source": "hilfe-s2-3",
+      "target": "s2-3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-3-z-s2-4",
+      "source": "hilfe-s2-3",
+      "target": "s2-4"
+    },
+    {
+      "id": "e-s2-3-z-s2-4",
+      "source": "s2-3",
+      "target": "s2-4"
+    },
+    {
+      "id": "e-s2-4-a-falsch",
+      "source": "s2-4",
+      "target": "hilfe-s2-4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-4-a-zurueck",
+      "source": "hilfe-s2-4",
+      "target": "s2-4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-4-z-s2-5",
+      "source": "hilfe-s2-4",
+      "target": "s2-5"
+    },
+    {
+      "id": "e-s2-4-z-s2-5",
+      "source": "s2-4",
+      "target": "s2-5"
+    },
+    {
+      "id": "e-s2-5-a-falsch",
+      "source": "s2-5",
+      "target": "hilfe-s2-5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-5-a-zurueck",
+      "source": "hilfe-s2-5",
+      "target": "s2-5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-5-z-s2-6",
+      "source": "hilfe-s2-5",
+      "target": "s2-6"
+    },
+    {
+      "id": "e-s2-5-z-s2-6",
+      "source": "s2-5",
+      "target": "s2-6"
+    },
+    {
+      "id": "e-s2-6-a-falsch",
+      "source": "s2-6",
+      "target": "hilfe-s2-6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-6-a-zurueck",
+      "source": "hilfe-s2-6",
+      "target": "s2-6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-6-z-s2-7",
+      "source": "hilfe-s2-6",
+      "target": "s2-7"
+    },
+    {
+      "id": "e-s2-6-z-s2-7",
+      "source": "s2-6",
+      "target": "s2-7"
+    },
+    {
+      "id": "e-s2-7-a-falsch",
+      "source": "s2-7",
+      "target": "hilfe-s2-7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-7-a-zurueck",
+      "source": "hilfe-s2-7",
+      "target": "s2-7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-7-z-s2-8",
+      "source": "hilfe-s2-7",
+      "target": "s2-8"
+    },
+    {
+      "id": "e-s2-7-z-s2-8",
+      "source": "s2-7",
+      "target": "s2-8"
+    },
+    {
+      "id": "e-s2-8-a-falsch",
+      "source": "s2-8",
+      "target": "hilfe-s2-8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s2-8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s2-8-a-zurueck",
+      "source": "hilfe-s2-8",
+      "target": "s2-8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s2-8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s2-8-z-nach-2",
+      "source": "hilfe-s2-8",
+      "target": "nach-2"
+    },
+    {
+      "id": "e-s2-8-z-nach-2",
+      "source": "s2-8",
+      "target": "nach-2"
+    },
+    {
+      "id": "e-nach-2-b-weiter",
+      "source": "nach-2",
+      "target": "s3-aussage1",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "answer",
+          "nodeId": "nach-2",
+          "path": "selected.0"
+        },
+        "op": "eq",
+        "right": "o1"
+      }
+    },
+    {
+      "id": "e-nach-2-z-ende",
+      "source": "nach-2",
+      "target": "ende"
+    },
+    {
+      "id": "e-s3-aussage1-a-falsch",
+      "source": "s3-aussage1",
+      "target": "hilfe-s3-aussage1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-aussage1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-aussage1-a-zurueck",
+      "source": "hilfe-s3-aussage1",
+      "target": "s3-aussage1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-aussage1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-aussage1-z-s3-aussage2",
+      "source": "hilfe-s3-aussage1",
+      "target": "s3-aussage2"
+    },
+    {
+      "id": "e-s3-aussage1-z-s3-aussage2",
+      "source": "s3-aussage1",
+      "target": "s3-aussage2"
+    },
+    {
+      "id": "e-s3-aussage2-a-falsch",
+      "source": "s3-aussage2",
+      "target": "hilfe-s3-aussage2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-aussage2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-aussage2-a-zurueck",
+      "source": "hilfe-s3-aussage2",
+      "target": "s3-aussage2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-aussage2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-aussage2-z-s3-1",
+      "source": "hilfe-s3-aussage2",
+      "target": "s3-1"
+    },
+    {
+      "id": "e-s3-aussage2-z-s3-1",
+      "source": "s3-aussage2",
+      "target": "s3-1"
+    },
+    {
+      "id": "e-s3-1-a-falsch",
+      "source": "s3-1",
+      "target": "hilfe-s3-1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-1-a-zurueck",
+      "source": "hilfe-s3-1",
+      "target": "s3-1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-1-z-s3-2",
+      "source": "hilfe-s3-1",
+      "target": "s3-2"
+    },
+    {
+      "id": "e-s3-1-z-s3-2",
+      "source": "s3-1",
+      "target": "s3-2"
+    },
+    {
+      "id": "e-s3-2-a-falsch",
+      "source": "s3-2",
+      "target": "hilfe-s3-2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-2-a-zurueck",
+      "source": "hilfe-s3-2",
+      "target": "s3-2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-2-z-s3-3",
+      "source": "hilfe-s3-2",
+      "target": "s3-3"
+    },
+    {
+      "id": "e-s3-2-z-s3-3",
+      "source": "s3-2",
+      "target": "s3-3"
+    },
+    {
+      "id": "e-s3-3-a-falsch",
+      "source": "s3-3",
+      "target": "hilfe-s3-3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-3-a-zurueck",
+      "source": "hilfe-s3-3",
+      "target": "s3-3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-3-z-s3-4",
+      "source": "hilfe-s3-3",
+      "target": "s3-4"
+    },
+    {
+      "id": "e-s3-3-z-s3-4",
+      "source": "s3-3",
+      "target": "s3-4"
+    },
+    {
+      "id": "e-s3-4-a-falsch",
+      "source": "s3-4",
+      "target": "hilfe-s3-4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-4-a-zurueck",
+      "source": "hilfe-s3-4",
+      "target": "s3-4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-4-z-s3-5",
+      "source": "hilfe-s3-4",
+      "target": "s3-5"
+    },
+    {
+      "id": "e-s3-4-z-s3-5",
+      "source": "s3-4",
+      "target": "s3-5"
+    },
+    {
+      "id": "e-s3-5-a-falsch",
+      "source": "s3-5",
+      "target": "hilfe-s3-5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-5-a-zurueck",
+      "source": "hilfe-s3-5",
+      "target": "s3-5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-5-z-s3-6",
+      "source": "hilfe-s3-5",
+      "target": "s3-6"
+    },
+    {
+      "id": "e-s3-5-z-s3-6",
+      "source": "s3-5",
+      "target": "s3-6"
+    },
+    {
+      "id": "e-s3-6-a-falsch",
+      "source": "s3-6",
+      "target": "hilfe-s3-6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "s3-6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-s3-6-a-zurueck",
+      "source": "hilfe-s3-6",
+      "target": "s3-6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "s3-6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-s3-6-z-ende",
+      "source": "hilfe-s3-6",
+      "target": "ende"
+    },
+    {
+      "id": "e-s3-6-z-ende",
+      "source": "s3-6",
+      "target": "ende"
+    }
+  ]
+}

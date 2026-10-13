@@ -8,11 +8,19 @@ lang: de
 
 :::alert{info}
 
-Rechne so viele Aufgaben, wie du zur Übung brauchst! Bei den Trainern bekommst du mit dem Pfeil ↵ neben der Auswertung immer eine neue Aufgabe.
+**Darum geht's:** Hier übst du, so viel du brauchst. Starte mit dem **Trainingslager** und wähle deine Stufe. Darunter findest du weitere Aufgaben zum Ausfüllen.
 
 :::
 
-## Vorzeichen-Trainer
+## 🏋️ Trainingslager
+
+Wähle eine Stufe: 🟢 Grundlagen, 🟡 Fortgeschritten oder 🔴 Profi. Nach jeder Stufe kannst du aufhören oder zur nächsten wechseln.
+
+::bitflow{id="rationale-zahlen-training" src="training.bitflow" height="auto" maxHeight="85vh"}
+
+## 🟢 Vorzeichen-Trainer
+
+Mit dem Pfeil ↵ neben der Auswertung bekommst du immer eine neue Aufgabe.
 
 ::::::tabs
 
@@ -48,7 +56,26 @@ Rechne so viele Aufgaben, wie du zur Übung brauchst! Bei den Trainern bekommst 
 
 ::::::
 
-## Rechenketten
+## 🟢 Achte auf die Rechenart
+
+:::snippet{#aufgabe}
+
+Achte auf das Rechenzeichen! Die Vorzeichenregel gilt nur für mal und geteilt.
+
+:::
+
+:::multievent
+
+| a) | b) | c) |
+| --- | --- | --- |
+| $(-48) + (-12) =$ {z{-60}} | $36 + (-9) =$ {z{27}} | $(-4{,}5) + (-5) =$ {z{-9,5}} |
+| $(-48) - (-12) =$ {z{-36}} | $36 - (-9) =$ {z{45}} | $(-4{,}5) - (-5) =$ {z{0,5}} |
+| $(-48) \cdot (-12) =$ {z{576}} | $36 \cdot (-9) =$ {z{-324}} | $(-4{,}5) \cdot (-5) =$ {z{22,5}} |
+| $(-48) : (-12) =$ {z{4}} | $36 : (-9) =$ {z{-4}} | $(-4{,}5) : (-5) =$ {z{0,9}} |
+
+:::
+
+## 🟡 Rechenketten
 
 :::snippet{#aufgabe}
 
@@ -66,7 +93,7 @@ $-\frac{1}{2} \xrightarrow{\;\cdot (-8)\;}$ {z{4}} $\xrightarrow{\;: (-0{,}25)\;
 
 :::
 
-## Zahlenmauern
+## 🟡 Zahlenmauern
 
 In einer Mal-Mauer ist jeder Stein das **Produkt** der beiden Steine darunter.
 
@@ -117,45 +144,54 @@ In einer Mal-Mauer ist jeder Stein das **Produkt** der beiden Steine darunter.
 
 :::
 
+## 🟡 Terme aufstellen und anwenden
+
 :::snippet{#aufgabe}
 
-**Mauer 4** – Denke dir selbst eine Mal-Mauer mit vier Steinen unten aus. Der oberste Stein soll **negativ** sein. Wie viele negative Zahlen dürfen unten stehen? Tausche deine Mauer mit einem Partner.
+Schreibe als Term und berechne.
 
 :::
-
-## Das Produktspiel
-
-Wähle aus Feld 1 und aus Feld 2 jeweils eine Zahl und multipliziere sie.
-
-| Feld 1 | | | |
-| :-: | :-: | :-: | :-: |
-| $-7$ | $+2$ | $+11$ | $0$ |
-| $-9$ | $-23$ | $+4$ | $+51$ |
-| $+8$ | $-15$ | $+1$ | $-10$ |
-
-| Feld 2 | | | |
-| :-: | :-: | :-: | :-: |
-| $+18$ | $-99$ | $+3$ | $-2$ |
-| $-5$ | $+10$ | $0$ | $-11$ |
-| $-37$ | $-8$ | $+9$ | $-12$ |
 
 :::multievent
 
-- Das **größte** Produkt ist {z{2277}}.
-- Das **kleinste** Produkt ist {z{-5049}}.
-- Das Produkt, das am **nächsten an 100** liegt, ist {z{99}}.
+- Multipliziere die Summe aus $-7$ und $3$ mit $-5$. $\quad$ Ergebnis: {z{20}}
+- Dividiere $-36$ durch die Differenz aus $-2$ und $4$. $\quad$ Ergebnis: {z{6}}
+- Subtrahiere vom Produkt aus $-6$ und $-0{,}5$ die Zahl $8$. $\quad$ Ergebnis: {z{-5}}
+- Addiere zum Quotienten aus $-4{,}8$ und $1{,}2$ das Quadrat von $-3$. $\quad$ Ergebnis: {z{5}}
 
-{b{Das größte Produkt entsteht aus zwei Zahlen mit gleichem Vorzeichen und möglichst großem Betrag – auch zwei negative Zahlen kommen infrage!}}
+{b{Terme: (−7 + 3) · (−5) — (−36) : (−2 − 4) — (−6) · (−0,5) − 8 — (−4,8) : 1,2 + (−3)²}}
 
 :::
 
-## Vorzeichen-Check
+:::snippet{#aufgabe}
 
-Acht abwechslungsreiche Aufgaben: Zahlengerade, Tabelle, richtig oder falsch. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.
+Stelle zuerst einen Term auf. Berechne dann.
 
-::bitflow{id="rationale-zahlen-vorzeichen" src="vorzeichen.bitflow" height="auto" maxHeight="85vh"}
+:::
 
-## Noch mehr Übungen
+:::multievent
+
+**a)** In den USA wird die Temperatur in Grad Fahrenheit (°F) gemessen. Um eine Celsius-Temperatur umzurechnen, multipliziert man sie mit $\frac{9}{5}$ (also $1{,}8$) und addiert dann $32$. Wie viel °F sind $-13{,}5$ °C?
+
+$-13{,}5 \cdot 1{,}8 + 32 =$ {z{7,7}} °F
+
+**b)** Ein Pegel steht bei $-1{,}25$ m. Er fällt um $1{,}4$ m und steigt dann wieder um $0{,}5$ m. Neuer Stand:
+
+{z{-2,15}} m
+
+**c)** Eine Tiefenbohrung beginnt auf Meereshöhe. Jeden Tag wird $15$ m tiefer gebohrt. Wo ist der Bohrer nach $14$ Tagen? (Höhe mit Vorzeichen)
+
+{z{-210}} m
+
+**d)** Der Bohrer ist nach einigen Tagen bei $-135$ m. Wie viele Tage wurde gebohrt?
+
+{z{9}} Tage
+
+:::
+
+Mehr zum Umrechnen von Temperaturen findest du auf der Seite [Temperaturskalen](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/temperaturskalen).
+
+:::::collapsible{title="📱 Noch mehr Übungen (LearningApps)" id="rz-uebungen-apps"}
 
 ::::tabs
 
@@ -172,3 +208,7 @@ Acht abwechslungsreiche Aufgaben: Zahlengerade, Tabelle, richtig oder falsch. Be
 :::
 
 ::::
+
+:::::
+
+Knifflige Aufgaben findest du in der [🧩 Knobelecke](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/07-knobelecke).

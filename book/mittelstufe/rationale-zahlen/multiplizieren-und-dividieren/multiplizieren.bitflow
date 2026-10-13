@@ -2,27 +2,40 @@
   "version": 1,
   "meta": {
     "id": "rationale-zahlen-multiplizieren",
-    "title": "Rationale Zahlen multiplizieren",
+    "title": "Teste dich: Multiplizieren",
     "locale": "de",
     "askConfidence": false,
     "askReasoning": false,
     "navigation": "back",
     "allowSkip": false,
-    "sections": [],
-    "pools": []
+    "pools": [],
+    "sections": [
+      {
+        "id": "basis",
+        "label": "Grundlagen"
+      },
+      {
+        "id": "extra",
+        "label": "Extra-Übung"
+      },
+      {
+        "id": "profi",
+        "label": "Profi-Aufgaben"
+      }
+    ]
   },
   "nodes": [
     {
       "id": "start",
       "type": "start-simple",
+      "data": {
+        "title": "Teste dich: Multiplizieren",
+        "markdown": "Zuerst kommen **Grundlagen**. Je nachdem, wie es läuft, geht es danach mit **Profi-Aufgaben** oder einer **Extra-Übung** weiter. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      },
       "position": {
         "x": 0,
         "y": 0
-      },
-      "data": {
-        "title": "Rationale Zahlen multiplizieren",
-        "markdown": "Acht Aufgaben zum Multiplizieren mit ganzen Zahlen, Dezimalzahlen und Brüchen. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
-        "showOutline": false
       }
     },
     {
@@ -97,19 +110,21 @@
       "position": {
         "x": 0,
         "y": 140
-      }
+      },
+      "section": "basis"
     },
     {
       "id": "hilfe-m-zuordnen",
       "type": "title-simple",
-      "position": {
-        "x": 360,
-        "y": 210
-      },
       "data": {
         "title": "Vorzeichenregel",
         "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
-      }
+      },
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "section": "basis"
     },
     {
       "id": "m1",
@@ -146,19 +161,21 @@
       "position": {
         "x": 0,
         "y": 280
-      }
+      },
+      "section": "basis"
     },
     {
       "id": "hilfe-m1",
       "type": "title-simple",
-      "position": {
-        "x": 360,
-        "y": 350
-      },
       "data": {
         "title": "Vorzeichenregel",
         "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
-      }
+      },
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "section": "basis"
     },
     {
       "id": "m2",
@@ -195,19 +212,21 @@
       "position": {
         "x": 0,
         "y": 420
-      }
+      },
+      "section": "basis"
     },
     {
       "id": "hilfe-m2",
       "type": "title-simple",
-      "position": {
-        "x": 360,
-        "y": 490
-      },
       "data": {
         "title": "Vorzeichenregel",
         "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
-      }
+      },
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "section": "basis"
     },
     {
       "id": "m3",
@@ -260,29 +279,31 @@
       "position": {
         "x": 0,
         "y": 560
-      }
+      },
+      "section": "basis"
     },
     {
       "id": "hilfe-m3",
       "type": "title-simple",
-      "position": {
-        "x": 360,
-        "y": 630
-      },
       "data": {
         "title": "Dezimalzahlen multiplizieren",
         "markdown": "Rechne erst ohne Komma, dann setze das Komma: Das Ergebnis hat so viele Nachkommastellen wie beide Faktoren zusammen.\n\n1,5 · 0,4: 15 · 4 = 60 → zwei Nachkommastellen → 0,60 = 0,6"
-      }
+      },
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "section": "basis"
     },
     {
       "id": "m4",
       "type": "task-math",
       "data": {
-        "instruction": "Berechne und kürze.",
-        "latex": "\\left(-\\frac{2}{3}\\right)\\cdot\\frac{3}{4}=\\placeholder[t]{}",
+        "instruction": "Berechne.",
+        "latex": "(-0{,}5) \\cdot  8=\\placeholder[t]{}",
         "blanks": {
           "t": {
-            "expected": "-\\frac{1}{2}",
+            "expected": "-4",
             "accepted": []
           }
         },
@@ -292,17 +313,9 @@
         "blankFeedback": [
           {
             "blank": "t",
-            "latex": "\\frac{1}{2}",
+            "latex": "4",
             "feedback": {
-              "message": "Verschiedene Vorzeichen – das Produkt ist negativ.",
-              "severity": "warning"
-            }
-          },
-          {
-            "blank": "t",
-            "latex": "-\\frac{5}{7}",
-            "feedback": {
-              "message": "Beim Multiplizieren werden Zähler und Nenner nicht addiert.",
+              "message": "Minus mal plus ergibt minus.",
               "severity": "warning"
             }
           }
@@ -317,29 +330,44 @@
       "position": {
         "x": 0,
         "y": 700
-      }
+      },
+      "section": "basis"
     },
     {
       "id": "hilfe-m4",
       "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
       "position": {
         "x": 360,
-        "y": 770
+        "y": 700
       },
-      "data": {
-        "title": "Brüche multiplizieren",
-        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
-      }
+      "section": "basis"
     },
     {
-      "id": "m5",
+      "id": "weiter-profi",
+      "type": "title-simple",
+      "data": {
+        "title": "Stark! 💪",
+        "markdown": "Die Grundlagen sitzen. Jetzt kommen **Profi-Aufgaben** mit Brüchen, Dezimalzahlen und kniffligeren Rechnungen."
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "section": "profi"
+    },
+    {
+      "id": "mp1",
       "type": "task-math",
       "data": {
         "instruction": "Berechne und kürze.",
-        "latex": "\\left(-\\frac{5}{6}\\right)\\cdot\\left(-\\frac{3}{10}\\right)=\\placeholder[t]{}",
+        "latex": "\\left(-\\frac{2}{3}\\right)\\cdot \\left(-\\frac{3}{4}\\right)=\\placeholder[t]{}",
         "blanks": {
           "t": {
-            "expected": "\\frac{1}{4}",
+            "expected": "\\frac{1}{2}",
             "accepted": []
           }
         },
@@ -349,7 +377,7 @@
         "blankFeedback": [
           {
             "blank": "t",
-            "latex": "-\\frac{1}{4}",
+            "latex": "-\\frac{1}{2}",
             "feedback": {
               "message": "Minus mal minus ergibt plus.",
               "severity": "warning"
@@ -365,64 +393,48 @@
       },
       "position": {
         "x": 0,
-        "y": 840
-      }
+        "y": 980
+      },
+      "section": "profi"
     },
     {
-      "id": "hilfe-m5",
+      "id": "hilfe-mp1",
       "type": "title-simple",
-      "position": {
-        "x": 360,
-        "y": 910
-      },
       "data": {
         "title": "Brüche multiplizieren",
         "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
-      }
+      },
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "section": "profi"
     },
     {
-      "id": "m6",
-      "type": "task-choice",
+      "id": "mp2",
+      "type": "task-math",
       "data": {
-        "instruction": "Welche Zahl ist $-(-7)$?",
-        "variant": "single",
-        "choices": [
+        "instruction": "Berechne und kürze.",
+        "latex": "\\frac{3}{4}\\cdot \\left(-\\frac{12}{21}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{3}{7}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
           {
-            "id": "o1",
-            "markdown": "$7$",
-            "correct": true
-          },
-          {
-            "id": "o2",
-            "markdown": "$-7$",
-            "correct": false,
-            "feedbackWhenChecked": {
-              "message": "−(−7) = (−1) · (−7). Minus mal minus ergibt plus.",
-              "severity": "warning"
-            }
-          },
-          {
-            "id": "o3",
-            "markdown": "$-14$",
-            "correct": false,
-            "feedbackWhenChecked": {
-              "message": "Hier wird nichts addiert: Das vordere Minus bildet die Gegenzahl.",
-              "severity": "warning"
-            }
-          },
-          {
-            "id": "o4",
-            "markdown": "$0$",
-            "correct": false,
-            "feedbackWhenChecked": {
-              "message": "−(−7) ist die Gegenzahl von −7.",
+            "blank": "t",
+            "latex": "\\frac{3}{7}",
+            "feedback": {
+              "message": "Plus mal minus ergibt minus.",
               "severity": "warning"
             }
           }
         ],
-        "shuffle": true,
-        "partialCredit": false,
-        "patternFeedback": [],
         "evaluation": {
           "mode": "auto",
           "enableRetry": false,
@@ -432,23 +444,186 @@
       },
       "position": {
         "x": 0,
-        "y": 980
-      }
+        "y": 1120
+      },
+      "section": "profi"
     },
     {
-      "id": "hilfe-m6",
+      "id": "hilfe-mp2",
       "type": "title-simple",
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      },
       "position": {
         "x": 360,
-        "y": 1050
+        "y": 1120
       },
-      "data": {
-        "title": "Gegenzahl",
-        "markdown": "Ein Minus vor einer Zahl oder Klammer bedeutet mal (−1):\n\n−(−7) = (−1) · (−7) = 7\n\nDas ist die Gegenzahl von −7."
-      }
+      "section": "profi"
     },
     {
-      "id": "m7",
+      "id": "mp3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-\\frac{4}{7}\\right)\\cdot (-14)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-8",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "\\frac{2}{49}",
+            "feedback": {
+              "message": "Die 14 gehört in den Zähler: 14 = 14/1.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-mp3",
+      "type": "title-simple",
+      "data": {
+        "title": "Brüche multiplizieren",
+        "markdown": "Zähler mal Zähler, Nenner mal Nenner. Kürze am besten vorher. Das Vorzeichen bestimmst du mit der Vorzeichenregel.\n\n(−2/3) · 3/4 = −(2 · 3)/(3 · 4) = −6/12 = −1/2"
+      },
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "section": "profi"
+    },
+    {
+      "id": "mp4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "\\left(-3{,}5\\right) \\cdot  \\frac{3}{5}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-2.1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "2.1",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – das Produkt ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-mp4",
+      "type": "title-simple",
+      "data": {
+        "title": "Bruch als Anteil",
+        "markdown": "Oft ist es am einfachsten, den Bruch als Anteil zu nehmen: erst durch den Nenner teilen, dann mit dem Zähler malnehmen.\n\n3/5 von 3,5: 3,5 : 5 = 0,7 → 0,7 · 3 = 2,1. Das Vorzeichen bestimmst du mit der Vorzeichenregel."
+      },
+      "position": {
+        "x": 360,
+        "y": 1400
+      },
+      "section": "profi"
+    },
+    {
+      "id": "mp5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "0{,}16 \\cdot  \\left(-\\frac{5}{8}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-0.1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "0.1",
+            "feedback": {
+              "message": "Verschiedene Vorzeichen – das Produkt ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-mp5",
+      "type": "title-simple",
+      "data": {
+        "title": "Bruch als Anteil",
+        "markdown": "Oft ist es am einfachsten, den Bruch als Anteil zu nehmen: erst durch den Nenner teilen, dann mit dem Zähler malnehmen.\n\n3/5 von 3,5: 3,5 : 5 = 0,7 → 0,7 · 3 = 2,1. Das Vorzeichen bestimmst du mit der Vorzeichenregel."
+      },
+      "position": {
+        "x": 360,
+        "y": 1540
+      },
+      "section": "profi"
+    },
+    {
+      "id": "mp6",
       "type": "task-numeric",
       "data": {
         "instruction": "Ein U-Boot taucht pro Minute 1,5 m tiefer. Um wie viele Meter hat sich seine Höhe nach 8 Minuten verändert? Gib die Änderung mit Vorzeichen an.",
@@ -481,50 +656,310 @@
       },
       "position": {
         "x": 0,
-        "y": 1120
-      }
+        "y": 1680
+      },
+      "section": "profi"
     },
     {
-      "id": "hilfe-m7",
+      "id": "hilfe-mp6",
       "type": "title-simple",
-      "position": {
-        "x": 360,
-        "y": 1190
-      },
       "data": {
         "title": "Änderung pro Minute",
         "markdown": "Änderung pro Minute: −1,5 m. Nach 8 Minuten: 8 · (−1,5) = −12."
-      }
+      },
+      "position": {
+        "x": 360,
+        "y": 1680
+      },
+      "section": "profi"
+    },
+    {
+      "id": "weiter-extra",
+      "type": "title-simple",
+      "data": {
+        "title": "Noch etwas Übung 🙂",
+        "markdown": "Ein paar Grundlagen haben noch nicht geklappt. Hier kommen **leichtere Aufgaben**, damit die Regel sitzt."
+      },
+      "position": {
+        "x": 0,
+        "y": 1820
+      },
+      "section": "extra"
+    },
+    {
+      "id": "me1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-3) \\cdot  4=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-12",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "12",
+            "feedback": {
+              "message": "Minus mal plus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1960
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-me1",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 1960
+      },
+      "section": "extra"
+    },
+    {
+      "id": "me2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-5) \\cdot  (-2)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "10",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-10",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2100
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-me2",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 2100
+      },
+      "section": "extra"
+    },
+    {
+      "id": "me3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "6 \\cdot  (-7)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-42",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "42",
+            "feedback": {
+              "message": "Plus mal minus ergibt minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2240
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-me3",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 2240
+      },
+      "section": "extra"
+    },
+    {
+      "id": "me4",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welches Vorzeichen hat $(-9) \\cdot  (-3)$?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "plus (+)",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "minus (−)",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Zwei gleiche Vorzeichen ergeben plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2380
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-me4",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 2380
+      },
+      "section": "extra"
+    },
+    {
+      "id": "me5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-2) \\cdot  (-2{,}5)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-5",
+            "feedback": {
+              "message": "Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2520
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-me5",
+      "type": "title-simple",
+      "data": {
+        "title": "Vorzeichenregel",
+        "markdown": "1. Multipliziere die Beträge (ohne Vorzeichen).\n2. Gleiche Vorzeichen → **plus**, verschiedene Vorzeichen → **minus**.\n\nBeispiel: (−2,5) · 4 = −(2,5 · 4) = −10"
+      },
+      "position": {
+        "x": 360,
+        "y": 2520
+      },
+      "section": "extra"
     },
     {
       "id": "ende",
       "type": "end-tries",
-      "position": {
-        "x": 0,
-        "y": 1260
-      },
       "data": {
         "title": "Geschafft",
-        "markdown": "Du multiplizierst rationale Zahlen sicher. Schau in der Übersicht nach, wo du noch unsicher warst.",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt. Mehr Übung findest du auf der Seite **Übungen**.",
         "showBreakdown": true,
         "showScore": true,
         "allowReview": true
+      },
+      "position": {
+        "x": 0,
+        "y": 2660
       }
     }
   ],
   "edges": [
     {
-      "id": "e-start-m-zuordnen",
-      "source": "start",
-      "target": "m-zuordnen"
-    },
-    {
-      "id": "e-m-zuordnen-m1",
-      "source": "m-zuordnen",
-      "target": "m1"
-    },
-    {
-      "id": "e-m-zuordnen-falsch",
+      "id": "e-m-zuordnen-a-falsch",
       "source": "m-zuordnen",
       "target": "hilfe-m-zuordnen",
       "label": "noch nicht",
@@ -540,11 +975,10 @@
       }
     },
     {
-      "id": "e-hilfe-m-zuordnen-zurueck",
+      "id": "e-hilfe-m-zuordnen-a-zurueck",
       "source": "hilfe-m-zuordnen",
       "target": "m-zuordnen",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
@@ -553,21 +987,21 @@
         },
         "op": "lt",
         "right": 2
-      }
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-hilfe-m-zuordnen-weiter",
+      "id": "e-hilfe-m-zuordnen-z-m1",
       "source": "hilfe-m-zuordnen",
-      "target": "m1",
-      "label": "weiter"
+      "target": "m1"
     },
     {
-      "id": "e-m1-m2",
-      "source": "m1",
-      "target": "m2"
+      "id": "e-m-zuordnen-z-m1",
+      "source": "m-zuordnen",
+      "target": "m1"
     },
     {
-      "id": "e-m1-falsch",
+      "id": "e-m1-a-falsch",
       "source": "m1",
       "target": "hilfe-m1",
       "label": "noch nicht",
@@ -583,11 +1017,10 @@
       }
     },
     {
-      "id": "e-hilfe-m1-zurueck",
+      "id": "e-hilfe-m1-a-zurueck",
       "source": "hilfe-m1",
       "target": "m1",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
@@ -596,21 +1029,21 @@
         },
         "op": "lt",
         "right": 2
-      }
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-hilfe-m1-weiter",
+      "id": "e-hilfe-m1-z-m2",
       "source": "hilfe-m1",
-      "target": "m2",
-      "label": "weiter"
+      "target": "m2"
     },
     {
-      "id": "e-m2-m3",
-      "source": "m2",
-      "target": "m3"
+      "id": "e-m1-z-m2",
+      "source": "m1",
+      "target": "m2"
     },
     {
-      "id": "e-m2-falsch",
+      "id": "e-m2-a-falsch",
       "source": "m2",
       "target": "hilfe-m2",
       "label": "noch nicht",
@@ -626,11 +1059,10 @@
       }
     },
     {
-      "id": "e-hilfe-m2-zurueck",
+      "id": "e-hilfe-m2-a-zurueck",
       "source": "hilfe-m2",
       "target": "m2",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
@@ -639,21 +1071,21 @@
         },
         "op": "lt",
         "right": 2
-      }
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-hilfe-m2-weiter",
+      "id": "e-hilfe-m2-z-m3",
       "source": "hilfe-m2",
-      "target": "m3",
-      "label": "weiter"
+      "target": "m3"
     },
     {
-      "id": "e-m3-m4",
-      "source": "m3",
-      "target": "m4"
+      "id": "e-m2-z-m3",
+      "source": "m2",
+      "target": "m3"
     },
     {
-      "id": "e-m3-falsch",
+      "id": "e-m3-a-falsch",
       "source": "m3",
       "target": "hilfe-m3",
       "label": "noch nicht",
@@ -669,11 +1101,10 @@
       }
     },
     {
-      "id": "e-hilfe-m3-zurueck",
+      "id": "e-hilfe-m3-a-zurueck",
       "source": "hilfe-m3",
       "target": "m3",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
@@ -682,21 +1113,21 @@
         },
         "op": "lt",
         "right": 2
-      }
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-hilfe-m3-weiter",
+      "id": "e-hilfe-m3-z-m4",
       "source": "hilfe-m3",
-      "target": "m4",
-      "label": "weiter"
+      "target": "m4"
     },
     {
-      "id": "e-m4-m5",
-      "source": "m4",
-      "target": "m5"
+      "id": "e-m3-z-m4",
+      "source": "m3",
+      "target": "m4"
     },
     {
-      "id": "e-m4-falsch",
+      "id": "e-m4-a-falsch",
       "source": "m4",
       "target": "hilfe-m4",
       "label": "noch nicht",
@@ -712,11 +1143,10 @@
       }
     },
     {
-      "id": "e-hilfe-m4-zurueck",
+      "id": "e-hilfe-m4-a-zurueck",
       "source": "hilfe-m4",
       "target": "m4",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
@@ -725,29 +1155,68 @@
         },
         "op": "lt",
         "right": 2
-      }
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-hilfe-m4-weiter",
+      "id": "e-hilfe-m4-b-weiter-profi",
       "source": "hilfe-m4",
-      "target": "m5",
-      "label": "weiter"
+      "target": "weiter-profi",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "scoreRatio",
+          "scope": {
+            "kind": "section",
+            "id": "basis"
+          }
+        },
+        "op": "gte",
+        "right": 0.75
+      }
     },
     {
-      "id": "e-m5-m6",
-      "source": "m5",
-      "target": "m6"
+      "id": "e-hilfe-m4-z-weiter-extra",
+      "source": "hilfe-m4",
+      "target": "weiter-extra"
     },
     {
-      "id": "e-m5-falsch",
-      "source": "m5",
-      "target": "hilfe-m5",
+      "id": "e-m4-b-weiter-profi",
+      "source": "m4",
+      "target": "weiter-profi",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "scoreRatio",
+          "scope": {
+            "kind": "section",
+            "id": "basis"
+          }
+        },
+        "op": "gte",
+        "right": 0.75
+      }
+    },
+    {
+      "id": "e-m4-z-weiter-extra",
+      "source": "m4",
+      "target": "weiter-extra"
+    },
+    {
+      "id": "e-start-z-start",
+      "source": "start",
+      "target": "m-zuordnen"
+    },
+    {
+      "id": "e-mp1-a-falsch",
+      "source": "mp1",
+      "target": "hilfe-mp1",
       "label": "noch nicht",
       "condition": {
         "type": "compare",
         "left": {
           "kind": "result",
-          "nodeId": "m5",
+          "nodeId": "mp1",
           "path": "state"
         },
         "op": "eq",
@@ -755,42 +1224,41 @@
       }
     },
     {
-      "id": "e-hilfe-m5-zurueck",
-      "source": "hilfe-m5",
-      "target": "m5",
+      "id": "e-hilfe-mp1-a-zurueck",
+      "source": "hilfe-mp1",
+      "target": "mp1",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
           "kind": "visits",
-          "nodeId": "m5"
+          "nodeId": "mp1"
         },
         "op": "lt",
         "right": 2
-      }
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-hilfe-m5-weiter",
-      "source": "hilfe-m5",
-      "target": "m6",
-      "label": "weiter"
+      "id": "e-hilfe-mp1-z-mp2",
+      "source": "hilfe-mp1",
+      "target": "mp2"
     },
     {
-      "id": "e-m6-m7",
-      "source": "m6",
-      "target": "m7"
+      "id": "e-mp1-z-mp2",
+      "source": "mp1",
+      "target": "mp2"
     },
     {
-      "id": "e-m6-falsch",
-      "source": "m6",
-      "target": "hilfe-m6",
+      "id": "e-mp2-a-falsch",
+      "source": "mp2",
+      "target": "hilfe-mp2",
       "label": "noch nicht",
       "condition": {
         "type": "compare",
         "left": {
           "kind": "result",
-          "nodeId": "m6",
+          "nodeId": "mp2",
           "path": "state"
         },
         "op": "eq",
@@ -798,42 +1266,214 @@
       }
     },
     {
-      "id": "e-hilfe-m6-zurueck",
-      "source": "hilfe-m6",
-      "target": "m6",
+      "id": "e-hilfe-mp2-a-zurueck",
+      "source": "hilfe-mp2",
+      "target": "mp2",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
           "kind": "visits",
-          "nodeId": "m6"
+          "nodeId": "mp2"
         },
         "op": "lt",
         "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-mp2-z-mp3",
+      "source": "hilfe-mp2",
+      "target": "mp3"
+    },
+    {
+      "id": "e-mp2-z-mp3",
+      "source": "mp2",
+      "target": "mp3"
+    },
+    {
+      "id": "e-mp3-a-falsch",
+      "source": "mp3",
+      "target": "hilfe-mp3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "mp3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
       }
     },
     {
-      "id": "e-hilfe-m6-weiter",
-      "source": "hilfe-m6",
-      "target": "m7",
-      "label": "weiter"
+      "id": "e-hilfe-mp3-a-zurueck",
+      "source": "hilfe-mp3",
+      "target": "mp3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "mp3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
     },
     {
-      "id": "e-m7-ende",
-      "source": "m7",
+      "id": "e-hilfe-mp3-z-mp4",
+      "source": "hilfe-mp3",
+      "target": "mp4"
+    },
+    {
+      "id": "e-mp3-z-mp4",
+      "source": "mp3",
+      "target": "mp4"
+    },
+    {
+      "id": "e-mp4-a-falsch",
+      "source": "mp4",
+      "target": "hilfe-mp4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "mp4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-mp4-a-zurueck",
+      "source": "hilfe-mp4",
+      "target": "mp4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "mp4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-mp4-z-mp5",
+      "source": "hilfe-mp4",
+      "target": "mp5"
+    },
+    {
+      "id": "e-mp4-z-mp5",
+      "source": "mp4",
+      "target": "mp5"
+    },
+    {
+      "id": "e-mp5-a-falsch",
+      "source": "mp5",
+      "target": "hilfe-mp5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "mp5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-mp5-a-zurueck",
+      "source": "hilfe-mp5",
+      "target": "mp5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "mp5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-mp5-z-mp6",
+      "source": "hilfe-mp5",
+      "target": "mp6"
+    },
+    {
+      "id": "e-mp5-z-mp6",
+      "source": "mp5",
+      "target": "mp6"
+    },
+    {
+      "id": "e-mp6-a-falsch",
+      "source": "mp6",
+      "target": "hilfe-mp6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "mp6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-mp6-a-zurueck",
+      "source": "hilfe-mp6",
+      "target": "mp6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "mp6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-mp6-z-ende",
+      "source": "hilfe-mp6",
       "target": "ende"
     },
     {
-      "id": "e-m7-falsch",
-      "source": "m7",
-      "target": "hilfe-m7",
+      "id": "e-mp6-z-ende",
+      "source": "mp6",
+      "target": "ende"
+    },
+    {
+      "id": "e-weiter-profi-z-weiter",
+      "source": "weiter-profi",
+      "target": "mp1"
+    },
+    {
+      "id": "e-me1-a-falsch",
+      "source": "me1",
+      "target": "hilfe-me1",
       "label": "noch nicht",
       "condition": {
         "type": "compare",
         "left": {
           "kind": "result",
-          "nodeId": "m7",
+          "nodeId": "me1",
           "path": "state"
         },
         "op": "eq",
@@ -841,26 +1481,203 @@
       }
     },
     {
-      "id": "e-hilfe-m7-zurueck",
-      "source": "hilfe-m7",
-      "target": "m7",
+      "id": "e-hilfe-me1-a-zurueck",
+      "source": "hilfe-me1",
+      "target": "me1",
       "label": "noch ein Versuch",
-      "resetTarget": "result",
       "condition": {
         "type": "compare",
         "left": {
           "kind": "visits",
-          "nodeId": "m7"
+          "nodeId": "me1"
         },
         "op": "lt",
         "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-me1-z-me2",
+      "source": "hilfe-me1",
+      "target": "me2"
+    },
+    {
+      "id": "e-me1-z-me2",
+      "source": "me1",
+      "target": "me2"
+    },
+    {
+      "id": "e-me2-a-falsch",
+      "source": "me2",
+      "target": "hilfe-me2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "me2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
       }
     },
     {
-      "id": "e-hilfe-m7-weiter",
-      "source": "hilfe-m7",
-      "target": "ende",
-      "label": "weiter"
+      "id": "e-hilfe-me2-a-zurueck",
+      "source": "hilfe-me2",
+      "target": "me2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "me2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-me2-z-me3",
+      "source": "hilfe-me2",
+      "target": "me3"
+    },
+    {
+      "id": "e-me2-z-me3",
+      "source": "me2",
+      "target": "me3"
+    },
+    {
+      "id": "e-me3-a-falsch",
+      "source": "me3",
+      "target": "hilfe-me3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "me3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-me3-a-zurueck",
+      "source": "hilfe-me3",
+      "target": "me3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "me3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-me3-z-me4",
+      "source": "hilfe-me3",
+      "target": "me4"
+    },
+    {
+      "id": "e-me3-z-me4",
+      "source": "me3",
+      "target": "me4"
+    },
+    {
+      "id": "e-me4-a-falsch",
+      "source": "me4",
+      "target": "hilfe-me4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "me4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-me4-a-zurueck",
+      "source": "hilfe-me4",
+      "target": "me4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "me4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-me4-z-me5",
+      "source": "hilfe-me4",
+      "target": "me5"
+    },
+    {
+      "id": "e-me4-z-me5",
+      "source": "me4",
+      "target": "me5"
+    },
+    {
+      "id": "e-me5-a-falsch",
+      "source": "me5",
+      "target": "hilfe-me5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "me5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-me5-a-zurueck",
+      "source": "hilfe-me5",
+      "target": "me5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "me5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-me5-z-ende",
+      "source": "hilfe-me5",
+      "target": "ende"
+    },
+    {
+      "id": "e-me5-z-ende",
+      "source": "me5",
+      "target": "ende"
+    },
+    {
+      "id": "e-weiter-extra-z-weiter",
+      "source": "weiter-extra",
+      "target": "me1"
     }
   ]
 }

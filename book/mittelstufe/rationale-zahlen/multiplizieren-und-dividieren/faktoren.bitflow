@@ -1,0 +1,1501 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "rationale-zahlen-faktoren",
+    "title": "Teste dich: Viele Faktoren und Potenzen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": [
+      {
+        "id": "basis",
+        "label": "Grundlagen"
+      },
+      {
+        "id": "extra",
+        "label": "Extra-Übung"
+      },
+      {
+        "id": "profi",
+        "label": "Profi-Aufgaben"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "data": {
+        "title": "Teste dich: Viele Faktoren und Potenzen",
+        "markdown": "Zuerst kommen **Grundlagen**. Je nachdem, wie es läuft, geht es danach mit **Profi-Aufgaben** oder einer **Extra-Übung** weiter. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "f-negativ",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welche Ergebnisse sind negativ? Wähle alle aus.",
+        "variant": "multiple",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$(-3) \\cdot  4$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$(-2) \\cdot  (-5)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Zwei Minuszeichen ergeben plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$(-1) \\cdot  (-1) \\cdot  (-1)$",
+            "correct": true
+          },
+          {
+            "id": "o4",
+            "markdown": "$(-2) \\cdot  (-2) \\cdot  (-2) \\cdot  (-2)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Vier Minuszeichen – eine gerade Anzahl – ergeben plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o5",
+            "markdown": "$(-8) \\cdot  0$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Mal 0 ergibt 0 – und 0 ist weder positiv noch negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": true,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      },
+      "section": "basis"
+    },
+    {
+      "id": "hilfe-f-negativ",
+      "type": "title-simple",
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      },
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "section": "basis"
+    },
+    {
+      "id": "f1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-2) \\cdot  3 \\cdot  (-5)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "30",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-30",
+            "feedback": {
+              "message": "Zwei negative Faktoren – gerade Anzahl, also plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "section": "basis"
+    },
+    {
+      "id": "hilfe-f1",
+      "type": "title-simple",
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      },
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "section": "basis"
+    },
+    {
+      "id": "f2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-1) \\cdot  (-2) \\cdot  (-3)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-6",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "6",
+            "feedback": {
+              "message": "Drei negative Faktoren – ungerade Anzahl, also minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      },
+      "section": "basis"
+    },
+    {
+      "id": "hilfe-f2",
+      "type": "title-simple",
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      },
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "section": "basis"
+    },
+    {
+      "id": "f3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-2)^{4}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "16",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-16",
+            "feedback": {
+              "message": "(−2)⁴ = (−2)·(−2)·(−2)·(−2): vier Minuszeichen ergeben plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-8",
+            "feedback": {
+              "message": "(−2)⁴ bedeutet viermal (−2) malnehmen, nicht (−2) · 4.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      },
+      "section": "basis"
+    },
+    {
+      "id": "hilfe-f3",
+      "type": "title-simple",
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      },
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "section": "basis"
+    },
+    {
+      "id": "f4",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welche Zahl ist $-(-7)$?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$7$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$-7$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "−(−7) = (−1) · (−7). Minus mal minus ergibt plus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$-14$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Hier wird nichts addiert: Das vordere Minus bildet die Gegenzahl.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "section": "basis"
+    },
+    {
+      "id": "hilfe-f4",
+      "type": "title-simple",
+      "data": {
+        "title": "Gegenzahl",
+        "markdown": "Ein Minus vor einer Zahl oder Klammer bedeutet mal (−1):\n\n−(−7) = (−1) · (−7) = 7"
+      },
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "section": "basis"
+    },
+    {
+      "id": "weiter-profi",
+      "type": "title-simple",
+      "data": {
+        "title": "Stark! 💪",
+        "markdown": "Die Grundlagen sitzen. Jetzt kommen **Profi-Aufgaben** mit Brüchen, Dezimalzahlen und kniffligeren Rechnungen."
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "section": "profi"
+    },
+    {
+      "id": "fp1",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welchen Wert hat $-3^{2}$?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$-9$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$9$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Die Hochzahl gehört nur zur 3: −3² = −(3 · 3).",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$-6$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "3² = 3 · 3, nicht 3 · 2.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-fp1",
+      "type": "title-simple",
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      },
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "section": "profi"
+    },
+    {
+      "id": "fp2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-0{,}2)^{3}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-0.008",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "0.008",
+            "feedback": {
+              "message": "Drei Minuszeichen – ungerade Anzahl, also minus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-0.8",
+            "feedback": {
+              "message": "0,2 · 0,2 · 0,2 hat drei Nachkommastellen: 0,008.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-fp2",
+      "type": "title-simple",
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      },
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "section": "profi"
+    },
+    {
+      "id": "fp3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne möglichst vorteilhaft.",
+        "latex": "\\frac{5}{7}\\cdot \\frac{4}{9}\\cdot \\left(-\\frac{7}{10}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-\\frac{2}{9}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "\\frac{2}{9}",
+            "feedback": {
+              "message": "Ein negativer Faktor – das Produkt ist negativ.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-fp3",
+      "type": "title-simple",
+      "data": {
+        "title": "Erst kürzen, dann rechnen",
+        "markdown": "1. Vorzeichen bestimmen: Minuszeichen zählen.\n2. Alles auf einen Bruchstrich schreiben.\n3. Kreuz und quer kürzen, bevor du multiplizierst.\n\nTipp: Gleiche Zahlen oben und unten (wie 17 und 37) heben sich ganz auf."
+      },
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "section": "profi"
+    },
+    {
+      "id": "fp4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne möglichst vorteilhaft. Tipp: Vertausche die Faktoren.",
+        "latex": "\\left(-\\frac{17}{37}\\cdot \\frac{2}{3}\\right)\\cdot \\left(-\\frac{37}{17}\\right)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "\\frac{2}{3}",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-\\frac{2}{3}",
+            "feedback": {
+              "message": "Zwei negative Faktoren – das Produkt ist positiv.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-fp4",
+      "type": "title-simple",
+      "data": {
+        "title": "Kehrwerte finden",
+        "markdown": "17/37 und 37/17 sind Kehrwerte voneinander: ihr Produkt ist 1.\n\n(−17/37) · (−37/17) = 1, also bleibt 1 · 2/3."
+      },
+      "position": {
+        "x": 360,
+        "y": 1400
+      },
+      "section": "profi"
+    },
+    {
+      "id": "fp5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "125 \\cdot  (-23) \\cdot  (-8) \\cdot  (-3)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-69000",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "69000",
+            "feedback": {
+              "message": "Drei negative Faktoren – ungerade Anzahl, also minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "section": "profi"
+    },
+    {
+      "id": "hilfe-fp5",
+      "type": "title-simple",
+      "data": {
+        "title": "Geschickt rechnen",
+        "markdown": "Vertausche so, dass glatte Zahlen entstehen: 125 · 8 = 1000 und 23 · 3 = 69. Dann zählst du die Minuszeichen."
+      },
+      "position": {
+        "x": 360,
+        "y": 1540
+      },
+      "section": "profi"
+    },
+    {
+      "id": "weiter-extra",
+      "type": "title-simple",
+      "data": {
+        "title": "Noch etwas Übung 🙂",
+        "markdown": "Ein paar Grundlagen haben noch nicht geklappt. Hier kommen **leichtere Aufgaben**, damit die Regel sitzt."
+      },
+      "position": {
+        "x": 0,
+        "y": 1680
+      },
+      "section": "extra"
+    },
+    {
+      "id": "fe1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-3) \\cdot  (-2) \\cdot  2=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "12",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-12",
+            "feedback": {
+              "message": "Zwei Minuszeichen – gerade Anzahl, also plus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1820
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-fe1",
+      "type": "title-simple",
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      },
+      "position": {
+        "x": 360,
+        "y": 1820
+      },
+      "section": "extra"
+    },
+    {
+      "id": "fe2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "2 \\cdot  (-5) \\cdot  2=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-20",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "20",
+            "feedback": {
+              "message": "Ein Minuszeichen – ungerade Anzahl, also minus.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1960
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-fe2",
+      "type": "title-simple",
+      "data": {
+        "title": "Minuszeichen zählen",
+        "markdown": "Zähle die negativen Faktoren: gerade Anzahl → plus, ungerade Anzahl → minus."
+      },
+      "position": {
+        "x": 360,
+        "y": 1960
+      },
+      "section": "extra"
+    },
+    {
+      "id": "fe3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-1)^{2}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "-1",
+            "feedback": {
+              "message": "(−1)² = (−1) · (−1) = 1.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2100
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-fe3",
+      "type": "title-simple",
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      },
+      "position": {
+        "x": 360,
+        "y": 2100
+      },
+      "section": "extra"
+    },
+    {
+      "id": "fe4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Berechne.",
+        "latex": "(-2)^{3}=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "-8",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "8",
+            "feedback": {
+              "message": "Drei Minuszeichen – ungerade Anzahl, also minus.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "-6",
+            "feedback": {
+              "message": "(−2)³ bedeutet dreimal (−2) malnehmen, nicht (−2) · 3.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 2240
+      },
+      "section": "extra"
+    },
+    {
+      "id": "hilfe-fe4",
+      "type": "title-simple",
+      "data": {
+        "title": "Potenzen mit negativer Basis",
+        "markdown": "(−2)⁴ = (−2) · (−2) · (−2) · (−2) = +16: vier Minuszeichen → plus.\n\nAber −2⁴ = −(2 · 2 · 2 · 2) = −16: Die Hochzahl gehört nur zur 2."
+      },
+      "position": {
+        "x": 360,
+        "y": 2240
+      },
+      "section": "extra"
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt. Mehr Übung findest du auf der Seite **Übungen**.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      },
+      "position": {
+        "x": 0,
+        "y": 2380
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-f-negativ-a-falsch",
+      "source": "f-negativ",
+      "target": "hilfe-f-negativ",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f-negativ",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f-negativ-a-zurueck",
+      "source": "hilfe-f-negativ",
+      "target": "f-negativ",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f-negativ"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f-negativ-z-f1",
+      "source": "hilfe-f-negativ",
+      "target": "f1"
+    },
+    {
+      "id": "e-f-negativ-z-f1",
+      "source": "f-negativ",
+      "target": "f1"
+    },
+    {
+      "id": "e-f1-a-falsch",
+      "source": "f1",
+      "target": "hilfe-f1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f1-a-zurueck",
+      "source": "hilfe-f1",
+      "target": "f1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f1-z-f2",
+      "source": "hilfe-f1",
+      "target": "f2"
+    },
+    {
+      "id": "e-f1-z-f2",
+      "source": "f1",
+      "target": "f2"
+    },
+    {
+      "id": "e-f2-a-falsch",
+      "source": "f2",
+      "target": "hilfe-f2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f2-a-zurueck",
+      "source": "hilfe-f2",
+      "target": "f2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f2-z-f3",
+      "source": "hilfe-f2",
+      "target": "f3"
+    },
+    {
+      "id": "e-f2-z-f3",
+      "source": "f2",
+      "target": "f3"
+    },
+    {
+      "id": "e-f3-a-falsch",
+      "source": "f3",
+      "target": "hilfe-f3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f3-a-zurueck",
+      "source": "hilfe-f3",
+      "target": "f3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f3-z-f4",
+      "source": "hilfe-f3",
+      "target": "f4"
+    },
+    {
+      "id": "e-f3-z-f4",
+      "source": "f3",
+      "target": "f4"
+    },
+    {
+      "id": "e-f4-a-falsch",
+      "source": "f4",
+      "target": "hilfe-f4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f4-a-zurueck",
+      "source": "hilfe-f4",
+      "target": "f4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f4-b-weiter-profi",
+      "source": "hilfe-f4",
+      "target": "weiter-profi",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "scoreRatio",
+          "scope": {
+            "kind": "section",
+            "id": "basis"
+          }
+        },
+        "op": "gte",
+        "right": 0.75
+      }
+    },
+    {
+      "id": "e-hilfe-f4-z-weiter-extra",
+      "source": "hilfe-f4",
+      "target": "weiter-extra"
+    },
+    {
+      "id": "e-f4-b-weiter-profi",
+      "source": "f4",
+      "target": "weiter-profi",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "scoreRatio",
+          "scope": {
+            "kind": "section",
+            "id": "basis"
+          }
+        },
+        "op": "gte",
+        "right": 0.75
+      }
+    },
+    {
+      "id": "e-f4-z-weiter-extra",
+      "source": "f4",
+      "target": "weiter-extra"
+    },
+    {
+      "id": "e-start-z-start",
+      "source": "start",
+      "target": "f-negativ"
+    },
+    {
+      "id": "e-fp1-a-falsch",
+      "source": "fp1",
+      "target": "hilfe-fp1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fp1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fp1-a-zurueck",
+      "source": "hilfe-fp1",
+      "target": "fp1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fp1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fp1-z-fp2",
+      "source": "hilfe-fp1",
+      "target": "fp2"
+    },
+    {
+      "id": "e-fp1-z-fp2",
+      "source": "fp1",
+      "target": "fp2"
+    },
+    {
+      "id": "e-fp2-a-falsch",
+      "source": "fp2",
+      "target": "hilfe-fp2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fp2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fp2-a-zurueck",
+      "source": "hilfe-fp2",
+      "target": "fp2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fp2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fp2-z-fp3",
+      "source": "hilfe-fp2",
+      "target": "fp3"
+    },
+    {
+      "id": "e-fp2-z-fp3",
+      "source": "fp2",
+      "target": "fp3"
+    },
+    {
+      "id": "e-fp3-a-falsch",
+      "source": "fp3",
+      "target": "hilfe-fp3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fp3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fp3-a-zurueck",
+      "source": "hilfe-fp3",
+      "target": "fp3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fp3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fp3-z-fp4",
+      "source": "hilfe-fp3",
+      "target": "fp4"
+    },
+    {
+      "id": "e-fp3-z-fp4",
+      "source": "fp3",
+      "target": "fp4"
+    },
+    {
+      "id": "e-fp4-a-falsch",
+      "source": "fp4",
+      "target": "hilfe-fp4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fp4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fp4-a-zurueck",
+      "source": "hilfe-fp4",
+      "target": "fp4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fp4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fp4-z-fp5",
+      "source": "hilfe-fp4",
+      "target": "fp5"
+    },
+    {
+      "id": "e-fp4-z-fp5",
+      "source": "fp4",
+      "target": "fp5"
+    },
+    {
+      "id": "e-fp5-a-falsch",
+      "source": "fp5",
+      "target": "hilfe-fp5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fp5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fp5-a-zurueck",
+      "source": "hilfe-fp5",
+      "target": "fp5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fp5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fp5-z-ende",
+      "source": "hilfe-fp5",
+      "target": "ende"
+    },
+    {
+      "id": "e-fp5-z-ende",
+      "source": "fp5",
+      "target": "ende"
+    },
+    {
+      "id": "e-weiter-profi-z-weiter",
+      "source": "weiter-profi",
+      "target": "fp1"
+    },
+    {
+      "id": "e-fe1-a-falsch",
+      "source": "fe1",
+      "target": "hilfe-fe1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fe1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fe1-a-zurueck",
+      "source": "hilfe-fe1",
+      "target": "fe1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fe1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fe1-z-fe2",
+      "source": "hilfe-fe1",
+      "target": "fe2"
+    },
+    {
+      "id": "e-fe1-z-fe2",
+      "source": "fe1",
+      "target": "fe2"
+    },
+    {
+      "id": "e-fe2-a-falsch",
+      "source": "fe2",
+      "target": "hilfe-fe2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fe2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fe2-a-zurueck",
+      "source": "hilfe-fe2",
+      "target": "fe2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fe2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fe2-z-fe3",
+      "source": "hilfe-fe2",
+      "target": "fe3"
+    },
+    {
+      "id": "e-fe2-z-fe3",
+      "source": "fe2",
+      "target": "fe3"
+    },
+    {
+      "id": "e-fe3-a-falsch",
+      "source": "fe3",
+      "target": "hilfe-fe3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fe3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fe3-a-zurueck",
+      "source": "hilfe-fe3",
+      "target": "fe3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fe3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fe3-z-fe4",
+      "source": "hilfe-fe3",
+      "target": "fe4"
+    },
+    {
+      "id": "e-fe3-z-fe4",
+      "source": "fe3",
+      "target": "fe4"
+    },
+    {
+      "id": "e-fe4-a-falsch",
+      "source": "fe4",
+      "target": "hilfe-fe4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "fe4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-fe4-a-zurueck",
+      "source": "hilfe-fe4",
+      "target": "fe4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "fe4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-fe4-z-ende",
+      "source": "hilfe-fe4",
+      "target": "ende"
+    },
+    {
+      "id": "e-fe4-z-ende",
+      "source": "fe4",
+      "target": "ende"
+    },
+    {
+      "id": "e-weiter-extra-z-weiter",
+      "source": "weiter-extra",
+      "target": "fe1"
+    }
+  ]
+}

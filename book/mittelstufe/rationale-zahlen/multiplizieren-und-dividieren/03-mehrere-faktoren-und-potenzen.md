@@ -1,14 +1,20 @@
 ---
-name: Mehrere Faktoren und Potenzen
+name: 🔢 Viele Faktoren und Potenzen
 index: 3
 lang: de
 ---
 
-# Mehrere Faktoren und Potenzen
+# Viele Faktoren und Potenzen
+
+:::alert{info}
+
+**Darum geht's:** Was passiert, wenn mehr als zwei Zahlen malgenommen werden? Du lernst einen Trick: **Minuszeichen zählen**. Damit kannst du auch Potenzen wie $(-2)^4$ berechnen.
+
+:::
 
 ## Die Vorzeichen-Maschine
 
-Hier werden fünf Zahlen multipliziert. Mit den Kästchen machst du einen Faktor negativ. Beobachte, wann das Produkt positiv und wann es negativ ist.
+Hier werden fünf Zahlen malgenommen. Mache mit den Kästchen einzelne Zahlen negativ. Wann ist das Produkt positiv, wann negativ?
 
 :::jsxgraph{height="300" width="720" boundingbox="[0,4,12,0]" axis=false grid=false}
 
@@ -72,30 +78,43 @@ function recolor() {
 
 :::multievent
 
-Bei **zwei** negativen Faktoren ist das Produkt {A{!positiv|negativ}}.
-Bei **drei** negativen Faktoren ist das Produkt {A{positiv|!negativ}}.
-Bei **vier** negativen Faktoren ist das Produkt {A{!positiv|negativ}}.
-
-Der Betrag des Produkts ist immer {z{18}}. Nur das {A{Komma|!Vorzeichen|Ergebnis von 2 · 0,5}} ändert sich.
+Bei **zwei** negativen Faktoren ist das Produkt {A{!positiv|negativ}}, bei **drei** {A{positiv|!negativ}}, bei **vier** {A{!positiv|negativ}}.
 
 :::
 
 :::snippet{#merken}
 
-**Produkte mit mehreren Faktoren**
+**Minuszeichen zählen**
 
-Zähle die negativen Faktoren:
+- **gerade** Anzahl negativer Faktoren ($2, 4, 6, \dots$) → Produkt **positiv**
+- **ungerade** Anzahl negativer Faktoren ($1, 3, 5, \dots$) → Produkt **negativ**
 
-- **gerade** Anzahl ($0, 2, 4, \dots$) → das Produkt ist **positiv**
-- **ungerade** Anzahl ($1, 3, 5, \dots$) → das Produkt ist **negativ**
-
-Je zwei Minuszeichen heben sich gegenseitig auf.
+Je zwei Minuszeichen werden zusammen zu einem Plus.
 
 :::
 
+<figure style="text-align:center;margin:1.2em 0;">
+<svg viewBox="0 0 620 185" width="620" style="max-width:100%;height:auto;" role="img" aria-label="Fünf negative Faktoren: je zwei Minuszeichen ergeben plus, eines bleibt übrig, also ist das Produkt negativ">
+<circle cx="70" cy="105" r="32" fill="#bb0a21" fill-opacity="0.15" stroke="#bb0a21" stroke-width="2"/><text x="70" y="113" font-size="22" text-anchor="middle" fill="currentColor">(−1)</text>
+<text x="127" y="112" font-size="22" text-anchor="middle" fill="currentColor">·</text>
+<circle cx="185" cy="105" r="32" fill="#bb0a21" fill-opacity="0.15" stroke="#bb0a21" stroke-width="2"/><text x="185" y="113" font-size="22" text-anchor="middle" fill="currentColor">(−2)</text>
+<text x="242" y="112" font-size="22" text-anchor="middle" fill="currentColor">·</text>
+<circle cx="300" cy="105" r="32" fill="#bb0a21" fill-opacity="0.15" stroke="#bb0a21" stroke-width="2"/><text x="300" y="113" font-size="22" text-anchor="middle" fill="currentColor">(−3)</text>
+<text x="357" y="112" font-size="22" text-anchor="middle" fill="currentColor">·</text>
+<circle cx="415" cy="105" r="32" fill="#bb0a21" fill-opacity="0.15" stroke="#bb0a21" stroke-width="2"/><text x="415" y="113" font-size="22" text-anchor="middle" fill="currentColor">(−4)</text>
+<text x="472" y="112" font-size="22" text-anchor="middle" fill="currentColor">·</text>
+<circle cx="530" cy="105" r="32" fill="#bb0a21" fill-opacity="0.15" stroke="#bb0a21" stroke-width="2"/><text x="530" y="113" font-size="22" text-anchor="middle" fill="currentColor">(−5)</text>
+<path d="M 70 70 Q 127.5 15 185 70" fill="none" stroke="#397b96" stroke-width="3"/><circle cx="127.5" cy="38" r="15" fill="#397b96"/><text x="127.5" y="45" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">+</text>
+<path d="M 300 70 Q 357.5 15 415 70" fill="none" stroke="#397b96" stroke-width="3"/><circle cx="357.5" cy="38" r="15" fill="#397b96"/><text x="357.5" y="45" font-size="20" font-weight="bold" text-anchor="middle" fill="#fff">+</text>
+<text x="530" y="58" font-size="15" text-anchor="middle" fill="#bb0a21">bleibt übrig</text>
+<text x="310" y="172" font-size="17" text-anchor="middle" fill="currentColor">5 Minuszeichen: 2 Paare und 1 übrig → Ergebnis <tspan fill="#bb0a21" font-weight="bold">negativ</tspan></text>
+</svg>
+<figcaption style="font-size:0.9em;opacity:0.8;margin-top:0.3em;">(−1) · (−2) · (−3) · (−4) · (−5) = −120</figcaption>
+</figure>
+
 :::snippet{#aufgabe}
 
-Bestimme zuerst nur das Vorzeichen. Berechne dann.
+**1** Bestimme zuerst das Vorzeichen. Berechne dann.
 
 :::
 
@@ -107,22 +126,31 @@ Bestimme zuerst nur das Vorzeichen. Berechne dann.
 | $(-1) \cdot (-1) \cdot (-1)$ | {A{+\|!−}} | {z{-1}} |
 | $4 \cdot (-0{,}5) \cdot 10$ | {A{+\|!−}} | {z{-20}} |
 | $(-2) \cdot (-2) \cdot (-2) \cdot (-2)$ | {A{!+\|−}} | {z{16}} |
-| $(-0{,}1) \cdot (-0{,}2) \cdot (-5)$ | {A{+\|!−}} | {z{-0,1}} |
 | $(-7) \cdot 0 \cdot (-3)$ | {A{+\|−\|!weder noch}} | {z{0}} |
+
+:::
+
+## Ein Minus vor der Klammer
+
+:::snippet{#merken}
+
+Ein Minus vor einer Zahl oder Klammer bedeutet **mal (−1)**. Du erhältst die **Gegenzahl**:
+
+$$-(-7) = (-1) \cdot (-7) = 7 \qquad -(+5) = (-1) \cdot 5 = -5$$
+
+:::
+
+:::multievent
+
+$-(-1) =$ {z{1}} $\qquad -(-0{,}3) =$ {z{0,3}} $\qquad -(+2) =$ {z{-2}} $\qquad -(-(-7)) =$ {z{-7}}
 
 :::
 
 ## Potenzen mit negativer Basis
 
-Eine Potenz ist eine Kurzschreibweise für ein Produkt aus lauter gleichen Faktoren:
+Eine Potenz ist ein Produkt aus lauter gleichen Faktoren. Also hilft wieder das Minuszeichen-Zählen:
 
 $$(-2)^4 = (-2) \cdot (-2) \cdot (-2) \cdot (-2) = 16$$
-
-:::snippet{#aufgabe}
-
-Setze die Reihe fort. Was fällt dir auf?
-
-:::
 
 :::multievent
 
@@ -130,137 +158,20 @@ Setze die Reihe fort. Was fällt dir auf?
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | {z{-2}} | {z{4}} | {z{-8}} | {z{16}} | {z{-32}} | {z{64}} |
 
-Ist die Hochzahl **gerade**, ist die Potenz {A{!positiv|negativ}}. Ist die Hochzahl **ungerade**, ist die Potenz {A{positiv|!negativ}}.
+Gerade Hochzahl → {A{!positiv|negativ}} $\qquad$ Ungerade Hochzahl → {A{positiv|!negativ}}
 
 :::
 
 :::alert{warn}
 
-**Achtung, Klammer!**
+**Achtung, Klammer!** $\quad (-3)^2 = (-3) \cdot (-3) = 9$, aber $-3^2 = -(3 \cdot 3) = -9$.
 
-$$(-3)^4 = (-3) \cdot (-3) \cdot (-3) \cdot (-3) = +81$$
-
-$$-3^4 = -(3 \cdot 3 \cdot 3 \cdot 3) = -81$$
-
-Ohne Klammer gehört die Hochzahl **nur zur 3**. Das Minus wird erst danach angewendet. Viele Taschenrechner rechnen genauso: Wer `-3^4` eintippt, erhält $-81$.
+Ohne Klammer gehört die Hochzahl **nur zur 3**.
 
 :::
 
-:::snippet{#aufgabe}
+## Teste dich
 
-Berechne. Achte auf die Klammern.
+Zuerst kommen Grundlagen. Wenn sie sitzen, geht es mit Profi-Aufgaben weiter, sonst mit einer Extra-Übung.
 
-:::
-
-:::multievent
-
-| | | | |
-| --- | --- | --- | --- |
-| $(-5)^2 =$ {z{25}} | $-5^2 =$ {z{-25}} | $(-1)^7 =$ {z{-1}} | $(-1)^{10} =$ {z{1}} |
-| $(-2)^7 =$ {z{-128}} | $-2^7 =$ {z{-128}} | $(-0{,}2)^3 =$ {z{-0,008}} | $-(-4)^2 =$ {z{-16}} |
-| $(-10)^5 =$ {z{-100000}} | $(-6)^1 =$ {z{-6}} | $(-0{,}3)^0 =$ {z{1}} | $0^{12} =$ {z{0}} |
-
-:::
-
-:::snippet{#aufgabe}
-
-Richtig oder falsch? Du musst nichts ausrechnen – es reicht, das Vorzeichen zu bestimmen.
-
-:::
-
-:::multievent
-
-- $(-9)^{75}$ ist negativ. {A{!richtig|falsch}}
-- $-47^{28}$ ist positiv. {A{richtig|!falsch}}
-- $(-91)^{21} > 0$ {A{richtig|!falsch}}
-- $(-276)^{48} < 0$ {A{richtig|!falsch}}
-- $(-15)^{4} < (-15)^{6}$ {A{!richtig|falsch}}
-- $(-23)^{5} < (-34)^{5}$ {A{richtig|!falsch}}
-
-{h{Tipp: Bei der letzten Aussage sind beide Zahlen negativ. Welche liegt weiter links auf der Zahlengeraden?}}
-
-:::
-
-## Geschickt rechnen
-
-Für rationale Zahlen gelten dieselben Rechengesetze wie für Brüche und natürliche Zahlen.
-
-:::snippet{#merken}
-
-**Kommutativgesetz** (Vertauschungsgesetz): In einem Produkt darf man die Faktoren vertauschen.
-
-$$a \cdot b = b \cdot a \qquad \text{z. B. } (-1{,}4) \cdot 2{,}5 = 2{,}5 \cdot (-1{,}4)$$
-
-**Assoziativgesetz** (Verbindungsgesetz): In einem Produkt darf man Klammern beliebig setzen oder weglassen.
-
-$$(a \cdot b) \cdot c = a \cdot (b \cdot c) = a \cdot b \cdot c$$
-
-:::
-
-:::snippet{#beispiel}
-
-$$
-\begin{aligned}
-11 \cdot (-4) \cdot 25 &= 11 \cdot \big((-4) \cdot 25\big) &&\text{Klammer geschickt setzen} \\
-&= 11 \cdot (-100) \\
-&= -1100
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-(-125) \cdot (-7) \cdot (-8) &= (-125) \cdot (-8) \cdot (-7) &&\text{Faktoren vertauschen} \\
-&= 1000 \cdot (-7) \\
-&= -7000
-\end{aligned}
-$$
-
-Suche nach Partnern, die zusammen $10$, $100$ oder $1000$ ergeben: $4 \cdot 25$, $8 \cdot 125$, $2 \cdot 5$, $0{,}5 \cdot 2$ …
-
-:::
-
-:::snippet{#aufgabe}
-
-Berechne möglichst vorteilhaft.
-
-:::
-
-:::multievent
-
-- $(-13) \cdot 25 \cdot (-4) =$ {z{1300}}
-- $2{,}5 \cdot (-1{,}5) \cdot 8 =$ {z{-30}}
-- $(-0{,}8) \cdot (-3{,}7) \cdot 1{,}25 =$ {z{3,7}}
-- $0{,}7 \cdot (-20) \cdot (-0{,}3) \cdot (-5) =$ {z{-21}}
-- $125 \cdot (-23) \cdot (-8) \cdot (-3) =$ {z{-69000}}
-- $(-0{,}1) \cdot (-0{,}02) \cdot (-0{,}05) =$ {z{-0,0001}}
-
-{b{Tipp: Fasse zuerst die Faktoren zusammen, die eine »glatte« Zahl ergeben, z. B. 25 · 4 = 100 oder 1,25 · 0,8 = 1.}}
-
-:::
-
-:::snippet{#aufgabe}
-
-Berechne möglichst vorteilhaft. Kürze vorher. Gib das Ergebnis als Bruch ein (Bruch-Taste oder `/`).
-
-:::
-
-::bitflow{id="rationale-zahlen-faktoren-brueche" src="faktoren-brueche.bitflow" height="auto" maxHeight="85vh"}
-
-## Stimmt das?
-
-:::snippet{#aufgabe}
-
-Suche zuerst ein Beispiel. Entscheide dann, ob die Aussage **immer** stimmt. Ein einziges Gegenbeispiel reicht, um eine Aussage zu widerlegen.
-
-:::
-
-:::multievent
-
-- Ist bei zwei Faktoren einer negativ, so ist das Produkt negativ. {A{immer richtig|!nicht immer richtig}}
-- Das Produkt zweier negativer Zahlen ist größer als jeder der beiden Faktoren. {A{!immer richtig|nicht immer richtig}}
-- Das Produkt dreier Zahlen ist nur dann positiv, wenn alle drei das gleiche Vorzeichen haben. {A{immer richtig|!nicht immer richtig}}
-- Das Produkt zweier rationaler Zahlen ist nie null. {A{immer richtig|!nicht immer richtig}}
-
-{b{Gegenbeispiele: (−3) · 0 = 0 ist nicht negativ. (−1) · (−1) · 5 = 5 ist positiv, obwohl die Vorzeichen verschieden sind. 0 · 4 = 0.}}
-
-:::
+::bitflow{id="rationale-zahlen-faktoren" src="faktoren.bitflow" height="auto" maxHeight="85vh"}

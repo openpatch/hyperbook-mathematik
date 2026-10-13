@@ -1,43 +1,51 @@
 ---
-name: Terme berechnen
+name: 🧮 Terme berechnen
 index: 5
 lang: de
 ---
 
 # Terme mit rationalen Zahlen berechnen
 
-## Einstieg: Die Wetterprognose
+:::alert{info}
 
-Am Montagmorgen zeigt das Thermometer $-3$ °C. Die Wettervorhersage sagt: Bis Freitag wird es jeden Tag um $1{,}5$ °C kälter.
-
-:::snippet{#aufgabe}
-
-Welche Temperatur ist am Freitagmorgen zu erwarten? Schreibe die Rechnung als **einen** Term.
+**Darum geht's:** In einer Rechnung kommen oft mehrere Rechenarten vor. Du lernst, in welcher **Reihenfolge** gerechnet wird – auch mit negativen Zahlen.
 
 :::
+
+## Einstieg: Die Wetterprognose
+
+Am Montagmorgen ist es $-3$ °C. Die Vorhersage: Bis Freitag wird es **jeden Tag 1,5 °C kälter**.
 
 :::multievent
 
-Von Montag bis Freitag vergehen {z{4}} Tage.
+Von Montag bis Freitag vergehen {z{4}} Tage. $\qquad -3 + 4 \cdot (-1{,}5) =$ {z{-9}} °C
 
-Term: $-3 + 4 \cdot (-1{,}5) =$ {z{-9}} °C
-
-{b{Zuerst wird 4 · (−1,5) = −6 berechnet (Punkt vor Strich). Dann −3 + (−6) = −9.}}
+{b{Zuerst wird 4 · (−1,5) = −6 gerechnet (Punkt vor Strich). Dann −3 + (−6) = −9.}}
 
 :::
 
-## Die Reihenfolge beim Rechnen
+## Die Reihenfolge
+
+<figure style="text-align:center;margin:1.2em 0;">
+<svg viewBox="0 0 640 205" width="640" style="max-width:100%;height:auto;" role="img" aria-label="Treppe der Rechenreihenfolge: 1. Klammern, 2. Potenzen, 3. Punktrechnung, 4. Strichrechnung">
+<rect x="20" y="25" width="142" height="170" rx="6" fill="#9A6B2F" fill-opacity="0.85"/><text x="91" y="55" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff">1. Klammern</text><text x="91" y="87" font-size="24" text-anchor="middle" fill="#fff">( )</text>
+<rect x="170" y="61" width="142" height="134" rx="6" fill="#bb0a21" fill-opacity="0.85"/><text x="241" y="91" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff">2. Potenzen</text><text x="241" y="123" font-size="24" text-anchor="middle" fill="#fff">x²</text>
+<rect x="320" y="97" width="142" height="98" rx="6" fill="#397b96" fill-opacity="0.85"/><text x="391" y="127" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff">3. Punkt</text><text x="391" y="159" font-size="24" text-anchor="middle" fill="#fff">·  :</text>
+<rect x="470" y="133" width="142" height="62" rx="6" fill="#5a8f3c" fill-opacity="0.85"/><text x="541" y="163" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff">4. Strich</text><text x="541" y="195" font-size="24" text-anchor="middle" fill="#fff">+  −</text>
+</svg>
+<figcaption style="font-size:0.9em;opacity:0.8;margin-top:0.3em;">Steige die Treppe von oben nach unten hinab. Auf einer Stufe rechnest du von links nach rechts.</figcaption>
+</figure>
 
 :::snippet{#merken}
 
-**Regeln für das Berechnen von Termen**
+**Reihenfolge beim Rechnen**
 
-1. **Klammern** zuerst. Bei mehreren Klammern ineinander: die innerste zuerst.
-2. **Potenzen** vor Punkt- und Strichrechnung.
-3. **Punktrechnung** ($\cdot$ und $:$) vor **Strichrechnung** ($+$ und $-$).
-4. Sonst wird **von links nach rechts** gerechnet.
+1. **Klammern** zuerst, bei Klammern in Klammern die innerste zuerst
+2. **Potenzen**
+3. **Punktrechnung**: mal und geteilt
+4. **Strichrechnung**: plus und minus
 
-Merkhilfe: **K**lammer – **P**otenz – **P**unkt – **S**trich
+Auf derselben Stufe rechnest du **von links nach rechts**.
 
 :::
 
@@ -45,26 +53,19 @@ Merkhilfe: **K**lammer – **P**otenz – **P**unkt – **S**trich
 
 $$
 \begin{aligned}
-14 - 4 \cdot (-2)^3 &= 14 - 4 \cdot (-8) &&\text{Potenz} \\
-&= 14 - (-32) &&\text{Punkt vor Strich} \\
-&= 14 + 32 \\
-&= 46
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\big(-7 + 3 \cdot (-2)\big) : (-0{,}5) &= \big(-7 + (-6)\big) : (-0{,}5) &&\text{in der Klammer: Punkt vor Strich} \\
-&= (-13) : (-0{,}5) \\
-&= 26
+14 - 4 \cdot (-2)^3 &= 14 - 4 \cdot (-8) &&\text{2. Potenz} \\
+&= 14 - (-32) &&\text{3. Punkt vor Strich} \\
+&= 14 + 32 = 46 &&\text{4. Strich}
 \end{aligned}
 $$
 
 :::
 
+## Üben
+
 :::snippet{#aufgabe}
 
-Rechne Schritt für Schritt.
+**1** Rechne Schritt für Schritt.
 
 :::
 
@@ -72,83 +73,27 @@ Rechne Schritt für Schritt.
 
 - $12 + 8 : (-2) = 12 + ($ {z{-4}} $) =$ {z{8}}
 - $(-2)^4 - 24 =$ {z{16}} $- 24 =$ {z{-8}}
-- $-6 + (-4)^3 = -6 + ($ {z{-64}} $) =$ {z{-70}}
 - $(-4) : (3 - 11) = (-4) : ($ {z{-8}} $) =$ {z{0,5}}
-- $-7 + 48 - 100 : (-20) = -7 + 48 - ($ {z{-5}} $) =$ {z{46}}
+- $-6 + (-4)^3 = -6 + ($ {z{-64}} $) =$ {z{-70}}
 
 :::
 
-## Ein Ausflug wird geplant
-
-Die Klasse 7b hat beim Schulfest $180$ € eingenommen. Davon soll ein Ausflug für alle $24$ Kinder bezahlt werden. Pro Kind kostet der Eintritt $6{,}50$ € und die Busfahrt $3$ €.
-
 :::snippet{#aufgabe}
 
-Reicht das Geld? Wie viel muss jedes Kind noch dazubezahlen – oder bekommt es etwas zurück? Ergänze den Term.
+**2** Die Klasse 7b hat beim Schulfest $180$ € eingenommen. Davon soll ein Ausflug für alle $24$ Kinder bezahlt werden. Pro Kind kostet er $9{,}50$ €. Reicht das Geld?
 
 :::
 
 :::multievent
-
-Kosten pro Kind: $6{,}50 + 3 =$ {z{9,5}} €
 
 $(180 - 24 \cdot 9{,}5) : 24 = (180 -$ {z{228}} $) : 24 =$ {z{-48}} $: 24 =$ {z{-2}}
 
-Das Ergebnis ist negativ. Das bedeutet: Jedes Kind muss noch {z{2}} € {A{!dazubezahlen|zurückbekommen}}.
+Das Ergebnis ist negativ: Jedes Kind muss noch {z{2}} € {A{!dazubezahlen|zurückbekommen}}.
 
 :::
-
-## Terme aufstellen
-
-:::snippet{#aufgabe}
-
-Schreibe als Term und berechne.
-
-:::
-
-:::multievent
-
-- Multipliziere die Summe aus $-7$ und $3$ mit $-5$. $\quad$ Ergebnis: {z{20}}
-- Dividiere $-36$ durch die Differenz aus $-2$ und $4$. $\quad$ Ergebnis: {z{6}}
-- Subtrahiere vom Produkt aus $-6$ und $-0{,}5$ die Zahl $8$. $\quad$ Ergebnis: {z{-5}}
-- Addiere zum Quotienten aus $-4{,}8$ und $1{,}2$ das Quadrat von $-3$. $\quad$ Ergebnis: {z{5}}
-
-{b{Terme: (−7 + 3) · (−5) — (−36) : (−2 − 4) — (−6) · (−0,5) − 8 — (−4,8) : 1,2 + (−3)²}}
-
-:::
-
-## Anwendungen
-
-:::snippet{#aufgabe}
-
-Stelle zuerst einen Term auf. Berechne dann.
-
-:::
-
-:::multievent
-
-**a)** In den USA wird die Temperatur in Grad Fahrenheit (°F) gemessen. Um eine Celsius-Temperatur umzurechnen, multipliziert man sie mit $\frac{9}{5}$ (also $1{,}8$) und addiert dann $32$. Wie viel °F sind $-13{,}5$ °C?
-
-$-13{,}5 \cdot 1{,}8 + 32 =$ {z{7,7}} °F
-
-**b)** Ein Pegel steht bei $-1{,}25$ m. Er fällt um $1{,}4$ m und steigt dann wieder um $0{,}5$ m. Neuer Stand:
-
-{z{-2,15}} m
-
-**c)** Eine Tiefenbohrung beginnt auf Meereshöhe. Jeden Tag wird $15$ m tiefer gebohrt. Wo ist der Bohrer nach $14$ Tagen? (Höhe mit Vorzeichen)
-
-{z{-210}} m
-
-**d)** Der Bohrer ist nach einigen Tagen bei $-135$ m. Wie viele Tage wurde gebohrt?
-
-{z{9}} Tage
-
-:::
-
-Mehr zum Umrechnen von Temperaturen findest du auf der Seite [Temperaturskalen](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/temperaturskalen).
 
 ## Teste dich
 
-Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.
+Zuerst kommen Grundlagen. Wenn sie sitzen, geht es mit Profi-Aufgaben weiter, sonst mit einer Extra-Übung.
 
 ::bitflow{id="rationale-zahlen-terme" src="terme.bitflow" height="auto" maxHeight="85vh"}

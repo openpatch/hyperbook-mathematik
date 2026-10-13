@@ -1,99 +1,57 @@
 ---
-name: 💡 Muster entdecken
+name: 💡 Minus mal minus?
 index: 1
 lang: de
 ---
 
-# Warum ist minus mal minus plus?
+# Minus mal minus – was kommt da raus?
 
-Dass $3 \cdot 2 = 6$ ist, weißt du längst. Aber was ist $3 \cdot (-2)$? Und was soll $(-3) \cdot (-2)$ bedeuten? Auf dieser Seite findest du es selbst heraus – auf drei verschiedenen Wegen.
+:::alert{info}
 
-## Weg 1: Malnehmen ist wiederholtes Addieren
-
-$3 \cdot 2$ bedeutet $2 + 2 + 2$. Das klappt genauso mit einer negativen Zahl.
-
-:::snippet{#aufgabe}
-
-Schreibe als Summe und berechne.
+**Darum geht's:** Du findest selbst heraus, welches Vorzeichen ein Produkt hat, wenn negative Zahlen mitspielen. Das schaffst du in drei Schritten.
 
 :::
 
+## Schritt 1: Malnehmen ist Plusrechnen
+
+$3 \cdot 2$ bedeutet $2 + 2 + 2$. Das klappt auch mit einer negativen Zahl:
+
+$$3 \cdot (-2) = (-2) + (-2) + (-2) = -6$$
+
 :::multievent
 
-- $3 \cdot (-2) = (-2) + (-2) + (-2) =$ {z{-6}}
 - $4 \cdot (-1{,}5) = (-1{,}5) + (-1{,}5) + (-1{,}5) + (-1{,}5) =$ {z{-6}}
 - $2 \cdot (-0{,}25) =$ {z{-0,5}}
 - $5 \cdot (-3) =$ {z{-15}}
 
-Beim Malnehmen darf man die Faktoren vertauschen. Also ist $(-2) \cdot 3 = 3 \cdot (-2) =$ {z{-6}}.
+Man darf die Faktoren vertauschen: $(-3) \cdot 5 = 5 \cdot (-3) =$ {z{-15}}
 
-Ein positiver und ein negativer Faktor ergeben ein {A{positives|!negatives}} Ergebnis.
-
-:::
-
-## Weg 2: Muster fortsetzen
-
-:::snippet{#aufgabe}
-
-Rechne die Aufgaben oben in jeder Reihe aus. Schau dir an, wie sich die Ergebnisse verändern, und setze das Muster fort.
+**Plus mal minus** ergibt {A{plus|!minus}}.
 
 :::
 
-::::::tabs
+## Schritt 2: Das Muster fortsetzen
 
-::::tab{title="Reihe 1"}
+Rechne von oben nach unten. Wie verändern sich die Ergebnisse? Setze das Muster fort.
 
 :::multievent
 
 | Aufgabe | Ergebnis |
-| --- | --- |
-| $3 \cdot 3$ | {z{9}} |
-| $3 \cdot 2$ | {z{6}} |
-| $3 \cdot 1$ | {z{3}} |
-| $3 \cdot 0$ | {z{0}} |
-| $3 \cdot (-1)$ | {z{-3}} |
-| $3 \cdot (-2)$ | {z{-6}} |
-| $3 \cdot (-3)$ | {z{-9}} |
-
-Wird der zweite Faktor um 1 kleiner, wird das Ergebnis um {z{3}} {A{größer|!kleiner}}.
-
-:::
-
-::::
-
-::::tab{title="Reihe 2"}
-
-:::multievent
-
-| Aufgabe | Ergebnis |
-| --- | --- |
+| :---: | :---: |
 | $(-3) \cdot 3$ | {z{-9}} |
 | $(-3) \cdot 2$ | {z{-6}} |
 | $(-3) \cdot 1$ | {z{-3}} |
 | $(-3) \cdot 0$ | {z{0}} |
 | $(-3) \cdot (-1)$ | {z{3}} |
 | $(-3) \cdot (-2)$ | {z{6}} |
-| $(-3) \cdot (-3)$ | {z{9}} |
 
-Wird der zweite Faktor um 1 kleiner, wird das Ergebnis um {z{3}} {A{!größer|kleiner}}.
-
-:::
-
-::::
-
-::::::
-
-:::snippet{#brain}
-
-Wenn das Muster weitergehen soll, **muss** $(-3) \cdot (-1) = 3$ sein. Jede andere Festlegung würde das Muster zerstören.
+Von Zeile zu Zeile wird das Ergebnis um {z{3}} größer. **Minus mal minus** ergibt also {A{!plus|minus}}.
 
 :::
 
-## Weg 3: Pfeile auf der Zahlengeraden
+## Schritt 3: Ausprobieren mit Pfeilen
 
-Eine Zahl kannst du als Pfeil darstellen, der bei 0 beginnt. Positive Zahlen zeigen nach rechts, negative nach links.
-
-Stelle mit den Schiebereglern die Faktoren $a$ und $b$ ein. Der blaue Pfeil ist $b$. Der graue Pfeil zeigt, wie $b$ mehrmals aneinandergelegt wird. Der rote Pfeil ist das Ergebnis $a \cdot b$.
+Jede Zahl ist ein Pfeil, der bei 0 startet: Positive Zahlen zeigen nach rechts, negative nach links. Stelle $a$ und $b$ mit den Schiebereglern ein und beobachte den **roten Ergebnis-Pfeil**.
 
 :::jsxgraph{height="400" width="720" boundingbox="[-13,5,13,-3.2]" axis=false grid=false}
 
@@ -185,63 +143,62 @@ refresh();
 
 :::
 
-:::snippet{#aufgabe}
-
-Stelle die Faktoren mit den Schiebereglern ein und lies das Ergebnis ab.
-
-:::
-
 :::multievent
 
-- $3 \cdot (-1{,}5) =$ {z{-4,5}}
-- $(-3) \cdot 2 =$ {z{-6}}
-- $(-3) \cdot (-2) =$ {z{6}}
-- $(-2) \cdot (-2{,}5) =$ {z{5}}
-- $(-4) \cdot 0{,}5 =$ {z{-2}}
+Stelle ein und lies ab: $\quad 3 \cdot (-1{,}5) =$ {z{-4,5}} $\quad (-3) \cdot (-2) =$ {z{6}} $\quad (-2) \cdot (-2{,}5) =$ {z{5}}
 
-Ein negativer Faktor $a$ {A{verlängert den Pfeil nur|!verlängert den Pfeil und dreht seine Richtung um|lässt den Pfeil unverändert}}.
-
-Zeigt der Pfeil $b$ nach links und wird umgedreht, zeigt das Ergebnis nach {A{links|!rechts}}. Also ist minus mal minus {A{!plus|minus}}.
+Ist $a$ negativ, wird der Pfeil {A{nur länger|!länger und umgedreht|nicht verändert}}.
 
 :::
 
-## Eine Geschichte dazu: Temperatur im Zeitraffer
+::::collapsible{title="🌡️ Noch eine Erklärung: Temperatur im Zeitraffer" id="rz-entdecken-temperatur"}
 
-Auf einem Berg sinkt die Temperatur am Abend jede Stunde um 2 °C. Die Änderung pro Stunde ist also $-2$ °C. Jetzt ist es 0 °C.
+Auf einem Berg wird es abends **jede Stunde 2 °C kälter**. Die Änderung pro Stunde ist $-2$ °C. Gerade ist es 0 °C.
 
-- **In** 3 Stunden: $3 \cdot (-2) = -6$. Es wird 6 °C **kälter** sein.
-- **Vor** 3 Stunden (also Zeit $-3$): $(-3) \cdot (-2) = +6$. Es war 6 °C **wärmer**.
+- **In** 3 Stunden: $3 \cdot (-2) = -6$. Es wird 6 °C kälter sein.
+- **Vor** 3 Stunden, also zur Zeit $-3$: $(-3) \cdot (-2) = +6$. Es war 6 °C wärmer.
 
-Wenn du einen Film, in dem es kälter wird, **rückwärts** abspielst, wird es wärmer. Rückwärts (−) und kälter werden (−) ergibt wärmer werden (+).
+<figure style="text-align:center;margin:1.2em 0;">
+<svg viewBox="0 0 640 270" width="640" style="max-width:100%;height:auto;" role="img" aria-label="Temperaturverlauf: vor 3 Stunden plus 6 Grad, jetzt 0 Grad, in 3 Stunden minus 6 Grad">
+<line x1="70" y1="130" x2="620" y2="130" stroke="currentColor" stroke-dasharray="4 4" opacity="0.5"/>
+<text x="62" y="134" font-size="13" text-anchor="end" fill="currentColor">0 °C</text>
+<line x1="70" y1="226" x2="620" y2="226" stroke="currentColor" stroke-width="1.5"/>
+<text x="620" y="265" font-size="13" text-anchor="end" fill="currentColor">Zeit</text>
+<rect x="90" y="30" width="240" height="196" fill="#397b96" fill-opacity="0.08"/>
+<rect x="330" y="30" width="240" height="196" fill="#bb0a21" fill-opacity="0.06"/>
+<text x="210" y="22" font-size="14" text-anchor="middle" fill="currentColor">Vergangenheit: Zeit negativ</text>
+<text x="450" y="22" font-size="14" text-anchor="middle" fill="currentColor">Zukunft: Zeit positiv</text>
+<line x1="90" y1="46" x2="570" y2="214" stroke="currentColor" stroke-width="2.5"/>
+<circle cx="90" cy="46" r="6" fill="#397b96"/><text x="100" y="38" font-size="15" fill="#397b96">+6 °C</text>
+<line x1="90" y1="222" x2="90" y2="230" stroke="currentColor"/><text x="90" y="248" font-size="13" text-anchor="middle" fill="currentColor">vor 3 h</text>
+<circle cx="170" cy="74" r="6" fill="#397b96"/><text x="180" y="66" font-size="15" fill="#397b96">+4 °C</text>
+<line x1="170" y1="222" x2="170" y2="230" stroke="currentColor"/><text x="170" y="248" font-size="13" text-anchor="middle" fill="currentColor">−2</text>
+<circle cx="250" cy="102" r="6" fill="#397b96"/><text x="260" y="94" font-size="15" fill="#397b96">+2 °C</text>
+<line x1="250" y1="222" x2="250" y2="230" stroke="currentColor"/><text x="250" y="248" font-size="13" text-anchor="middle" fill="currentColor">−1</text>
+<circle cx="330" cy="130" r="6" fill="currentColor"/><text x="340" y="122" font-size="13" fill="currentColor">0 °C</text>
+<line x1="330" y1="222" x2="330" y2="230" stroke="currentColor"/><text x="330" y="248" font-size="13" text-anchor="middle" fill="currentColor">jetzt</text>
+<circle cx="410" cy="158" r="6" fill="#bb0a21"/><text x="420" y="150" font-size="15" fill="#bb0a21">−2 °C</text>
+<line x1="410" y1="222" x2="410" y2="230" stroke="currentColor"/><text x="410" y="248" font-size="13" text-anchor="middle" fill="currentColor">+1</text>
+<circle cx="490" cy="186" r="6" fill="#bb0a21"/><text x="500" y="178" font-size="15" fill="#bb0a21">−4 °C</text>
+<line x1="490" y1="222" x2="490" y2="230" stroke="currentColor"/><text x="490" y="248" font-size="13" text-anchor="middle" fill="currentColor">+2</text>
+<circle cx="570" cy="214" r="6" fill="#bb0a21"/><text x="580" y="206" font-size="15" fill="#bb0a21">−6 °C</text>
+<line x1="570" y1="222" x2="570" y2="230" stroke="currentColor"/><text x="570" y="248" font-size="13" text-anchor="middle" fill="currentColor">in 3 h</text>
+</svg>
+<figcaption style="font-size:0.9em;opacity:0.8;margin-top:0.3em;">Jede Stunde wird es 2 °C kälter. Vor 3 Stunden war es also wärmer: (−3) · (−2) = +6.</figcaption>
+</figure>
 
-:::snippet{#aufgabe}
+Spielst du einen Film, in dem es kälter wird, **rückwärts** ab, wird es wärmer: rückwärts (−) mal kälter werden (−) ergibt wärmer werden (+).
 
-Ergänze. Jetzt ist es 0 °C.
+::::
+
+## Das hast du herausgefunden
+
+:::snippet{#merken}
+
+- Haben beide Faktoren das **gleiche** Vorzeichen, ist das Produkt **positiv**.
+- Haben die Faktoren **verschiedene** Vorzeichen, ist das Produkt **negativ**.
+- Ist ein Faktor $0$, ist das Produkt $0$.
 
 :::
 
-:::multievent
-
-| Änderung pro Stunde | Zeit in Stunden | Rechnung | Temperatur |
-| --- | --- | --- | --- |
-| $+3$ °C | $+2$ (in 2 Stunden) | $2 \cdot 3$ | {z{6}} °C |
-| $-3$ °C | $+2$ (in 2 Stunden) | $2 \cdot (-3)$ | {z{-6}} °C |
-| $+3$ °C | $-2$ (vor 2 Stunden) | $(-2) \cdot 3$ | {z{-6}} °C |
-| $-3$ °C | $-2$ (vor 2 Stunden) | $(-2) \cdot (-3)$ | {z{6}} °C |
-| $-1{,}5$ °C | $-4$ (vor 4 Stunden) | $(-4) \cdot (-1{,}5)$ | {z{6}} °C |
-
-:::
-
-## Was hast du herausgefunden?
-
-:::multievent
-
-Haben beide Faktoren **das gleiche** Vorzeichen, ist das Produkt {A{!positiv|negativ}}.
-
-Haben beide Faktoren **verschiedene** Vorzeichen, ist das Produkt {A{positiv|!negativ}}.
-
-Ist ein Faktor $0$, ist das Produkt {A{positiv|negativ|!null}}.
-
-:::
-
-Weiter geht es mit der [Regel für das Multiplizieren](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/02-multiplizieren).
+Weiter geht es mit der Seite [✖️ Multiplizieren](/mittelstufe/rationale-zahlen/multiplizieren-und-dividieren/02-multiplizieren).
