@@ -123,8 +123,8 @@ Je zwei Minuszeichen werden zusammen zu einem Plus.
 | Produkt | Vorzeichen | Ergebnis |
 | --- | :---: | --- |
 | $(-2) \cdot 3 \cdot (-5)$ | {A{!+\|−}} | {z{30}} |
-| $(-1) \cdot (-1) \cdot (-1)$ | {A{+\|!−}} | {z{-1}} |
-| $4 \cdot (-0{,}5) \cdot 10$ | {A{+\|!−}} | {z{-20}} |
+| $(-1) \cdot (-1) \cdot (-1)$ | {A{+\|!−}} | {z{1}} |
+| $4 \cdot (-0{,}5) \cdot 10$ | {A{+\|!−}} | {z{20}} |
 | $(-2) \cdot (-2) \cdot (-2) \cdot (-2)$ | {A{!+\|−}} | {z{16}} |
 | $(-7) \cdot 0 \cdot (-3)$ | {A{+\|−\|!weder noch}} | {z{0}} |
 
