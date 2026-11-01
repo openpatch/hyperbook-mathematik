@@ -36,19 +36,50 @@ jobs:
           git config --global credential.helper \
             '!f() { printf "username=%s\npassword=%s\n" "$HBC_USER" "$HBC_PASSWORD"; }; f'
           git remote add cloud https://hyperbook.cloud/api/books/5/git
-          git fetch --prune cloud "+refs/heads/*:refs/remotes/cloud/*"
+          git fetch --prune cloud "+refs/heads/*:refs/remotes/cloud/*" "+refs/tags/*:refs/tags/*"
 
       - name: Push to GitHub
+        id: push
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # Mirror the main branch
           if [ "$(git rev-parse refs/remotes/cloud/main)" = "$(git rev-parse refs/remotes/origin/main)" ]; then
             echo "main is already in sync with hyperbook.cloud"
-            exit 0
+          else
+            git push --force origin "refs/remotes/cloud/main:refs/heads/main"
           fi
 
-          git push --force origin "refs/remotes/cloud/main:refs/heads/main"
+          # Mirror tags: remember which tags are new or changed on GitHub
+          changed_tags=""
+          for tag in $(git for-each-ref --format='%(refname:short)' refs/tags); do
+            local_sha=$(git rev-parse "refs/tags/$tag")
+            remote_sha=$(git ls-remote origin "refs/tags/$tag" | awk '{print $1}')
+            if [ "$local_sha" != "$remote_sha" ]; then
+              changed_tags="$changed_tags $tag"
+            fi
+          done
 
-          # Pushes made with GITHUB_TOKEN do not trigger the Pages deploy
+          if [ -n "$changed_tags" ]; then
+            git push --force origin "refs/tags/*:refs/tags/*"
+            echo "changed_tags=$changed_tags" >> "$GITHUB_OUTPUT"
+          else
+            echo "tags are already in sync with GitHub"
+          fi
+
+          # Delete tags on GitHub that no longer exist on hyperbook.cloud
+          for tag in $(git ls-remote --tags --refs origin | awk '{print $2}' | sed 's|refs/tags/||'); do
+            if ! git rev-parse -q --verify "refs/tags/$tag" > /dev/null; then
+              git push origin ":refs/tags/$tag"
+            fi
+          done
+
+      - name: Trigger Pages deploy for new tags
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Tag pushes made with GITHUB_TOKEN do not trigger the Pages deploy
           # (on: push), so start it explicitly.
-          gh workflow run pages.yml --ref main
+          for tag in ${{ steps.push.outputs.changed_tags }}; do
+            gh workflow run pages.yml --ref "$tag"
+          done
