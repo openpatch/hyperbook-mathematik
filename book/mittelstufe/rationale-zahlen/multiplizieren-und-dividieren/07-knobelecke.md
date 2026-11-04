@@ -30,9 +30,11 @@ Wähle aus Feld 1 und aus Feld 2 jeweils eine Zahl und multipliziere sie.
 
 :::multievent
 
-- Das **größte** Produkt ist {z{2277}}.
-- Das **kleinste** Produkt ist {z{-5049}}.
-- Das Produkt, das am **nächsten an 100** liegt, ist {z{99}}.
+a) Gib das **größte** Produkt an, welches man mit einen Zahlenpaar aus Feld 1 und Feld 2 bilden kann: {z{2277}}.
+
+b) Gib das **kleinste** Produkt an, welches man mit einen Zahlenpaar aus Feld 1 und Feld 2 bilden kann: {z{-5049}}.
+
+c) Gib das Produkt an, welches am **nächsten an 100** liegt: {z{99}}.
 
 {b{Das größte Produkt entsteht aus zwei Zahlen mit gleichem Vorzeichen und möglichst großem Betrag – auch zwei negative Zahlen kommen infrage!}}
 
