@@ -197,13 +197,13 @@ Mehr zum Umrechnen von Temperaturen findest du auf der Seite [Temperaturskalen](
 
 :::tab{title="Multiplikation"}
 
-::embed{src="https://LearningApps.org/watch?app=pyka42ud320" height=600}
+::embed{src="https://LearningApps.org/watch?app=pyka42ud320" height="600px"}
 
 :::
 
 :::tab{title="Division"}
 
-::embed{src="https://LearningApps.org/watch?app=pe5ngm31k20" height=600}
+::embed{src="https://LearningApps.org/watch?app=pe5ngm31k20" height="600px"}
 
 :::
 
