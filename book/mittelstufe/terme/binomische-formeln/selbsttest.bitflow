@@ -1,0 +1,388 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "binomische-formeln-selbsttest",
+    "title": "Selbsttest: Binomische Formeln",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "free",
+    "allowSkip": true,
+    "pools": [],
+    "sections": [],
+    "timeLimit": 900
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Selbsttest: Binomische Formeln",
+        "markdown": "Zehn gemischte Aufgaben in 15 Minuten. Es gibt keine Hinweise – erst am Ende siehst du, was richtig war. Arbeite ohne Taschenrechner, Notizen auf Papier sind erlaubt.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "s1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus.",
+        "latex": "(x+7)^2=x^2+\\placeholder[b]{}x+\\placeholder[c]{}",
+        "blanks": {
+          "b": {
+            "expected": "14",
+            "accepted": []
+          },
+          "c": {
+            "expected": "49",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "s2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus.",
+        "latex": "(a-4)^2=a^2-\\placeholder[b]{}a+\\placeholder[c]{}",
+        "blanks": {
+          "b": {
+            "expected": "8",
+            "accepted": []
+          },
+          "c": {
+            "expected": "16",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "s3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus.",
+        "latex": "(x+10)(x-10)=x^2-\\placeholder[c]{}",
+        "blanks": {
+          "c": {
+            "expected": "100",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "s4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus.",
+        "latex": "(3x-1)^2=\\placeholder[a]{}x^2-\\placeholder[b]{}x+\\placeholder[c]{}",
+        "blanks": {
+          "a": {
+            "expected": "9",
+            "accepted": []
+          },
+          "b": {
+            "expected": "6",
+            "accepted": []
+          },
+          "c": {
+            "expected": "1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "s5",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $(a-b)^2 = a^2 - b^2$",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "s6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "x^2+18x+81=(x+\\placeholder[a]{})^2",
+        "blanks": {
+          "a": {
+            "expected": "9",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "s7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "16x^2-25=(\\placeholder[a]{}x+\\placeholder[b]{})(\\placeholder[c]{}x-\\placeholder[d]{})",
+        "blanks": {
+          "a": {
+            "expected": "4",
+            "accepted": []
+          },
+          "b": {
+            "expected": "5",
+            "accepted": []
+          },
+          "c": {
+            "expected": "4",
+            "accepted": []
+          },
+          "d": {
+            "expected": "5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "s8",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Berechne im Kopf mit einer binomischen Formel: $59^2$",
+        "expected": "3481",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "s9",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Berechne im Kopf mit einer binomischen Formel: $52 \\cdot 48$",
+        "expected": "2496",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "s10",
+      "type": "task-math",
+      "data": {
+        "instruction": "Vereinfache.",
+        "latex": "(x+5)^2-(x-5)^2=\\placeholder[b]{}x",
+        "blanks": {
+          "b": {
+            "expected": "20",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": true
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau dir in der Übersicht an, welche Aufgaben noch nicht geklappt haben, und wiederhole die passende Seite.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-s1",
+      "source": "start",
+      "target": "s1"
+    },
+    {
+      "id": "e-s1-z-s2",
+      "source": "s1",
+      "target": "s2"
+    },
+    {
+      "id": "e-s2-z-s3",
+      "source": "s2",
+      "target": "s3"
+    },
+    {
+      "id": "e-s3-z-s4",
+      "source": "s3",
+      "target": "s4"
+    },
+    {
+      "id": "e-s4-z-s5",
+      "source": "s4",
+      "target": "s5"
+    },
+    {
+      "id": "e-s5-z-s6",
+      "source": "s5",
+      "target": "s6"
+    },
+    {
+      "id": "e-s6-z-s7",
+      "source": "s6",
+      "target": "s7"
+    },
+    {
+      "id": "e-s7-z-s8",
+      "source": "s7",
+      "target": "s8"
+    },
+    {
+      "id": "e-s8-z-s9",
+      "source": "s8",
+      "target": "s9"
+    },
+    {
+      "id": "e-s9-z-s10",
+      "source": "s9",
+      "target": "s10"
+    },
+    {
+      "id": "e-s10-z-ende",
+      "source": "s10",
+      "target": "ende"
+    }
+  ]
+}

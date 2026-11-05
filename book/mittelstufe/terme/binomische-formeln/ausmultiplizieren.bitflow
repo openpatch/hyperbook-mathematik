@@ -1,0 +1,966 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "binomische-formeln-ausmultiplizieren",
+    "title": "Teste dich: Ausmultiplizieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Teste dich: Ausmultiplizieren",
+        "markdown": "Acht Aufgaben zu den drei binomischen Formeln. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "f-zuordnen",
+      "type": "task-matching",
+      "data": {
+        "instruction": "Ordne jeder Formel die richtige Summe zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "(a + b)²"
+            },
+            "right": {
+              "kind": "text",
+              "label": "a² + 2ab + b²"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "(a − b)²"
+            },
+            "right": {
+              "kind": "text",
+              "label": "a² − 2ab + b²"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "(a + b) · (a − b)"
+            },
+            "right": {
+              "kind": "text",
+              "label": "a² − b²"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-f-zuordnen",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "data": {
+        "title": "Die binomischen Formeln",
+        "markdown": "1. $(a+b)^2 = a^2 + 2ab + b^2$\n2. $(a-b)^2 = a^2 - 2ab + b^2$\n3. $(a+b)(a-b) = a^2 - b^2$"
+      }
+    },
+    {
+      "id": "f1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücken.",
+        "latex": "(x+3)^2=x^2+\\placeholder[b]{}x+\\placeholder[c]{}",
+        "blanks": {
+          "b": {
+            "expected": "6",
+            "accepted": []
+          },
+          "c": {
+            "expected": "9",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "3",
+            "feedback": {
+              "message": "Das Mittelglied ist 2 · a · b = 2 · x · 3.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "c",
+            "latex": "6",
+            "feedback": {
+              "message": "3² = 3 · 3 = 9, nicht 2 · 3.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-f1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "data": {
+        "title": "Erste binomische Formel",
+        "markdown": "$(a+b)^2 = a^2 + 2ab + b^2$ mit $a = x$ und $b = 3$:\n\n$x^2 + 2 \\cdot x \\cdot 3 + 3^2$"
+      }
+    },
+    {
+      "id": "f2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücken.",
+        "latex": "(y-5)^2=y^2-\\placeholder[b]{}y+\\placeholder[c]{}",
+        "blanks": {
+          "b": {
+            "expected": "10",
+            "accepted": []
+          },
+          "c": {
+            "expected": "25",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "5",
+            "feedback": {
+              "message": "Das Mittelglied ist 2 · y · 5.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "c",
+            "latex": "10",
+            "feedback": {
+              "message": "5² = 5 · 5 = 25.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-f2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "data": {
+        "title": "Zweite binomische Formel",
+        "markdown": "$(a-b)^2 = a^2 - 2ab + b^2$ mit $a = y$ und $b = 5$:\n\n$y^2 - 2 \\cdot y \\cdot 5 + 5^2$"
+      }
+    },
+    {
+      "id": "f3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücke.",
+        "latex": "(a+6)(a-6)=a^2-\\placeholder[c]{}",
+        "blanks": {
+          "c": {
+            "expected": "36",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "c",
+            "latex": "12",
+            "feedback": {
+              "message": "Hier wird quadriert: 6² = 36.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "c",
+            "latex": "6",
+            "feedback": {
+              "message": "Hier wird quadriert: 6² = 36.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-f3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "data": {
+        "title": "Dritte binomische Formel",
+        "markdown": "$(a+b)(a-b) = a^2 - b^2$. Die gemischten Glieder $+6a$ und $-6a$ heben sich auf. Übrig bleibt $a^2 - 6^2$."
+      }
+    },
+    {
+      "id": "f4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücken.",
+        "latex": "(2x+1)^2=\\placeholder[a]{}x^2+\\placeholder[b]{}x+\\placeholder[c]{}",
+        "blanks": {
+          "a": {
+            "expected": "4",
+            "accepted": []
+          },
+          "b": {
+            "expected": "4",
+            "accepted": []
+          },
+          "c": {
+            "expected": "1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "2",
+            "feedback": {
+              "message": "Die ganze 2x wird quadriert: (2x)² = 2x · 2x = 4x².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "b",
+            "latex": "2",
+            "feedback": {
+              "message": "Mittelglied: 2 · 2x · 1 = 4x.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-f4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "data": {
+        "title": "Klammer um 2x denken",
+        "markdown": "Hier ist $a = 2x$ und $b = 1$:\n\n$(2x)^2 + 2 \\cdot 2x \\cdot 1 + 1^2 = 4x^2 + 4x + 1$"
+      }
+    },
+    {
+      "id": "f5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücken.",
+        "latex": "(3a-2b)^2=\\placeholder[p]{}a^2-\\placeholder[q]{}ab+\\placeholder[r]{}b^2",
+        "blanks": {
+          "p": {
+            "expected": "9",
+            "accepted": []
+          },
+          "q": {
+            "expected": "12",
+            "accepted": []
+          },
+          "r": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "p",
+            "latex": "3",
+            "feedback": {
+              "message": "(3a)² = 9a².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "q",
+            "latex": "6",
+            "feedback": {
+              "message": "Mittelglied: 2 · 3a · 2b = 12ab.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "r",
+            "latex": "2",
+            "feedback": {
+              "message": "(2b)² = 4b².",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-f5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "data": {
+        "title": "Zweite binomische Formel",
+        "markdown": "Hier ist das erste Glied $3a$ und das zweite $2b$:\n\n$(3a)^2 - 2 \\cdot 3a \\cdot 2b + (2b)^2$"
+      }
+    },
+    {
+      "id": "f6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücken.",
+        "latex": "(5+4z)(5-4z)=\\placeholder[c]{}-\\placeholder[d]{}z^2",
+        "blanks": {
+          "c": {
+            "expected": "25",
+            "accepted": []
+          },
+          "d": {
+            "expected": "16",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "d",
+            "latex": "4",
+            "feedback": {
+              "message": "(4z)² = 16z².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "d",
+            "latex": "8",
+            "feedback": {
+              "message": "(4z)² = 4z · 4z = 16z².",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-f6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "data": {
+        "title": "Dritte binomische Formel",
+        "markdown": "$(a+b)(a-b) = a^2 - b^2$ mit $a = 5$ und $b = 4z$:\n\n$5^2 - (4z)^2$"
+      }
+    },
+    {
+      "id": "f7",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $(x+4)^2 = x^2 + 16$",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-f7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "data": {
+        "title": "Das Mittelglied fehlt",
+        "markdown": "Denk an das Quadrat aus vier Teilen: Es fehlen die zwei Rechtecke $2 \\cdot x \\cdot 4 = 8x$.\n\nRichtig ist $(x+4)^2 = x^2 + 8x + 16$."
+      }
+    },
+    {
+      "id": "f8",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus. Fülle die Lücken.",
+        "latex": "\\left(\\frac{1}{2}x+4\\right)^2=\\placeholder[a]{}x^2+\\placeholder[b]{}x+\\placeholder[c]{}",
+        "blanks": {
+          "a": {
+            "expected": "\\frac{1}{4}",
+            "accepted": []
+          },
+          "b": {
+            "expected": "4",
+            "accepted": []
+          },
+          "c": {
+            "expected": "16",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "\\frac{1}{2}",
+            "feedback": {
+              "message": "(½x)² = ½ · ½ · x² = ¼x².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "b",
+            "latex": "2",
+            "feedback": {
+              "message": "Mittelglied: 2 · ½x · 4 = 4x.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "hilfe-f8",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "data": {
+        "title": "Auch mit Brüchen",
+        "markdown": "$\\left(\\frac{1}{2}x\\right)^2 = \\frac{1}{4}x^2$\n\n$2 \\cdot \\frac{1}{2}x \\cdot 4 = 4x$\n\n$4^2 = 16$"
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt. Weiter geht es mit dem **Faktorisieren**.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-f-zuordnen",
+      "source": "start",
+      "target": "f-zuordnen"
+    },
+    {
+      "id": "e-f-zuordnen-a-falsch",
+      "source": "f-zuordnen",
+      "target": "hilfe-f-zuordnen",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f-zuordnen",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f-zuordnen-a-zurueck",
+      "source": "hilfe-f-zuordnen",
+      "target": "f-zuordnen",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f-zuordnen"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f-zuordnen-z-f1",
+      "source": "hilfe-f-zuordnen",
+      "target": "f1"
+    },
+    {
+      "id": "e-f-zuordnen-z-f1",
+      "source": "f-zuordnen",
+      "target": "f1"
+    },
+    {
+      "id": "e-f1-a-falsch",
+      "source": "f1",
+      "target": "hilfe-f1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f1-a-zurueck",
+      "source": "hilfe-f1",
+      "target": "f1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f1-z-f2",
+      "source": "hilfe-f1",
+      "target": "f2"
+    },
+    {
+      "id": "e-f1-z-f2",
+      "source": "f1",
+      "target": "f2"
+    },
+    {
+      "id": "e-f2-a-falsch",
+      "source": "f2",
+      "target": "hilfe-f2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f2-a-zurueck",
+      "source": "hilfe-f2",
+      "target": "f2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f2-z-f3",
+      "source": "hilfe-f2",
+      "target": "f3"
+    },
+    {
+      "id": "e-f2-z-f3",
+      "source": "f2",
+      "target": "f3"
+    },
+    {
+      "id": "e-f3-a-falsch",
+      "source": "f3",
+      "target": "hilfe-f3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f3-a-zurueck",
+      "source": "hilfe-f3",
+      "target": "f3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f3-z-f4",
+      "source": "hilfe-f3",
+      "target": "f4"
+    },
+    {
+      "id": "e-f3-z-f4",
+      "source": "f3",
+      "target": "f4"
+    },
+    {
+      "id": "e-f4-a-falsch",
+      "source": "f4",
+      "target": "hilfe-f4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f4-a-zurueck",
+      "source": "hilfe-f4",
+      "target": "f4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f4-z-f5",
+      "source": "hilfe-f4",
+      "target": "f5"
+    },
+    {
+      "id": "e-f4-z-f5",
+      "source": "f4",
+      "target": "f5"
+    },
+    {
+      "id": "e-f5-a-falsch",
+      "source": "f5",
+      "target": "hilfe-f5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f5-a-zurueck",
+      "source": "hilfe-f5",
+      "target": "f5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f5-z-f6",
+      "source": "hilfe-f5",
+      "target": "f6"
+    },
+    {
+      "id": "e-f5-z-f6",
+      "source": "f5",
+      "target": "f6"
+    },
+    {
+      "id": "e-f6-a-falsch",
+      "source": "f6",
+      "target": "hilfe-f6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f6-a-zurueck",
+      "source": "hilfe-f6",
+      "target": "f6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f6-z-f7",
+      "source": "hilfe-f6",
+      "target": "f7"
+    },
+    {
+      "id": "e-f6-z-f7",
+      "source": "f6",
+      "target": "f7"
+    },
+    {
+      "id": "e-f7-a-falsch",
+      "source": "f7",
+      "target": "hilfe-f7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f7-a-zurueck",
+      "source": "hilfe-f7",
+      "target": "f7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f7-z-f8",
+      "source": "hilfe-f7",
+      "target": "f8"
+    },
+    {
+      "id": "e-f7-z-f8",
+      "source": "f7",
+      "target": "f8"
+    },
+    {
+      "id": "e-f8-a-falsch",
+      "source": "f8",
+      "target": "hilfe-f8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "f8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-f8-a-zurueck",
+      "source": "hilfe-f8",
+      "target": "f8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "f8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-f8-z-ende",
+      "source": "hilfe-f8",
+      "target": "ende"
+    },
+    {
+      "id": "e-f8-z-ende",
+      "source": "f8",
+      "target": "ende"
+    }
+  ]
+}

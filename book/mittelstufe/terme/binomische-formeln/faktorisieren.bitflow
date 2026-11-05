@@ -1,0 +1,823 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "binomische-formeln-faktorisieren",
+    "title": "Teste dich: Faktorisieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Teste dich: Faktorisieren",
+        "markdown": "Schreibe die Summen als Produkt. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "k1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "x^2+8x+16=(x+\\placeholder[a]{})^2",
+        "blanks": {
+          "a": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "16",
+            "feedback": {
+              "message": "Gesucht ist die Zahl, deren Quadrat 16 ist.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "a",
+            "latex": "8",
+            "feedback": {
+              "message": "Gesucht ist die Zahl, deren Quadrat 16 ist.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-k1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "data": {
+        "title": "Quadrate suchen",
+        "markdown": "$16 = 4^2$. Prüfe das Mittelglied: $2 \\cdot x \\cdot 4 = 8x$ ✓"
+      }
+    },
+    {
+      "id": "k2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "x^2-12x+36=(x-\\placeholder[a]{})^2",
+        "blanks": {
+          "a": {
+            "expected": "6",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "36",
+            "feedback": {
+              "message": "Gesucht ist die Zahl, deren Quadrat 36 ist.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "a",
+            "latex": "12",
+            "feedback": {
+              "message": "Gesucht ist die Zahl, deren Quadrat 36 ist.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-k2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "data": {
+        "title": "Quadrate suchen",
+        "markdown": "$36 = 6^2$. Prüfe das Mittelglied: $2 \\cdot x \\cdot 6 = 12x$ ✓. Wegen $-12x$ ist es die zweite Formel."
+      }
+    },
+    {
+      "id": "k3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "x^2-81=(x+\\placeholder[a]{})(x-\\placeholder[b]{})",
+        "blanks": {
+          "a": {
+            "expected": "9",
+            "accepted": []
+          },
+          "b": {
+            "expected": "9",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-k3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "data": {
+        "title": "Differenz von zwei Quadraten",
+        "markdown": "$x^2 - 81 = x^2 - 9^2$. Das passt zur dritten Formel $a^2 - b^2 = (a+b)(a-b)$."
+      }
+    },
+    {
+      "id": "k4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "4x^2+20x+25=(\\placeholder[a]{}x+\\placeholder[b]{})^2",
+        "blanks": {
+          "a": {
+            "expected": "2",
+            "accepted": []
+          },
+          "b": {
+            "expected": "5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "4",
+            "feedback": {
+              "message": "Gesucht ist, was quadriert 4x² ergibt: (2x)² = 4x².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "b",
+            "latex": "25",
+            "feedback": {
+              "message": "Gesucht ist die Zahl, deren Quadrat 25 ist.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-k4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "data": {
+        "title": "Quadrate suchen",
+        "markdown": "$4x^2 = (2x)^2$ und $25 = 5^2$. Prüfe: $2 \\cdot 2x \\cdot 5 = 20x$ ✓"
+      }
+    },
+    {
+      "id": "k5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Faktorisiere.",
+        "latex": "49-y^2=(\\placeholder[a]{}+y)(\\placeholder[b]{}-y)",
+        "blanks": {
+          "a": {
+            "expected": "7",
+            "accepted": []
+          },
+          "b": {
+            "expected": "7",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-k5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "data": {
+        "title": "Differenz von zwei Quadraten",
+        "markdown": "$49 - y^2 = 7^2 - y^2 = (7+y)(7-y)$"
+      }
+    },
+    {
+      "id": "k6",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welcher Term lässt sich mit einer binomischen Formel als Produkt schreiben?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$x^2 + 10x + 25$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$x^2 + 9$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Eine Summe von zwei Quadraten passt zu keiner Formel.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$x^2 + 6x + 4$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "4 = 2², aber 2 · x · 2 = 4x, nicht 6x.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$x^2 + 4x - 4$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Das letzte Glied ist negativ, es ist kein Quadrat.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-k6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "data": {
+        "title": "So prüfst du",
+        "markdown": "1. Gibt es zwei Quadrate mit **plus** davor?\n2. Passt das Mittelglied $2ab$?\n\nBei $a^2 - b^2$ ohne Mittelglied passt die dritte Formel."
+      }
+    },
+    {
+      "id": "k7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Ergänze so, dass eine binomische Formel entsteht.",
+        "latex": "x^2+\\placeholder[b]{}x+49=(x+7)^2",
+        "blanks": {
+          "b": {
+            "expected": "14",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "7",
+            "feedback": {
+              "message": "Mittelglied: 2 · x · 7.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-k7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "data": {
+        "title": "Mittelglied",
+        "markdown": "Das Mittelglied ist immer $2ab$, hier $2 \\cdot x \\cdot 7$."
+      }
+    },
+    {
+      "id": "k8",
+      "type": "task-math",
+      "data": {
+        "instruction": "Ergänze so, dass eine binomische Formel entsteht.",
+        "latex": "9a^2-30ab+\\placeholder[c]{}=(3a-5b)^2",
+        "blanks": {
+          "c": {
+            "expected": "25b^2",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "c",
+            "latex": "25",
+            "feedback": {
+              "message": "Auch das b wird quadriert: (5b)² = 25b².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "c",
+            "latex": "5b^2",
+            "feedback": {
+              "message": "(5b)² = 5b · 5b = 25b².",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-k8",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "data": {
+        "title": "Letztes Glied",
+        "markdown": "Das letzte Glied ist $(5b)^2 = 5b \\cdot 5b$."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt. Weiter geht es mit den **Rechentricks**.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-k1",
+      "source": "start",
+      "target": "k1"
+    },
+    {
+      "id": "e-k1-a-falsch",
+      "source": "k1",
+      "target": "hilfe-k1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k1-a-zurueck",
+      "source": "hilfe-k1",
+      "target": "k1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k1-z-k2",
+      "source": "hilfe-k1",
+      "target": "k2"
+    },
+    {
+      "id": "e-k1-z-k2",
+      "source": "k1",
+      "target": "k2"
+    },
+    {
+      "id": "e-k2-a-falsch",
+      "source": "k2",
+      "target": "hilfe-k2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k2-a-zurueck",
+      "source": "hilfe-k2",
+      "target": "k2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k2-z-k3",
+      "source": "hilfe-k2",
+      "target": "k3"
+    },
+    {
+      "id": "e-k2-z-k3",
+      "source": "k2",
+      "target": "k3"
+    },
+    {
+      "id": "e-k3-a-falsch",
+      "source": "k3",
+      "target": "hilfe-k3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k3-a-zurueck",
+      "source": "hilfe-k3",
+      "target": "k3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k3-z-k4",
+      "source": "hilfe-k3",
+      "target": "k4"
+    },
+    {
+      "id": "e-k3-z-k4",
+      "source": "k3",
+      "target": "k4"
+    },
+    {
+      "id": "e-k4-a-falsch",
+      "source": "k4",
+      "target": "hilfe-k4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k4-a-zurueck",
+      "source": "hilfe-k4",
+      "target": "k4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k4-z-k5",
+      "source": "hilfe-k4",
+      "target": "k5"
+    },
+    {
+      "id": "e-k4-z-k5",
+      "source": "k4",
+      "target": "k5"
+    },
+    {
+      "id": "e-k5-a-falsch",
+      "source": "k5",
+      "target": "hilfe-k5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k5-a-zurueck",
+      "source": "hilfe-k5",
+      "target": "k5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k5-z-k6",
+      "source": "hilfe-k5",
+      "target": "k6"
+    },
+    {
+      "id": "e-k5-z-k6",
+      "source": "k5",
+      "target": "k6"
+    },
+    {
+      "id": "e-k6-a-falsch",
+      "source": "k6",
+      "target": "hilfe-k6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k6-a-zurueck",
+      "source": "hilfe-k6",
+      "target": "k6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k6-z-k7",
+      "source": "hilfe-k6",
+      "target": "k7"
+    },
+    {
+      "id": "e-k6-z-k7",
+      "source": "k6",
+      "target": "k7"
+    },
+    {
+      "id": "e-k7-a-falsch",
+      "source": "k7",
+      "target": "hilfe-k7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k7-a-zurueck",
+      "source": "hilfe-k7",
+      "target": "k7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k7-z-k8",
+      "source": "hilfe-k7",
+      "target": "k8"
+    },
+    {
+      "id": "e-k7-z-k8",
+      "source": "k7",
+      "target": "k8"
+    },
+    {
+      "id": "e-k8-a-falsch",
+      "source": "k8",
+      "target": "hilfe-k8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "k8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-k8-a-zurueck",
+      "source": "hilfe-k8",
+      "target": "k8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "k8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-k8-z-ende",
+      "source": "hilfe-k8",
+      "target": "ende"
+    },
+    {
+      "id": "e-k8-z-ende",
+      "source": "k8",
+      "target": "ende"
+    }
+  ]
+}
