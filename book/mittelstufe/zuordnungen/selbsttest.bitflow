@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "zuordnungen-selbsttest",
+    "title": "Selbsttest Zuordnungen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "free",
+    "allowSkip": true,
+    "sections": [],
+    "pools": [],
+    "timeLimit": 1800
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Selbsttest Zuordnungen",
+        "markdown": "Zehn Aufgaben in 30 Minuten, passend zur Ich-kann-Liste im Arbeitsheft (S. 35). Erst am Ende siehst du, was richtig war. Ein Taschenrechner ist erlaubt.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "s1",
+      "type": "task-fill-in-the-blank",
+      "position": {
+        "x": 0,
+        "y": 140
+      },
+      "data": {
+        "instruction": "Ergänze die Fachwörter.",
+        "text": "Der höchste Punkt eines Graphen in seiner Umgebung heißt [[1]], der tiefste [[2]].\nEin waagerechter Abschnitt bedeutet: Der Graph bleibt [[3]].",
+        "blanks": {
+          "1": [
+            "Hochpunkt"
+          ],
+          "2": [
+            "Tiefpunkt"
+          ],
+          "3": [
+            "konstant",
+            "gleich"
+          ]
+        },
+        "caseSensitive": false,
+        "trim": true,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "s2",
+      "type": "task-yes-no",
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "data": {
+        "question": "Ist **Note → Name** eine Zuordnung, bei der jeder Note genau ein Name zugeordnet wird?",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "s3",
+      "type": "task-table",
+      "position": {
+        "x": 0,
+        "y": 420
+      },
+      "data": {
+        "instruction": "Eine Portion Asia-Pfanne braucht 0,65 m² Ackerfläche. Fülle die Tabelle aus.",
+        "caption": "Portionen → Fläche",
+        "columns": [
+          {
+            "id": "x",
+            "header": "Portionen",
+            "kind": "number"
+          },
+          {
+            "id": "y",
+            "header": "Fläche in m²",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "x": {
+                "given": "1"
+              },
+              "y": {
+                "given": "0,65"
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "x": {
+                "given": "3"
+              },
+              "y": {
+                "accepted": [
+                  "1,95",
+                  "1.95"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "x": {
+                "given": "10"
+              },
+              "y": {
+                "accepted": [
+                  "6,5",
+                  "6.5"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "x": {
+                "given": "40"
+              },
+              "y": {
+                "accepted": [
+                  "26",
+                  "26"
+                ]
+              }
+            }
+          }
+        ],
+        "numberTolerance": 0.001,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "s4",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 560
+      },
+      "data": {
+        "instruction": "Bei welcher Tabelle sind die **Quotienten** y : x gleich?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "| x | 4 | 10 | 15 |\n|---|---|---|---|\n| y | 6 | 15 | 22,5 |",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "| x | 4 | 10 | 15 |\n|---|---|---|---|\n| y | 6 | 12 | 17 |",
+            "correct": false
+          },
+          {
+            "id": "c3",
+            "markdown": "| x | 4 | 10 | 15 |\n|---|---|---|---|\n| y | 30 | 12 | 8 |",
+            "correct": false
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "s5",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "data": {
+        "instruction": "Der Proportionalitätsfaktor ist k = 2,25 (m² pro Burger). Wie viel Fläche brauchen 12 Burger?",
+        "expected": "27",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "m²"
+      }
+    },
+    {
+      "id": "s6",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "data": {
+        "instruction": "6 Brötchen kosten 2,40 €. Wie viel kosten 9 Brötchen?",
+        "expected": "3.6",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "€"
+      }
+    },
+    {
+      "id": "s7",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "data": {
+        "instruction": "Wie sieht der Graph einer **antiproportionalen** Zuordnung aus?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "Eine Hyperbel, die fällt und sich den Achsen nähert",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "Eine Halbgerade, die im Ursprung beginnt",
+            "correct": false
+          },
+          {
+            "id": "c3",
+            "markdown": "Eine Gerade, die nicht durch den Ursprung geht",
+            "correct": false
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "s8",
+      "type": "task-table",
+      "position": {
+        "x": 0,
+        "y": 1120
+      },
+      "data": {
+        "instruction": "Ein Vorrat reicht für 4 Personen 30 Tage. Fülle die Tabelle aus.",
+        "caption": "Personen → Tage",
+        "columns": [
+          {
+            "id": "x",
+            "header": "Personen",
+            "kind": "number"
+          },
+          {
+            "id": "y",
+            "header": "Tage",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "x": {
+                "given": "1"
+              },
+              "y": {
+                "accepted": [
+                  "120",
+                  "120"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "x": {
+                "given": "4"
+              },
+              "y": {
+                "given": "30"
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "x": {
+                "given": "5"
+              },
+              "y": {
+                "accepted": [
+                  "24",
+                  "24"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "x": {
+                "given": "8"
+              },
+              "y": {
+                "accepted": [
+                  "15",
+                  "15"
+                ]
+              }
+            }
+          }
+        ],
+        "numberTolerance": 0.001,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "s9",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "instruction": "Ein Vorrat reicht 8 Kindern 15 Tage. Wie lange reicht er 12 Kindern?",
+        "expected": "10",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "Tage"
+      }
+    },
+    {
+      "id": "s10",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "data": {
+        "instruction": "Mit 10 Jahren ist Ben 1,40 m groß. Welches Modell passt zu **Alter → Körpergröße**?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "keins von beidem – man kann die Größe nicht mit dem Dreisatz berechnen",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "proportional – mit 20 Jahren ist Ben 2,80 m groß",
+            "correct": false
+          },
+          {
+            "id": "c3",
+            "markdown": "antiproportional – mit 20 Jahren ist Ben 0,70 m groß",
+            "correct": false
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Auswertung",
+        "markdown": "Schau dir an, was noch nicht geklappt hat, und wiederhole die passende Seite. Kreuze dann im Arbeitsheft (S. 35) an, wie sicher du dich fühlst.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-s1",
+      "source": "start",
+      "target": "s1"
+    },
+    {
+      "id": "e-s1-s2",
+      "source": "s1",
+      "target": "s2"
+    },
+    {
+      "id": "e-s2-s3",
+      "source": "s2",
+      "target": "s3"
+    },
+    {
+      "id": "e-s3-s4",
+      "source": "s3",
+      "target": "s4"
+    },
+    {
+      "id": "e-s4-s5",
+      "source": "s4",
+      "target": "s5"
+    },
+    {
+      "id": "e-s5-s6",
+      "source": "s5",
+      "target": "s6"
+    },
+    {
+      "id": "e-s6-s7",
+      "source": "s6",
+      "target": "s7"
+    },
+    {
+      "id": "e-s7-s8",
+      "source": "s7",
+      "target": "s8"
+    },
+    {
+      "id": "e-s8-s9",
+      "source": "s8",
+      "target": "s9"
+    },
+    {
+      "id": "e-s9-s10",
+      "source": "s9",
+      "target": "s10"
+    },
+    {
+      "id": "e-s10-ende",
+      "source": "s10",
+      "target": "ende"
+    }
+  ]
+}

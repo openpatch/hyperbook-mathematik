@@ -1,0 +1,744 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "zuordnungen-training",
+    "title": "Trainingslager Zuordnungen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Trainingslager Zuordnungen",
+        "markdown": "Zehn Aufgaben: erst proportional, dann antiproportional, dann gemischt. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch. Ein Taschenrechner ist erlaubt.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "t1",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 140
+      },
+      "data": {
+        "instruction": "Welche Tabelle gehört zu einer **proportionalen** Zuordnung?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "| x | 2 | 4 | 6 |\n|---|---|---|---|\n| y | 3 | 6 | 9 |",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "| x | 2 | 4 | 6 |\n|---|---|---|---|\n| y | 3 | 5 | 7 |",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Prüfe die Quotienten: 3 : 2 = 1,5, aber 5 : 4 = 1,25.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "c3",
+            "markdown": "| x | 2 | 4 | 6 |\n|---|---|---|---|\n| y | 12 | 6 | 4 |",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Hier gehört zum Doppelten die Hälfte – das ist antiproportional.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t2",
+      "type": "task-table",
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "data": {
+        "instruction": "Eine Portion Linsencurry braucht 1,25 m² Ackerfläche. Fülle die Tabelle aus.",
+        "caption": "Portionen → Fläche",
+        "columns": [
+          {
+            "id": "x",
+            "header": "Portionen",
+            "kind": "number"
+          },
+          {
+            "id": "y",
+            "header": "Fläche in m²",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "x": {
+                "given": "1"
+              },
+              "y": {
+                "given": "1,25"
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "x": {
+                "given": "2"
+              },
+              "y": {
+                "accepted": [
+                  "2,5",
+                  "2.5"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "x": {
+                "given": "5"
+              },
+              "y": {
+                "accepted": [
+                  "6,25",
+                  "6.25"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "x": {
+                "given": "8"
+              },
+              "y": {
+                "accepted": [
+                  "10",
+                  "10"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r5",
+            "cells": {
+              "x": {
+                "given": "20"
+              },
+              "y": {
+                "accepted": [
+                  "25",
+                  "25"
+                ]
+              }
+            }
+          }
+        ],
+        "numberTolerance": 0.001,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t3",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 420
+      },
+      "data": {
+        "instruction": "7 Hefte kosten 11,90 €. Wie viel kosten 3 Hefte?",
+        "expected": "5.1",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [
+          {
+            "value": "1.7",
+            "feedback": {
+              "message": "Das ist der Preis für **ein** Heft. Multipliziere noch mit 3.",
+              "severity": "warning"
+            }
+          },
+          {
+            "value": "27.77",
+            "feedback": {
+              "message": "Weniger Hefte kosten weniger. Teile erst durch 7, dann mal 3.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "€"
+      }
+    },
+    {
+      "id": "h3",
+      "type": "title-simple",
+      "position": {
+        "x": 420,
+        "y": 560
+      },
+      "data": {
+        "title": "Hinweis: Dreisatz",
+        "markdown": "| Hefte | 7 | 1 | 3 |\n|---|---|---|---|\n| Preis in € | 11,90 | ? | ? |\n\nTeile **beide** Größen durch 7. Multipliziere dann **beide** mit 3."
+      }
+    },
+    {
+      "id": "t4",
+      "type": "task-function-plot",
+      "position": {
+        "x": 0,
+        "y": 560
+      },
+      "data": {
+        "instruction": "Zehn Portionen Salat enthalten 5 kg Tomaten. Zeichne den Graphen der Zuordnung Portionen → Tomaten in kg: Ziehe die Punkte an die richtige Stelle.",
+        "axes": {
+          "x": {
+            "label": "Portionen",
+            "min": 0,
+            "max": 10,
+            "step": 1
+          },
+          "y": {
+            "label": "Tomaten in kg",
+            "min": 0,
+            "max": 6,
+            "step": 0.5
+          }
+        },
+        "target": "0.5x",
+        "shown": [],
+        "handles": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "snap": "half",
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t5",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "data": {
+        "instruction": "Welche Zuordnung ist **antiproportional**?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "Anzahl gleich starker Pumpen → Zeit, bis der Pool leer ist",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "Anzahl Brötchen → Preis",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Doppelt so viele Brötchen kosten doppelt so viel – proportional.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "c3",
+            "markdown": "Brenndauer einer Kerze → Länge der Kerze",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Je mehr – desto weniger, aber nach doppelter Zeit ist die Kerze nicht halb so lang.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t6",
+      "type": "task-table",
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "data": {
+        "instruction": "Ein Futtervorrat reicht für 2 Kaninchen 36 Tage. Fülle die Tabelle aus.",
+        "caption": "Kaninchen → Tage",
+        "columns": [
+          {
+            "id": "x",
+            "header": "Kaninchen",
+            "kind": "number"
+          },
+          {
+            "id": "y",
+            "header": "Tage",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "x": {
+                "given": "1"
+              },
+              "y": {
+                "accepted": [
+                  "72",
+                  "72"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "x": {
+                "given": "2"
+              },
+              "y": {
+                "given": "36"
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "x": {
+                "given": "3"
+              },
+              "y": {
+                "accepted": [
+                  "24",
+                  "24"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "x": {
+                "given": "4"
+              },
+              "y": {
+                "accepted": [
+                  "18",
+                  "18"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r5",
+            "cells": {
+              "x": {
+                "given": "6"
+              },
+              "y": {
+                "accepted": [
+                  "12",
+                  "12"
+                ]
+              }
+            }
+          }
+        ],
+        "numberTolerance": 0.001,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t7",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "data": {
+        "instruction": "5 Maler streichen eine Schule in 12 Tagen. Wie lange brauchen 6 Maler?",
+        "expected": "10",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [
+          {
+            "value": "14.4",
+            "feedback": {
+              "message": "Mehr Maler brauchen weniger Zeit. Die Zuordnung ist antiproportional.",
+              "severity": "warning"
+            }
+          },
+          {
+            "value": "60",
+            "feedback": {
+              "message": "Das ist die Zeit für **einen** Maler. Teile noch durch 6.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "Tage"
+      }
+    },
+    {
+      "id": "h7",
+      "type": "title-simple",
+      "position": {
+        "x": 420,
+        "y": 1120
+      },
+      "data": {
+        "title": "Hinweis: antiproportionaler Dreisatz",
+        "markdown": "| Maler | 5 | 1 | 6 |\n|---|---|---|---|\n| Tage | 12 | ? | ? |\n\nEin Maler allein braucht **5-mal so lange**: 12 · 5. Sechs Maler brauchen davon nur ein Sechstel."
+      }
+    },
+    {
+      "id": "t8",
+      "type": "task-function-plot",
+      "position": {
+        "x": 0,
+        "y": 1120
+      },
+      "data": {
+        "instruction": "Ein Vorrat reicht für 1 Person 24 Tage. Zeichne den Graphen der Zuordnung Personen → Tage.",
+        "axes": {
+          "x": {
+            "label": "Personen",
+            "min": 0,
+            "max": 12,
+            "step": 1
+          },
+          "y": {
+            "label": "Tage",
+            "min": 0,
+            "max": 26,
+            "step": 2
+          }
+        },
+        "target": "24/x",
+        "shown": [],
+        "handles": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          12
+        ],
+        "snap": "half",
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t9",
+      "type": "task-matching",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "instruction": "Ordne jeder Situation das passende Modell zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "Fläche eines Ackers → Anzahl Portionen"
+            },
+            "right": {
+              "kind": "text",
+              "label": "proportional"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "Portionen pro Tag → Anzahl Tage"
+            },
+            "right": {
+              "kind": "text",
+              "label": "antiproportional"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "Strecke → Taxipreis mit Grundgebühr"
+            },
+            "right": {
+              "kind": "text",
+              "label": "keins von beidem"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "t10",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "data": {
+        "instruction": "Ein Acker reicht bei 50 Portionen pro Tag 120 Tage. Wie lange reicht er bei 75 Portionen pro Tag?",
+        "expected": "80",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [
+          {
+            "value": "180",
+            "feedback": {
+              "message": "Mehr Portionen pro Tag – dann reicht der Acker **weniger** lange.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "Tage"
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Geschafft!",
+        "markdown": "In der Übersicht siehst du, was schon gut klappt. Wenn du fit bist, mach den **Selbsttest**.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-t1",
+      "source": "start",
+      "target": "t1"
+    },
+    {
+      "id": "e-t1-t2",
+      "source": "t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t2-t3",
+      "source": "t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t3-h3",
+      "source": "t3",
+      "target": "h3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-t3-t4",
+      "source": "t3",
+      "target": "t4",
+      "label": "richtig"
+    },
+    {
+      "id": "e-h3-t3",
+      "source": "h3",
+      "target": "t3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-h3-t4",
+      "source": "h3",
+      "target": "t4",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t7-h7",
+      "source": "t7",
+      "target": "h7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-t7-t8",
+      "source": "t7",
+      "target": "t8",
+      "label": "richtig"
+    },
+    {
+      "id": "e-h7-t7",
+      "source": "h7",
+      "target": "t7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-h7-t8",
+      "source": "h7",
+      "target": "t8",
+      "label": "weiter"
+    },
+    {
+      "id": "e-t4-t5",
+      "source": "t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t5-t6",
+      "source": "t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t6-t7",
+      "source": "t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t8-t9",
+      "source": "t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t9-t10",
+      "source": "t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t10-ende",
+      "source": "t10",
+      "target": "ende"
+    }
+  ]
+}

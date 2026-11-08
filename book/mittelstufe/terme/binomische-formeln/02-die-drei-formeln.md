@@ -172,7 +172,7 @@ $$
 
 ::::::tabs
 
-::::tab{title="1. Formel"}
+::::tab{title="Erste Formel"}
 
 :::multievent
 
@@ -185,7 +185,7 @@ $$
 
 ::::
 
-::::tab{title="2. Formel"}
+::::tab{title="Zweite Formel"}
 
 :::multievent
 
@@ -198,7 +198,7 @@ $$
 
 ::::
 
-::::tab{title="3. Formel"}
+::::tab{title="Dritte Formel"}
 
 :::multievent
 
