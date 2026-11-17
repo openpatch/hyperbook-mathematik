@@ -2,6 +2,7 @@
 name: Selbsttest
 index: 6
 lang: de
+permaid: mittelstufe-terme-binomisch-selbsttest
 ---
 
 # Selbsttest: Binomische Formeln

@@ -2,6 +2,7 @@
 name: "Rückwärts: Faktorisieren"
 index: 3
 lang: de
+permaid: mittelstufe-terme-binomisch-faktorisieren
 ---
 
 # Rückwärts: Faktorisieren

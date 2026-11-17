@@ -2,6 +2,7 @@
 name: Das Quadrat-Puzzle
 index: 1
 lang: de
+permaid: mittelstufe-terme-binomisch-quadrat-puzzle
 ---
 
 # Das Quadrat-Puzzle: Was ist $(a + b)^2$?

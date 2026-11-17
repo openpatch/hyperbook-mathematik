@@ -1,0 +1,976 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "zwei-klammern-training",
+    "title": "Training: Zwei Klammern multiplizieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Training: Zwei Klammern multiplizieren",
+        "markdown": "Zehn Aufgaben zum Multiplizieren von zwei Klammern. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "t1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus.",
+        "latex": "(a+b)(c+d)=\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "ac+ad+bc+bd",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "ac+bd",
+            "feedback": {
+              "message": "Es fehlen zwei Produkte. Jedes Glied wird mit jedem multipliziert.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-t1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Vier Bögen: $a \\cdot c$, $a \\cdot d$, $b \\cdot c$, $b \\cdot d$."
+      }
+    },
+    {
+      "id": "t2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus und fasse zusammen.",
+        "latex": "(x+3)(x+5)=x^2+\\placeholder[a]{}x+\\placeholder[b]{}",
+        "blanks": {
+          "a": {
+            "expected": "8",
+            "accepted": []
+          },
+          "b": {
+            "expected": "15",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "8",
+            "feedback": {
+              "message": "3 · 5 = 15. Die Zahlen werden multipliziert.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-t2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$x \\cdot x = x^2$, $x \\cdot 5 = 5x$, $3 \\cdot x = 3x$, $3 \\cdot 5 = 15$. Dann $5x + 3x = 8x$."
+      }
+    },
+    {
+      "id": "t3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus und fasse zusammen.",
+        "latex": "(x-2)(x+9)=x^2+\\placeholder[a]{}x+\\placeholder[b]{}",
+        "blanks": {
+          "a": {
+            "expected": "7",
+            "accepted": []
+          },
+          "b": {
+            "expected": "-18",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "11",
+            "feedback": {
+              "message": "−2 · x = −2x. Also 9x − 2x = 7x.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "b",
+            "latex": "18",
+            "feedback": {
+              "message": "(−2) · 9 = −18.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-t3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Malkreuz: $x \\cdot x = x^2$, $x \\cdot 9 = 9x$, $(-2) \\cdot x = -2x$, $(-2) \\cdot 9 = -18$."
+      }
+    },
+    {
+      "id": "t4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus und fasse zusammen.",
+        "latex": "(x-4)(x-5)=x^2+\\placeholder[a]{}x+\\placeholder[b]{}",
+        "blanks": {
+          "a": {
+            "expected": "-9",
+            "accepted": []
+          },
+          "b": {
+            "expected": "20",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "-20",
+            "feedback": {
+              "message": "(−4) · (−5) = +20.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-t4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$(-4) \\cdot (-5) = +20$ und $-5x - 4x = -9x$."
+      }
+    },
+    {
+      "id": "t5",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Ein Grundstück ist $30$ m breit und $20$ m tief. Es wird um $4$ m breiter und $5$ m tiefer. Um wie viele m² wächst es?",
+        "expected": "250",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "230",
+            "feedback": {
+              "message": "Die Ecke 4 · 5 = 20 m² fehlt.",
+              "severity": "warning"
+            }
+          },
+          {
+            "value": "850",
+            "feedback": {
+              "message": "Gefragt ist der Zuwachs, nicht die neue Fläche.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-t5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Neue Fläche $34 \\cdot 25 = 850$ m², alte Fläche $600$ m². Oder in Teilen: $30 \\cdot 5 + 4 \\cdot 20 + 4 \\cdot 5$."
+      }
+    },
+    {
+      "id": "t6",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welcher Term ist $(x - 2) - (x + 9)$?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$-11$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$x^2 + 7x - 18$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Zwischen den Klammern steht minus, nicht mal.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$2x + 7$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Das wäre die Summe der Klammern.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$-7$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Das Minus vor der zweiten Klammer gilt auch für die 9.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-t6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Zwischen den Klammern steht ein Minus. Löse die Minusklammer auf: $x - 2 - x - 9$."
+      }
+    },
+    {
+      "id": "t7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Multipliziere aus und fasse zusammen.",
+        "latex": "(2x-3)(x+4)=\\placeholder[a]{}x^2+\\placeholder[b]{}x+\\placeholder[c]{}",
+        "blanks": {
+          "a": {
+            "expected": "2",
+            "accepted": []
+          },
+          "b": {
+            "expected": "5",
+            "accepted": []
+          },
+          "c": {
+            "expected": "-12",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "11",
+            "feedback": {
+              "message": "(−3) · x = −3x. Also 8x − 3x = 5x.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-t7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$2x \\cdot x = 2x^2$, $2x \\cdot 4 = 8x$, $(-3) \\cdot x = -3x$, $(-3) \\cdot 4 = -12$."
+      }
+    },
+    {
+      "id": "t8",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Wie viele Produkte entstehen bei $(a + b + c)(x + y)$, bevor man zusammenfasst?",
+        "expected": "6",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "5",
+            "feedback": {
+              "message": "Nicht addieren: Jedes der 3 Glieder wird mit jedem der 2 Glieder multipliziert.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-t8",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Drei Glieder mal zwei Glieder: $3 \\cdot 2$."
+      }
+    },
+    {
+      "id": "t9",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $(x + 4)(x - 1) = x^2 + 3x - 4$",
+        "correctAnswer": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "hilfe-t9",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$x^2 - x + 4x - 4 = x^2 + 3x - 4$."
+      }
+    },
+    {
+      "id": "t10",
+      "type": "task-math",
+      "data": {
+        "instruction": "Vereinfache.",
+        "latex": "(x+1)(x+2)-x^2=\\placeholder[a]{}x+\\placeholder[b]{}",
+        "blanks": {
+          "a": {
+            "expected": "3",
+            "accepted": []
+          },
+          "b": {
+            "expected": "2",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      }
+    },
+    {
+      "id": "hilfe-t10",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1400
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Erst ausmultiplizieren: $x^2 + 3x + 2$. Dann $x^2$ abziehen."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-t1",
+      "source": "start",
+      "target": "t1"
+    },
+    {
+      "id": "e-t1-a-falsch",
+      "source": "t1",
+      "target": "hilfe-t1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t1-a-zurueck",
+      "source": "hilfe-t1",
+      "target": "t1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t1-z-t2",
+      "source": "hilfe-t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t1-z-t2",
+      "source": "t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t2-a-falsch",
+      "source": "t2",
+      "target": "hilfe-t2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t2-a-zurueck",
+      "source": "hilfe-t2",
+      "target": "t2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t2-z-t3",
+      "source": "hilfe-t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t2-z-t3",
+      "source": "t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t3-a-falsch",
+      "source": "t3",
+      "target": "hilfe-t3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t3-a-zurueck",
+      "source": "hilfe-t3",
+      "target": "t3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t3-z-t4",
+      "source": "hilfe-t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t3-z-t4",
+      "source": "t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t4-a-falsch",
+      "source": "t4",
+      "target": "hilfe-t4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t4-a-zurueck",
+      "source": "hilfe-t4",
+      "target": "t4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t4-z-t5",
+      "source": "hilfe-t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t4-z-t5",
+      "source": "t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t5-a-falsch",
+      "source": "t5",
+      "target": "hilfe-t5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t5-a-zurueck",
+      "source": "hilfe-t5",
+      "target": "t5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t5-z-t6",
+      "source": "hilfe-t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t5-z-t6",
+      "source": "t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t6-a-falsch",
+      "source": "t6",
+      "target": "hilfe-t6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t6-a-zurueck",
+      "source": "hilfe-t6",
+      "target": "t6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t6-z-t7",
+      "source": "hilfe-t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t6-z-t7",
+      "source": "t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t7-a-falsch",
+      "source": "t7",
+      "target": "hilfe-t7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t7-a-zurueck",
+      "source": "hilfe-t7",
+      "target": "t7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t7-z-t8",
+      "source": "hilfe-t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t7-z-t8",
+      "source": "t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t8-a-falsch",
+      "source": "t8",
+      "target": "hilfe-t8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t8-a-zurueck",
+      "source": "hilfe-t8",
+      "target": "t8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t8-z-t9",
+      "source": "hilfe-t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t8-z-t9",
+      "source": "t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t9-a-falsch",
+      "source": "t9",
+      "target": "hilfe-t9",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t9",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t9-a-zurueck",
+      "source": "hilfe-t9",
+      "target": "t9",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t9"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t9-z-t10",
+      "source": "hilfe-t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t9-z-t10",
+      "source": "t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t10-a-falsch",
+      "source": "t10",
+      "target": "hilfe-t10",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t10",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t10-a-zurueck",
+      "source": "hilfe-t10",
+      "target": "t10",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t10"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t10-z-ende",
+      "source": "hilfe-t10",
+      "target": "ende"
+    },
+    {
+      "id": "e-t10-z-ende",
+      "source": "t10",
+      "target": "ende"
+    }
+  ]
+}

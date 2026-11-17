@@ -1,0 +1,994 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "terme-aufstellen-training",
+    "title": "Training: Terme aufstellen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Training: Terme aufstellen",
+        "markdown": "Zehn Aufgaben zum Aufstellen und Berechnen von Termen. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "t1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Stelle den Term auf: das Dreifache der Summe aus $x$ und $4$.",
+        "latex": "\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "3(x+4)",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "3x+4",
+            "feedback": {
+              "message": "Das Dreifache gilt für die ganze Summe. Setze eine Klammer.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-t1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "„Das Dreifache **der Summe**“: Erst die Summe $x + 4$ bilden, dann mal $3$. Also $3 \\cdot (x + 4)$."
+      }
+    },
+    {
+      "id": "t2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Stelle den Term auf: Subtrahiere $7$ vom Doppelten von $a$.",
+        "latex": "\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "2a-7",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "7-2a",
+            "feedback": {
+              "message": "Bei „subtrahiere A von B“ steht B vorne.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-t2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "„Subtrahiere $7$ **von** $2a$“ heißt: Von $2a$ wird $7$ weggenommen, also $2a - 7$."
+      }
+    },
+    {
+      "id": "t3",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welchen Typ hat der Term $(x + 6) : 8$?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "Summe",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Die Addition kommt zuerst, weil sie in der Klammer steht.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o2",
+            "markdown": "Quotient",
+            "correct": true
+          },
+          {
+            "id": "o3",
+            "markdown": "Produkt",
+            "correct": false
+          },
+          {
+            "id": "o4",
+            "markdown": "Differenz",
+            "correct": false
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-t3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Der Typ richtet sich nach der Rechnung, die **zuletzt** ausgeführt wird. Erst wird die Klammer berechnet, dann geteilt."
+      }
+    },
+    {
+      "id": "t4",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Ein Beet hat die Fläche $x \\cdot (7 - x)$ in m². Berechne die Fläche für $x = 2{,}5$.",
+        "expected": "11.25",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "17.5",
+            "feedback": {
+              "message": "Du hast nur 7 · 2,5 gerechnet. Berechne zuerst die Klammer: 7 − 2,5.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-t4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$7 - 2{,}5 = 4{,}5$. Dann $2{,}5 \\cdot 4{,}5$."
+      }
+    },
+    {
+      "id": "t5",
+      "type": "task-matching",
+      "data": {
+        "instruction": "Ordne jedem Text den passenden Term zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "die Summe aus dem Doppelten von x und 5"
+            },
+            "right": {
+              "kind": "text",
+              "label": "2x + 5"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "das Doppelte der Summe aus x und 5"
+            },
+            "right": {
+              "kind": "text",
+              "label": "2 · (x + 5)"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "das Quadrat der Summe aus x und 5"
+            },
+            "right": {
+              "kind": "text",
+              "label": "(x + 5)²"
+            }
+          },
+          {
+            "id": "p4",
+            "left": {
+              "kind": "text",
+              "label": "die Summe aus dem Quadrat von x und 5"
+            },
+            "right": {
+              "kind": "text",
+              "label": "x² + 5"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-t5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Achte darauf, was zuerst gebildet wird. „Das Doppelte **der Summe**“ heißt: Erst die Summe, dann verdoppeln. Dafür braucht man eine Klammer."
+      }
+    },
+    {
+      "id": "t6",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Ein Gehege wird an einer Mauer gebaut. Mit $30$ m Zaun werden drei Seiten eingezäunt. Die beiden Seiten an der Mauer sind je $x$ m lang. Welcher Term beschreibt die Fläche?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$x \\cdot (30 - 2x)$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$x \\cdot (30 - x)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Zwei Seiten sind x lang. Vom Zaun werden also 2x verbraucht.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$2x + (30 - 2x)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Das ist die Zaunlänge, nicht die Fläche.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$x \\cdot 30$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Die Seite gegenüber der Mauer ist nicht 30 m lang.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-t6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Zeichne eine Skizze. Zwei Seiten sind $x$ lang. Für die dritte Seite bleibt $30 - 2x$. Fläche = Länge mal Breite."
+      }
+    },
+    {
+      "id": "t7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Ein Quader hat eine quadratische Grundfläche mit der Seitenlänge $x$ und die Höhe $y$. Gib einen Term für die Länge aller Kanten an.",
+        "latex": "\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "8x+4y",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "4x+4y",
+            "feedback": {
+              "message": "Die Grundfläche und die Deckfläche haben je 4 Kanten der Länge x.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-t7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Ein Quader hat $12$ Kanten. Grundfläche und Deckfläche haben je $4$ Kanten der Länge $x$, dazu kommen $4$ senkrechte Kanten der Länge $y$."
+      }
+    },
+    {
+      "id": "t8",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Ein Handyvertrag kostet $9{,}99$ € im Monat und $0{,}09$ € pro Gesprächsminute. Die Kosten sind $9{,}99 + 0{,}09 \\cdot m$. Wie viel Euro kostet ein Monat mit $120$ Minuten?",
+        "expected": "20.79",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "10.8",
+            "feedback": {
+              "message": "Rechne erst 0,09 · 120 und addiere dann 9,99 (Punkt vor Strich).",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-t8",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Punkt vor Strich: $0{,}09 \\cdot 120 = 10{,}80$. Dann $9{,}99 + 10{,}80$."
+      }
+    },
+    {
+      "id": "t9",
+      "type": "task-math",
+      "data": {
+        "instruction": "Ein Preis $x$ wird um $20\\,\\%$ erhöht. Gib den neuen Preis als Produkt an.",
+        "latex": "\\placeholder[t]{}",
+        "blanks": {
+          "t": {
+            "expected": "1.2x",
+            "accepted": [
+              "1{,}2x",
+              "1,2x",
+              "\\frac{6}{5}x"
+            ]
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "t",
+            "latex": "x+20",
+            "feedback": {
+              "message": "Prozent bedeutet einen Anteil vom Preis, nicht 20 €.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "t",
+            "latex": "0.2x",
+            "feedback": {
+              "message": "0,2x ist nur die Erhöhung. Der alte Preis kommt noch dazu.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "hilfe-t9",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$100\\,\\% + 20\\,\\% = 120\\,\\%$. Der neue Preis ist $1{,}2 \\cdot x$."
+      }
+    },
+    {
+      "id": "t10",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Sind die Terme $x - 5$ und $5 - x$ wertgleich?",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      }
+    },
+    {
+      "id": "hilfe-t10",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1400
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Setze eine Zahl ein, zum Beispiel $x = 10$: $10 - 5 = 5$, aber $5 - 10 = -5$. Ein Gegenbeispiel genügt."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-t1",
+      "source": "start",
+      "target": "t1"
+    },
+    {
+      "id": "e-t1-a-falsch",
+      "source": "t1",
+      "target": "hilfe-t1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t1-a-zurueck",
+      "source": "hilfe-t1",
+      "target": "t1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t1-z-t2",
+      "source": "hilfe-t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t1-z-t2",
+      "source": "t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t2-a-falsch",
+      "source": "t2",
+      "target": "hilfe-t2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t2-a-zurueck",
+      "source": "hilfe-t2",
+      "target": "t2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t2-z-t3",
+      "source": "hilfe-t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t2-z-t3",
+      "source": "t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t3-a-falsch",
+      "source": "t3",
+      "target": "hilfe-t3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t3-a-zurueck",
+      "source": "hilfe-t3",
+      "target": "t3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t3-z-t4",
+      "source": "hilfe-t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t3-z-t4",
+      "source": "t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t4-a-falsch",
+      "source": "t4",
+      "target": "hilfe-t4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t4-a-zurueck",
+      "source": "hilfe-t4",
+      "target": "t4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t4-z-t5",
+      "source": "hilfe-t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t4-z-t5",
+      "source": "t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t5-a-falsch",
+      "source": "t5",
+      "target": "hilfe-t5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t5-a-zurueck",
+      "source": "hilfe-t5",
+      "target": "t5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t5-z-t6",
+      "source": "hilfe-t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t5-z-t6",
+      "source": "t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t6-a-falsch",
+      "source": "t6",
+      "target": "hilfe-t6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t6-a-zurueck",
+      "source": "hilfe-t6",
+      "target": "t6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t6-z-t7",
+      "source": "hilfe-t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t6-z-t7",
+      "source": "t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t7-a-falsch",
+      "source": "t7",
+      "target": "hilfe-t7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t7-a-zurueck",
+      "source": "hilfe-t7",
+      "target": "t7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t7-z-t8",
+      "source": "hilfe-t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t7-z-t8",
+      "source": "t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t8-a-falsch",
+      "source": "t8",
+      "target": "hilfe-t8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t8-a-zurueck",
+      "source": "hilfe-t8",
+      "target": "t8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t8-z-t9",
+      "source": "hilfe-t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t8-z-t9",
+      "source": "t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t9-a-falsch",
+      "source": "t9",
+      "target": "hilfe-t9",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t9",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t9-a-zurueck",
+      "source": "hilfe-t9",
+      "target": "t9",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t9"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t9-z-t10",
+      "source": "hilfe-t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t9-z-t10",
+      "source": "t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t10-a-falsch",
+      "source": "t10",
+      "target": "hilfe-t10",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t10",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t10-a-zurueck",
+      "source": "hilfe-t10",
+      "target": "t10",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t10"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t10-z-ende",
+      "source": "hilfe-t10",
+      "target": "ende"
+    },
+    {
+      "id": "e-t10-z-ende",
+      "source": "t10",
+      "target": "ende"
+    }
+  ]
+}

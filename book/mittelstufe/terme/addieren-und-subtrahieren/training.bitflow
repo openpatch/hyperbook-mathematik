@@ -1,0 +1,1001 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "addieren-subtrahieren-training",
+    "title": "Training: Addieren und Subtrahieren",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Training: Addieren und Subtrahieren",
+        "markdown": "Zehn Aufgaben zum Zusammenfassen gleichartiger Glieder. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "t1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Fasse zusammen.",
+        "latex": "7a+2a+4b=\\placeholder[a]{}a+\\placeholder[b]{}b",
+        "blanks": {
+          "a": {
+            "expected": "9",
+            "accepted": []
+          },
+          "b": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "13",
+            "feedback": {
+              "message": "Nur die a-Glieder sind gleichartig. 4b bleibt für sich.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-t1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Gleichartig sind $7a$ und $2a$. Das Glied $4b$ hat eine andere Variable und bleibt stehen."
+      }
+    },
+    {
+      "id": "t2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Fasse zusammen.",
+        "latex": "8x^2-x^2+3x=\\placeholder[a]{}x^2+\\placeholder[b]{}x",
+        "blanks": {
+          "a": {
+            "expected": "7",
+            "accepted": []
+          },
+          "b": {
+            "expected": "3",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "8",
+            "feedback": {
+              "message": "Vor x² steht unsichtbar eine 1: 8x² − 1x² = 7x².",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-t2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$x^2$ bedeutet $1 \\cdot x^2$. Also $8x^2 - 1x^2 = 7x^2$."
+      }
+    },
+    {
+      "id": "t3",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welche Glieder sind gleichartig?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$3xy^2$ und $-5y^2x$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$3xy^2$ und $3x^2y$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Die Exponenten stehen an verschiedenen Variablen.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$4a$ und $4a^2$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "a und a² haben verschiedene Exponenten.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$2x$ und $2y$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Die Variablen sind verschieden.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-t3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Gleichartige Glieder haben **dieselben Variablen mit denselben Exponenten**. Die Reihenfolge der Faktoren spielt keine Rolle: $y^2x = xy^2$."
+      }
+    },
+    {
+      "id": "t4",
+      "type": "task-math",
+      "data": {
+        "instruction": "Vereinfache.",
+        "latex": "-5xy^2+3xy^2+y^2=\\placeholder[a]{}xy^2+y^2",
+        "blanks": {
+          "a": {
+            "expected": "-2",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "-8",
+            "feedback": {
+              "message": "Rechne −5 + 3. Das ist −2.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "a",
+            "latex": "2",
+            "feedback": {
+              "message": "Achte auf das Vorzeichen: −5 + 3 = −2.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-t4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Addiere nur die Zahlfaktoren der gleichartigen Glieder: $-5 + 3 = -2$. Das Glied $y^2$ ist nicht gleichartig zu $xy^2$."
+      }
+    },
+    {
+      "id": "t5",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $9a + 9b = 18ab$",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-t5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$a$ und $b$ sind verschiedene Sorten. $9a + 9b$ lässt sich nicht zusammenfassen. Gegenbeispiel mit $a = 2$ und $b = 1$: $18 + 9 = 27$, aber $18 \\cdot 2 \\cdot 1 = 36$."
+      }
+    },
+    {
+      "id": "t6",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Stimmt das? $x^2 - x = x$",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-t6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$x^2$ und $x$ sind nicht gleichartig. Gegenbeispiel: $x = 3$ ergibt $9 - 3 = 6$ und nicht $3$."
+      }
+    },
+    {
+      "id": "t7",
+      "type": "task-math",
+      "data": {
+        "instruction": "Vereinfache und ordne.",
+        "latex": "4u-3u^2+6-u+5u^2=\\placeholder[a]{}u^2+\\placeholder[b]{}u+\\placeholder[c]{}",
+        "blanks": {
+          "a": {
+            "expected": "2",
+            "accepted": []
+          },
+          "b": {
+            "expected": "3",
+            "accepted": []
+          },
+          "c": {
+            "expected": "6",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "8",
+            "feedback": {
+              "message": "Das Minus vor 3u² gehört zum Glied: −3u² + 5u² = 2u².",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "b",
+            "latex": "5",
+            "feedback": {
+              "message": "Das Minus vor u gehört zum Glied: 4u − u = 3u.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-t7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Sortiere: $-3u^2 + 5u^2 = 2u^2$ und $4u - u = 3u$. Die $6$ bleibt am Ende."
+      }
+    },
+    {
+      "id": "t8",
+      "type": "task-matching",
+      "data": {
+        "instruction": "Ordne jedem Term die vereinfachte Form zu.",
+        "pairs": [
+          {
+            "id": "p1",
+            "left": {
+              "kind": "text",
+              "label": "3x + 2y − x"
+            },
+            "right": {
+              "kind": "text",
+              "label": "2x + 2y"
+            }
+          },
+          {
+            "id": "p2",
+            "left": {
+              "kind": "text",
+              "label": "3x + 2x − y"
+            },
+            "right": {
+              "kind": "text",
+              "label": "5x − y"
+            }
+          },
+          {
+            "id": "p3",
+            "left": {
+              "kind": "text",
+              "label": "3x − 2x + y"
+            },
+            "right": {
+              "kind": "text",
+              "label": "x + y"
+            }
+          },
+          {
+            "id": "p4",
+            "left": {
+              "kind": "text",
+              "label": "x + 2y − 3x"
+            },
+            "right": {
+              "kind": "text",
+              "label": "−2x + 2y"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-t8",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Fasse nur die $x$-Glieder zusammen. Das $y$-Glied bleibt mit seinem Vorzeichen stehen."
+      }
+    },
+    {
+      "id": "t9",
+      "type": "task-numeric",
+      "data": {
+        "instruction": "Vereinfache zuerst und setze dann $a = 10$ ein: $3a + 17 - 2a - 12 + a$",
+        "expected": "25",
+        "tolerance": "exact",
+        "decimalSeparator": "both",
+        "allowExpression": false,
+        "valueFeedback": [
+          {
+            "value": "15",
+            "feedback": {
+              "message": "Du hast das letzte +a vergessen: 3a − 2a + a = 2a.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "hilfe-t9",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$3a - 2a + a = 2a$ und $17 - 12 = 5$. Also $2a + 5$."
+      }
+    },
+    {
+      "id": "t10",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Mit welchem Beispiel kann man zeigen, dass $2x + y$ und $2(x + y)$ **nicht** wertgleich sind?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$x = 1$, $y = 3$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$x = 5$, $y = 0$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Für y = 0 haben beide Terme denselben Wert.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$x = 0$, $y = 0$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Beide Terme haben den Wert 0.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      }
+    },
+    {
+      "id": "hilfe-t10",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1400
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Rechne für jedes Beispiel beide Terme aus. Gesucht ist ein Beispiel mit **verschiedenen** Werten."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-t1",
+      "source": "start",
+      "target": "t1"
+    },
+    {
+      "id": "e-t1-a-falsch",
+      "source": "t1",
+      "target": "hilfe-t1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t1-a-zurueck",
+      "source": "hilfe-t1",
+      "target": "t1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t1-z-t2",
+      "source": "hilfe-t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t1-z-t2",
+      "source": "t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t2-a-falsch",
+      "source": "t2",
+      "target": "hilfe-t2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t2-a-zurueck",
+      "source": "hilfe-t2",
+      "target": "t2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t2-z-t3",
+      "source": "hilfe-t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t2-z-t3",
+      "source": "t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t3-a-falsch",
+      "source": "t3",
+      "target": "hilfe-t3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t3-a-zurueck",
+      "source": "hilfe-t3",
+      "target": "t3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t3-z-t4",
+      "source": "hilfe-t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t3-z-t4",
+      "source": "t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t4-a-falsch",
+      "source": "t4",
+      "target": "hilfe-t4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t4-a-zurueck",
+      "source": "hilfe-t4",
+      "target": "t4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t4-z-t5",
+      "source": "hilfe-t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t4-z-t5",
+      "source": "t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t5-a-falsch",
+      "source": "t5",
+      "target": "hilfe-t5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t5-a-zurueck",
+      "source": "hilfe-t5",
+      "target": "t5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t5-z-t6",
+      "source": "hilfe-t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t5-z-t6",
+      "source": "t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t6-a-falsch",
+      "source": "t6",
+      "target": "hilfe-t6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t6-a-zurueck",
+      "source": "hilfe-t6",
+      "target": "t6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t6-z-t7",
+      "source": "hilfe-t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t6-z-t7",
+      "source": "t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t7-a-falsch",
+      "source": "t7",
+      "target": "hilfe-t7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t7-a-zurueck",
+      "source": "hilfe-t7",
+      "target": "t7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t7-z-t8",
+      "source": "hilfe-t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t7-z-t8",
+      "source": "t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t8-a-falsch",
+      "source": "t8",
+      "target": "hilfe-t8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t8-a-zurueck",
+      "source": "hilfe-t8",
+      "target": "t8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t8-z-t9",
+      "source": "hilfe-t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t8-z-t9",
+      "source": "t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t9-a-falsch",
+      "source": "t9",
+      "target": "hilfe-t9",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t9",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t9-a-zurueck",
+      "source": "hilfe-t9",
+      "target": "t9",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t9"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t9-z-t10",
+      "source": "hilfe-t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t9-z-t10",
+      "source": "t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t10-a-falsch",
+      "source": "t10",
+      "target": "hilfe-t10",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t10",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t10-a-zurueck",
+      "source": "hilfe-t10",
+      "target": "t10",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t10"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t10-z-ende",
+      "source": "hilfe-t10",
+      "target": "ende"
+    },
+    {
+      "id": "e-t10-z-ende",
+      "source": "t10",
+      "target": "ende"
+    }
+  ]
+}

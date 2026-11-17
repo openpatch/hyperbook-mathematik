@@ -2,6 +2,7 @@
 name: Übungen
 index: 5
 lang: de
+permaid: mittelstufe-terme-binomisch-uebungen
 ---
 
 # Übungen zu den binomischen Formeln

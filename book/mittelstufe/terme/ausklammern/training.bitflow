@@ -1,0 +1,963 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "ausklammern-training",
+    "title": "Training: Ausklammern",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "back",
+    "allowSkip": false,
+    "pools": [],
+    "sections": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Training: Ausklammern",
+        "markdown": "Zehn Aufgaben zum Ausklammern. Bei einem Fehler bekommst du einen Hinweis und einen zweiten Versuch.",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "t1",
+      "type": "task-math",
+      "data": {
+        "instruction": "Klammere die größte gemeinsame Zahl aus.",
+        "latex": "12x+18=\\placeholder[a]{}(\\placeholder[b]{}x+\\placeholder[c]{})",
+        "blanks": {
+          "a": {
+            "expected": "6",
+            "accepted": []
+          },
+          "b": {
+            "expected": "2",
+            "accepted": []
+          },
+          "c": {
+            "expected": "3",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "a",
+            "latex": "3",
+            "feedback": {
+              "message": "3 ist ein gemeinsamer Teiler, aber nicht der größte.",
+              "severity": "warning"
+            }
+          },
+          {
+            "blank": "a",
+            "latex": "2",
+            "feedback": {
+              "message": "2 ist ein gemeinsamer Teiler, aber nicht der größte.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 140
+      }
+    },
+    {
+      "id": "hilfe-t1",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 140
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Der größte gemeinsame Teiler von $12$ und $18$ ist $6$. Dann bleibt $12x : 6 = 2x$ und $18 : 6 = 3$."
+      }
+    },
+    {
+      "id": "t2",
+      "type": "task-math",
+      "data": {
+        "instruction": "Klammere so viel wie möglich aus.",
+        "latex": "5ab-10a=\\placeholder[a]{}a(b-\\placeholder[b]{})",
+        "blanks": {
+          "a": {
+            "expected": "5",
+            "accepted": []
+          },
+          "b": {
+            "expected": "2",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 280
+      }
+    },
+    {
+      "id": "hilfe-t2",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 280
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Gemeinsam sind $5$ und $a$. Es bleibt $5ab : 5a = b$ und $10a : 5a = 2$."
+      }
+    },
+    {
+      "id": "t3",
+      "type": "task-math",
+      "data": {
+        "instruction": "Ergänze.",
+        "latex": "14x^2-7x=7x(\\placeholder[a]{}x-\\placeholder[b]{})",
+        "blanks": {
+          "a": {
+            "expected": "2",
+            "accepted": []
+          },
+          "b": {
+            "expected": "1",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "0",
+            "feedback": {
+              "message": "Wird ein ganzes Glied ausgeklammert, bleibt eine 1 stehen: 7x = 7x · 1.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "id": "hilfe-t3",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$14x^2 = 7x \\cdot 2x$ und $7x = 7x \\cdot 1$."
+      }
+    },
+    {
+      "id": "t4",
+      "type": "task-choice",
+      "data": {
+        "instruction": "Welche Umformung ist richtig **und** fertig?",
+        "variant": "single",
+        "choices": [
+          {
+            "id": "o1",
+            "markdown": "$6ab + 3a = 3a(2b + 1)$",
+            "correct": true
+          },
+          {
+            "id": "o2",
+            "markdown": "$6ab + 3a = 3a \\cdot 2b$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Probe: 3a · 2b = 6ab. Das Glied 3a fehlt.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o3",
+            "markdown": "$6ab + 3a = a(6b + 3)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Richtig, aber in der Klammer steckt noch der Faktor 3.",
+              "severity": "warning"
+            }
+          },
+          {
+            "id": "o4",
+            "markdown": "$6ab + 3a = 3(2ab + 1)$",
+            "correct": false,
+            "feedbackWhenChecked": {
+              "message": "Probe: 3 · 1 = 3, nicht 3a.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "shuffle": true,
+        "partialCredit": false,
+        "patternFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 560
+      }
+    },
+    {
+      "id": "hilfe-t4",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 560
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Mache bei jeder Antwort die Probe durch Ausmultiplizieren. Fertig ist man, wenn in der Klammer kein gemeinsamer Faktor mehr steckt."
+      }
+    },
+    {
+      "id": "t5",
+      "type": "task-math",
+      "data": {
+        "instruction": "Klammere so viel wie möglich aus.",
+        "latex": "24x^2z+18xz^2=\\placeholder[a]{}xz(\\placeholder[b]{}x+\\placeholder[c]{}z)",
+        "blanks": {
+          "a": {
+            "expected": "6",
+            "accepted": []
+          },
+          "b": {
+            "expected": "4",
+            "accepted": []
+          },
+          "c": {
+            "expected": "3",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      }
+    },
+    {
+      "id": "hilfe-t5",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 700
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Zahlen: größter gemeinsamer Teiler von $24$ und $18$ ist $6$. Variablen: $x$ und $z$ kommen in beiden Gliedern mindestens einmal vor."
+      }
+    },
+    {
+      "id": "t6",
+      "type": "task-math",
+      "data": {
+        "instruction": "Klammere $-6c$ aus.",
+        "latex": "-30cd-24ce=-6c(\\placeholder[a]{}d+\\placeholder[b]{}e)",
+        "blanks": {
+          "a": {
+            "expected": "5",
+            "accepted": []
+          },
+          "b": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [
+          {
+            "blank": "b",
+            "latex": "-4",
+            "feedback": {
+              "message": "Probe: −6c · (−4e) = +24ce. Es soll aber −24ce herauskommen.",
+              "severity": "warning"
+            }
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 840
+      }
+    },
+    {
+      "id": "hilfe-t6",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 840
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$-30cd : (-6c) = 5d$ und $-24ce : (-6c) = 4e$."
+      }
+    },
+    {
+      "id": "t7",
+      "type": "task-yes-no",
+      "data": {
+        "question": "Ist die Umformung **fertig**? $12ab + 18ab^2 = 3ab(4 + 6b)$",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 980
+      }
+    },
+    {
+      "id": "hilfe-t7",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 980
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "In der Klammer haben $4$ und $6b$ noch den gemeinsamen Faktor $2$. Fertig ist $6ab(2 + 3b)$."
+      }
+    },
+    {
+      "id": "t8",
+      "type": "task-math",
+      "data": {
+        "instruction": "Klammere so viel wie möglich aus.",
+        "latex": "10a^5b+8a^3b^2=\\placeholder[a]{}a^3b(\\placeholder[b]{}a^2+\\placeholder[c]{}b)",
+        "blanks": {
+          "a": {
+            "expected": "2",
+            "accepted": []
+          },
+          "b": {
+            "expected": "5",
+            "accepted": []
+          },
+          "c": {
+            "expected": "4",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1120
+      }
+    },
+    {
+      "id": "hilfe-t8",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1120
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "Kleinste Potenz von $a$ ist $a^3$, von $b$ ist es $b$. Der größte gemeinsame Teiler von $10$ und $8$ ist $2$."
+      }
+    },
+    {
+      "id": "t9",
+      "type": "task-math",
+      "data": {
+        "instruction": "Mach es wie Nazar.",
+        "latex": "ax+ay+bx+by=(a+b)(\\placeholder[a]{})",
+        "blanks": {
+          "a": {
+            "expected": "x+y",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1260
+      }
+    },
+    {
+      "id": "hilfe-t9",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1260
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$ax + ay = a(x + y)$ und $bx + by = b(x + y)$. Dann die gemeinsame Klammer $(x + y)$ ausklammern."
+      }
+    },
+    {
+      "id": "t10",
+      "type": "task-math",
+      "data": {
+        "instruction": "Mach es wie Nazar.",
+        "latex": "xy+5x+2y+10=(x+\\placeholder[a]{})(y+\\placeholder[b]{})",
+        "blanks": {
+          "a": {
+            "expected": "2",
+            "accepted": []
+          },
+          "b": {
+            "expected": "5",
+            "accepted": []
+          }
+        },
+        "compare": "symbolic",
+        "partialCredit": false,
+        "virtualKeyboard": true,
+        "blankFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": true,
+          "allowSkip": false
+        }
+      },
+      "position": {
+        "x": 0,
+        "y": 1400
+      }
+    },
+    {
+      "id": "hilfe-t10",
+      "type": "title-simple",
+      "position": {
+        "x": 360,
+        "y": 1400
+      },
+      "data": {
+        "title": "Tipp",
+        "markdown": "$xy + 5x = x(y + 5)$ und $2y + 10 = 2(y + 5)$."
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Geschafft",
+        "markdown": "Schau in der Übersicht nach, was schon gut klappt.",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-t1",
+      "source": "start",
+      "target": "t1"
+    },
+    {
+      "id": "e-t1-a-falsch",
+      "source": "t1",
+      "target": "hilfe-t1",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t1",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t1-a-zurueck",
+      "source": "hilfe-t1",
+      "target": "t1",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t1"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t1-z-t2",
+      "source": "hilfe-t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t1-z-t2",
+      "source": "t1",
+      "target": "t2"
+    },
+    {
+      "id": "e-t2-a-falsch",
+      "source": "t2",
+      "target": "hilfe-t2",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t2",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t2-a-zurueck",
+      "source": "hilfe-t2",
+      "target": "t2",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t2"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t2-z-t3",
+      "source": "hilfe-t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t2-z-t3",
+      "source": "t2",
+      "target": "t3"
+    },
+    {
+      "id": "e-t3-a-falsch",
+      "source": "t3",
+      "target": "hilfe-t3",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t3",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t3-a-zurueck",
+      "source": "hilfe-t3",
+      "target": "t3",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t3"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t3-z-t4",
+      "source": "hilfe-t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t3-z-t4",
+      "source": "t3",
+      "target": "t4"
+    },
+    {
+      "id": "e-t4-a-falsch",
+      "source": "t4",
+      "target": "hilfe-t4",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t4",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t4-a-zurueck",
+      "source": "hilfe-t4",
+      "target": "t4",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t4"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t4-z-t5",
+      "source": "hilfe-t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t4-z-t5",
+      "source": "t4",
+      "target": "t5"
+    },
+    {
+      "id": "e-t5-a-falsch",
+      "source": "t5",
+      "target": "hilfe-t5",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t5",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t5-a-zurueck",
+      "source": "hilfe-t5",
+      "target": "t5",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t5"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t5-z-t6",
+      "source": "hilfe-t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t5-z-t6",
+      "source": "t5",
+      "target": "t6"
+    },
+    {
+      "id": "e-t6-a-falsch",
+      "source": "t6",
+      "target": "hilfe-t6",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t6",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t6-a-zurueck",
+      "source": "hilfe-t6",
+      "target": "t6",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t6"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t6-z-t7",
+      "source": "hilfe-t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t6-z-t7",
+      "source": "t6",
+      "target": "t7"
+    },
+    {
+      "id": "e-t7-a-falsch",
+      "source": "t7",
+      "target": "hilfe-t7",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t7",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t7-a-zurueck",
+      "source": "hilfe-t7",
+      "target": "t7",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t7"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t7-z-t8",
+      "source": "hilfe-t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t7-z-t8",
+      "source": "t7",
+      "target": "t8"
+    },
+    {
+      "id": "e-t8-a-falsch",
+      "source": "t8",
+      "target": "hilfe-t8",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t8",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t8-a-zurueck",
+      "source": "hilfe-t8",
+      "target": "t8",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t8"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t8-z-t9",
+      "source": "hilfe-t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t8-z-t9",
+      "source": "t8",
+      "target": "t9"
+    },
+    {
+      "id": "e-t9-a-falsch",
+      "source": "t9",
+      "target": "hilfe-t9",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t9",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t9-a-zurueck",
+      "source": "hilfe-t9",
+      "target": "t9",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t9"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t9-z-t10",
+      "source": "hilfe-t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t9-z-t10",
+      "source": "t9",
+      "target": "t10"
+    },
+    {
+      "id": "e-t10-a-falsch",
+      "source": "t10",
+      "target": "hilfe-t10",
+      "label": "noch nicht",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "result",
+          "nodeId": "t10",
+          "path": "state"
+        },
+        "op": "eq",
+        "right": "wrong"
+      }
+    },
+    {
+      "id": "e-hilfe-t10-a-zurueck",
+      "source": "hilfe-t10",
+      "target": "t10",
+      "label": "noch ein Versuch",
+      "condition": {
+        "type": "compare",
+        "left": {
+          "kind": "visits",
+          "nodeId": "t10"
+        },
+        "op": "lt",
+        "right": 2
+      },
+      "resetTarget": "result"
+    },
+    {
+      "id": "e-hilfe-t10-z-ende",
+      "source": "hilfe-t10",
+      "target": "ende"
+    },
+    {
+      "id": "e-t10-z-ende",
+      "source": "t10",
+      "target": "ende"
+    }
+  ]
+}

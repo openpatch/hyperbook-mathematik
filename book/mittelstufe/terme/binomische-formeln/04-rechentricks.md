@@ -2,6 +2,7 @@
 name: Rechentricks
 index: 4
 lang: de
+permaid: mittelstufe-terme-binomisch-rechentricks
 ---
 
 # Rechentricks mit binomischen Formeln

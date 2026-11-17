@@ -1,7 +1,8 @@
 ---
 name: Binomische Formeln
 lang: de
-index: 1
+index: 7
+permaid: mittelstufe-terme-binomisch
 ---
 
 # Binomische Formeln

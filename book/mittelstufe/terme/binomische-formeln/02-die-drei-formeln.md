@@ -2,6 +2,7 @@
 name: Die drei Formeln
 index: 2
 lang: de
+permaid: mittelstufe-terme-binomisch-die-drei-formeln
 ---
 
 # Die drei binomischen Formeln
