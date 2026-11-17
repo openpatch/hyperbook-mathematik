@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "meta": {
+    "id": "zuordnungen-pruefe-dich-proportional",
+    "title": "Prüfe dich: Proportionale Zuordnungen",
+    "locale": "de",
+    "askConfidence": false,
+    "askReasoning": false,
+    "navigation": "free",
+    "allowSkip": true,
+    "sections": [],
+    "pools": []
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start-simple",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "title": "Prüfe dich: Proportionale Zuordnungen",
+        "markdown": "Zehn Aufgaben zu proportionalen Zuordnungen und zum Dreisatz – alle rund ums Essen. Erst am Ende siehst du, was richtig war. Ein Taschenrechner ist erlaubt. **Notiere am Ende deine Punktzahl in deinem Arbeitsbericht.**",
+        "showOutline": false
+      }
+    },
+    {
+      "id": "p1",
+      "type": "task-yes-no",
+      "position": {
+        "x": 0,
+        "y": 140
+      },
+      "data": {
+        "question": "Ein Becher Joghurt kostet 0,49 €. Ist die Zuordnung **Anzahl Becher → Preis** proportional?",
+        "correctAnswer": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "p2",
+      "type": "task-yes-no",
+      "position": {
+        "x": 0,
+        "y": 280
+      },
+      "data": {
+        "question": "Eine Pizza kostet 8 €, dazu kommt einmal 2,50 € Liefergebühr. Ist die Zuordnung **Anzahl Pizzen → Gesamtpreis** proportional?",
+        "correctAnswer": false,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "p3",
+      "type": "task-table",
+      "position": {
+        "x": 0,
+        "y": 420
+      },
+      "data": {
+        "instruction": "Eine Portion Burger mit Pommes braucht 2,25 m² Ackerfläche. Fülle die Tabelle aus.",
+        "caption": "Portionen → Fläche",
+        "columns": [
+          {
+            "id": "x",
+            "header": "Portionen",
+            "kind": "number"
+          },
+          {
+            "id": "y",
+            "header": "Fläche in m²",
+            "kind": "number"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r1",
+            "cells": {
+              "x": {
+                "given": "1"
+              },
+              "y": {
+                "given": "2,25"
+              }
+            }
+          },
+          {
+            "id": "r2",
+            "cells": {
+              "x": {
+                "given": "2"
+              },
+              "y": {
+                "accepted": [
+                  "4,5",
+                  "4.5",
+                  "4,50"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r3",
+            "cells": {
+              "x": {
+                "given": "4"
+              },
+              "y": {
+                "accepted": [
+                  "9"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r4",
+            "cells": {
+              "x": {
+                "given": "10"
+              },
+              "y": {
+                "accepted": [
+                  "22,5",
+                  "22.5",
+                  "22,50"
+                ]
+              }
+            }
+          },
+          {
+            "id": "r5",
+            "cells": {
+              "x": {
+                "accepted": [
+                  "20"
+                ]
+              },
+              "y": {
+                "given": "45"
+              }
+            }
+          }
+        ],
+        "numberTolerance": 0.001,
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "p4",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 560
+      },
+      "data": {
+        "instruction": "Haferflocken: Welche Tabelle **Menge in g → Energie in kcal** gehört zu einer proportionalen Zuordnung?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "| Menge in g | 40 | 60 | 100 |\n|---|---|---|---|\n| Energie in kcal | 148 | 222 | 370 |",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "| Menge in g | 40 | 60 | 100 |\n|---|---|---|---|\n| Energie in kcal | 148 | 200 | 370 |",
+            "correct": false
+          },
+          {
+            "id": "c3",
+            "markdown": "| Menge in g | 40 | 60 | 100 |\n|---|---|---|---|\n| Energie in kcal | 188 | 208 | 248 |",
+            "correct": false
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "p5",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "data": {
+        "instruction": "Für 3 kg Kartoffeln bezahlt man 4,20 €. Bestimme den Proportionalitätsfaktor (Preis für 1 kg).",
+        "expected": "1.4",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "€ pro kg"
+      }
+    },
+    {
+      "id": "p6",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 840
+      },
+      "data": {
+        "instruction": "Für 6 Personen braucht man 450 g Nudeln. Wie viel Nudeln braucht man für 10 Personen?",
+        "expected": "750",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "g"
+      }
+    },
+    {
+      "id": "p7",
+      "type": "task-numeric",
+      "position": {
+        "x": 0,
+        "y": 980
+      },
+      "data": {
+        "instruction": "1 Liter Cola enthält 106 g Zucker. Wie viel Zucker enthält eine 0,5-Liter-Flasche?",
+        "expected": "53",
+        "tolerance": "absolute",
+        "toleranceValue": 0.01,
+        "decimalSeparator": "both",
+        "allowExpression": true,
+        "valueFeedback": [],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        },
+        "unitMode": "shown",
+        "unit": "g"
+      }
+    },
+    {
+      "id": "p8",
+      "type": "task-function-plot",
+      "position": {
+        "x": 0,
+        "y": 1120
+      },
+      "data": {
+        "instruction": "Eine Portion Linsencurry braucht 1,25 m² Ackerfläche. Zeichne den Graphen der Zuordnung **Portionen → Fläche in m²**: Ziehe die Punkte an die richtige Stelle.",
+        "axes": {
+          "x": {
+            "label": "Portionen",
+            "min": 0,
+            "max": 8,
+            "step": 1
+          },
+          "y": {
+            "label": "Fläche in m²",
+            "min": 0,
+            "max": 11,
+            "step": 0.5
+          }
+        },
+        "target": "1.25x",
+        "shown": [],
+        "handles": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "snap": "half",
+        "partialCredit": true,
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "p9",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 1260
+      },
+      "data": {
+        "instruction": "Welche Aussage über den Graphen einer **proportionalen** Zuordnung stimmt?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "Er ist eine Halbgerade, die im Ursprung beginnt.",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "Er ist eine Gerade, die die $y$-Achse oberhalb des Ursprungs schneidet.",
+            "correct": false
+          },
+          {
+            "id": "c3",
+            "markdown": "Er ist eine Kurve, die fällt und sich den Achsen nähert.",
+            "correct": false
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "p10",
+      "type": "task-choice",
+      "position": {
+        "x": 0,
+        "y": 1400
+      },
+      "data": {
+        "instruction": "Ben rechnet: „4 Brötchen kosten 2 €. 8 Brötchen sind 4 Brötchen mehr, also kosten sie 2 € + 4 € = 6 €.“ Was stimmt?",
+        "variant": "single",
+        "shuffle": true,
+        "choices": [
+          {
+            "id": "c1",
+            "markdown": "Ben hat falsch gerechnet: Doppelt so viele Brötchen kosten doppelt so viel, also 4 €.",
+            "correct": true
+          },
+          {
+            "id": "c2",
+            "markdown": "Ben hat richtig gerechnet.",
+            "correct": false
+          },
+          {
+            "id": "c3",
+            "markdown": "Ben hat falsch gerechnet: 8 Brötchen kosten 8 €.",
+            "correct": false
+          }
+        ],
+        "evaluation": {
+          "mode": "auto",
+          "enableRetry": false,
+          "showFeedback": false,
+          "allowSkip": false
+        }
+      }
+    },
+    {
+      "id": "ende",
+      "type": "end-tries",
+      "position": {
+        "x": 0,
+        "y": 1540
+      },
+      "data": {
+        "title": "Auswertung",
+        "markdown": "Trage deine Punktzahl in deinen **Arbeitsbericht** ein. Schau dir an, was noch nicht geklappt hat, und wiederhole die passende Seite (Links unter dem Test).",
+        "showBreakdown": true,
+        "showScore": true,
+        "allowReview": true
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-p1",
+      "source": "start",
+      "target": "p1"
+    },
+    {
+      "id": "e-p1-p2",
+      "source": "p1",
+      "target": "p2"
+    },
+    {
+      "id": "e-p2-p3",
+      "source": "p2",
+      "target": "p3"
+    },
+    {
+      "id": "e-p3-p4",
+      "source": "p3",
+      "target": "p4"
+    },
+    {
+      "id": "e-p4-p5",
+      "source": "p4",
+      "target": "p5"
+    },
+    {
+      "id": "e-p5-p6",
+      "source": "p5",
+      "target": "p6"
+    },
+    {
+      "id": "e-p6-p7",
+      "source": "p6",
+      "target": "p7"
+    },
+    {
+      "id": "e-p7-p8",
+      "source": "p7",
+      "target": "p8"
+    },
+    {
+      "id": "e-p8-p9",
+      "source": "p8",
+      "target": "p9"
+    },
+    {
+      "id": "e-p9-p10",
+      "source": "p9",
+      "target": "p10"
+    },
+    {
+      "id": "e-p10-ende",
+      "source": "p10",
+      "target": "ende"
+    }
+  ]
+}
